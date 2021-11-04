@@ -1,0 +1,25 @@
+{
+  "name": "@forecast/theme",
+  "version": "0.0.1",
+  "description": "Forecast Design System theme",
+  "author": "TruePlan Inc.",
+  "license": "UNLICENSED",
+  "main": "src/index.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "",
+    "type-check": "tsc"
+  },
+  "peerDependencies": {
+    "react": "17.x",
+    "react-dom": "17.x"
+  },
+  "devDependencies": {
+    "@stitches/react": "^1.2.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "typescript": "^4.4.3"
+  }
+}
