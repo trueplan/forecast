@@ -1,0 +1,59 @@
+{
+  "name": "@forecast/components",
+  "version": "0.0.1",
+  "description": "Forecast Match Design System Components",
+  "private": true,
+  "author": "TruePlan Inc.",
+  "license": "UNLICENSED",
+  "main": "src/index.ts",
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@github.com/trueplan/forecast",
+    "directory": "packages/components"
+  },
+  "publishConfig": {
+    "main": "dist/index.js",
+    "module": "dist/index.mjs",
+    "types": "dist/index.d.ts",
+    "access": "public"
+  },
+  "scripts": {
+    "build": "yarn clean && yarn compile",
+    "clean": "rm -rf ./dist",
+    "compile": "rollup -c node:match --environment NODE_ENV:production",
+    "compile:dev": "rollup -c node:match --environment NODE_ENV:development",
+    "type-check": "tsc --noEmit --composite false",
+    "publish": "yarn npm publish --tolerate-republish"
+  },
+  "peerDependencies": {
+    "@forecast/theme": "^0.0.1",
+    "@radix-ui/react-checkbox": "^0.1.1",
+    "@radix-ui/react-dialog": "^0.1.1",
+    "@radix-ui/react-dropdown-menu": "^0.1.0",
+    "@radix-ui/react-progress": "^0.1.1",
+    "@radix-ui/react-radio-group": "^0.1.1",
+    "@radix-ui/react-tooltip": "^0.1.0",
+    "@radix-ui/react-visually-hidden": "^0.1.0",
+    "@stitches/react": "^1.2.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-uid": "^2.3.1"
+  },
+  "devDependencies": {
+    "@forecast/theme": "^0.0.1",
+    "@radix-ui/react-checkbox": "^0.1.1",
+    "@radix-ui/react-dialog": "^0.1.1",
+    "@radix-ui/react-dropdown-menu": "^0.1.0",
+    "@radix-ui/react-progress": "^0.1.1",
+    "@radix-ui/react-radio-group": "^0.1.1",
+    "@radix-ui/react-tooltip": "^0.1.0",
+    "@radix-ui/react-visually-hidden": "^0.1.0",
+    "@stitches/react": "^1.2.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-uid": "^2.3.1"
+  }
+}
