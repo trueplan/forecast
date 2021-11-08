@@ -1865,6 +1865,47 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@forecast/icons@workspace:packages/icons":
+  version: 0.0.0-use.local
+  resolution: "@forecast/icons@workspace:packages/icons"
+  dependencies:
+    "@forecast/theme": ^0.0.1
+    "@svgr/babel-plugin-add-jsx-attribute": ^5.4.0
+    "@svgr/babel-plugin-remove-jsx-attribute": ^5.4.0
+    "@svgr/plugin-svgo": ^5.5.0
+    "@twilio-labs/svg-to-react": ^2.1.0
+    "@types/node": ^14.14.45
+    "@types/react": ^16.14.6
+    "@types/react-dom": ^16.9.12
+    chalk: ^4.1.2
+    commander: ^8.2.0
+    eslint-config-forecast: "workspace:configs/eslint"
+    lodash.difference: ^4.5.0
+    lodash.startcase: ^4.4.0
+    react: ^17.0.2
+    react-dom: ^17.0.2
+    react-uid: ^2.3.1
+    rollup: ^2.59.0
+    rollup-config-forecast: "workspace:configs/rollup"
+    tsconfig-forecast: "workspace:configs/tsconfig"
+    tslib: ^2.3.1
+    typescript: ^4.4.3
+  peerDependencies:
+    "@forecast/theme": ^0.0.1
+    "@svgr/babel-plugin-add-jsx-attribute": ^5.4.0
+    "@svgr/babel-plugin-remove-jsx-attribute": ^5.4.0
+    "@svgr/plugin-svgo": ^5.5.0
+    "@twilio-labs/svg-to-react": ^2.1.0
+    chalk: ^4.1.2
+    commander: ^8.2.0
+    lodash.difference: ^4.5.0
+    lodash.startcase: ^4.4.0
+    react: ^17.0.2
+    react-dom: ^17.0.2
+    react-uid: ^2.3.1
+  languageName: unknown
+  linkType: soft
+
 "@forecast/theme@^0.0.1, @forecast/theme@workspace:packages/theme":
   version: 0.0.0-use.local
   resolution: "@forecast/theme@workspace:packages/theme"
@@ -9860,6 +9901,9 @@ __metadata:
     "@storybook/node-logger": ^6.2.9
     "@storybook/preset-create-react-app": ^3.1.7
     "@storybook/react": ^6.2.9
+    "@svgr/babel-plugin-add-jsx-attribute": ^5.4.0
+    "@svgr/babel-plugin-remove-jsx-attribute": ^5.4.0
+    "@svgr/plugin-svgo": ^5.5.0
     "@testing-library/jest-dom": ^5.15.0
     "@testing-library/react": ^12.1.2
     "@twilio-labs/svg-to-react": ^2.1.0
