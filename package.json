@@ -11,17 +11,19 @@
     "packages/**"
   ],
   "scripts": {
-    "clean": "yarn workspaces foreach run clean && jest --clearCache && yarn cache clean",
-    "build": "yarn workspaces foreach --topological-dev run build",
-    "storybook": "start-storybook -s ./.storybook/static -p 6006",
     "build:storybook": "build-storybook -c .storybook -o ./docs -s .storybook/static",
+    "build": "yarn workspaces foreach --topological-dev run build",
     "chromatic": "chromatic",
-    "convert:icons": "yarn workspace @forecast/icons convert:icons",
+    "clean": "yarn workspaces foreach run clean && jest --clearCache && yarn cache clean",
     "convert:icons-new": "yarn workspace @forecast/icons convert:icons-new",
+    "convert:icons": "yarn workspace @forecast/icons convert:icons",
     "lint:js": "eslint '**/*.{ts,tsx,js,cjs}'",
+    "prepare": "is-ci || husky install",
     "prettier:write": "prettier --write '**/*.{ts,tsx,js,cjs}'",
+    "storybook": "start-storybook -s ./.storybook/static -p 6006",
+    "test:ci": "jest --ci",
     "test": "jest",
-    "test:ci": "jest --ci"
+    "type-check": "yarn type-check --workspaces --if-present"
   },
   "lint-staged": {
     "**/*": "prettier --write --ignore-unknown",
@@ -51,6 +53,8 @@
     "@babel/preset-env": "^7.15.6",
     "@babel/preset-react": "^7.14.5",
     "@babel/preset-typescript": "^7.15.0",
+    "@commitlint/cli": "^14.1.0",
+    "@commitlint/config-conventional": "^14.1.0",
     "@storybook/addon-actions": "^6.2.9",
     "@storybook/addon-docs": "^6.2.9",
     "@storybook/addon-essentials": "^6.2.9",
