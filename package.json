@@ -16,7 +16,9 @@
     "convert:icons": "node ./src/icons/tools/cli.js convert",
     "convert:icons-new": "node ./src/icons/tools/cli.js convert-new",
     "lint:js": "eslint '**/*.{ts,tsx,js,cjs}'",
-    "prettier:write": "prettier --write '**/*.{ts,tsx,js,cjs}'"
+    "prettier:write": "prettier --write '**/*.{ts,tsx,js,cjs}'",
+    "test": "jest",
+    "test:ci": "jest --ci"
   },
   "lint-staged": {
     "**/*": "prettier --write --ignore-unknown",
@@ -44,6 +46,8 @@
     "@storybook/node-logger": "^6.2.9",
     "@storybook/preset-create-react-app": "^3.1.7",
     "@storybook/react": "^6.2.9",
+    "@testing-library/jest-dom": "^5.15.0",
+    "@testing-library/react": "^12.1.2",
     "@twilio-labs/svg-to-react": "^2.1.0",
     "@types/jest": "^27.0.2",
     "@types/node": "^14.14.45",
@@ -80,7 +84,7 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-uid": "^2.3.1",
-    "ts-jest": "^27.0.5",
+    "ts-jest": "^27.0.7",
     "typescript": "^4.4.3"
   },
   "peerDependencies": {

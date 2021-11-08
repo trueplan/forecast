@@ -1,17 +1,16 @@
 module.exports = {
   verbose: true,
-  roots: ['<rootDir>/client', '<rootDir>/design-system'],
+  roots: ['<rootDir>/packages'],
   transform: {
     '^.+\\.tsx?$': 'ts-jest',
   },
   testRegex: '(/__tests__/.*|(\\.|/)(test|spec))\\.tsx?$',
   testEnvironment: 'jsdom',
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json', 'node'],
-  snapshotSerializers: ['enzyme-to-json/serializer'],
-  testPathIgnorePatterns: ['<rootDir>/src/(?:.+?)/dist/'],
+  testPathIgnorePatterns: ['<rootDir>/packages/(?:.+?)/dist/'],
   cacheDirectory: '.jest-cache',
   coverageDirectory: '.jest-coverage',
-  coveragePathIgnorePatterns: ['<rootDir>/src/(?:.+?)/dist/'],
+  coveragePathIgnorePatterns: ['<rootDir>/packages/(?:.+?)/dist/'],
   coverageReporters: ['html', 'text'],
   coverageThreshold: {
     global: {
@@ -23,8 +22,7 @@ module.exports = {
   },
   moduleNameMapper: {
     ['\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$']:
-      '<rootDir>/.jest/__mocks__/file-mock.js',
-    ['\\.(scss|css|less)$']: '<rootDir>/.jest/__mocks__/style-mock.js',
+      '<rootDir>/.jest/file-mock.ts',
   },
   setupFilesAfterEnv: ['<rootDir>/.jest/setup-tests.ts'],
   transformIgnorePatterns: ['node_modules/'],
