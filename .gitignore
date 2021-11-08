@@ -68,3 +68,8 @@ jspm_packages/
 
 # Design system storybook build
 /docs
+
+# Build artifacts
+**/dist/*
+**/build/*
+**/generated/*
