@@ -1820,7 +1820,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@forecast/components@workspace:packages/components":
+"@forecast/components@^0.0.1, @forecast/components@workspace:packages/components":
   version: 0.0.0-use.local
   resolution: "@forecast/components@workspace:packages/components"
   dependencies:
@@ -1869,6 +1869,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@forecast/icons@workspace:packages/icons"
   dependencies:
+    "@forecast/components": ^0.0.1
     "@forecast/theme": ^0.0.1
     "@svgr/babel-plugin-add-jsx-attribute": ^5.4.0
     "@svgr/babel-plugin-remove-jsx-attribute": ^5.4.0
@@ -1891,6 +1892,7 @@ __metadata:
     tslib: ^2.3.1
     typescript: ^4.4.3
   peerDependencies:
+    "@forecast/components": ^0.0.1
     "@forecast/theme": ^0.0.1
     "@svgr/babel-plugin-add-jsx-attribute": ^5.4.0
     "@svgr/babel-plugin-remove-jsx-attribute": ^5.4.0
@@ -1924,6 +1926,7 @@ __metadata:
     react-uid: ^2.3.1
     rollup: ^2.59.0
     rollup-config-forecast: "workspace:configs/rollup"
+    tsconfig-forecast: "workspace:configs/tsconfig"
     tslib: ^2.3.1
     typescript: ^4.4.3
   peerDependencies:

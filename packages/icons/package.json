@@ -42,6 +42,7 @@
     "lodash.startcase": "^4.4.0"
   },
   "peerDependencies": {
+    "@forecast/components": "^0.0.1",
     "@forecast/theme": "^0.0.1",
     "@svgr/babel-plugin-add-jsx-attribute": "^5.4.0",
     "@svgr/babel-plugin-remove-jsx-attribute": "^5.4.0",
@@ -56,6 +57,7 @@
     "react-uid": "^2.3.1"
   },
   "devDependencies": {
+    "@forecast/components": "^0.0.1",
     "@forecast/theme": "^0.0.1",
     "@svgr/babel-plugin-add-jsx-attribute": "^5.4.0",
     "@svgr/babel-plugin-remove-jsx-attribute": "^5.4.0",
