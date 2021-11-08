@@ -3,6 +3,10 @@
     "strictNullChecks": true,
     "module": "esnext",
     "jsx": "react",
+    "baseUrl": "./packages",
+    "paths": {
+      "@forecast/theme/*": ["theme/src/*"]
+    },
     "target": "es5",
     "checkJs": false,
     "allowJs": true,
@@ -18,7 +22,8 @@
     "noEmit": true,
     "noImplicitAny": false,
     "noFallthroughCasesInSwitch": true,
-    "downlevelIteration": true
+    "downlevelIteration": true,
+    "declaration": true
   },
   "exclude": ["node_modules", "public", ".next"]
 }

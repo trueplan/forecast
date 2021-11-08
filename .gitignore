@@ -45,7 +45,13 @@ jspm_packages/
 .yarn-integrity
 
 # Yarn
+.pnp.*
 .yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
 
 # Next.js build output
 .next

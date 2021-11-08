@@ -1,5 +1,5 @@
-import * as React from 'react';
-import {globalStyles} from '../packages/theme';
+import * as React from "react";
+import { globalStyles } from "../packages/theme";
 
 export const decorators = [
   (Story) => {
@@ -13,6 +13,6 @@ export const decorators = [
 ];
 
 export const parameters = {
-  actions: {argTypesRegex: '^on[A-Z].*'},
-  controls: {expanded: true},
+  actions: { argTypesRegex: "^on[A-Z].*" },
+  controls: { expanded: true },
 };

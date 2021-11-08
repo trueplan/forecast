@@ -1,15 +1,15 @@
-import {styled, theme} from '@forecast/theme';
+import { styled, theme } from "@forecast/theme";
 
-export const StyledCard = styled('div', {
+export const StyledCard = styled("div", {
   backgroundColor: theme.colors.white,
   borderColor: theme.colors.borderLight,
   borderRadius: theme.radii[30],
-  borderStyle: 'solid',
+  borderStyle: "solid",
   borderWidth: theme.borderWidths[10],
   variants: {
     borderless: {
       true: {
-        border: 'none',
+        border: "none",
       },
     },
     padding: {
@@ -175,17 +175,17 @@ export const StyledCard = styled('div', {
   },
 });
 
-export const StyledCardHeader = styled('div', {
+export const StyledCardHeader = styled("div", {
   borderBottomColor: theme.colors.borderLight,
-  borderBottomStyle: 'solid',
+  borderBottomStyle: "solid",
   borderBottomWidth: theme.borderWidths[10],
   px: theme.space[40],
   py: theme.space[20],
 });
 
-export const StyledCardFooter = styled('div', {
+export const StyledCardFooter = styled("div", {
   borderTopColor: theme.colors.borderLight,
-  borderTopStyle: 'solid',
+  borderTopStyle: "solid",
   borderTopWidth: theme.borderWidths[10],
   px: theme.space[40],
   py: theme.space[20],

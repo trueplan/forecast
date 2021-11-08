@@ -1,9 +1,21 @@
-import * as React from 'react';
-import {StyledCard} from './styles';
-import type {CardProps} from './types';
+import * as React from "react";
+import { StyledCard } from "./styles";
+import type { CardProps } from "./types";
 
 const Card = React.forwardRef<HTMLDivElement, CardProps>(
-  ({borderless, children, padding, paddingBottom, paddingLeft, paddingRight, paddingTop, ...props}, ref) => (
+  (
+    {
+      borderless,
+      children,
+      padding,
+      paddingBottom,
+      paddingLeft,
+      paddingRight,
+      paddingTop,
+      ...props
+    },
+    ref
+  ) => (
     <StyledCard
       borderless={borderless}
       padding={padding}
@@ -19,6 +31,6 @@ const Card = React.forwardRef<HTMLDivElement, CardProps>(
   )
 );
 
-Card.displayName = 'Card';
+Card.displayName = "Card";
 
-export {Card};
+export { Card };
