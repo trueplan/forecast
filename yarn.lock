@@ -1845,6 +1845,7 @@ __metadata:
     react-uid: ^2.3.1
     rollup: ^2.59.0
     rollup-config-forecast: "workspace:configs/rollup"
+    tsconfig-forecast: "workspace:configs/tsconfig"
     tslib: ^2.3.1
     typescript: ^4.4.3
   peerDependencies:
@@ -9854,6 +9855,7 @@ __metadata:
     react-uid: ^2.3.1
     rollup: ^2.59.0
     ts-jest: ^27.0.7
+    tsconfig-forecast: "workspace:configs/tsconfig"
     typescript: ^4.4.3
   peerDependencies:
     react: 17.x
@@ -18107,6 +18109,12 @@ __metadata:
   checksum: c2a698b85d521298fe6f2435fbf2d3dc5834b423ea25abd321805ead3f399dbeedce7ca09492d7eb005b9d2c009c6b9587055bc3ab273dc6b9e40eefd7edb5b2
   languageName: node
   linkType: hard
+
+"tsconfig-forecast@workspace:configs/tsconfig":
+  version: 0.0.0-use.local
+  resolution: "tsconfig-forecast@workspace:configs/tsconfig"
+  languageName: unknown
+  linkType: soft
 
 "tsconfig-paths@npm:^3.11.0, tsconfig-paths@npm:^3.9.0":
   version: 3.11.0

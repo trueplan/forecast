@@ -27,6 +27,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         "reference": "workspace:configs/rollup"
       },
       {
+        "name": "tsconfig-forecast",
+        "reference": "workspace:configs/tsconfig"
+      },
+      {
         "name": "@forecast/components",
         "reference": "workspace:packages/components"
       },
@@ -41,7 +45,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ["@forecast/components", ["workspace:packages/components"]],
       ["@forecast/theme", ["virtual:4d8b081611afaea327b1d75c4d35d7bcb2bd53da66929b3c82aad5f66cd2fd38deb2c11f40f6b10bc2b48fc8ed24643df9f0a0596203505ff0a81dab71ff46ac#workspace:packages/theme", "workspace:packages/theme"]],
       ["forecast", ["workspace:."]],
-      ["rollup-config-forecast", ["virtual:4d8b081611afaea327b1d75c4d35d7bcb2bd53da66929b3c82aad5f66cd2fd38deb2c11f40f6b10bc2b48fc8ed24643df9f0a0596203505ff0a81dab71ff46ac#workspace:configs/rollup", "workspace:configs/rollup"]]
+      ["rollup-config-forecast", ["virtual:4d8b081611afaea327b1d75c4d35d7bcb2bd53da66929b3c82aad5f66cd2fd38deb2c11f40f6b10bc2b48fc8ed24643df9f0a0596203505ff0a81dab71ff46ac#workspace:configs/rollup", "workspace:configs/rollup"]],
+      ["tsconfig-forecast", ["workspace:configs/tsconfig"]]
     ],
     "fallbackPool": [
     ],
@@ -105,6 +110,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["react-uid", "virtual:83930a02e406f078247fc9b9d21de38a337fcb78679a3d66298da2df309f013f7be5bb231811c0f7e8543d93b976930cd65092f5c1c34eb2317b35770703c6a9#npm:2.3.1"],
             ["rollup", "npm:2.59.0"],
             ["ts-jest", "virtual:83930a02e406f078247fc9b9d21de38a337fcb78679a3d66298da2df309f013f7be5bb231811c0f7e8543d93b976930cd65092f5c1c34eb2317b35770703c6a9#npm:27.0.7"],
+            ["tsconfig-forecast", "workspace:configs/tsconfig"],
             ["typescript", "patch:typescript@npm%3A4.4.4#~builtin<compat/typescript>::version=4.4.4&hash=ddd1e8"]
           ],
           "linkType": "SOFT",
@@ -4539,6 +4545,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["react-uid", "virtual:83930a02e406f078247fc9b9d21de38a337fcb78679a3d66298da2df309f013f7be5bb231811c0f7e8543d93b976930cd65092f5c1c34eb2317b35770703c6a9#npm:2.3.1"],
             ["rollup", "npm:2.59.0"],
             ["rollup-config-forecast", "virtual:4d8b081611afaea327b1d75c4d35d7bcb2bd53da66929b3c82aad5f66cd2fd38deb2c11f40f6b10bc2b48fc8ed24643df9f0a0596203505ff0a81dab71ff46ac#workspace:configs/rollup"],
+            ["tsconfig-forecast", "workspace:configs/tsconfig"],
             ["tslib", "npm:2.3.1"],
             ["typescript", "patch:typescript@npm%3A4.4.4#~builtin<compat/typescript>::version=4.4.4&hash=ddd1e8"]
           ],
@@ -15376,6 +15383,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["react-uid", "virtual:83930a02e406f078247fc9b9d21de38a337fcb78679a3d66298da2df309f013f7be5bb231811c0f7e8543d93b976930cd65092f5c1c34eb2317b35770703c6a9#npm:2.3.1"],
             ["rollup", "npm:2.59.0"],
             ["ts-jest", "virtual:83930a02e406f078247fc9b9d21de38a337fcb78679a3d66298da2df309f013f7be5bb231811c0f7e8543d93b976930cd65092f5c1c34eb2317b35770703c6a9#npm:27.0.7"],
+            ["tsconfig-forecast", "workspace:configs/tsconfig"],
             ["typescript", "patch:typescript@npm%3A4.4.4#~builtin<compat/typescript>::version=4.4.4&hash=ddd1e8"]
           ],
           "linkType": "SOFT",
@@ -24982,6 +24990,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             "typescript"
           ],
           "linkType": "HARD",
+        }]
+      ]],
+      ["tsconfig-forecast", [
+        ["workspace:configs/tsconfig", {
+          "packageLocation": "./configs/tsconfig/",
+          "packageDependencies": [
+            ["tsconfig-forecast", "workspace:configs/tsconfig"]
+          ],
+          "linkType": "SOFT",
         }]
       ]],
       ["tsconfig-paths", [

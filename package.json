@@ -90,6 +90,7 @@
     "react-uid": "^2.3.1",
     "rollup": "^2.59.0",
     "ts-jest": "^27.0.7",
+    "tsconfig-forecast": "workspace:configs/tsconfig",
     "typescript": "^4.4.3"
   },
   "peerDependencies": {

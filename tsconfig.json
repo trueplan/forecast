@@ -1,29 +1,7 @@
 {
+  "extends": "tsconfig-forecast",
   "compilerOptions": {
-    "strictNullChecks": true,
-    "module": "esnext",
-    "jsx": "react",
-    "baseUrl": "./packages",
-    "paths": {
-      "@forecast/theme/*": ["theme/src/*"]
-    },
-    "target": "es5",
-    "checkJs": false,
-    "allowJs": true,
-    "lib": ["dom", "dom.iterable", "esnext"],
-    "skipLibCheck": true,
-    "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
-    "strict": true,
-    "forceConsistentCasingInFileNames": true,
-    "moduleResolution": "node",
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "noEmit": true,
-    "noImplicitAny": false,
-    "noFallthroughCasesInSwitch": true,
-    "downlevelIteration": true,
-    "declaration": true
+    "allowJs": true
   },
-  "exclude": ["node_modules", "public", ".next"]
+  "exclude": ["node_modules", "dist", "build", "generated", "vendor"]
 }

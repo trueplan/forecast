@@ -1,0 +1,20 @@
+{
+  "name": "tsconfig-forecast",
+  "version": "0.0.1",
+  "license": "Apache-2.0",
+  "main": "tsconfig.json",
+  "files": [
+    "tsconfig.json"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@github.com/trueplan/forecast",
+    "directory": "configs/tsconfig"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "publish": "yarn npm publish --tolerate-republish"
+  }
+}
