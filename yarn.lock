@@ -2013,6 +2013,7 @@ __metadata:
   resolution: "@forecast/components@workspace:packages/components"
   dependencies:
     "@babel/core": ^7.15.5
+    "@forecast/icons": ^0.0.1
     "@forecast/theme": ^0.0.1
     "@radix-ui/react-checkbox": ^0.1.1
     "@radix-ui/react-dialog": ^0.1.1
@@ -2022,6 +2023,7 @@ __metadata:
     "@radix-ui/react-tooltip": ^0.1.0
     "@radix-ui/react-visually-hidden": ^0.1.0
     "@stitches/react": ^1.2.0
+    "@storybook/react": ^6.2.9
     "@testing-library/jest-dom": ^5.15.0
     "@testing-library/react": ^12.1.2
     "@types/jest": ^27.0.2
@@ -2038,6 +2040,7 @@ __metadata:
     tslib: ^2.3.1
     typescript: ^4.4.3
   peerDependencies:
+    "@forecast/icons": ^0.0.1
     "@forecast/theme": ^0.0.1
     "@radix-ui/react-checkbox": ^0.1.1
     "@radix-ui/react-dialog": ^0.1.1
@@ -2053,7 +2056,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@forecast/icons@workspace:packages/icons":
+"@forecast/icons@^0.0.1, @forecast/icons@workspace:packages/icons":
   version: 0.0.0-use.local
   resolution: "@forecast/icons@workspace:packages/icons"
   dependencies:
