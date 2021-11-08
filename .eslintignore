@@ -1,0 +1,7 @@
+node_modules
+dist
+__generated__
+.next
+public
+
+**/*.d.ts

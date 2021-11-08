@@ -1,0 +1,56 @@
+{
+  "name": "@forecast/theme",
+  "version": "0.0.1",
+  "description": "Forecast Match Design System Theme",
+  "private": true,
+  "author": "TruePlan Inc.",
+  "license": "UNLICENSED",
+  "main": "src/index.ts",
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@github.com/trueplan/forecast",
+    "directory": "packages/theme"
+  },
+  "publishConfig": {
+    "main": "dist/index.js",
+    "module": "dist/index.mjs",
+    "types": "dist/index.d.ts",
+    "access": "public"
+  },
+  "scripts": {
+    "build": "yarn clean && yarn compile",
+    "clean": "rm -rf ./dist",
+    "compile": "rollup -c node:forecast --environment NODE_ENV:production",
+    "compile:dev": "rollup -c node:forecast --environment NODE_ENV:development",
+    "type-check": "tsc --noEmit --composite false",
+    "publish": "yarn npm publish --tolerate-republish"
+  },
+  "peerDependencies": {
+    "@stitches/react": "^1.2.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-uid": "^2.3.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.15.5",
+    "@stitches/react": "^1.2.0",
+    "@testing-library/jest-dom": "^5.15.0",
+    "@testing-library/react": "^12.1.2",
+    "@types/jest": "^27.0.2",
+    "@types/node": "^14.14.45",
+    "@types/react": "^16.14.6",
+    "@types/react-dom": "^16.9.12",
+    "eslint-config-forecast": "workspace:configs/eslint",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-uid": "^2.3.1",
+    "rollup": "^2.59.0",
+    "rollup-config-forecast": "workspace:configs/rollup",
+    "tsconfig-forecast": "workspace:configs/tsconfig",
+    "tslib": "^2.3.1",
+    "typescript": "^4.4.3"
+  }
+}

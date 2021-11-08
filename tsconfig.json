@@ -1,0 +1,7 @@
+{
+  "extends": "tsconfig-forecast",
+  "compilerOptions": {
+    "allowJs": true
+  },
+  "exclude": ["node_modules", "dist", "build", "generated", "vendor"]
+}
