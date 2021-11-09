@@ -25,7 +25,7 @@
     "test": "jest",
     "test:ci": "jest --ci --coverage",
     "test:coverage": "jest --runInBand --coverage",
-    "type-check": "yarn type-check --workspaces --if-present"
+    "type-check": "yarn workspaces foreach run type-check"
   },
   "lint-staged": {
     "**/*": "prettier --write --ignore-unknown",

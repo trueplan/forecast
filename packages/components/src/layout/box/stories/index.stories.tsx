@@ -1,7 +1,6 @@
 // eslint-disable-next-line eslint-comments/disable-enable-pair
 /* eslint-disable sonarjs/no-duplicate-string */
 import * as React from "react";
-import { theme } from "@forecast/theme";
 import { Box } from "../src";
 
 // eslint-disable-next-line import/no-default-export

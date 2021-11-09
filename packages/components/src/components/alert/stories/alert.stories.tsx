@@ -1,6 +1,6 @@
 import * as React from "react";
 import type { Story } from "@storybook/react";
-import { theme } from "@forecast/theme";
+import { Anchor } from "../../anchor";
 import { Box } from "../../../layout/box";
 import { Paragraph } from "../../paragraph";
 // import { Anchor } from "../../Anchor/src";
@@ -25,8 +25,8 @@ const Template: Story<AlertProps> = ({ onDismiss, ...props }) => (
         Lorem ipsum dolor sit amet, consectetur. Lorem ipsum dolor sit amet,
         consectetur.
       </Paragraph>
-      <Box css={{ marginTop: theme.space[10] }}>
-        {/* <Anchor>Learn More</Anchor> */}test
+      <Box css={{ marginTop: "$10" }}>
+        <Anchor>Learn More</Anchor>
       </Box>
     </Alert>
     <Alert onDismiss={onDismiss} {...props} />

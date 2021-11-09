@@ -35,3 +35,17 @@ jobs:
       # Bootstrap Forecast
       - name: Install Node dependencies
         run: yarn install --immutable
+
+      # Build Forecast
+      - name: Build Forecast
+        run: yarn build
+
+      # Test
+      - name: Run prettier check
+        run: yarn prettier:check
+      # - name: Run eslint
+      #   run: yarn lint:js
+      # - name: Run type checker
+      #   run: yarn type-check
+      - name: Run tests
+        run: yarn test:ci
