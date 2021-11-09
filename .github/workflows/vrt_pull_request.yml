@@ -37,12 +37,18 @@ jobs:
       - name: Install Node dependencies
         run: yarn install --immutable
 
+      # Build Forecast
+      - name: Build Forecast
+        run: yarn build
+
       # Chromatic
+      - name: Build Storybook
+        run: yarn build:storybook
       - name: Run Chromatic
         uses: chromaui/action@v1
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
-          buildScriptName: 'build:storybook'
+          storybookBuildDir: ./docs
           autoAcceptChanges: 'main'
           exitOnceUploaded: true
