@@ -1,4 +1,4 @@
-aname: 'VRT Main'
+name: 'VRT Main'
 
 on:
   push:
