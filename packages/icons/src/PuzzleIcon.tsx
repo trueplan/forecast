@@ -16,7 +16,7 @@ const PuzzleIcon: React.FC<PuzzleIconProps> = ({
   size = "medium",
   color = "current",
   title,
-  decorative
+  decorative,
 }) => {
   const titleId = `PuzzleIcon-${useUID()}`;
 

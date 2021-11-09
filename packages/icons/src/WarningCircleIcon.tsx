@@ -16,7 +16,7 @@ const WarningCircleIcon: React.FC<WarningCircleIconProps> = ({
   size = "medium",
   color = "current",
   title,
-  decorative
+  decorative,
 }) => {
   const titleId = `WarningCircleIcon-${useUID()}`;
 

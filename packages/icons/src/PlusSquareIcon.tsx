@@ -16,7 +16,7 @@ const PlusSquareIcon: React.FC<PlusSquareIconProps> = ({
   size = "medium",
   color = "current",
   title,
-  decorative
+  decorative,
 }) => {
   const titleId = `PlusSquareIcon-${useUID()}`;
 

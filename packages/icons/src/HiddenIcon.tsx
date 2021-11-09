@@ -16,7 +16,7 @@ const HiddenIcon: React.FC<HiddenIconProps> = ({
   size = "medium",
   color = "current",
   title,
-  decorative
+  decorative,
 }) => {
   const titleId = `HiddenIcon-${useUID()}`;
 

@@ -16,7 +16,7 @@ const ArrowSwapIcon: React.FC<ArrowSwapIconProps> = ({
   size = "medium",
   color = "current",
   title,
-  decorative
+  decorative,
 }) => {
   const titleId = `ArrowSwapIcon-${useUID()}`;
 

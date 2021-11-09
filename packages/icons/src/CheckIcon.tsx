@@ -16,7 +16,7 @@ const CheckIcon: React.FC<CheckIconProps> = ({
   size = "medium",
   color = "current",
   title,
-  decorative
+  decorative,
 }) => {
   const titleId = `CheckIcon-${useUID()}`;
 

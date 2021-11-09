@@ -16,7 +16,7 @@ const CloseCircleIcon: React.FC<CloseCircleIconProps> = ({
   size = "medium",
   color = "current",
   title,
-  decorative
+  decorative,
 }) => {
   const titleId = `CloseCircleIcon-${useUID()}`;
 

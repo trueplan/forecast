@@ -16,7 +16,7 @@ const LinkOutIcon: React.FC<LinkOutIconProps> = ({
   size = "medium",
   color = "current",
   title,
-  decorative
+  decorative,
 }) => {
   const titleId = `LinkOutIcon-${useUID()}`;
 

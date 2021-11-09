@@ -16,7 +16,7 @@ const OutIcon: React.FC<OutIconProps> = ({
   size = "medium",
   color = "current",
   title,
-  decorative
+  decorative,
 }) => {
   const titleId = `OutIcon-${useUID()}`;
 

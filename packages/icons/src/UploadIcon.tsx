@@ -16,7 +16,7 @@ const UploadIcon: React.FC<UploadIconProps> = ({
   size = "medium",
   color = "current",
   title,
-  decorative
+  decorative,
 }) => {
   const titleId = `UploadIcon-${useUID()}`;
 

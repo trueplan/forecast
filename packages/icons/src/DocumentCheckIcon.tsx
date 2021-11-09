@@ -16,7 +16,7 @@ const DocumentCheckIcon: React.FC<DocumentCheckIconProps> = ({
   size = "medium",
   color = "current",
   title,
-  decorative
+  decorative,
 }) => {
   const titleId = `DocumentCheckIcon-${useUID()}`;
 

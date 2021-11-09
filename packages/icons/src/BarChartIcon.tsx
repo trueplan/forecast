@@ -16,7 +16,7 @@ const BarChartIcon: React.FC<BarChartIconProps> = ({
   size = "medium",
   color = "current",
   title,
-  decorative
+  decorative,
 }) => {
   const titleId = `BarChartIcon-${useUID()}`;
 

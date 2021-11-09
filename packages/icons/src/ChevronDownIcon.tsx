@@ -16,7 +16,7 @@ const ChevronDownIcon: React.FC<ChevronDownIconProps> = ({
   size = "medium",
   color = "current",
   title,
-  decorative
+  decorative,
 }) => {
   const titleId = `ChevronDownIcon-${useUID()}`;
 

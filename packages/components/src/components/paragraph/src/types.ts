@@ -4,7 +4,7 @@ type ParagraphSize = "small" | "medium";
 type ParagraphColor = "default" | "dark" | "inverse";
 type ParagraphMarginBottom = "space0" | "space40";
 export interface ParagraphProps
-  extends React.HTMLAttributes<HTMLParagraphElement> {
+  extends Omit<React.HTMLAttributes<HTMLParagraphElement>, "css"> {
   size?: ParagraphSize;
   color?: ParagraphColor;
   marginBottom?: ParagraphMarginBottom;

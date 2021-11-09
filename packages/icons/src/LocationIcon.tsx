@@ -16,7 +16,7 @@ const LocationIcon: React.FC<LocationIconProps> = ({
   size = "medium",
   color = "current",
   title,
-  decorative
+  decorative,
 }) => {
   const titleId = `LocationIcon-${useUID()}`;
 

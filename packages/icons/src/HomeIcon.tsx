@@ -16,7 +16,7 @@ const HomeIcon: React.FC<HomeIconProps> = ({
   size = "medium",
   color = "current",
   title,
-  decorative
+  decorative,
 }) => {
   const titleId = `HomeIcon-${useUID()}`;
 

@@ -16,7 +16,7 @@ const DocumentMinusIcon: React.FC<DocumentMinusIconProps> = ({
   size = "medium",
   color = "current",
   title,
-  decorative
+  decorative,
 }) => {
   const titleId = `DocumentMinusIcon-${useUID()}`;
 

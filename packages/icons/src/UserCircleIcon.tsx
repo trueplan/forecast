@@ -16,7 +16,7 @@ const UserCircleIcon: React.FC<UserCircleIconProps> = ({
   size = "medium",
   color = "current",
   title,
-  decorative
+  decorative,
 }) => {
   const titleId = `UserCircleIcon-${useUID()}`;
 

@@ -1,5 +1,6 @@
+// eslint-disable-next-line eslint-comments/disable-enable-pair
+/* eslint-disable sonarjs/no-duplicate-string */
 import * as React from "react";
-import { theme } from "@forecast/theme";
 import { Box } from "../src";
 
 // eslint-disable-next-line import/no-default-export
@@ -12,12 +13,12 @@ export const Default: React.FC = () => (
   <>
     <Box
       css={{
-        backgroundColor: theme.colors.backgroundInverse,
-        color: theme.colors.textDark,
+        backgroundColor: "$backgroundInverse",
+        color: "$textDark",
         p: "$20",
         borderStyle: "solid",
-        borderWidth: theme.borderWidths[20],
-        borderRadius: theme.radii[30],
+        borderWidth: "$20",
+        borderRadius: "$30",
         borderColor: "$blue150",
       }}
     >
@@ -31,16 +32,16 @@ export const Card: React.FC = () => (
     <Box
       css={{
         backgroundColor: "$white",
-        color: theme.colors.textLight,
+        color: "$textLight",
         textAlign: "center",
         p: "$20",
         borderStyle: "solid",
-        borderWidth: theme.borderWidths[10],
-        btlr: theme.radii[30],
-        btrr: theme.radii[30],
-        borderColor: theme.colors.borderLight,
+        borderWidth: "$10",
+        btlr: "$30",
+        btrr: "$30",
+        borderColor: "$borderLight",
         textTransform: "uppercase",
-        fontSize: theme.fontSizes[10],
+        fontSize: "$10",
       }}
     >
       Requests
@@ -51,26 +52,26 @@ export const Card: React.FC = () => (
         textAlign: "center",
         p: "$40",
         borderLeftStyle: "solid",
-        borderLeftWidth: theme.borderWidths[10],
-        borderLeftColor: theme.colors.borderLight,
+        borderLeftWidth: "$10",
+        borderLeftColor: "$borderLight",
         borderRightStyle: "solid",
-        borderRightWidth: theme.borderWidths[10],
-        borderRightColor: theme.colors.borderLight,
+        borderRightWidth: "$10",
+        borderRightColor: "$borderLight",
         borderBottomStyle: "solid",
-        borderBottomWidth: theme.borderWidths[10],
-        borderBottomColor: theme.colors.borderLight,
-        bblr: theme.radii[30],
-        bbrr: theme.radii[30],
+        borderBottomWidth: "$10",
+        borderBottomColor: "$borderLight",
+        bblr: "$30",
+        bbrr: "$30",
       }}
     >
-      <Box as="p" css={{ color: theme.colors.textLight }}>
+      <Box as="p" css={{ color: "$textLight" }}>
         You do not have any drafts created.
       </Box>
       <Box
         css={{
-          color: theme.colors.textLight,
-          fontSize: theme.fontSizes[80],
-          lineHeight: theme.fontSizes[80],
+          color: "$textLight",
+          fontSize: "$80",
+          lineHeight: "$80",
           fw: "$medium",
           mt: "$40",
         }}
@@ -80,21 +81,21 @@ export const Card: React.FC = () => (
       <Box
         as="button"
         css={{
-          backgroundColor: theme.colors.white,
+          backgroundColor: "$white",
           py: "$20",
           px: "$60",
           mt: "$60",
           fw: "$medium",
-          borderColor: theme.colors.borderLight,
+          borderColor: "$borderLight",
           borderWidth: "$10",
           br: "$30",
           borderStyle: "solid",
           cursor: "pointer",
-          color: theme.colors.textMedium,
+          color: "$textMedium",
           fontFamily: "inherit",
-          fontSize: theme.fontSizes[30],
+          fontSize: "$30",
           "&:hover": {
-            borderColor: theme.colors.borderDark,
+            borderColor: "$borderDark",
           },
         }}
       >
@@ -110,7 +111,7 @@ export const Grid: React.FC = () => (
       css={{
         display: "grid",
         gridTemplateColumns: "repeat(4, 1fr);",
-        gap: theme.space[20],
+        gap: "$20",
       }}
     >
       <Box
@@ -118,8 +119,8 @@ export const Grid: React.FC = () => (
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
-          backgroundColor: theme.colors.backgroundDark,
-          color: theme.colors.textInverse,
+          backgroundColor: "$backgroundDark",
+          color: "$textInverse",
           p: "$20",
         }}
       >
@@ -130,8 +131,8 @@ export const Grid: React.FC = () => (
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
-          backgroundColor: theme.colors.backgroundDark,
-          color: theme.colors.textInverse,
+          backgroundColor: "$backgroundDark",
+          color: "$textInverse",
           p: "$20",
         }}
       >
@@ -142,8 +143,8 @@ export const Grid: React.FC = () => (
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
-          backgroundColor: theme.colors.backgroundDark,
-          color: theme.colors.textInverse,
+          backgroundColor: "$backgroundDark",
+          color: "$textInverse",
           p: "$20",
         }}
       >
@@ -154,8 +155,8 @@ export const Grid: React.FC = () => (
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
-          backgroundColor: theme.colors.backgroundDark,
-          color: theme.colors.textInverse,
+          backgroundColor: "$backgroundDark",
+          color: "$textInverse",
           p: "$20",
         }}
       >
@@ -166,8 +167,8 @@ export const Grid: React.FC = () => (
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
-          backgroundColor: theme.colors.backgroundDark,
-          color: theme.colors.textInverse,
+          backgroundColor: "$backgroundDark",
+          color: "$textInverse",
           p: "$20",
         }}
       >
@@ -178,8 +179,8 @@ export const Grid: React.FC = () => (
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
-          backgroundColor: theme.colors.backgroundDark,
-          color: theme.colors.textInverse,
+          backgroundColor: "$backgroundDark",
+          color: "$textInverse",
           p: "$20",
         }}
       >
@@ -190,8 +191,8 @@ export const Grid: React.FC = () => (
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
-          backgroundColor: theme.colors.backgroundDark,
-          color: theme.colors.textInverse,
+          backgroundColor: "$backgroundDark",
+          color: "$textInverse",
           p: "$20",
         }}
       >
@@ -202,8 +203,8 @@ export const Grid: React.FC = () => (
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
-          backgroundColor: theme.colors.backgroundDark,
-          color: theme.colors.textInverse,
+          backgroundColor: "$backgroundDark",
+          color: "$textInverse",
           p: "$20",
         }}
       >

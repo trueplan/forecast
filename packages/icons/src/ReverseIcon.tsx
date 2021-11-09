@@ -16,7 +16,7 @@ const ReverseIcon: React.FC<ReverseIconProps> = ({
   size = "medium",
   color = "current",
   title,
-  decorative
+  decorative,
 }) => {
   const titleId = `ReverseIcon-${useUID()}`;
 

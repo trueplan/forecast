@@ -16,7 +16,7 @@ const LinkIcon: React.FC<LinkIconProps> = ({
   size = "medium",
   color = "current",
   title,
-  decorative
+  decorative,
 }) => {
   const titleId = `LinkIcon-${useUID()}`;
 

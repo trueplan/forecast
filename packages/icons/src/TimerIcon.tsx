@@ -16,7 +16,7 @@ const TimerIcon: React.FC<TimerIconProps> = ({
   size = "medium",
   color = "current",
   title,
-  decorative
+  decorative,
 }) => {
   const titleId = `TimerIcon-${useUID()}`;
 

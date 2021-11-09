@@ -1,15 +1,13 @@
 import * as React from "react";
 import { styled } from "@forecast/theme";
-import type { CSS } from "@forecast/theme";
 
 const StyledBox = styled("div", {
   boxSizing: "border-box",
 });
 
-export interface BoxProps extends React.HTMLAttributes<HTMLDivElement> {
+export interface BoxProps {
   as?: React.ReactNode;
   children?: React.ReactNode;
-  css?: CSS;
   decorative?: boolean;
 }
 

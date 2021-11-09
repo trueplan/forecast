@@ -16,7 +16,7 @@ const StarIcon: React.FC<StarIconProps> = ({
   size = "medium",
   color = "current",
   title,
-  decorative
+  decorative,
 }) => {
   const titleId = `StarIcon-${useUID()}`;
 

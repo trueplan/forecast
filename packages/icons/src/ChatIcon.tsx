@@ -16,7 +16,7 @@ const ChatIcon: React.FC<ChatIconProps> = ({
   size = "medium",
   color = "current",
   title,
-  decorative
+  decorative,
 }) => {
   const titleId = `ChatIcon-${useUID()}`;
 

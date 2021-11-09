@@ -16,7 +16,7 @@ const PlusCircleIcon: React.FC<PlusCircleIconProps> = ({
   size = "medium",
   color = "current",
   title,
-  decorative
+  decorative,
 }) => {
   const titleId = `PlusCircleIcon-${useUID()}`;
 

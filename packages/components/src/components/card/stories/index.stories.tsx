@@ -1,10 +1,10 @@
-import * as React from 'react';
-import { Box } from '../../../layout/box';
-import { Card, CardHeader, CardFooter } from '../src';
+import * as React from "react";
+import { Box } from "../../../layout/box";
+import { Card, CardHeader, CardFooter } from "../src";
 
 // eslint-disable-next-line import/no-default-export
 export default {
-  title: 'Components/Card',
+  title: "Components/Card",
   component: Card,
 };
 
@@ -20,7 +20,7 @@ export const TopPadding: React.FC = () => (
 
 export const RightPadding: React.FC = () => (
   <Card paddingRight="space60">
-    <Box css={{ textAlign: 'right' }}>This is the content.</Box>
+    <Box css={{ textAlign: "right" }}>This is the content.</Box>
   </Card>
 );
 
