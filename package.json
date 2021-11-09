@@ -12,7 +12,7 @@
   ],
   "scripts": {
     "build:storybook": "build-storybook -c .storybook -o ./docs -s .storybook/static",
-    "build": "yarn workspaces foreach --topological-dev run build",
+    "build": "yarn workspace @forecast/theme build && yarn workspace @forecast/icons build && yarn workspace @forecast/components build",
     "chromatic": "chromatic",
     "clean": "yarn workspaces foreach run clean && jest --clearCache && yarn cache clean",
     "convert:icons-new": "yarn workspace @forecast/icons convert:icons-new",

@@ -1,6 +1,7 @@
-export type AlertVariants = "success" | "warning" | "error" | "info";
+export type AlertVariants = 'success' | 'warning' | 'error' | 'info';
 
-export interface AlertProps extends React.HTMLAttributes<HTMLDivElement> {
+export interface AlertProps
+  extends Omit<React.HTMLAttributes<HTMLDivElement>, 'css'> {
   title: string;
   variant?: AlertVariants;
   onDismiss?: () => void;
