@@ -37,10 +37,6 @@ jobs:
       - name: Install Node dependencies
         run: yarn install --immutable
 
-      # Build Forecast
-      - name: Build Forecast
-        run: yarn build
-
       # Chromatic
       - name: Run Chromatic
         uses: chromaui/action@v1
