@@ -1,12 +1,13 @@
-name: 'PR Checks'
+name: 'VRT PR'
 
 on:
   pull_request:
     types: [opened, synchronize, reopened, ready_for_review]
 
 jobs:
-  build_and_tests:
+  vrt:
     runs-on: ubuntu-latest
+    if: github.event.pull_request.draft == false
 
     steps:
       - name: Checkout Repo
@@ -40,12 +41,12 @@ jobs:
       - name: Build Forecast
         run: yarn build
 
-      # Test
-      - name: Run prettier check
-        run: yarn prettier:check
-      # - name: Run eslint
-      #   run: yarn lint:js
-      # - name: Run type checker
-      #   run: yarn type-check
-      - name: Run tests
-        run: yarn test:ci
+      # Chromatic
+      - name: Run Chromatic
+        uses: chromaui/action@v1
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
+          buildScriptName: 'build:storybook'
+          autoAcceptChanges: 'main'
+          exitOnceUploaded: true
