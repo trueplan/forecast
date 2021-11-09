@@ -1,9 +1,8 @@
-name: 'VRT Main'
+name: 'Release'
 
 on:
-  push:
-    branches:
-      - main
+  release:
+    types: [published]
 
 jobs:
   vrt:
@@ -41,14 +40,8 @@ jobs:
       - name: Build Forecast
         run: yarn build
 
-      # Chromatic
-      - name: Build Storybook
-        run: yarn build:storybook
-      - name: Run Chromatic
-        uses: chromaui/action@v1
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
-          storybookBuildDir: ./docs
-          autoAcceptChanges: 'main'
-          exitOnceUploaded: true
+      # Publish NPM Packages
+      - name: Publish packages
+        run: yarn publish:all
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
