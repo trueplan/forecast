@@ -16,7 +16,7 @@ const CheckboxIcon: React.FC<CheckboxIconProps> = ({
   size = "medium",
   color = "current",
   title,
-  decorative
+  decorative,
 }) => {
   const titleId = `CheckboxIcon-${useUID()}`;
 

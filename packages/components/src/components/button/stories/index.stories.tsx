@@ -1,11 +1,11 @@
-import * as React from 'react';
-import { CloseIcon, PencilIcon } from '@forecast/icons';
-import { Box } from '../../../layout/box';
-import { Button } from '../src';
+import * as React from "react";
+import { CloseIcon, PencilIcon } from "@forecast/icons";
+import { Box } from "../../../layout/box";
+import { Button } from "../src";
 
 // eslint-disable-next-line import/no-default-export
 export default {
-  title: 'Components/Button',
+  title: "Components/Button",
   component: Button,
 };
 
@@ -13,10 +13,10 @@ export const Default: React.FC = () => (
   <>
     <Box
       css={{
-        display: 'flex',
-        alignItems: 'center',
-        gap: '10px',
-        marginBottom: '20px',
+        display: "flex",
+        alignItems: "center",
+        gap: "10px",
+        marginBottom: "20px",
       }}
     >
       <Button size="small" variant="primary">
@@ -32,10 +32,10 @@ export const Default: React.FC = () => (
     </Box>
     <Box
       css={{
-        display: 'flex',
-        alignItems: 'center',
-        gap: '10px',
-        marginBottom: '20px',
+        display: "flex",
+        alignItems: "center",
+        gap: "10px",
+        marginBottom: "20px",
       }}
     >
       <Button size="small" variant="primary" loading>
@@ -53,10 +53,10 @@ export const Default: React.FC = () => (
     </Box>
     <Box
       css={{
-        display: 'flex',
-        alignItems: 'center',
-        gap: '10px',
-        marginBottom: '20px',
+        display: "flex",
+        alignItems: "center",
+        gap: "10px",
+        marginBottom: "20px",
       }}
     >
       <Button size="small" variant="secondary">
@@ -72,10 +72,10 @@ export const Default: React.FC = () => (
     </Box>
     <Box
       css={{
-        display: 'flex',
-        alignItems: 'center',
-        gap: '10px',
-        marginBottom: '20px',
+        display: "flex",
+        alignItems: "center",
+        gap: "10px",
+        marginBottom: "20px",
       }}
     >
       <Button size="small" variant="secondary" loading>
@@ -93,10 +93,10 @@ export const Default: React.FC = () => (
     </Box>
     <Box
       css={{
-        display: 'flex',
-        alignItems: 'center',
-        gap: '10px',
-        marginBottom: '20px',
+        display: "flex",
+        alignItems: "center",
+        gap: "10px",
+        marginBottom: "20px",
       }}
     >
       <Button size="small" variant="danger">
@@ -112,10 +112,10 @@ export const Default: React.FC = () => (
     </Box>
     <Box
       css={{
-        display: 'flex',
-        alignItems: 'center',
-        gap: '10px',
-        marginBottom: '20px',
+        display: "flex",
+        alignItems: "center",
+        gap: "10px",
+        marginBottom: "20px",
       }}
     >
       <Button size="small" variant="danger" loading>
@@ -133,10 +133,10 @@ export const Default: React.FC = () => (
     </Box>
     <Box
       css={{
-        display: 'flex',
-        alignItems: 'center',
-        gap: '10px',
-        marginBottom: '20px',
+        display: "flex",
+        alignItems: "center",
+        gap: "10px",
+        marginBottom: "20px",
       }}
     >
       <Button size="small" variant="ghost">
@@ -152,10 +152,10 @@ export const Default: React.FC = () => (
     </Box>
     <Box
       css={{
-        display: 'flex',
-        alignItems: 'center',
-        gap: '10px',
-        marginBottom: '20px',
+        display: "flex",
+        alignItems: "center",
+        gap: "10px",
+        marginBottom: "20px",
       }}
     >
       <Button size="small" variant="ghost" loading>
@@ -173,12 +173,12 @@ export const Default: React.FC = () => (
     </Box>
     <Box
       css={{
-        display: 'flex',
-        alignItems: 'center',
-        gap: '10px',
-        marginBottom: '20px',
-        backgroundColor: '#1F2D3D',
-        padding: '15px',
+        display: "flex",
+        alignItems: "center",
+        gap: "10px",
+        marginBottom: "20px",
+        backgroundColor: "#1F2D3D",
+        padding: "15px",
       }}
     >
       <Button size="small" variant="inverse">
@@ -194,12 +194,12 @@ export const Default: React.FC = () => (
     </Box>
     <Box
       css={{
-        display: 'flex',
-        alignItems: 'center',
-        gap: '10px',
-        marginBottom: '20px',
-        backgroundColor: '#1F2D3D',
-        padding: '15px',
+        display: "flex",
+        alignItems: "center",
+        gap: "10px",
+        marginBottom: "20px",
+        backgroundColor: "#1F2D3D",
+        padding: "15px",
       }}
     >
       <Button size="small" variant="inverse" loading>
@@ -222,11 +222,11 @@ export const FullWidth: React.FC = () => (
   <>
     <Box
       css={{
-        display: 'flex',
-        alignItems: 'center',
-        flexDirection: 'column',
-        gap: '10px',
-        marginBottom: '20px',
+        display: "flex",
+        alignItems: "center",
+        flexDirection: "column",
+        gap: "10px",
+        marginBottom: "20px",
       }}
     >
       <Button size="small" variant="primary" fullWidth>
@@ -253,11 +253,11 @@ export const FullWidth: React.FC = () => (
     </Box>
     <Box
       css={{
-        display: 'flex',
-        alignItems: 'center',
-        flexDirection: 'column',
-        gap: '10px',
-        marginBottom: '20px',
+        display: "flex",
+        alignItems: "center",
+        flexDirection: "column",
+        gap: "10px",
+        marginBottom: "20px",
       }}
     >
       <Button size="small" variant="secondary" fullWidth>
@@ -284,11 +284,11 @@ export const FullWidth: React.FC = () => (
     </Box>
     <Box
       css={{
-        display: 'flex',
-        alignItems: 'center',
-        flexDirection: 'column',
-        gap: '10px',
-        marginBottom: '20px',
+        display: "flex",
+        alignItems: "center",
+        flexDirection: "column",
+        gap: "10px",
+        marginBottom: "20px",
       }}
     >
       <Button size="small" variant="danger" fullWidth>
@@ -315,11 +315,11 @@ export const FullWidth: React.FC = () => (
     </Box>
     <Box
       css={{
-        display: 'flex',
-        alignItems: 'center',
-        flexDirection: 'column',
-        gap: '10px',
-        marginBottom: '20px',
+        display: "flex",
+        alignItems: "center",
+        flexDirection: "column",
+        gap: "10px",
+        marginBottom: "20px",
       }}
     >
       <Button size="small" variant="ghost" fullWidth>
@@ -346,13 +346,13 @@ export const FullWidth: React.FC = () => (
     </Box>
     <Box
       css={{
-        display: 'flex',
-        alignItems: 'center',
-        flexDirection: 'column',
-        gap: '10px',
-        marginBottom: '20px',
-        backgroundColor: '#1F2D3D',
-        padding: '15px',
+        display: "flex",
+        alignItems: "center",
+        flexDirection: "column",
+        gap: "10px",
+        marginBottom: "20px",
+        backgroundColor: "#1F2D3D",
+        padding: "15px",
       }}
     >
       <Button size="small" variant="inverse" fullWidth>
@@ -384,10 +384,10 @@ export const Icons: React.FC = () => (
   <>
     <Box
       css={{
-        display: 'flex',
-        alignItems: 'center',
-        gap: '10px',
-        marginBottom: '20px',
+        display: "flex",
+        alignItems: "center",
+        gap: "10px",
+        marginBottom: "20px",
       }}
     >
       <Button size="iconSmall" variant="primary">
@@ -411,10 +411,10 @@ export const Icons: React.FC = () => (
     </Box>
     <Box
       css={{
-        display: 'flex',
-        alignItems: 'center',
-        gap: '10px',
-        marginBottom: '20px',
+        display: "flex",
+        alignItems: "center",
+        gap: "10px",
+        marginBottom: "20px",
       }}
     >
       <Button size="iconSmall" variant="secondary">
@@ -438,10 +438,10 @@ export const Icons: React.FC = () => (
     </Box>
     <Box
       css={{
-        display: 'flex',
-        alignItems: 'center',
-        gap: '10px',
-        marginBottom: '20px',
+        display: "flex",
+        alignItems: "center",
+        gap: "10px",
+        marginBottom: "20px",
       }}
     >
       <Button size="iconSmall" variant="danger">
@@ -465,10 +465,10 @@ export const Icons: React.FC = () => (
     </Box>
     <Box
       css={{
-        display: 'flex',
-        alignItems: 'center',
-        gap: '10px',
-        marginBottom: '20px',
+        display: "flex",
+        alignItems: "center",
+        gap: "10px",
+        marginBottom: "20px",
       }}
     >
       <Button size="iconSmall" variant="ghost">
@@ -492,12 +492,12 @@ export const Icons: React.FC = () => (
     </Box>
     <Box
       css={{
-        display: 'flex',
-        alignItems: 'center',
-        gap: '10px',
-        marginBottom: '20px',
-        backgroundColor: '#1F2D3D',
-        padding: '15px',
+        display: "flex",
+        alignItems: "center",
+        gap: "10px",
+        marginBottom: "20px",
+        backgroundColor: "#1F2D3D",
+        padding: "15px",
       }}
     >
       <Button size="iconSmall" variant="inverse">
@@ -526,10 +526,10 @@ export const IconOnly: React.FC = () => (
   <>
     <Box
       css={{
-        display: 'flex',
-        alignItems: 'center',
-        gap: '10px',
-        marginBottom: '20px',
+        display: "flex",
+        alignItems: "center",
+        gap: "10px",
+        marginBottom: "20px",
       }}
     >
       <Button size="iconSmall" variant="iconOnly">
@@ -547,10 +547,10 @@ export const IconOnly: React.FC = () => (
     </Box>
     <Box
       css={{
-        display: 'flex',
-        alignItems: 'center',
-        gap: '10px',
-        marginBottom: '20px',
+        display: "flex",
+        alignItems: "center",
+        gap: "10px",
+        marginBottom: "20px",
       }}
     >
       <Button size="iconMedium" variant="iconOnly">
@@ -568,10 +568,10 @@ export const IconOnly: React.FC = () => (
     </Box>
     <Box
       css={{
-        display: 'flex',
-        alignItems: 'center',
-        gap: '10px',
-        marginBottom: '20px',
+        display: "flex",
+        alignItems: "center",
+        gap: "10px",
+        marginBottom: "20px",
       }}
     >
       <Button size="iconLarge" variant="iconOnly">
@@ -594,10 +594,10 @@ export const AsAnchor: React.FC = () => (
   <>
     <Box
       css={{
-        display: 'flex',
-        alignItems: 'center',
-        gap: '10px',
-        marginBottom: '20px',
+        display: "flex",
+        alignItems: "center",
+        gap: "10px",
+        marginBottom: "20px",
       }}
     >
       <Button as="a" href="#" size="small" variant="primary">
@@ -612,10 +612,10 @@ export const AsAnchor: React.FC = () => (
     </Box>
     <Box
       css={{
-        display: 'flex',
-        alignItems: 'center',
-        gap: '10px',
-        marginBottom: '20px',
+        display: "flex",
+        alignItems: "center",
+        gap: "10px",
+        marginBottom: "20px",
       }}
     >
       <Button as="a" href="#" size="small" variant="secondary">
@@ -630,10 +630,10 @@ export const AsAnchor: React.FC = () => (
     </Box>
     <Box
       css={{
-        display: 'flex',
-        alignItems: 'center',
-        gap: '10px',
-        marginBottom: '20px',
+        display: "flex",
+        alignItems: "center",
+        gap: "10px",
+        marginBottom: "20px",
       }}
     >
       <Button as="a" href="#" size="small" variant="danger">
@@ -648,10 +648,10 @@ export const AsAnchor: React.FC = () => (
     </Box>
     <Box
       css={{
-        display: 'flex',
-        alignItems: 'center',
-        gap: '10px',
-        marginBottom: '20px',
+        display: "flex",
+        alignItems: "center",
+        gap: "10px",
+        marginBottom: "20px",
       }}
     >
       <Button as="a" href="#" size="small" variant="ghost">
@@ -666,12 +666,12 @@ export const AsAnchor: React.FC = () => (
     </Box>
     <Box
       css={{
-        display: 'flex',
-        alignItems: 'center',
-        gap: '10px',
-        marginBottom: '20px',
-        backgroundColor: '#1F2D3D',
-        padding: '15px',
+        display: "flex",
+        alignItems: "center",
+        gap: "10px",
+        marginBottom: "20px",
+        backgroundColor: "#1F2D3D",
+        padding: "15px",
       }}
     >
       <Button as="a" href="#" size="small" variant="inverse">

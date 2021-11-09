@@ -16,7 +16,7 @@ const InsightIcon: React.FC<InsightIconProps> = ({
   size = "medium",
   color = "current",
   title,
-  decorative
+  decorative,
 }) => {
   const titleId = `InsightIcon-${useUID()}`;
 

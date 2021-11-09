@@ -16,7 +16,7 @@ const CheckSquareIcon: React.FC<CheckSquareIconProps> = ({
   size = "medium",
   color = "current",
   title,
-  decorative
+  decorative,
 }) => {
   const titleId = `CheckSquareIcon-${useUID()}`;
 

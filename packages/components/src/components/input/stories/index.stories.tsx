@@ -1,12 +1,12 @@
-import * as React from 'react';
-import { useUID } from 'react-uid';
-import { HelpText } from '../../help-text';
-import { Label } from '../../label';
-import { Input } from '../src';
+import * as React from "react";
+import { useUID } from "react-uid";
+import { HelpText } from "../../help-text";
+import { Label } from "../../label";
+import { Input } from "../src";
 
 // eslint-disable-next-line import/no-default-export
 export default {
-  title: 'Components/Input',
+  title: "Components/Input",
   component: Input,
 };
 

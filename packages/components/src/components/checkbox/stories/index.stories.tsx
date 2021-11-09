@@ -1,11 +1,11 @@
-import * as React from 'react';
-import { useUID } from 'react-uid';
-import { Box } from '../../../layout/box';
-import { Checkbox } from '../src';
+import * as React from "react";
+import { useUID } from "react-uid";
+import { Box } from "../../../layout/box";
+import { Checkbox } from "../src";
 
 // eslint-disable-next-line import/no-default-export
 export default {
-  title: 'Components/Checkbox',
+  title: "Components/Checkbox",
   component: Checkbox,
 };
 
@@ -57,7 +57,7 @@ export const MultipleLine: React.FC = () => {
   const [checked, setChecked] = React.useState(false);
 
   return (
-    <Box css={{ width: '300px' }}>
+    <Box css={{ width: "300px" }}>
       <form>
         <Checkbox
           checked={checked}

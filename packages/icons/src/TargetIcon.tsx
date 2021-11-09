@@ -16,7 +16,7 @@ const TargetIcon: React.FC<TargetIconProps> = ({
   size = "medium",
   color = "current",
   title,
-  decorative
+  decorative,
 }) => {
   const titleId = `TargetIcon-${useUID()}`;
 

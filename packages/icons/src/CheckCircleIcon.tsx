@@ -16,7 +16,7 @@ const CheckCircleIcon: React.FC<CheckCircleIconProps> = ({
   size = "medium",
   color = "current",
   title,
-  decorative
+  decorative,
 }) => {
   const titleId = `CheckCircleIcon-${useUID()}`;
 

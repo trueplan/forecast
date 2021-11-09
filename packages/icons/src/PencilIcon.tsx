@@ -16,7 +16,7 @@ const PencilIcon: React.FC<PencilIconProps> = ({
   size = "medium",
   color = "current",
   title,
-  decorative
+  decorative,
 }) => {
   const titleId = `PencilIcon-${useUID()}`;
 

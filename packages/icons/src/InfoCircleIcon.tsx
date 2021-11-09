@@ -16,7 +16,7 @@ const InfoCircleIcon: React.FC<InfoCircleIconProps> = ({
   size = "medium",
   color = "current",
   title,
-  decorative
+  decorative,
 }) => {
   const titleId = `InfoCircleIcon-${useUID()}`;
 

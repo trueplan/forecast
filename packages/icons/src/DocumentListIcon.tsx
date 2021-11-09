@@ -16,7 +16,7 @@ const DocumentListIcon: React.FC<DocumentListIconProps> = ({
   size = "medium",
   color = "current",
   title,
-  decorative
+  decorative,
 }) => {
   const titleId = `DocumentListIcon-${useUID()}`;
 

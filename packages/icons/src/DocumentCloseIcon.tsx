@@ -16,7 +16,7 @@ const DocumentCloseIcon: React.FC<DocumentCloseIconProps> = ({
   size = "medium",
   color = "current",
   title,
-  decorative
+  decorative,
 }) => {
   const titleId = `DocumentCloseIcon-${useUID()}`;
 

@@ -3,22 +3,22 @@
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export type ButtonAsOptions<Props = any> = React.ElementType<Props>;
 export type ButtonSizes =
-  | 'small'
-  | 'medium'
-  | 'large'
-  | 'iconSmall'
-  | 'iconMedium'
-  | 'iconLarge';
+  | "small"
+  | "medium"
+  | "large"
+  | "iconSmall"
+  | "iconMedium"
+  | "iconLarge";
 export type ButtonVariants =
-  | 'primary'
-  | 'secondary'
-  | 'danger'
-  | 'ghost'
-  | 'iconOnly'
-  | 'inverse';
+  | "primary"
+  | "secondary"
+  | "danger"
+  | "ghost"
+  | "iconOnly"
+  | "inverse";
 
 export interface ButtonProps
-  extends Omit<React.ButtonHTMLAttributes<HTMLButtonElement>, 'css'> {
+  extends Omit<React.ButtonHTMLAttributes<HTMLButtonElement>, "css"> {
   as?: ButtonAsOptions;
   fullWidth?: boolean;
   href?: string;

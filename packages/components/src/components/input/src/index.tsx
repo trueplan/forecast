@@ -1,7 +1,7 @@
-import * as React from 'react';
-import { InputBox } from '../../input-box';
-import { StyledInput } from './styles';
-import type { InputProps, InputTypeProps } from './types';
+import * as React from "react";
+import { InputBox } from "../../input-box";
+import { StyledInput } from "./styles";
+import type { InputProps, InputTypeProps } from "./types";
 
 const Input = React.forwardRef<HTMLInputElement, InputProps>(
   (
@@ -25,11 +25,11 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
     const typeProps: InputTypeProps = { type };
 
     // https://technology.blog.gov.uk/2020/02/24/why-the-gov-uk-design-system-team-changed-the-input-type-for-numbers/
-    if (type === 'number') {
-      typeProps.type = 'text';
-      typeProps.inputmode = 'numeric';
-      typeProps.pattern = '[0-9]*';
-      fontFamily = 'roboto';
+    if (type === "number") {
+      typeProps.type = "text";
+      typeProps.inputmode = "numeric";
+      typeProps.pattern = "[0-9]*";
+      fontFamily = "roboto";
     }
 
     return (
@@ -38,7 +38,7 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
         centeredText={centeredText}
         data-disabled={disabled}
         data-has-error={hasError}
-        data-hidden={type === 'hidden' ? true : null}
+        data-hidden={type === "hidden" ? true : null}
         data-read-only={readOnly}
         fontFamily={fontFamily}
         type={type}
@@ -62,7 +62,7 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
   }
 );
 
-Input.displayName = 'Input';
+Input.displayName = "Input";
 
 export { Input };
-export * from './types';
+export * from "./types";

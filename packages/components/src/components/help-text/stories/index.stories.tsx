@@ -1,9 +1,9 @@
-import * as React from 'react';
-import { HelpText } from '../src';
+import * as React from "react";
+import { HelpText } from "../src";
 
 // eslint-disable-next-line import/no-default-export
 export default {
-  title: 'Components/Help Text',
+  title: "Components/Help Text",
   component: HelpText,
 };
 

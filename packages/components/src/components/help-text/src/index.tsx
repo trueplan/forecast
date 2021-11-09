@@ -1,8 +1,8 @@
-import * as React from 'react';
-import { styled, theme } from '@forecast/theme';
+import * as React from "react";
+import { styled, theme } from "@forecast/theme";
 
-const StyledHelpText = styled('span', {
-  display: 'block',
+const StyledHelpText = styled("span", {
+  display: "block",
   color: theme.colors.textLight,
   fontFamily: theme.fonts.inter,
   fontWeight: theme.fontWeights.normal,
@@ -19,7 +19,7 @@ const StyledHelpText = styled('span', {
 });
 
 export interface HelpTextProps
-  extends Omit<React.HTMLAttributes<HTMLSpanElement>, 'css'> {
+  extends Omit<React.HTMLAttributes<HTMLSpanElement>, "css"> {
   children: React.ReactNode;
   hasError?: boolean;
 }
@@ -32,6 +32,6 @@ const HelpText = React.forwardRef<HTMLSpanElement, HelpTextProps>(
   )
 );
 
-HelpText.displayName = 'HelpText';
+HelpText.displayName = "HelpText";
 
 export { HelpText };

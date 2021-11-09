@@ -1,17 +1,17 @@
 export type CardPaddingOptions =
-  | 'space0'
-  | 'space10'
-  | 'space20'
-  | 'space30'
-  | 'space40'
-  | 'space50'
-  | 'space60'
-  | 'space70'
-  | 'space80'
-  | 'space90';
+  | "space0"
+  | "space10"
+  | "space20"
+  | "space30"
+  | "space40"
+  | "space50"
+  | "space60"
+  | "space70"
+  | "space80"
+  | "space90";
 
 export interface CardProps
-  extends Omit<React.HTMLAttributes<HTMLDivElement>, 'css'> {
+  extends Omit<React.HTMLAttributes<HTMLDivElement>, "css"> {
   children: React.ReactNode;
   borderless?: boolean;
   padding?: CardPaddingOptions;
@@ -22,11 +22,11 @@ export interface CardProps
 }
 
 export interface CardHeaderProps
-  extends Omit<React.HTMLAttributes<HTMLDivElement>, 'css'> {
+  extends Omit<React.HTMLAttributes<HTMLDivElement>, "css"> {
   children: React.ReactNode;
 }
 
 export interface CardFooterProps
-  extends Omit<React.HTMLAttributes<HTMLDivElement>, 'css'> {
+  extends Omit<React.HTMLAttributes<HTMLDivElement>, "css"> {
   children: React.ReactNode;
 }

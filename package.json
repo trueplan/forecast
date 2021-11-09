@@ -18,10 +18,13 @@
     "convert:icons-new": "yarn workspace @forecast/icons convert:icons-new",
     "convert:icons": "yarn workspace @forecast/icons convert:icons",
     "lint:js": "eslint '**/*.{ts,tsx,js,cjs}'",
+    "prettier": "prettier --list-different '**/*.{ts,tsx,js,cjs}'",
     "prettier:write": "prettier --write '**/*.{ts,tsx,js,cjs}'",
+    "prettier:check": "prettier --check '**/*.{ts,tsx,js,cjs}'",
     "storybook": "start-storybook -s ./.storybook/static -p 6006",
-    "test:ci": "jest --ci",
     "test": "jest",
+    "test:ci": "jest --ci --coverage",
+    "test:coverage": "jest --runInBand --coverage",
     "type-check": "yarn type-check --workspaces --if-present"
   },
   "lint-staged": {

@@ -16,7 +16,7 @@ const UserSquareIcon: React.FC<UserSquareIconProps> = ({
   size = "medium",
   color = "current",
   title,
-  decorative
+  decorative,
 }) => {
   const titleId = `UserSquareIcon-${useUID()}`;
 

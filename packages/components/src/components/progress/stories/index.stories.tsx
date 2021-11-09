@@ -1,10 +1,10 @@
-import * as React from 'react';
-import { Stack } from '../../../layout/stack';
-import { Progress, ProgressIndicator, ProgressBar } from '../src';
+import * as React from "react";
+import { Stack } from "../../../layout/stack";
+import { Progress, ProgressIndicator, ProgressBar } from "../src";
 
 // eslint-disable-next-line import/no-default-export
 export default {
-  title: 'Components/Progress',
+  title: "Components/Progress",
   component: Progress,
 };
 

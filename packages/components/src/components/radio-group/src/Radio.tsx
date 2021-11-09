@@ -1,13 +1,13 @@
-import * as React from 'react';
-import { Box } from '../../../layout/box';
-import { Label } from '../../label';
-import { StyledRadio, StyledRadioIndicator } from './styles';
-import type { RadioProps } from './types';
+import * as React from "react";
+import { Box } from "../../../layout/box";
+import { Label } from "../../label";
+import { StyledRadio, StyledRadioIndicator } from "./styles";
+import type { RadioProps } from "./types";
 
 const Radio = React.forwardRef<HTMLButtonElement, RadioProps>(
   ({ children, disabled, id, required, value, ...props }, ref) => {
     return (
-      <Box css={{ display: 'flex' }}>
+      <Box css={{ display: "flex" }}>
         <Box css={{ flexShrink: 0 }}>
           <StyledRadio
             disabled={disabled}
@@ -20,7 +20,7 @@ const Radio = React.forwardRef<HTMLButtonElement, RadioProps>(
             <StyledRadioIndicator />
           </StyledRadio>
         </Box>
-        <Box css={{ marginLeft: '$20' }}>
+        <Box css={{ marginLeft: "$20" }}>
           <Label
             disabled={disabled}
             htmlFor={id}
@@ -35,6 +35,6 @@ const Radio = React.forwardRef<HTMLButtonElement, RadioProps>(
   }
 );
 
-Radio.displayName = 'Radio';
+Radio.displayName = "Radio";
 
 export { Radio };

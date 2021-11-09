@@ -1,10 +1,10 @@
-import * as React from 'react';
-import { StyledPill } from './styles';
-import type { PillProps } from './types';
+import * as React from "react";
+import { StyledPill } from "./styles";
+import type { PillProps } from "./types";
 
 const Pill = React.forwardRef<HTMLSpanElement, PillProps>(
   (
-    { children, color = 'green', fontFamily, size = 'small', ...props },
+    { children, color = "green", fontFamily, size = "small", ...props },
     ref
   ) => (
     <StyledPill
@@ -19,6 +19,6 @@ const Pill = React.forwardRef<HTMLSpanElement, PillProps>(
   )
 );
 
-Pill.displayName = 'Pill';
+Pill.displayName = "Pill";
 
 export { Pill };

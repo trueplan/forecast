@@ -16,7 +16,7 @@ const GearIcon: React.FC<GearIconProps> = ({
   size = "medium",
   color = "current",
   title,
-  decorative
+  decorative,
 }) => {
   const titleId = `GearIcon-${useUID()}`;
 

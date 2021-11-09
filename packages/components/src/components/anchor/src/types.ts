@@ -3,11 +3,11 @@
 export type As<Props = any> = React.ElementType<Props>;
 
 export type AnchorTabIndexes = 0 | -1;
-export type AnchorTargets = '_self' | '_blank' | '_parent' | '_top';
-export type AnchorSizes = 'small' | 'medium' | 'large';
+export type AnchorTargets = "_self" | "_blank" | "_parent" | "_top";
+export type AnchorSizes = "small" | "medium" | "large";
 
 export interface AnchorProps
-  extends Omit<React.AnchorHTMLAttributes<HTMLAnchorElement>, 'css'> {
+  extends Omit<React.AnchorHTMLAttributes<HTMLAnchorElement>, "css"> {
   as?: As;
   isExternal?: boolean;
   noUnderline?: boolean;

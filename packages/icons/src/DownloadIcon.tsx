@@ -16,7 +16,7 @@ const DownloadIcon: React.FC<DownloadIconProps> = ({
   size = "medium",
   color = "current",
   title,
-  decorative
+  decorative,
 }) => {
   const titleId = `DownloadIcon-${useUID()}`;
 

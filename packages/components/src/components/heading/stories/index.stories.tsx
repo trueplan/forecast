@@ -1,9 +1,9 @@
-import * as React from 'react';
-import { Heading } from '../src';
+import * as React from "react";
+import { Heading } from "../src";
 
 // eslint-disable-next-line import/no-default-export
 export default {
-  title: 'Components/Heading',
+  title: "Components/Heading",
   component: Heading,
 };
 

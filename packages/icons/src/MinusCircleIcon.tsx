@@ -16,7 +16,7 @@ const MinusCircleIcon: React.FC<MinusCircleIconProps> = ({
   size = "medium",
   color = "current",
   title,
-  decorative
+  decorative,
 }) => {
   const titleId = `MinusCircleIcon-${useUID()}`;
 

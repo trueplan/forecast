@@ -16,7 +16,7 @@ const SearchIcon: React.FC<SearchIconProps> = ({
   size = "medium",
   color = "current",
   title,
-  decorative
+  decorative,
 }) => {
   const titleId = `SearchIcon-${useUID()}`;
 

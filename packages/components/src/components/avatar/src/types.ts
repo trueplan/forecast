@@ -1,15 +1,15 @@
 export type AvatarColors =
-  | 'blue'
-  | 'green'
-  | 'lilac'
-  | 'sky'
-  | 'yellow'
-  | 'red'
-  | 'royal';
-export type AvatarSizes = 'small' | 'medium' | 'large';
+  | "blue"
+  | "green"
+  | "lilac"
+  | "sky"
+  | "yellow"
+  | "red"
+  | "royal";
+export type AvatarSizes = "small" | "medium" | "large";
 
 export interface AvatarProps
-  extends Omit<React.HTMLAttributes<HTMLDivElement>, 'color' | 'css'> {
+  extends Omit<React.HTMLAttributes<HTMLDivElement>, "color" | "css"> {
   color?: AvatarColors;
   name: string;
   size?: AvatarSizes;

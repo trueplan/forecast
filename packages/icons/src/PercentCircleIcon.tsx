@@ -16,7 +16,7 @@ const PercentCircleIcon: React.FC<PercentCircleIconProps> = ({
   size = "medium",
   color = "current",
   title,
-  decorative
+  decorative,
 }) => {
   const titleId = `PercentCircleIcon-${useUID()}`;
 

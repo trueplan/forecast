@@ -16,7 +16,7 @@ const ArrowDownIcon: React.FC<ArrowDownIconProps> = ({
   size = "medium",
   color = "current",
   title,
-  decorative
+  decorative,
 }) => {
   const titleId = `ArrowDownIcon-${useUID()}`;
 

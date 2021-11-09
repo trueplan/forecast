@@ -1,7 +1,7 @@
-import * as React from 'react';
-import { Button } from '../../button';
-import { Heading } from '../../heading';
-import { Paragraph } from '../../paragraph';
+import * as React from "react";
+import { Button } from "../../button";
+import { Heading } from "../../heading";
+import { Paragraph } from "../../paragraph";
 import {
   Modal,
   ModalBody,
@@ -11,11 +11,11 @@ import {
   ModalHeading,
   ModalHeaderActions,
   ModalTrigger,
-} from '../src';
+} from "../src";
 
 // eslint-disable-next-line import/no-default-export
 export default {
-  title: 'Components/Modal',
+  title: "Components/Modal",
   component: Modal,
 };
 

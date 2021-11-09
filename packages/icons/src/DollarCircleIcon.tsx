@@ -16,7 +16,7 @@ const DollarCircleIcon: React.FC<DollarCircleIconProps> = ({
   size = "medium",
   color = "current",
   title,
-  decorative
+  decorative,
 }) => {
   const titleId = `DollarCircleIcon-${useUID()}`;
 

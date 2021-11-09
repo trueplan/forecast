@@ -1,14 +1,14 @@
-import * as React from 'react';
-import { Stack } from '../../../layout/stack';
-import { StyledRadioGroup } from './styles';
-import type { RadioGroupProps } from './types';
+import * as React from "react";
+import { Stack } from "../../../layout/stack";
+import { StyledRadioGroup } from "./styles";
+import type { RadioGroupProps } from "./types";
 
 const RadioGroup = React.forwardRef<HTMLDivElement, RadioGroupProps>(
   (
     {
       children,
       defaultValue,
-      dir = 'ltr',
+      dir = "ltr",
       label,
       name,
       onValueChange,
@@ -38,6 +38,6 @@ const RadioGroup = React.forwardRef<HTMLDivElement, RadioGroupProps>(
   }
 );
 
-RadioGroup.displayName = 'RadioGroup';
+RadioGroup.displayName = "RadioGroup";
 
 export { RadioGroup };

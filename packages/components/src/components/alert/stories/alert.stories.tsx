@@ -1,24 +1,24 @@
-import * as React from 'react';
-import type { Story } from '@storybook/react';
-import { theme } from '@forecast/theme';
-import { Box } from '../../../layout/box';
-import { Paragraph } from '../../paragraph';
+import * as React from "react";
+import type { Story } from "@storybook/react";
+import { theme } from "@forecast/theme";
+import { Box } from "../../../layout/box";
+import { Paragraph } from "../../paragraph";
 // import { Anchor } from "../../Anchor/src";
-import type { AlertProps } from '../src';
-import { Alert } from '../src';
+import type { AlertProps } from "../src";
+import { Alert } from "../src";
 
 // eslint-disable-next-line import/no-default-export
 export default {
-  title: 'Components/Alert',
+  title: "Components/Alert",
   component: Alert,
   args: {
-    title: 'Alert Title',
+    title: "Alert Title",
     onDismiss: (): void => void 0,
   },
 };
 
 const Template: Story<AlertProps> = ({ onDismiss, ...props }) => (
-  <Box css={{ display: 'grid', gridRowGap: '$35', maxWidth: '434px' }}>
+  <Box css={{ display: "grid", gridRowGap: "$35", maxWidth: "434px" }}>
     {console.log(props)}
     <Alert onDismiss={onDismiss} {...props}>
       <Paragraph marginBottom="space0">
@@ -47,13 +47,13 @@ const Template: Story<AlertProps> = ({ onDismiss, ...props }) => (
 );
 
 export const Success = Template.bind({});
-Success.args = { variant: 'success' };
+Success.args = { variant: "success" };
 
 export const Warning = Template.bind({});
-Warning.args = { variant: 'warning' };
+Warning.args = { variant: "warning" };
 
 export const Error = Template.bind({});
-Error.args = { variant: 'error' };
+Error.args = { variant: "error" };
 
 export const Info = Template.bind({});
-Info.args = { variant: 'info' };
+Info.args = { variant: "info" };

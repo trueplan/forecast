@@ -16,7 +16,7 @@ const RecruitingIcon: React.FC<RecruitingIconProps> = ({
   size = "medium",
   color = "current",
   title,
-  decorative
+  decorative,
 }) => {
   const titleId = `RecruitingIcon-${useUID()}`;
 

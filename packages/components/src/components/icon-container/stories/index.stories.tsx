@@ -1,4 +1,4 @@
-import * as React from 'react';
+import * as React from "react";
 import {
   ArrowSwapIcon,
   CheckIcon,
@@ -7,13 +7,13 @@ import {
   LocationIcon,
   SearchIcon,
   StarIcon,
-} from '@forecast/icons';
-import { Stack } from '../../../layout/stack';
-import { IconContainer } from '../src';
+} from "@forecast/icons";
+import { Stack } from "../../../layout/stack";
+import { IconContainer } from "../src";
 
 // eslint-disable-next-line import/no-default-export
 export default {
-  title: 'Components/Icon Container',
+  title: "Components/Icon Container",
   component: IconContainer,
 };
 

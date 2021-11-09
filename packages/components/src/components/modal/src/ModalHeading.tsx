@@ -1,18 +1,18 @@
-import * as React from 'react';
-import { Box } from '../../../layout/box';
-import { Heading } from '../../heading';
-import { ModalTitle, StyledSubTitle } from './styles';
-import type { ModalHeadingProps } from './types';
+import * as React from "react";
+import { Box } from "../../../layout/box";
+import { Heading } from "../../heading";
+import { ModalTitle, StyledSubTitle } from "./styles";
+import type { ModalHeadingProps } from "./types";
 
 const ModalHeading = React.forwardRef<HTMLHeadingElement, ModalHeadingProps>(
-  ({ as = 'h2', children, subTitle, ...props }, ref) => {
+  ({ as = "h2", children, subTitle, ...props }, ref) => {
     return (
       <Box
         css={{
-          display: 'flex',
-          alignItems: 'center',
+          display: "flex",
+          alignItems: "center",
           flexGrow: 1,
-          marginRight: '$40',
+          marginRight: "$40",
         }}
       >
         <Box>
@@ -34,6 +34,6 @@ const ModalHeading = React.forwardRef<HTMLHeadingElement, ModalHeadingProps>(
   }
 );
 
-ModalHeading.displayName = 'ModalHeading';
+ModalHeading.displayName = "ModalHeading";
 
 export { ModalHeading };

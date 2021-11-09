@@ -1,12 +1,12 @@
-import { styled, theme } from '@forecast/theme';
+import { styled, theme } from "@forecast/theme";
 
-export const StyledIconContainer = styled('div', {
-  alignItems: 'center',
+export const StyledIconContainer = styled("div", {
+  alignItems: "center",
   borderRadius: theme.radii.circle,
-  boxSizing: 'border-box',
-  display: 'flex',
-  justifyContent: 'center',
-  overflow: 'hidden',
+  boxSizing: "border-box",
+  display: "flex",
+  justifyContent: "center",
+  overflow: "hidden",
   variants: {
     color: {
       blue: {
@@ -40,16 +40,16 @@ export const StyledIconContainer = styled('div', {
     },
     size: {
       small: {
-        height: '24px',
-        width: '24px',
+        height: "24px",
+        width: "24px",
       },
       medium: {
-        height: '32px',
-        width: '32px',
+        height: "32px",
+        width: "32px",
       },
       large: {
-        height: '40px',
-        width: '40px',
+        height: "40px",
+        width: "40px",
       },
     },
   },

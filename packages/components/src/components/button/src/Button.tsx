@@ -1,26 +1,26 @@
-import * as React from 'react';
-import { Box } from '../../../layout/box';
-import { Spinner } from '../../spinner';
-import { StyledButton, StyledButtonContents } from './styles';
-import type { ButtonProps } from './types';
+import * as React from "react";
+import { Box } from "../../../layout/box";
+import { Spinner } from "../../spinner";
+import { StyledButton, StyledButtonContents } from "./styles";
+import type { ButtonProps } from "./types";
 
 const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
   (
     {
-      as = 'button',
+      as = "button",
       children,
       fullWidth,
       isDisabled,
       loading,
-      size = 'medium',
-      variant = 'primary',
+      size = "medium",
+      variant = "primary",
       ...props
     },
     ref
   ) => {
     return (
       <StyledButton
-        aria-busy={loading ? 'true' : 'false'}
+        aria-busy={loading ? "true" : "false"}
         as={as}
         disabled={isDisabled}
         fullWidth={fullWidth}
@@ -31,7 +31,7 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
         {...props}
       >
         <StyledButtonContents
-          aria-hidden={loading ? 'true' : 'false'}
+          aria-hidden={loading ? "true" : "false"}
           loading={loading}
         >
           {children}
@@ -40,14 +40,14 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
           <Box
             as="span"
             css={{
-              position: 'absolute',
+              position: "absolute",
               top: 0,
               right: 0,
               bottom: 0,
               left: 0,
-              display: 'flex',
-              justifyContent: 'center',
-              alignItems: 'center',
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
             }}
           >
             <Spinner label="Loading. Please wait." />
@@ -58,6 +58,6 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
   }
 );
 
-Button.displayName = 'Button';
+Button.displayName = "Button";
 
 export { Button };

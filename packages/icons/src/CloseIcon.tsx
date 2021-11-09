@@ -16,7 +16,7 @@ const CloseIcon: React.FC<CloseIconProps> = ({
   size = "medium",
   color = "current",
   title,
-  decorative
+  decorative,
 }) => {
   const titleId = `CloseIcon-${useUID()}`;
 

@@ -16,7 +16,7 @@ const TrashIcon: React.FC<TrashIconProps> = ({
   size = "medium",
   color = "current",
   title,
-  decorative
+  decorative,
 }) => {
   const titleId = `TrashIcon-${useUID()}`;
 

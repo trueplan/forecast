@@ -16,7 +16,7 @@ const InterdeterminateIcon: React.FC<InterdeterminateIconProps> = ({
   size = "medium",
   color = "current",
   title,
-  decorative
+  decorative,
 }) => {
   const titleId = `InterdeterminateIcon-${useUID()}`;
 

@@ -1,10 +1,10 @@
-import * as React from 'react';
-import { Stack } from '../../../layout/stack';
-import { InputBox } from '../src';
+import * as React from "react";
+import { Stack } from "../../../layout/stack";
+import { InputBox } from "../src";
 
 // eslint-disable-next-line import/no-default-export
 export default {
-  title: 'Components/Input Box',
+  title: "Components/Input Box",
   component: InputBox,
 };
 

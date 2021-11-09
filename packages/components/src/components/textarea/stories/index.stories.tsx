@@ -1,12 +1,12 @@
-import * as React from 'react';
-import { useUID } from 'react-uid';
-import { HelpText } from '../../help-text';
-import { Label } from '../../label';
-import { TextArea } from '../src';
+import * as React from "react";
+import { useUID } from "react-uid";
+import { HelpText } from "../../help-text";
+import { Label } from "../../label";
+import { TextArea } from "../src";
 
 // eslint-disable-next-line import/no-default-export
 export default {
-  title: 'Components/TextArea',
+  title: "Components/TextArea",
   component: TextArea,
 };
 

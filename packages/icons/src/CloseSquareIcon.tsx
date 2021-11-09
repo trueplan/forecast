@@ -16,7 +16,7 @@ const CloseSquareIcon: React.FC<CloseSquareIconProps> = ({
   size = "medium",
   color = "current",
   title,
-  decorative
+  decorative,
 }) => {
   const titleId = `CloseSquareIcon-${useUID()}`;
 

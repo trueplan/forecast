@@ -1,9 +1,9 @@
-import * as React from 'react';
-import { Anchor } from '../src';
+import * as React from "react";
+import { Anchor } from "../src";
 
 // eslint-disable-next-line import/no-default-export
 export default {
-  title: 'Components/Anchor',
+  title: "Components/Anchor",
   component: Anchor,
 };
 
@@ -59,10 +59,10 @@ export const InParagraph: React.FC = () => (
     <p>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nec erat
       id nisi tristique dignissim. Phasellus a sem a ligula sollicitudin dictum
-      et quis lacus.{' '}
+      et quis lacus.{" "}
       <Anchor href="#" noUnderline>
         I'm an anchor
-      </Anchor>{' '}
+      </Anchor>{" "}
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nec erat
       id nisi tristique dignissim. Phasellus a sem a ligula sollicitudin dictum
       et quis lacus.

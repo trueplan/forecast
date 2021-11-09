@@ -16,7 +16,7 @@ const CalendarIcon: React.FC<CalendarIconProps> = ({
   size = "medium",
   color = "current",
   title,
-  decorative
+  decorative,
 }) => {
   const titleId = `CalendarIcon-${useUID()}`;
 

@@ -1,13 +1,13 @@
 export type InputTypes =
-  | 'text'
-  | 'email'
-  | 'hidden'
-  | 'number'
-  | 'password'
-  | 'search'
-  | 'tel'
-  | 'date'
-  | 'time';
+  | "text"
+  | "email"
+  | "hidden"
+  | "number"
+  | "password"
+  | "search"
+  | "tel"
+  | "date"
+  | "time";
 
 export interface InputTypeProps {
   type: InputTypes;
@@ -16,11 +16,11 @@ export interface InputTypeProps {
 }
 
 export interface InputProps
-  extends Omit<React.InputHTMLAttributes<HTMLInputElement>, 'css'> {
+  extends Omit<React.InputHTMLAttributes<HTMLInputElement>, "css"> {
   borderless?: boolean;
   centeredText?: boolean;
   disabled?: boolean;
-  fontFamily?: 'roboto';
+  fontFamily?: "roboto";
   hasError?: boolean;
   id?: string;
   name?: string;

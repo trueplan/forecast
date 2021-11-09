@@ -16,7 +16,7 @@ const ExpandIcon: React.FC<ExpandIconProps> = ({
   size = "medium",
   color = "current",
   title,
-  decorative
+  decorative,
 }) => {
   const titleId = `ExpandIcon-${useUID()}`;
 

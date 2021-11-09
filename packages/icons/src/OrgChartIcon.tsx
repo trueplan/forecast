@@ -16,7 +16,7 @@ const OrgChartIcon: React.FC<OrgChartIconProps> = ({
   size = "medium",
   color = "current",
   title,
-  decorative
+  decorative,
 }) => {
   const titleId = `OrgChartIcon-${useUID()}`;
 

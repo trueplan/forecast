@@ -1,12 +1,12 @@
-import { styled, theme } from '@forecast/theme';
+import { styled, theme } from "@forecast/theme";
 
-export const StyledIconWrapper = styled('span', {
-  display: 'block',
+export const StyledIconWrapper = styled("span", {
+  display: "block",
   lineHeight: theme.lineHeights[0],
   variants: {
     color: {
       current: {
-        color: 'currentColor',
+        color: "currentColor",
       },
       red: {
         color: theme.colors.red,
@@ -56,30 +56,30 @@ export const StyledIconWrapper = styled('span', {
     },
     display: {
       inlineBlock: {
-        display: 'inline-block',
+        display: "inline-block",
       },
       block: {
-        display: 'block',
+        display: "block",
       },
       flex: {
-        display: 'flex',
+        display: "flex",
       },
       inlineFlex: {
-        display: 'inline-flex',
+        display: "inline-flex",
       },
     },
     size: {
       xsmall: {
-        height: '0.625rem',
-        width: '0.625rem',
+        height: "0.625rem",
+        width: "0.625rem",
       },
       small: {
-        height: '1rem',
-        width: '1rem',
+        height: "1rem",
+        width: "1rem",
       },
       medium: {
-        height: '1.25rem',
-        width: '1.25rem',
+        height: "1.25rem",
+        width: "1.25rem",
       },
     },
   },

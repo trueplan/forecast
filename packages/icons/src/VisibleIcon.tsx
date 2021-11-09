@@ -16,7 +16,7 @@ const VisibleIcon: React.FC<VisibleIconProps> = ({
   size = "medium",
   color = "current",
   title,
-  decorative
+  decorative,
 }) => {
   const titleId = `VisibleIcon-${useUID()}`;
 

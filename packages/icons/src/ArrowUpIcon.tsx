@@ -16,7 +16,7 @@ const ArrowUpIcon: React.FC<ArrowUpIconProps> = ({
   size = "medium",
   color = "current",
   title,
-  decorative
+  decorative,
 }) => {
   const titleId = `ArrowUpIcon-${useUID()}`;
 

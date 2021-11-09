@@ -1,10 +1,10 @@
-import * as React from 'react';
-import { Stack } from '../../../layout/stack';
-import { Status } from '../src';
+import * as React from "react";
+import { Stack } from "../../../layout/stack";
+import { Status } from "../src";
 
 // eslint-disable-next-line import/no-default-export
 export default {
-  title: 'Components/Status',
+  title: "Components/Status",
   component: Status,
 };
 

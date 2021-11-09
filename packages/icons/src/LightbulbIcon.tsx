@@ -16,7 +16,7 @@ const LightbulbIcon: React.FC<LightbulbIconProps> = ({
   size = "medium",
   color = "current",
   title,
-  decorative
+  decorative,
 }) => {
   const titleId = `LightbulbIcon-${useUID()}`;
 
