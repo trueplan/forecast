@@ -19,7 +19,6 @@
     "types": "dist/index.d.ts",
     "registry": "https://npm.pkg.github.com/"
   },
-  "type": "module",
   "scripts": {
     "build": "yarn clean && yarn compile",
     "clean": "rm -rf ./dist",
@@ -38,7 +37,8 @@
     "chalk": "^4.1.2",
     "commander": "^8.2.0",
     "lodash.difference": "^4.5.0",
-    "lodash.startcase": "^4.4.0"
+    "lodash.startcase": "^4.4.0",
+    "react-uid": "^2.3.1"
   },
   "peerDependencies": {
     "@svgr/babel-plugin-add-jsx-attribute": "^5.4.0",

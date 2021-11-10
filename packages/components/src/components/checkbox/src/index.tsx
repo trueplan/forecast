@@ -1,9 +1,9 @@
-import * as React from 'react';
-import { CheckboxIcon, InterdeterminateIcon } from '@trueplan/forecast-icons';
-import { Box } from '../../../layout/box';
-import { Label } from '../../label';
-import { StyledCheckbox, StyledCheckboxIndicator } from './styles';
-import type { CheckboxProps } from './types';
+import * as React from "react";
+import { CheckboxIcon, InterdeterminateIcon } from "@trueplan/forecast-icons";
+import { Box } from "../../../layout/box";
+import { Label } from "../../label";
+import { StyledCheckbox, StyledCheckboxIndicator } from "./styles";
+import type { CheckboxProps } from "./types";
 
 const Checkbox = React.forwardRef<HTMLButtonElement, CheckboxProps>(
   (
@@ -22,7 +22,7 @@ const Checkbox = React.forwardRef<HTMLButtonElement, CheckboxProps>(
     ref
   ) => {
     return (
-      <Box css={{ display: 'flex' }}>
+      <Box css={{ display: "flex" }}>
         <Box css={{ flexShrink: 0 }}>
           <StyledCheckbox
             checked={checked}
@@ -37,7 +37,7 @@ const Checkbox = React.forwardRef<HTMLButtonElement, CheckboxProps>(
             {...props}
           >
             <StyledCheckboxIndicator>
-              {checked === 'indeterminate' && (
+              {checked === "indeterminate" && (
                 <InterdeterminateIcon decorative size="xsmall" />
               )}
               {(checked === true || defaultChecked === true) && (
@@ -46,7 +46,7 @@ const Checkbox = React.forwardRef<HTMLButtonElement, CheckboxProps>(
             </StyledCheckboxIndicator>
           </StyledCheckbox>
         </Box>
-        <Box css={{ marginLeft: '$20' }}>
+        <Box css={{ marginLeft: "$20" }}>
           <Label
             disabled={disabled}
             htmlFor={id}
@@ -61,6 +61,6 @@ const Checkbox = React.forwardRef<HTMLButtonElement, CheckboxProps>(
   }
 );
 
-Checkbox.displayName = 'Checkbox';
+Checkbox.displayName = "Checkbox";
 
 export { Checkbox };

@@ -11,3 +11,6 @@
 **/dist/*
 **/build/*
 **/generated/*
+
+# Storybook docs
+docs/*

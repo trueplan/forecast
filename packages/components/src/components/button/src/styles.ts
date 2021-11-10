@@ -1,10 +1,10 @@
-import { styled, theme } from '@trueplan/forecast-theme';
+import { styled, theme } from "@trueplan/forecast-theme";
 
-export const StyledButtonContents = styled('span', {
-  display: 'flex',
-  textDecoration: 'inherit',
-  justifyContent: 'center',
-  alignItems: 'center',
+export const StyledButtonContents = styled("span", {
+  display: "flex",
+  textDecoration: "inherit",
+  justifyContent: "center",
+  alignItems: "center",
   gap: theme.space[15],
   variants: {
     loading: {
@@ -15,34 +15,34 @@ export const StyledButtonContents = styled('span', {
   },
 });
 
-export const StyledButton = styled('button', {
-  appearance: 'none',
-  background: 'none',
-  display: 'inline-block',
-  borderStyle: 'solid',
+export const StyledButton = styled("button", {
+  appearance: "none",
+  background: "none",
+  display: "inline-block",
+  borderStyle: "solid",
   borderWidth: theme.borderWidths[10],
   borderRadius: theme.radii[30],
-  outline: 'none',
-  transition: 'background-color 100ms ease-in, border-color 100ms ease-in',
+  outline: "none",
+  transition: "background-color 100ms ease-in, border-color 100ms ease-in",
   fontFamily: theme.fonts.inter,
   fontWeight: theme.fontWeights.semiBold,
-  textDecoration: 'none',
-  position: 'relative',
+  textDecoration: "none",
+  position: "relative",
   margin: theme.space[0],
-  cursor: 'pointer',
-  '&:hover': { textDecoration: 'none' },
-  '&:focus': { textDecoration: 'none' },
-  '&:active': { textDecoration: 'none' },
-  '&:disabled': { cursor: 'not-allowed' },
+  cursor: "pointer",
+  "&:hover": { textDecoration: "none" },
+  "&:focus": { textDecoration: "none" },
+  "&:active": { textDecoration: "none" },
+  "&:disabled": { cursor: "not-allowed" },
   variants: {
     fullWidth: {
       true: {
-        width: '100%',
+        width: "100%",
       },
     },
     loading: {
       true: {
-        cursor: 'wait',
+        cursor: "wait",
       },
     },
     size: {
@@ -67,17 +67,17 @@ export const StyledButton = styled('button', {
       iconSmall: {
         // Breaking out of the theme here to make the icon only button heights match the text button heights.
         // Might change depending on final icon sizes.
-        padding: '9px',
+        padding: "9px",
       },
       iconMedium: {
         // Breaking out of the theme here to make the icon only button heights match the text button heights.
         // Might change depending on final icon sizes.
-        padding: '12px',
+        padding: "12px",
       },
       iconLarge: {
         // Breaking out of the theme here to make the icon only button heights match the text button heights.
         // Might change depending on final icon sizes.
-        padding: '15px',
+        padding: "15px",
       },
     },
     variant: {
@@ -85,21 +85,21 @@ export const StyledButton = styled('button', {
         backgroundColor: theme.colors.green,
         borderColor: theme.colors.green,
         color: theme.colors.white,
-        '&:hover': {
+        "&:hover": {
           backgroundColor: theme.colors.green110,
           borderColor: theme.colors.green110,
         },
-        '&:focus': {
+        "&:focus": {
           backgroundColor: theme.colors.green110,
           borderColor: theme.colors.white,
-          outline: '$borderWidths$20 solid $colors$green50 !important',
-          outlineOffset: '1px',
+          outline: "$borderWidths$20 solid $colors$green50 !important",
+          outlineOffset: "1px",
         },
-        '&:active': {
+        "&:active": {
           backgroundColor: theme.colors.green110,
           borderColor: theme.colors.green110,
         },
-        '&:disabled': {
+        "&:disabled": {
           backgroundColor: theme.colors.gray50,
           borderColor: theme.colors.gray50,
         },
@@ -108,19 +108,19 @@ export const StyledButton = styled('button', {
         backgroundColor: theme.colors.white,
         borderColor: theme.colors.gray50,
         color: theme.colors.textMedium,
-        '&:hover': {
+        "&:hover": {
           borderColor: theme.colors.borderDark,
         },
-        '&:focus': {
+        "&:focus": {
           borderColor: theme.colors.borderDark,
-          outline: '$borderWidths$20 solid $colors$gray40 !important',
-          outlineOffset: '1px',
+          outline: "$borderWidths$20 solid $colors$gray40 !important",
+          outlineOffset: "1px",
         },
-        '&:active': {
+        "&:active": {
           backgroundColor: theme.colors.gray20,
           borderColor: theme.colors.borderDark,
         },
-        '&:disabled': {
+        "&:disabled": {
           borderColor: theme.colors.gray50,
           color: theme.colors.gray60,
         },
@@ -129,97 +129,97 @@ export const StyledButton = styled('button', {
         backgroundColor: theme.colors.white,
         borderColor: theme.colors.red,
         color: theme.colors.red,
-        '&:hover': {
+        "&:hover": {
           backgroundColor: theme.colors.red,
           borderColor: theme.colors.red,
           color: theme.colors.white,
         },
-        '&:focus': {
+        "&:focus": {
           backgroundColor: theme.colors.red,
           borderColor: theme.colors.red,
           color: theme.colors.white,
-          outline: '$borderWidths$20 solid $colors$red !important',
-          outlineOffset: '1px',
+          outline: "$borderWidths$20 solid $colors$red !important",
+          outlineOffset: "1px",
         },
-        '&:active': {
+        "&:active": {
           backgroundColor: theme.colors.red110,
           borderColor: theme.colors.red110,
           color: theme.colors.white,
         },
-        '&:disabled': {
+        "&:disabled": {
           backgroundColor: theme.colors.white,
           borderColor: theme.colors.gray50,
           color: theme.colors.gray60,
         },
       },
       ghost: {
-        backgroundColor: 'transparent',
-        borderColor: 'transparent',
+        backgroundColor: "transparent",
+        borderColor: "transparent",
         color: theme.colors.gray80,
-        '&:hover': {
+        "&:hover": {
           backgroundColor: theme.colors.gray20,
           borderColor: theme.colors.gray20,
         },
-        '&:focus': {
+        "&:focus": {
           backgroundColor: theme.colors.gray20,
           borderColor: theme.colors.gray20,
-          outline: '$borderWidths$20 solid $colors$gray20 !important',
-          outlineOffset: '1px',
+          outline: "$borderWidths$20 solid $colors$gray20 !important",
+          outlineOffset: "1px",
         },
-        '&:active': {
+        "&:active": {
           backgroundColor: theme.colors.gray30,
           borderColor: theme.colors.gray30,
         },
-        '&:disabled': {
+        "&:disabled": {
           backgroundColor: theme.colors.gray50,
           borderColor: theme.colors.gray50,
           color: theme.colors.white,
         },
       },
       iconOnly: {
-        backgroundColor: 'transparent',
-        borderColor: 'transparent',
+        backgroundColor: "transparent",
+        borderColor: "transparent",
         color: theme.colors.gray60,
-        '&:hover': {
+        "&:hover": {
           backgroundColor: theme.colors.gray20,
           borderColor: theme.colors.gray20,
           color: theme.colors.textMedium,
         },
-        '&:focus': {
+        "&:focus": {
           backgroundColor: theme.colors.gray20,
           borderColor: theme.colors.gray20,
           color: theme.colors.textMedium,
-          outline: '$borderWidths$20 solid $colors$gray20 !important',
-          outlineOffset: '1px',
+          outline: "$borderWidths$20 solid $colors$gray20 !important",
+          outlineOffset: "1px",
         },
-        '&:active': {
+        "&:active": {
           backgroundColor: theme.colors.gray30,
           borderColor: theme.colors.gray30,
           color: theme.colors.textMedium,
         },
-        '&:disabled': {
+        "&:disabled": {
           backgroundColor: theme.colors.gray50,
           borderColor: theme.colors.gray50,
           color: theme.colors.white,
         },
       },
       inverse: {
-        backgroundColor: 'transparent',
+        backgroundColor: "transparent",
         borderColor: theme.colors.gray70,
         color: theme.colors.white,
-        '&:hover': {
+        "&:hover": {
           borderColor: theme.colors.white,
         },
-        '&:focus': {
+        "&:focus": {
           borderColor: theme.colors.white,
-          outline: '$borderWidths$20 solid $colors$gray70 !important',
-          outlineOffset: '1px',
+          outline: "$borderWidths$20 solid $colors$gray70 !important",
+          outlineOffset: "1px",
         },
-        '&:active': {
+        "&:active": {
           backgroundColor: theme.colors.gray80,
           borderColor: theme.colors.white,
         },
-        '&:disabled': {
+        "&:disabled": {
           borderColor: theme.colors.gray70,
           color: theme.colors.gray70,
         },

@@ -26,7 +26,8 @@
     "noImplicitAny": false,
     "noFallthroughCasesInSwitch": true,
     "downlevelIteration": true,
-    "declaration": true
+    "declaration": true,
+    "declarationMap": true
   },
   "exclude": ["node_modules", "public", ".next"]
 }

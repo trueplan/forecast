@@ -1,12 +1,12 @@
-import * as React from 'react';
-import { InfoCircleIcon } from '@trueplan/forecast-icons';
-import { Box } from '../../../layout/box';
-import { Button } from '../../button';
-import { Tooltip, TooltipTrigger, TooltipContent } from '../src';
+import * as React from "react";
+import { InfoCircleIcon } from "@trueplan/forecast-icons";
+import { Box } from "../../../layout/box";
+import { Button } from "../../button";
+import { Tooltip, TooltipTrigger, TooltipContent } from "../src";
 
 // eslint-disable-next-line import/no-default-export
 export default {
-  title: 'Components/Tooltip',
+  title: "Components/Tooltip",
   component: Tooltip,
   parameters: {
     chromatic: { delay: 1000 },
@@ -14,7 +14,7 @@ export default {
 };
 
 export const Default: React.FC = () => (
-  <Box css={{ padding: '5rem' }}>
+  <Box css={{ padding: "5rem" }}>
     <Tooltip delayDuration={0}>
       <TooltipTrigger asChild>
         <Button size="iconSmall" variant="secondary">
@@ -31,10 +31,10 @@ export const Default: React.FC = () => (
 export const MultilineOpen: React.FC = () => (
   <Box
     css={{
-      display: 'grid',
-      gridTemplateColumns: 'repeat(3, max-content)',
-      gridRowGap: '11rem',
-      justifyContent: 'space-between',
+      display: "grid",
+      gridTemplateColumns: "repeat(3, max-content)",
+      gridRowGap: "11rem",
+      justifyContent: "space-between",
     }}
   >
     <div>
@@ -116,10 +116,10 @@ export const MultilineOpen: React.FC = () => (
 export const SingleLineOpen: React.FC = () => (
   <Box
     css={{
-      display: 'grid',
-      gridTemplateColumns: 'repeat(3, max-content)',
-      gridRowGap: '11rem',
-      justifyContent: 'space-between',
+      display: "grid",
+      gridTemplateColumns: "repeat(3, max-content)",
+      gridRowGap: "11rem",
+      justifyContent: "space-between",
     }}
   >
     <div>

@@ -1,8 +1,8 @@
-import * as React from 'react';
-import { styled } from '@trueplan/forecast-theme';
+import * as React from "react";
+import { styled } from "@trueplan/forecast-theme";
 
-const StyledBox = styled('div', {
-  boxSizing: 'border-box',
+const StyledBox = styled("div", {
+  boxSizing: "border-box",
 });
 
 export interface BoxProps {
@@ -21,6 +21,6 @@ const Box = React.forwardRef<HTMLDivElement, BoxProps>(
   }
 );
 
-Box.displayName = 'Box';
+Box.displayName = "Box";
 
 export { Box };
