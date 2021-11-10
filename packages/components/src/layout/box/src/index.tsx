@@ -5,7 +5,8 @@ const StyledBox = styled("div", {
   boxSizing: "border-box",
 });
 
-export interface BoxProps {
+export interface BoxProps
+  extends Omit<React.HTMLAttributes<HTMLDivElement>, "css"> {
   as?: React.ReactNode;
   children?: React.ReactNode;
   decorative?: boolean;
