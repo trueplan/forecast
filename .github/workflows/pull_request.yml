@@ -45,7 +45,7 @@ jobs:
         run: yarn prettier:check
       # - name: Run eslint
       #   run: yarn lint:js
-      # - name: Run type checker
-      #   run: yarn type-check
+      - name: Run type checker
+        run: yarn type-check
       - name: Run tests
         run: yarn test:ci
