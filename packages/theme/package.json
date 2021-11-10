@@ -2,7 +2,6 @@
   "name": "@forecast/theme",
   "version": "0.0.1",
   "description": "Forecast Match Design System Theme",
-  "private": true,
   "author": "TruePlan Inc.",
   "license": "UNLICENSED",
   "main": "src/index.ts",
