@@ -8,6 +8,10 @@ jobs:
   publish_and_deploy:
     runs-on: ubuntu-latest
 
+    permissions:
+      contents: read
+      packages: write
+
     steps:
       - name: Checkout Repo
         uses: actions/checkout@v2
@@ -42,6 +46,10 @@ jobs:
 
       # Publish NPM Packages
       - name: Publish packages
+        uses: actions/setup-node@v2
+        with:
+          registry-url: 'https://npm.pkg.github.com'
+          scope: '@forecast'
         run: yarn publish:all
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
