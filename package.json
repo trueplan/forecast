@@ -27,7 +27,7 @@
     "test:coverage": "jest --runInBand --coverage",
     "type-check": "yarn workspaces foreach run type-check",
     "version:all": "yarn version check --interactive && yarn version apply --all",
-    "publish:all": "yarn workspace @forecast/theme publish && yarn workspace @forecast/icons publish && yarn workspace @forecast/components publish"
+    "publish:all": "yarn workspace @forecast/theme publish"
   },
   "lint-staged": {
     "**/*": "prettier --write --ignore-unknown",
