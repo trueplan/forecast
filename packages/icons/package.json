@@ -1,5 +1,5 @@
 {
-  "name": "@forecast/icons",
+  "name": "@trueplan/forecast-icons",
   "version": "0.0.1",
   "description": "Forecast Match Design System Icons",
   "author": "TruePlan Inc.",
@@ -41,11 +41,11 @@
     "lodash.startcase": "^4.4.0"
   },
   "peerDependencies": {
-    "@forecast/components": "^0.0.1",
-    "@forecast/theme": "^0.0.1",
     "@svgr/babel-plugin-add-jsx-attribute": "^5.4.0",
     "@svgr/babel-plugin-remove-jsx-attribute": "^5.4.0",
     "@svgr/plugin-svgo": "^5.5.0",
+    "@trueplan/forecast-components": "^0.0.1",
+    "@trueplan/forecast-theme": "^0.0.1",
     "@twilio-labs/svg-to-react": "^2.1.0",
     "chalk": "^4.1.2",
     "commander": "^8.2.0",
@@ -56,11 +56,11 @@
     "react-uid": "^2.3.1"
   },
   "devDependencies": {
-    "@forecast/components": "workspace:packages/components",
-    "@forecast/theme": "workspace:packages/theme",
     "@svgr/babel-plugin-add-jsx-attribute": "^5.4.0",
     "@svgr/babel-plugin-remove-jsx-attribute": "^5.4.0",
     "@svgr/plugin-svgo": "^5.5.0",
+    "@trueplan/forecast-components": "workspace:packages/components",
+    "@trueplan/forecast-theme": "workspace:packages/theme",
     "@twilio-labs/svg-to-react": "^2.1.0",
     "@types/node": "^14.14.45",
     "@types/react": "^16.14.6",

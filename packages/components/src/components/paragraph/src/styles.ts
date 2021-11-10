@@ -1,6 +1,6 @@
-import { styled, theme } from "@forecast/theme";
+import { styled, theme } from '@trueplan/forecast-theme';
 
-export const StyledParagraph = styled("p", {
+export const StyledParagraph = styled('p', {
   fontFamily: theme.fonts.inter,
   fontWeight: theme.fontWeights.normal,
   color: theme.colors.gray70,

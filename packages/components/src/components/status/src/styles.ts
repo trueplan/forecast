@@ -1,8 +1,8 @@
-import { styled, theme } from "@forecast/theme";
+import { styled, theme } from '@trueplan/forecast-theme';
 
-export const StyledStatus = styled("div", {
+export const StyledStatus = styled('div', {
   borderRadius: theme.radii[100],
-  display: "inline-block",
+  display: 'inline-block',
   fontFamily: theme.fonts.inter,
   fontSize: theme.fontSizes[10],
   fontWeight: theme.fontWeights.medium,
@@ -10,8 +10,8 @@ export const StyledStatus = styled("div", {
   padding: theme.space[25],
   // Setting as 1px so it matches the height set by design.
   // This padding works well with the text line-height.
-  paddingTop: "1px",
-  paddingBottom: "1px",
+  paddingTop: '1px',
+  paddingBottom: '1px',
   variants: {
     color: {
       default: {
@@ -44,49 +44,49 @@ export const StyledStatus = styled("div", {
   },
   compoundVariants: [
     {
-      color: "default",
+      color: 'default',
       filled: true,
       css: {
         backgroundColor: theme.colors.gray20,
       },
     },
     {
-      color: "gray",
+      color: 'gray',
       filled: true,
       css: {
         backgroundColor: theme.colors.gray20,
       },
     },
     {
-      color: "blue",
+      color: 'blue',
       filled: true,
       css: {
         backgroundColor: theme.colors.blue10,
       },
     },
     {
-      color: "lilac",
+      color: 'lilac',
       filled: true,
       css: {
         backgroundColor: theme.colors.lilac10,
       },
     },
     {
-      color: "green",
+      color: 'green',
       filled: true,
       css: {
         backgroundColor: theme.colors.green10,
       },
     },
     {
-      color: "yellow",
+      color: 'yellow',
       filled: true,
       css: {
         backgroundColor: theme.colors.yellow10,
       },
     },
     {
-      color: "red",
+      color: 'red',
       filled: true,
       css: {
         backgroundColor: theme.colors.red10,

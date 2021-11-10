@@ -1,6 +1,6 @@
-import { styled, theme } from "@forecast/theme";
+import { styled, theme } from '@trueplan/forecast-theme';
 
-export const StyledHeading = styled("h1", {
+export const StyledHeading = styled('h1', {
   color: theme.colors.gray80,
   fontFamily: theme.fonts.inter,
   fontWeight: theme.fontWeights.semiBold,
@@ -15,28 +15,28 @@ export const StyledHeading = styled("h1", {
     },
     size: {
       heading60: {
-        fontSize: "$10",
-        lineHeight: "$10",
+        fontSize: '$10',
+        lineHeight: '$10',
       },
       heading50: {
-        fontSize: "$20",
-        lineHeight: "$20",
+        fontSize: '$20',
+        lineHeight: '$20',
       },
       heading40: {
-        fontSize: "$30",
-        lineHeight: "$30",
+        fontSize: '$30',
+        lineHeight: '$30',
       },
       heading30: {
-        fontSize: "$40",
-        lineHeight: "$40",
+        fontSize: '$40',
+        lineHeight: '$40',
       },
       heading20: {
-        fontSize: "$50",
-        lineHeight: "$50",
+        fontSize: '$50',
+        lineHeight: '$50',
       },
       heading10: {
-        fontSize: "$60",
-        lineHeight: "$60",
+        fontSize: '$60',
+        lineHeight: '$60',
       },
     },
   },

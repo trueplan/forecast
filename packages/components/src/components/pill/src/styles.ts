@@ -1,7 +1,7 @@
-import { styled, theme } from "@forecast/theme";
+import { styled, theme } from '@trueplan/forecast-theme';
 
-export const StyledPill = styled("span", {
-  borderStyle: "solid",
+export const StyledPill = styled('span', {
+  borderStyle: 'solid',
   borderRadius: theme.radii[30],
   borderWidth: theme.borderWidths[10],
   fontWeight: theme.fontWeights.semiBold,
@@ -31,10 +31,10 @@ export const StyledPill = styled("span", {
     },
     size: {
       small: {
-        fontSize: "$10",
+        fontSize: '$10',
       },
       large: {
-        fontSize: "$20",
+        fontSize: '$20',
       },
     },
     fontFamily: {

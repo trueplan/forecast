@@ -1,9 +1,9 @@
-import * as React from "react";
-import { CloseIcon } from "@forecast/icons";
-import { Box } from "../../../layout/box";
-import { Button } from "../../button";
-import { ModalClose } from "./styles";
-import type { ModalHeaderActionsProps } from "./types";
+import * as React from 'react';
+import { CloseIcon } from '@trueplan/forecast-icons';
+import { Box } from '../../../layout/box';
+import { Button } from '../../button';
+import { ModalClose } from './styles';
+import type { ModalHeaderActionsProps } from './types';
 
 const ModalHeaderActions = React.forwardRef<
   HTMLDivElement,
@@ -11,7 +11,7 @@ const ModalHeaderActions = React.forwardRef<
 >(({ children, ...props }, ref) => {
   return (
     <Box
-      css={{ display: "flex", alignItems: "center", gap: "$20" }}
+      css={{ display: 'flex', alignItems: 'center', gap: '$20' }}
       ref={ref}
       {...props}
     >
@@ -25,6 +25,6 @@ const ModalHeaderActions = React.forwardRef<
   );
 });
 
-ModalHeaderActions.displayName = "ModalHeaderActions";
+ModalHeaderActions.displayName = 'ModalHeaderActions';
 
 export { ModalHeaderActions };

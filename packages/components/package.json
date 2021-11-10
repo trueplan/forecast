@@ -1,5 +1,5 @@
 {
-  "name": "@forecast/components",
+  "name": "@trueplan/forecast-components",
   "version": "0.0.1",
   "description": "Forecast Match Design System Components",
   "author": "TruePlan Inc.",
@@ -28,8 +28,6 @@
     "publish": "yarn npm publish --tolerate-republish"
   },
   "peerDependencies": {
-    "@forecast/icons": "^0.0.1",
-    "@forecast/theme": "^0.0.1",
     "@radix-ui/react-checkbox": "^0.1.1",
     "@radix-ui/react-dialog": "^0.1.1",
     "@radix-ui/react-dropdown-menu": "^0.1.0",
@@ -38,14 +36,14 @@
     "@radix-ui/react-tooltip": "^0.1.0",
     "@radix-ui/react-visually-hidden": "^0.1.0",
     "@stitches/react": "^1.2.0",
+    "@trueplan/forecast-icons": "^0.0.1",
+    "@trueplan/forecast-theme": "^0.0.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-uid": "^2.3.1"
   },
   "devDependencies": {
     "@babel/core": "^7.15.5",
-    "@forecast/icons": "workspace:packages/icons",
-    "@forecast/theme": "workspace:packages/theme",
     "@radix-ui/react-checkbox": "^0.1.1",
     "@radix-ui/react-dialog": "^0.1.1",
     "@radix-ui/react-dropdown-menu": "^0.1.0",
@@ -57,6 +55,8 @@
     "@storybook/react": "^6.2.9",
     "@testing-library/jest-dom": "^5.15.0",
     "@testing-library/react": "^12.1.2",
+    "@trueplan/forecast-icons": "workspace:packages/icons",
+    "@trueplan/forecast-theme": "workspace:packages/theme",
     "@types/jest": "^27.0.2",
     "@types/node": "^14.14.45",
     "@types/react": "^16.14.6",

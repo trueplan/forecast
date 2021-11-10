@@ -1,33 +1,33 @@
-import { styled, theme } from "@forecast/theme";
+import { styled, theme } from '@trueplan/forecast-theme';
 
-export const StyledAvatar = styled("div", {
-  alignItems: "center",
-  br: "$circle",
-  boxSizing: "border-box",
+export const StyledAvatar = styled('div', {
+  alignItems: 'center',
+  br: '$circle',
+  boxSizing: 'border-box',
   color: theme.colors.white,
-  display: "flex",
-  fw: "$semiBold",
-  justifyContent: "center",
-  overflow: "hidden",
+  display: 'flex',
+  fw: '$semiBold',
+  justifyContent: 'center',
+  overflow: 'hidden',
   variants: {
     size: {
       small: {
-        fs: "$10",
-        lh: "$10",
-        height: "24px",
-        width: "24px",
+        fs: '$10',
+        lh: '$10',
+        height: '24px',
+        width: '24px',
       },
       medium: {
-        fs: "$20",
-        lh: "$20",
-        height: "32px",
-        width: "32px",
+        fs: '$20',
+        lh: '$20',
+        height: '32px',
+        width: '32px',
       },
       large: {
-        fs: "$30",
-        lh: "$30",
-        height: "40px",
-        width: "40px",
+        fs: '$30',
+        lh: '$30',
+        height: '40px',
+        width: '40px',
       },
     },
     color: {
@@ -55,23 +55,23 @@ export const StyledAvatar = styled("div", {
     },
   },
   defaultVariants: {
-    size: "medium",
-    color: "lilac",
+    size: 'medium',
+    color: 'lilac',
   },
 });
 
-export const StyledAvatarInitials = styled("abbr", {
-  color: "inherit",
-  display: "block",
-  fontFamily: "inherit",
-  fontSize: "inherit",
-  fontWeight: "inherit",
-  lineHeight: "inherit",
-  textAlign: "center",
-  textDecoration: "none",
+export const StyledAvatarInitials = styled('abbr', {
+  color: 'inherit',
+  display: 'block',
+  fontFamily: 'inherit',
+  fontSize: 'inherit',
+  fontWeight: 'inherit',
+  lineHeight: 'inherit',
+  textAlign: 'center',
+  textDecoration: 'none',
 });
 
-export const StyledAvatarImage = styled("img", {
-  maxWidth: "100%",
-  height: "auto",
+export const StyledAvatarImage = styled('img', {
+  maxWidth: '100%',
+  height: 'auto',
 });

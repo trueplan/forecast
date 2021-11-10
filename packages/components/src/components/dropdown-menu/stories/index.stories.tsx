@@ -1,5 +1,5 @@
-import * as React from "react";
-import { CloseCircleIcon, GearIcon } from "@forecast/icons";
+import * as React from 'react';
+import { CloseCircleIcon, GearIcon } from '@trueplan/forecast-icons';
 import {
   DropdownMenu,
   DropdownMenuTrigger,
@@ -12,14 +12,14 @@ import {
   DropdownMenuGroup,
   DropdownMenuRadioGroup,
   DropdownMenuRadioItem,
-} from "../src";
-import { FauxSelectBox } from "../src/FauxSelect";
-import { Button } from "../../button";
-import { Box } from "../../../layout/box";
+} from '../src';
+import { FauxSelectBox } from '../src/FauxSelect';
+import { Button } from '../../button';
+import { Box } from '../../../layout/box';
 
 // eslint-disable-next-line import/no-default-export
 export default {
-  title: "Components/Dropdown Menu",
+  title: 'Components/Dropdown Menu',
   component: DropdownMenu,
   parameters: {
     chromatic: { delay: 1000 },
@@ -27,15 +27,15 @@ export default {
 };
 
 export const Default: React.FC = () => (
-  <Box css={{ position: "absolute", top: 20, left: 20 }}>
+  <Box css={{ position: 'absolute', top: 20, left: 20 }}>
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
         <Button variant="primary">Open Menu</Button>
       </DropdownMenuTrigger>
 
       <DropdownMenuContent align="start">
-        <DropdownMenuItem onSelect={() => alert("Dropdown item clicked")}>
-          All Activities{" "}
+        <DropdownMenuItem onSelect={() => alert('Dropdown item clicked')}>
+          All Activities{' '}
           <DropdownMenuItemRightSlot>⌘+A</DropdownMenuItemRightSlot>
         </DropdownMenuItem>
         <DropdownMenuItem>
@@ -65,7 +65,7 @@ export const Default: React.FC = () => (
 );
 
 export const TopRightPosition: React.FC = () => (
-  <Box css={{ position: "absolute", top: 20, right: 20 }}>
+  <Box css={{ position: 'absolute', top: 20, right: 20 }}>
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
         <Button variant="primary">Open Menu</Button>
@@ -73,7 +73,7 @@ export const TopRightPosition: React.FC = () => (
 
       <DropdownMenuContent align="start">
         <DropdownMenuItem>
-          All Activities{" "}
+          All Activities{' '}
           <DropdownMenuItemRightSlot>⌘+A</DropdownMenuItemRightSlot>
         </DropdownMenuItem>
         <DropdownMenuItem>
@@ -103,7 +103,7 @@ export const TopRightPosition: React.FC = () => (
 );
 
 export const DefaultOpen: React.FC = () => (
-  <Box css={{ position: "absolute", top: 20, left: 20 }}>
+  <Box css={{ position: 'absolute', top: 20, left: 20 }}>
     <DropdownMenu open>
       <DropdownMenuTrigger asChild>
         <Button variant="primary">Open Menu</Button>
@@ -111,7 +111,7 @@ export const DefaultOpen: React.FC = () => (
 
       <DropdownMenuContent align="start">
         <DropdownMenuItem>
-          All Activities{" "}
+          All Activities{' '}
           <DropdownMenuItemRightSlot>⌘+A</DropdownMenuItemRightSlot>
         </DropdownMenuItem>
         <DropdownMenuItem>
@@ -141,8 +141,8 @@ export const DefaultOpen: React.FC = () => (
 );
 
 export const Multiple: React.FC = () => (
-  <Box css={{ position: "absolute", top: 20, left: 20 }}>
-    <Box css={{ marginBottom: "$25" }}>
+  <Box css={{ position: 'absolute', top: 20, left: 20 }}>
+    <Box css={{ marginBottom: '$25' }}>
       <DropdownMenu>
         <DropdownMenuTrigger asChild>
           <Button variant="primary">Open Menu</Button>
@@ -150,7 +150,7 @@ export const Multiple: React.FC = () => (
 
         <DropdownMenuContent align="start">
           <DropdownMenuItem>
-            All Activities{" "}
+            All Activities{' '}
             <DropdownMenuItemRightSlot>⌘+A</DropdownMenuItemRightSlot>
           </DropdownMenuItem>
           <DropdownMenuItem>
@@ -177,7 +177,7 @@ export const Multiple: React.FC = () => (
         </DropdownMenuContent>
       </DropdownMenu>
     </Box>
-    <Box css={{ marginBottom: "$25" }}>
+    <Box css={{ marginBottom: '$25' }}>
       <DropdownMenu>
         <DropdownMenuTrigger asChild>
           <Button variant="secondary">Open Menu</Button>
@@ -185,7 +185,7 @@ export const Multiple: React.FC = () => (
 
         <DropdownMenuContent align="start">
           <DropdownMenuItem>
-            All Activities{" "}
+            All Activities{' '}
             <DropdownMenuItemRightSlot>⌘+A</DropdownMenuItemRightSlot>
           </DropdownMenuItem>
           <DropdownMenuItem>
@@ -212,7 +212,7 @@ export const Multiple: React.FC = () => (
         </DropdownMenuContent>
       </DropdownMenu>
     </Box>
-    <Box css={{ marginBottom: "$25" }}>
+    <Box css={{ marginBottom: '$25' }}>
       <DropdownMenu>
         <DropdownMenuTrigger asChild>
           <Button variant="secondary" size="iconSmall">
@@ -222,7 +222,7 @@ export const Multiple: React.FC = () => (
 
         <DropdownMenuContent align="start">
           <DropdownMenuItem>
-            All Activities{" "}
+            All Activities{' '}
             <DropdownMenuItemRightSlot>⌘+A</DropdownMenuItemRightSlot>
           </DropdownMenuItem>
           <DropdownMenuItem>
@@ -249,7 +249,7 @@ export const Multiple: React.FC = () => (
         </DropdownMenuContent>
       </DropdownMenu>
     </Box>
-    <Box css={{ marginBottom: "$25" }}>
+    <Box css={{ marginBottom: '$25' }}>
       <DropdownMenu>
         <DropdownMenuTrigger asChild>
           <Button variant="ghost" size="iconSmall">
@@ -259,7 +259,7 @@ export const Multiple: React.FC = () => (
 
         <DropdownMenuContent align="start">
           <DropdownMenuItem>
-            All Activities{" "}
+            All Activities{' '}
             <DropdownMenuItemRightSlot>⌘+A</DropdownMenuItemRightSlot>
           </DropdownMenuItem>
           <DropdownMenuItem>
@@ -290,11 +290,11 @@ export const Multiple: React.FC = () => (
 );
 
 const changeTrigger = (): void => {
-  console.log("this would change pivot states");
+  console.log('this would change pivot states');
 };
 
 export const FauxSelect: React.FC = () => {
-  const [selectText, setSelectText] = React.useState("Pivot: Off");
+  const [selectText, setSelectText] = React.useState('Pivot: Off');
 
   return (
     <DropdownMenu>

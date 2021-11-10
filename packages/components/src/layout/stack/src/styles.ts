@@ -1,20 +1,20 @@
-import { styled } from "@forecast/theme";
+import { styled } from '@trueplan/forecast-theme';
 
-export const StyledStack = styled("div", {
-  boxSizing: "border-box",
-  display: "flex",
+export const StyledStack = styled('div', {
+  boxSizing: 'border-box',
+  display: 'flex',
   variants: {
     direction: {
       horizontal: {
-        flexDirection: "row",
+        flexDirection: 'row',
       },
       vertical: {
-        flexDirection: "column",
+        flexDirection: 'column',
       },
     },
     inline: {
       true: {
-        display: "inline-flex",
+        display: 'inline-flex',
       },
     },
   },

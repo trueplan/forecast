@@ -1,14 +1,14 @@
-import { styled, theme } from "@forecast/theme";
+import { styled, theme } from '@trueplan/forecast-theme';
 
-export const StyledLabel = styled("label", {
+export const StyledLabel = styled('label', {
   fontFamily: theme.fonts.inter,
   fontWeight: theme.fontWeights.medium,
   fontSize: theme.fontSizes[10],
   lineHeight: theme.lineHeights[10],
   color: theme.colors.textLight,
   marginBottom: theme.space[10],
-  display: "flex",
-  alignItems: "center",
+  display: 'flex',
+  alignItems: 'center',
   variants: {
     marginBottom: {
       space0: {
@@ -29,15 +29,15 @@ export const StyledLabel = styled("label", {
     disabled: {
       true: {
         color: theme.colors.textLight,
-        cursor: "not-allowed",
+        cursor: 'not-allowed',
       },
     },
   },
 });
 
-export const StyledDot = styled("div", {
-  height: "3px",
-  width: "3px",
+export const StyledDot = styled('div', {
+  height: '3px',
+  width: '3px',
   borderRadius: theme.radii.circle,
   backgroundColor: theme.colors.red,
   marginLeft: theme.space[10],
