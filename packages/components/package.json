@@ -48,7 +48,7 @@
     "@radix-ui/react-visually-hidden": "^0.1.0",
     "@stitches/react": "^1.2.0",
     "@trueplan/forecast-icons": "^0.0.2",
-    "@trueplan/forecast-theme": "^0.0.1",
+    "@trueplan/forecast-theme": "^0.0.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-uid": "^2.3.1"
