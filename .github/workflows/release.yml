@@ -44,14 +44,6 @@ jobs:
       - name: Build Forecast
         run: yarn build
 
-      # Setup .npmrc file to publish to npm
-      - name: Set up .npmrc
-        uses: actions/setup-node@v2
-        with:
-          node-version: '12.x'
-          registry-url: 'https://npm.pkg.github.com'
-          scope: '@trueplan'
-
       # Publish NPM Packages
       - name: Publish packages
         run: yarn publish:all
