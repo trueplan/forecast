@@ -46,7 +46,7 @@ jobs:
 
       # Publish NPM Packages
       - name: Publish packages
-        uses: actions/setup-node@v2
+      - uses: actions/setup-node@v2
         with:
           registry-url: 'https://npm.pkg.github.com'
           scope: '@forecast'
