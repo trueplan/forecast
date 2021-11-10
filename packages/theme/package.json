@@ -18,7 +18,6 @@
     "main": "dist/index.js",
     "module": "dist/index.mjs",
     "types": "dist/index.d.ts",
-    "access": "public",
     "registry": "https://npm.pkg.github.com/"
   },
   "scripts": {
