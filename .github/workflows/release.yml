@@ -5,7 +5,7 @@ on:
     types: [published]
 
 jobs:
-  vrt:
+  publish_and_deploy:
     runs-on: ubuntu-latest
 
     steps:
