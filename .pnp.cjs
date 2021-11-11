@@ -107,6 +107,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-plugin-sonarjs", "virtual:83930a02e406f078247fc9b9d21de38a337fcb78679a3d66298da2df309f013f7be5bb231811c0f7e8543d93b976930cd65092f5c1c34eb2317b35770703c6a9#npm:0.10.0"],
             ["eslint-plugin-testing-library", "virtual:83930a02e406f078247fc9b9d21de38a337fcb78679a3d66298da2df309f013f7be5bb231811c0f7e8543d93b976930cd65092f5c1c34eb2317b35770703c6a9#npm:3.10.2"],
             ["eslint-plugin-unicorn", "virtual:83930a02e406f078247fc9b9d21de38a337fcb78679a3d66298da2df309f013f7be5bb231811c0f7e8543d93b976930cd65092f5c1c34eb2317b35770703c6a9#npm:35.0.0"],
+            ["husky", "npm:7.0.4"],
             ["is-ci", "npm:3.0.1"],
             ["jest", "virtual:83930a02e406f078247fc9b9d21de38a337fcb78679a3d66298da2df309f013f7be5bb231811c0f7e8543d93b976930cd65092f5c1c34eb2317b35770703c6a9#npm:27.3.1"],
             ["jest-canvas-mock", "npm:2.3.1"],
@@ -15264,6 +15265,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-plugin-sonarjs", "virtual:83930a02e406f078247fc9b9d21de38a337fcb78679a3d66298da2df309f013f7be5bb231811c0f7e8543d93b976930cd65092f5c1c34eb2317b35770703c6a9#npm:0.10.0"],
             ["eslint-plugin-testing-library", "virtual:83930a02e406f078247fc9b9d21de38a337fcb78679a3d66298da2df309f013f7be5bb231811c0f7e8543d93b976930cd65092f5c1c34eb2317b35770703c6a9#npm:3.10.2"],
             ["eslint-plugin-unicorn", "virtual:83930a02e406f078247fc9b9d21de38a337fcb78679a3d66298da2df309f013f7be5bb231811c0f7e8543d93b976930cd65092f5c1c34eb2317b35770703c6a9#npm:35.0.0"],
+            ["husky", "npm:7.0.4"],
             ["is-ci", "npm:3.0.1"],
             ["jest", "virtual:83930a02e406f078247fc9b9d21de38a337fcb78679a3d66298da2df309f013f7be5bb231811c0f7e8543d93b976930cd65092f5c1c34eb2317b35770703c6a9#npm:27.3.1"],
             ["jest-canvas-mock", "npm:2.3.1"],
@@ -16585,6 +16587,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["humanize-ms", "npm:1.2.1"],
             ["ms", "npm:2.1.3"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["husky", [
+        ["npm:7.0.4", {
+          "packageLocation": "./.yarn/cache/husky-npm-7.0.4-917ba035c6-c6ec4af63d.zip/node_modules/husky/",
+          "packageDependencies": [
+            ["husky", "npm:7.0.4"]
           ],
           "linkType": "HARD",
         }]
