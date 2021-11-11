@@ -1,4 +1,4 @@
-name: 'PR Checks'
+name: "PR Checks"
 
 on:
   pull_request:
@@ -17,7 +17,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v1
         with:
-          node-version: '16.2.x'
+          node-version: "16.2.x"
 
       # Cache Yarn dependencies
       # https://github.com/actions/cache/blob/main/examples.md#node---yarn-2
@@ -43,8 +43,8 @@ jobs:
       # Test
       - name: Run prettier check
         run: yarn prettier:check
-      # - name: Run eslint
-      #   run: yarn lint:js
+      - name: Run eslint
+        run: yarn lint:js
       - name: Run type checker
         run: yarn type-check
       - name: Run tests

@@ -8,6 +8,7 @@
     "baseUrl": "./packages",
     "paths": {
       "@forecast/components/*": ["components/src/*"],
+      "@forecast/icons/*": ["icons/*"],
       "@forecast/theme/*": ["theme/src/*"]
     },
     "target": "es5",
