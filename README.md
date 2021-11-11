@@ -47,7 +47,7 @@ npmRegistries:
     npmAuthToken: REPLACE-THIS-WITH-YOUR-ACCESS-TOKEN
 ```
 
-Far NPM and Yarn v1.x, run the following command. Use your access token when prompted for your password.
+For NPM and Yarn v1.x, run the following command. Use your access token when prompted for your password.
 
 ```shell
 npm login --registry=https://npm.pkg.github.com
