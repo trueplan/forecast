@@ -1,0 +1,64 @@
+{
+  "version": "0.2",
+  "language": "en",
+  "words": [
+    "dsys",
+    "svgs",
+    "testid",
+    "twilio",
+    "roboto",
+    "schulte",
+    "ngozi",
+    "xsmall",
+    "hris",
+    "recruitments",
+    "serializers",
+    "nums",
+    "approvable",
+    "unselectable",
+    "borderless",
+    "trueplan",
+    "Segoe",
+    "Neue",
+    "npmrc",
+    "labelledby",
+    "noreferrer",
+    "noopener"
+  ],
+  "ignoreWords": [
+    "btlr",
+    "btrr",
+    "bbrr",
+    "bblr",
+    "adlru",
+    "millify",
+    "eqeqeq",
+    "formik",
+    "sonarjs",
+    "immer",
+    "linkify",
+    "toastify"
+  ],
+  "flagWords": ["hte"],
+  "allowCompoundWords": true,
+  "ignorePaths": [
+    "**/node_modules/**",
+    "**/.next/**",
+    "*.svg",
+    "package.json",
+    "*.lock",
+    "cspell.json",
+    "**/.pnp.*/**",
+    "**/.yarn/**",
+    "**/docs/**",
+    "**/dist/**",
+    "build-storybook.log"
+  ],
+  "overrides": [
+    {
+      "filename": "**/{*.stories.tsx,*.test.tsx}",
+      "dictionaries": ["lorem-ipsum"],
+      "ignoreWords": ["potenti"]
+    }
+  ]
+}
