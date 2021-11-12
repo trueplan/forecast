@@ -2,4 +2,4 @@
 . "$(dirname "$0")/_/husky.sh"
 
 yarn lint:staged
-yarn lint:spelling
+yarn dlx --quiet cspell --no-summary $(git diff --cached --name-only)
