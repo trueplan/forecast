@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Box } from "../../../layout/box";
+import { Box } from "../../../primitives/box";
 import { Label } from "../../label";
 import { StyledRadio, StyledRadioIndicator } from "./styles";
 import type { RadioProps } from "./types";

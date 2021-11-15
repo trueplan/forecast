@@ -1,9 +1,8 @@
 import * as React from "react";
 import type { Story } from "@storybook/react";
 import { Anchor } from "../../anchor";
-import { Box } from "../../../layout/box";
+import { Box } from "../../../primitives/box";
 import { Paragraph } from "../../paragraph";
-// import { Anchor } from "../../Anchor/src";
 import type { AlertProps } from "../src";
 import { Alert } from "../src";
 
@@ -26,7 +25,7 @@ const Template: Story<AlertProps> = ({ onDismiss, ...props }) => (
         consectetur.
       </Paragraph>
       <Box css={{ marginTop: "$10" }}>
-        <Anchor>Learn More</Anchor>
+        <Anchor href="#">Learn More</Anchor>
       </Box>
     </Alert>
     <Alert onDismiss={onDismiss} {...props} />

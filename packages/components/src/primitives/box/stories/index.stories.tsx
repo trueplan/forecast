@@ -5,7 +5,7 @@ import { Box } from "../src";
 
 // eslint-disable-next-line import/no-default-export
 export default {
-  title: "Layout/Box",
+  title: "Primitives/Box",
   component: Box,
 };
 

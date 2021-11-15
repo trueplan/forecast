@@ -1,7 +1,7 @@
 import * as React from "react";
 import { ChevronDownIcon } from "@trueplan/forecast-icons";
 import { styled, theme } from "@trueplan/forecast-theme";
-import { Box } from "../../../layout/box";
+import { Box } from "../../../primitives/box";
 
 const StyledFauxSelectButton = styled("button", {
   all: "unset",

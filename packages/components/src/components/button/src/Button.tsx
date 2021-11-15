@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Box } from "../../../layout/box";
+import { Box } from "../../../primitives/box";
 import { Spinner } from "../../spinner";
 import { StyledButton, StyledButtonContents } from "./styles";
 import type { ButtonProps } from "./types";

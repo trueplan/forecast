@@ -1,6 +1,6 @@
 import * as React from "react";
 import { useUID } from "react-uid";
-import { Box } from "../../../layout/box";
+import { Box } from "../../../primitives/box";
 import { Checkbox } from "../src";
 
 // eslint-disable-next-line import/no-default-export

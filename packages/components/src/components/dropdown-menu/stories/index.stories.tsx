@@ -15,7 +15,7 @@ import {
 } from "../src";
 import { FauxSelectBox } from "../src/FauxSelect";
 import { Button } from "../../button";
-import { Box } from "../../../layout/box";
+import { Box } from "../../../primitives/box";
 
 // eslint-disable-next-line import/no-default-export
 export default {
