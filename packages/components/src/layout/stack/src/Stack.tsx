@@ -1,4 +1,6 @@
 import * as React from "react";
+import { useUIDSeed } from "react-uid";
+import { Box } from "../../../primitives/box";
 import { StyledStack } from "./styles";
 import type { StackProps } from "./types";
 
@@ -16,6 +18,17 @@ const Stack = React.forwardRef<HTMLDivElement, StackProps>(
     },
     ref
   ) => {
+    const [childrenCount, validChildren] = React.useMemo(() => {
+      const filteredChildren = React.Children.toArray(children).filter(
+        (child) => React.isValidElement(child) || typeof child === "string"
+      );
+      return [filteredChildren.length, filteredChildren];
+    }, [children]);
+
+    const childMargins = direction === "vertical" ? spacing : undefined;
+
+    const keySeed = useUIDSeed();
+
     return (
       <StyledStack
         as={as}
@@ -25,7 +38,19 @@ const Stack = React.forwardRef<HTMLDivElement, StackProps>(
         ref={ref}
         {...props}
       >
-        {children}
+        {validChildren.map((child, index) => {
+          return (
+            <Box
+              css={{
+                marginBottom:
+                  childrenCount !== index + 1 ? childMargins : undefined,
+              }}
+              key={keySeed(`stack-${index}`)}
+            >
+              {child}
+            </Box>
+          );
+        })}
       </StyledStack>
     );
   }
