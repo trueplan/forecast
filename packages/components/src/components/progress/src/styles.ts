@@ -7,7 +7,6 @@ export const StyledProgress = styled(ProgressPrimitive.Root, {
   height: "6px",
   overflow: "hidden",
   position: "relative",
-  width: "250px",
 });
 
 export const StyledProgressIndicator = styled(ProgressPrimitive.Indicator, {
