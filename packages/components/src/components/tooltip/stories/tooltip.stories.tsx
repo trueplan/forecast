@@ -1,6 +1,6 @@
 import * as React from "react";
 import { InfoCircleIcon } from "@trueplan/forecast-icons";
-import { Box } from "../../../layout/box";
+import { Box } from "../../../primitives/box";
 import { Button } from "../../button";
 import { Tooltip, TooltipTrigger, TooltipContent } from "../src";
 

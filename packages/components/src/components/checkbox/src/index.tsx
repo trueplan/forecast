@@ -1,6 +1,6 @@
 import * as React from "react";
 import { CheckboxIcon, InterdeterminateIcon } from "@trueplan/forecast-icons";
-import { Box } from "../../../layout/box";
+import { Box } from "../../../primitives/box";
 import { Label } from "../../label";
 import { StyledCheckbox, StyledCheckboxIndicator } from "./styles";
 import type { CheckboxProps } from "./types";

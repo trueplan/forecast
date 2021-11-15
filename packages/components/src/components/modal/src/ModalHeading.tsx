@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Box } from "../../../layout/box";
+import { Box } from "../../../primitives/box";
 import { Heading } from "../../heading";
 import { ModalTitle, StyledSubTitle } from "./styles";
 import type { ModalHeadingProps } from "./types";

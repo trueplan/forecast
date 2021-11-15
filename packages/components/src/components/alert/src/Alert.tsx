@@ -6,7 +6,7 @@ import {
   InfoCircleIcon,
   CloseIcon,
 } from "@trueplan/forecast-icons";
-import { Box } from "../../../layout/box";
+import { Box } from "../../../primitives/box";
 import {
   StyledAlert,
   StyledAlertTitle,

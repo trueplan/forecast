@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Box } from "../../../layout/box";
+import { Box } from "../../../primitives/box";
 import { StyledStatus } from "./styles";
 import type { StatusProps } from "./types";
 

@@ -1,6 +1,6 @@
 import * as React from "react";
 import { CloseIcon, PencilIcon } from "@trueplan/forecast-icons";
-import { Box } from "../../../layout/box";
+import { Box } from "../../../primitives/box";
 import { Button } from "../src";
 
 // eslint-disable-next-line import/no-default-export

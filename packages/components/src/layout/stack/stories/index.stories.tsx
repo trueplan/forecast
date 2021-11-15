@@ -1,7 +1,7 @@
 // eslint-disable-next-line eslint-comments/disable-enable-pair
 /* eslint-disable sonarjs/no-duplicate-string */
 import * as React from "react";
-import { Box } from "../../box";
+import { Box } from "../../../primitives/box";
 import { Stack } from "../src";
 
 // eslint-disable-next-line import/no-default-export

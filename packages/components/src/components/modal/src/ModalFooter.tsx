@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Box } from "../../../layout/box";
+import { Box } from "../../../primitives/box";
 import { HelpText } from "../../help-text";
 import { StyledModalFooter } from "./styles";
 import type { ModalFooterProps } from "./types";

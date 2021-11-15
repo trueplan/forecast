@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Box } from "../../../layout/box";
+import { Box } from "../../../primitives/box";
 import { Card, CardHeader, CardFooter } from "../src";
 
 // eslint-disable-next-line import/no-default-export

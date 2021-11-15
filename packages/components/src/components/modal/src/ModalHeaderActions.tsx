@@ -1,6 +1,6 @@
 import * as React from "react";
 import { CloseIcon } from "@trueplan/forecast-icons";
-import { Box } from "../../../layout/box";
+import { Box } from "../../../primitives/box";
 import { Button } from "../../button";
 import { ModalClose } from "./styles";
 import type { ModalHeaderActionsProps } from "./types";
