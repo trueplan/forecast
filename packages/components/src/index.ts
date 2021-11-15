@@ -22,5 +22,6 @@ export * from "./components/status";
 export * from "./components/textarea";
 export * from "./components/tooltip";
 export * from "./components/visually-hidden";
-export * from "./layout/box";
 export * from "./layout/stack";
+export * from "./primitives/box";
+export * from "./primitives/text";
