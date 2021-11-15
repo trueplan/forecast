@@ -4,8 +4,12 @@ export const StyledPill = styled("span", {
   borderStyle: "solid",
   borderRadius: theme.radii[30],
   borderWidth: theme.borderWidths[10],
+  display: "inline-block",
   fontWeight: theme.fontWeights.semiBold,
-  p: theme.space[10],
+  paddingTop: "1px",
+  paddingBottom: "1px",
+  paddingLeft: theme.space[10],
+  paddingRight: theme.space[10],
   variants: {
     color: {
       green: {
