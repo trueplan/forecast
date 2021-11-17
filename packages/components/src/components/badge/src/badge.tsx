@@ -3,8 +3,17 @@ import { StyledBadge } from "./styles";
 import type { BadgeProps } from "./types";
 
 export const Badge = React.forwardRef<HTMLSpanElement, BadgeProps>(
-  ({ size = "small", color = "lilac", ...props }, ref) => (
-    <StyledBadge size={size} color={color} ref={ref} {...props} />
+  (
+    { size = "small", color = "lilac", fontFamily = "inter", ...props },
+    ref
+  ) => (
+    <StyledBadge
+      size={size}
+      color={color}
+      fontFamily={fontFamily}
+      ref={ref}
+      {...props}
+    />
   )
 );
 

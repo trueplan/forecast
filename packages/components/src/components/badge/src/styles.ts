@@ -37,5 +37,13 @@ export const StyledBadge = styled("span", {
         backgroundColor: "$gray50",
       },
     },
+    fontFamily: {
+      inter: {
+        fontFamily: "$inter",
+      },
+      roboto: {
+        fontFamily: "$roboto",
+      },
+    },
   },
 });
