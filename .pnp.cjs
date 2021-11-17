@@ -6237,6 +6237,36 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["@radix-ui/react-tabs", [
+        ["npm:0.1.1", {
+          "packageLocation": "./.yarn/cache/@radix-ui-react-tabs-npm-0.1.1-2cbf367ec7-8cdac0e5d4.zip/node_modules/@radix-ui/react-tabs/",
+          "packageDependencies": [
+            ["@radix-ui/react-tabs", "npm:0.1.1"]
+          ],
+          "linkType": "SOFT",
+        }],
+        ["virtual:66ef534ac91fed1f106aa593639d4f7597eb1dbd64d59ca4b3b7fe6dfbfe14222aeba5a3c48f82e35150521aa8ab9940509f5fd0d64f8e57980014099f6a7e71#npm:0.1.1", {
+          "packageLocation": "./.yarn/__virtual__/@radix-ui-react-tabs-virtual-390d653fa9/0/cache/@radix-ui-react-tabs-npm-0.1.1-2cbf367ec7-8cdac0e5d4.zip/node_modules/@radix-ui/react-tabs/",
+          "packageDependencies": [
+            ["@radix-ui/react-tabs", "virtual:66ef534ac91fed1f106aa593639d4f7597eb1dbd64d59ca4b3b7fe6dfbfe14222aeba5a3c48f82e35150521aa8ab9940509f5fd0d64f8e57980014099f6a7e71#npm:0.1.1"],
+            ["@babel/runtime", "npm:7.16.0"],
+            ["@radix-ui/primitive", "npm:0.1.0"],
+            ["@radix-ui/react-context", "virtual:f5adb1a8289a7d164e3164e7a6d3eedab4564eb104775734d786c3e8af5158fc7691b04e2c3ff1fbd7cc6db73abcfd150dff5497f54e58c1667e4b1b59a175bf#npm:0.1.1"],
+            ["@radix-ui/react-id", "virtual:01ce165d6ec4d48d993bbc71b4b273e2785a009a5fff9fd6e2c8719e2947e50a92fb828c7160e35ab5387c73ffb9a5fbc3a6d4f060fe143351f7b604c57ad234#npm:0.1.1"],
+            ["@radix-ui/react-primitive", "virtual:f5adb1a8289a7d164e3164e7a6d3eedab4564eb104775734d786c3e8af5158fc7691b04e2c3ff1fbd7cc6db73abcfd150dff5497f54e58c1667e4b1b59a175bf#npm:0.1.1"],
+            ["@radix-ui/react-roving-focus", "virtual:a0eaa3ecd03bde967a1c5e9cd7c7d091d0fcccc081012740a1366817fab0b6c9294a86a966719eba98936963391b2ddafe113c894b2c79697e34c24e6c557009#npm:0.1.1"],
+            ["@radix-ui/react-use-callback-ref", "virtual:1170b6045adb0d0f3878cbdcfebd29d1e916d011eb0e2ef6d8019641b8f756a06acb9acd0f7ba14d8f577a774a3476cf6a70a6202fb766befe7dda4f366495be#npm:0.1.0"],
+            ["@radix-ui/react-use-controllable-state", "virtual:f5adb1a8289a7d164e3164e7a6d3eedab4564eb104775734d786c3e8af5158fc7691b04e2c3ff1fbd7cc6db73abcfd150dff5497f54e58c1667e4b1b59a175bf#npm:0.1.0"],
+            ["@types/react", "npm:16.14.20"],
+            ["react", "npm:17.0.2"]
+          ],
+          "packagePeers": [
+            "@types/react",
+            "react"
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["@radix-ui/react-tooltip", [
         ["npm:0.1.1", {
           "packageLocation": "./.yarn/cache/@radix-ui-react-tooltip-npm-0.1.1-84c699be92-efe63f1fed.zip/node_modules/@radix-ui/react-tooltip/",
@@ -8872,6 +8902,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@radix-ui/react-dropdown-menu", "virtual:66ef534ac91fed1f106aa593639d4f7597eb1dbd64d59ca4b3b7fe6dfbfe14222aeba5a3c48f82e35150521aa8ab9940509f5fd0d64f8e57980014099f6a7e71#npm:0.1.1"],
             ["@radix-ui/react-progress", "virtual:66ef534ac91fed1f106aa593639d4f7597eb1dbd64d59ca4b3b7fe6dfbfe14222aeba5a3c48f82e35150521aa8ab9940509f5fd0d64f8e57980014099f6a7e71#npm:0.1.1"],
             ["@radix-ui/react-radio-group", "virtual:66ef534ac91fed1f106aa593639d4f7597eb1dbd64d59ca4b3b7fe6dfbfe14222aeba5a3c48f82e35150521aa8ab9940509f5fd0d64f8e57980014099f6a7e71#npm:0.1.1"],
+            ["@radix-ui/react-tabs", "virtual:66ef534ac91fed1f106aa593639d4f7597eb1dbd64d59ca4b3b7fe6dfbfe14222aeba5a3c48f82e35150521aa8ab9940509f5fd0d64f8e57980014099f6a7e71#npm:0.1.1"],
             ["@radix-ui/react-tooltip", "virtual:66ef534ac91fed1f106aa593639d4f7597eb1dbd64d59ca4b3b7fe6dfbfe14222aeba5a3c48f82e35150521aa8ab9940509f5fd0d64f8e57980014099f6a7e71#npm:0.1.1"],
             ["@radix-ui/react-visually-hidden", "virtual:66ef534ac91fed1f106aa593639d4f7597eb1dbd64d59ca4b3b7fe6dfbfe14222aeba5a3c48f82e35150521aa8ab9940509f5fd0d64f8e57980014099f6a7e71#npm:0.1.1"],
             ["@stitches/react", "virtual:66ef534ac91fed1f106aa593639d4f7597eb1dbd64d59ca4b3b7fe6dfbfe14222aeba5a3c48f82e35150521aa8ab9940509f5fd0d64f8e57980014099f6a7e71#npm:1.2.5"],
@@ -8936,6 +8967,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@radix-ui/react-dropdown-menu", "virtual:66ef534ac91fed1f106aa593639d4f7597eb1dbd64d59ca4b3b7fe6dfbfe14222aeba5a3c48f82e35150521aa8ab9940509f5fd0d64f8e57980014099f6a7e71#npm:0.1.1"],
             ["@radix-ui/react-progress", "virtual:66ef534ac91fed1f106aa593639d4f7597eb1dbd64d59ca4b3b7fe6dfbfe14222aeba5a3c48f82e35150521aa8ab9940509f5fd0d64f8e57980014099f6a7e71#npm:0.1.1"],
             ["@radix-ui/react-radio-group", "virtual:66ef534ac91fed1f106aa593639d4f7597eb1dbd64d59ca4b3b7fe6dfbfe14222aeba5a3c48f82e35150521aa8ab9940509f5fd0d64f8e57980014099f6a7e71#npm:0.1.1"],
+            ["@radix-ui/react-tabs", "virtual:66ef534ac91fed1f106aa593639d4f7597eb1dbd64d59ca4b3b7fe6dfbfe14222aeba5a3c48f82e35150521aa8ab9940509f5fd0d64f8e57980014099f6a7e71#npm:0.1.1"],
             ["@radix-ui/react-tooltip", "virtual:66ef534ac91fed1f106aa593639d4f7597eb1dbd64d59ca4b3b7fe6dfbfe14222aeba5a3c48f82e35150521aa8ab9940509f5fd0d64f8e57980014099f6a7e71#npm:0.1.1"],
             ["@radix-ui/react-visually-hidden", "virtual:66ef534ac91fed1f106aa593639d4f7597eb1dbd64d59ca4b3b7fe6dfbfe14222aeba5a3c48f82e35150521aa8ab9940509f5fd0d64f8e57980014099f6a7e71#npm:0.1.1"],
             ["@stitches/react", "virtual:66ef534ac91fed1f106aa593639d4f7597eb1dbd64d59ca4b3b7fe6dfbfe14222aeba5a3c48f82e35150521aa8ab9940509f5fd0d64f8e57980014099f6a7e71#npm:1.2.5"],
