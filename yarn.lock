@@ -3071,6 +3071,24 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@radix-ui/react-tabs@npm:0.1.1":
+  version: 0.1.1
+  resolution: "@radix-ui/react-tabs@npm:0.1.1"
+  dependencies:
+    "@babel/runtime": ^7.13.10
+    "@radix-ui/primitive": 0.1.0
+    "@radix-ui/react-context": 0.1.1
+    "@radix-ui/react-id": 0.1.1
+    "@radix-ui/react-primitive": 0.1.1
+    "@radix-ui/react-roving-focus": 0.1.1
+    "@radix-ui/react-use-callback-ref": 0.1.0
+    "@radix-ui/react-use-controllable-state": 0.1.0
+  peerDependencies:
+    react: ^16.8 || ^17.0
+  checksum: 8cdac0e5d496a9849b540ba9dc940a94168bc7e7088f0adec1efa061df53d097ebc7047f53dd37ac3e0c9d2039f97bfc7240629af1befdf34d8888d351c2b61e
+  languageName: node
+  linkType: hard
+
 "@radix-ui/react-tooltip@npm:^0.1.0":
   version: 0.1.1
   resolution: "@radix-ui/react-tooltip@npm:0.1.1"
@@ -4602,6 +4620,7 @@ __metadata:
     "@radix-ui/react-dropdown-menu": ^0.1.0
     "@radix-ui/react-progress": ^0.1.1
     "@radix-ui/react-radio-group": ^0.1.1
+    "@radix-ui/react-tabs": 0.1.1
     "@radix-ui/react-tooltip": ^0.1.0
     "@radix-ui/react-visually-hidden": ^0.1.0
     "@stitches/react": ^1.2.0

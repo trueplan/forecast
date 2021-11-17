@@ -19,6 +19,7 @@ export * from "./components/progress";
 export * from "./components/radio-group";
 export * from "./components/spinner";
 export * from "./components/status";
+export * from "./components/tab";
 export * from "./components/textarea";
 export * from "./components/tooltip";
 export * from "./components/visually-hidden";
