@@ -5,6 +5,7 @@ export * from "./components/badge";
 export * from "./components/button";
 export * from "./components/card";
 export * from "./components/checkbox";
+export * from "./components/drawer";
 export * from "./components/dropdown-menu";
 export * from "./components/heading";
 export * from "./components/help-text";
