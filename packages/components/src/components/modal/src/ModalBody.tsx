@@ -3,9 +3,9 @@ import { StyledModalBody } from "./styles";
 import type { ModalBodyProps } from "./types";
 
 const ModalBody = React.forwardRef<HTMLDivElement, ModalBodyProps>(
-  ({ children, ...props }, ref) => {
+  ({ children, padding = "space35", ...props }, ref) => {
     return (
-      <StyledModalBody ref={ref} {...props}>
+      <StyledModalBody padding={padding} ref={ref} {...props}>
         {children}
       </StyledModalBody>
     );

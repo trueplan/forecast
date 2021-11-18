@@ -106,6 +106,45 @@ export const Wide: React.FC = () => {
   );
 };
 
+export const NoPaddingOnBody: React.FC = () => {
+  return (
+    <Modal defaultOpen>
+      <ModalTrigger asChild>
+        <Button variant="primary">Open Modal</Button>
+      </ModalTrigger>
+      <ModalContent>
+        <ModalHeader>
+          <ModalHeading subTitle="This is the subtitle">
+            This is the Title
+          </ModalHeading>
+          <ModalHeaderActions />
+        </ModalHeader>
+        <ModalBody padding="space0">
+          <Heading as="h3" size="heading30">
+            Modal Body Heading
+          </Heading>
+          <Paragraph>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
+            dignissim sit amet quam nec vehicula. Nullam lectus leo, mattis ut
+            erat quis, fringilla consectetur magna. Praesent nisi massa,
+            faucibus et aliquet quis, porttitor ultricies augue. Nulla in
+            tincidunt libero. Donec pellentesque fermentum sagittis. Suspendisse
+            eu mauris quis diam faucibus hendrerit eget et lectus. Nunc quis
+            ipsum id neque ultricies lacinia.
+          </Paragraph>
+        </ModalBody>
+        <ModalFooter helpText="This is the help text.">
+          <ModalTrigger asChild>
+            <Button variant="primary" size="small">
+              Click
+            </Button>
+          </ModalTrigger>
+        </ModalFooter>
+      </ModalContent>
+    </Modal>
+  );
+};
+
 export const OverflowBodyContent: React.FC = () => {
   return (
     <Modal defaultOpen>
