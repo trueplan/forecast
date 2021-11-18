@@ -40,10 +40,10 @@ export const StyledModalContent = styled(DialogPrimitive.Content, {
   variants: {
     size: {
       default: {
-        maxWidth: "424px",
+        maxWidth: "26.5rem",
       },
       wide: {
-        maxWidth: "1170px",
+        maxWidth: "73.125rem",
       },
     },
   },
@@ -70,7 +70,16 @@ export const StyledSubTitle = styled("span", {
 
 export const StyledModalBody = styled("div", {
   overflowY: "auto",
-  padding: theme.space[35],
+  variants: {
+    padding: {
+      space0: {
+        padding: theme.space[0],
+      },
+      space35: {
+        padding: theme.space[35],
+      },
+    },
+  },
 });
 
 export const StyledModalFooter = styled("footer", {

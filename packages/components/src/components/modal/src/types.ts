@@ -34,6 +34,7 @@ export interface ModalHeadingProps
 export interface ModalBodyProps
   extends Omit<React.HTMLAttributes<HTMLDivElement>, "css"> {
   children: React.ReactNode;
+  padding?: "space0" | "space35";
 }
 
 export interface ModalFooterProps
