@@ -7,14 +7,14 @@ const StyledBox = styled("div", {
 });
 
 export interface BoxProps
-  extends Omit<React.HTMLAttributes<HTMLDivElement>, "css"> {
+  extends Omit<React.HTMLAttributes<HTMLElement>, "css"> {
   as?: React.ReactNode;
   children?: React.ReactNode;
   css?: Stitches.CSS;
   decorative?: boolean;
 }
 
-const Box = React.forwardRef<HTMLDivElement, BoxProps>(
+const Box = React.forwardRef<HTMLElement, BoxProps>(
   ({ children, ...props }, ref) => {
     return (
       // eslint-disable-next-line @typescript-eslint/ban-ts-comment
