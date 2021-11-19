@@ -4,7 +4,7 @@ import type * as Stitches from "@stitches/react";
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore - Jest complains about types here, but everything seems to render properly.
 // Could be something in our jest config or tsconfig.
-export const { styled, css, theme } = createStitches({
+export const { styled, css, theme, keyframes } = createStitches({
   prefix: "tp",
   theme: {
     colors: {
