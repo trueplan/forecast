@@ -1,7 +1,7 @@
 {
   "name": "@trueplan/forecast-icons",
   "version": "0.0.4",
-  "description": "Forecast Match Design System Icons",
+  "description": "Forecast Design System Icons",
   "author": "TruePlan Inc.",
   "license": "UNLICENSED",
   "main": "index.ts",
