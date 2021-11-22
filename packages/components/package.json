@@ -1,7 +1,7 @@
 {
   "name": "@trueplan/forecast-components",
   "version": "0.0.4",
-  "description": "Forecast Match Design System Components",
+  "description": "Forecast Design System Components",
   "author": "TruePlan Inc.",
   "license": "UNLICENSED",
   "main": "src/index.ts",
