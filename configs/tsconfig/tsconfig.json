@@ -7,9 +7,9 @@
     "jsx": "react",
     "baseUrl": "./packages",
     "paths": {
-      "@forecast/components/*": ["components/src/*"],
-      "@forecast/icons/*": ["icons/*"],
-      "@forecast/theme/*": ["theme/src/*"]
+      "@trueplan/forecast-components/*": ["components/src/*"],
+      "@trueplan/forecast-icons/*": ["icons/*"],
+      "@trueplan/forecast-theme/*": ["theme/src/*"]
     },
     "target": "es5",
     "checkJs": false,
