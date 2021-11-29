@@ -19,6 +19,7 @@ export * from "./components/pill";
 export * from "./components/progress";
 export * from "./components/radio-group";
 export * from "./components/spinner";
+export * from "./components/stat";
 export * from "./components/status";
 export * from "./components/tab";
 export * from "./components/textarea";
