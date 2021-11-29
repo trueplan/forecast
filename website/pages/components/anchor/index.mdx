@@ -1,0 +1,145 @@
+import { Doc } from "../../../components/layout/Doc";
+import {
+  Badge,
+  Box,
+  Button,
+  Status,
+  Stack,
+} from "@trueplan/forecast-components";
+
+export const meta = {
+  title: "Anchor",
+  description:
+    "Anchor is a component that can be used to create links to other pages in the application.",
+  slug: "/components/anchor",
+};
+
+export default ({ children, meta }) => <Doc children={children} meta={meta} />;
+
+# Anchor
+
+<Box css={{ marginBottom: "$40" }}>
+  <Badge size="small">Components</Badge>
+</Box>
+
+Some sort of description about an Anchor. One sentence max.
+
+<Box
+  as="hr"
+  css={{
+    height: "1px",
+    backgroundColor: "$borderLight",
+    border: "none",
+    marginBottom: "$40",
+  }}
+/>
+
+## Usage
+
+```jsx
+import { Anchor } from "@trueplan/forecast-components";
+
+const Component = () => <Anchor href="/">Anchor text</Anchor>;
+```
+
+## Examples
+
+Examples will live here.
+
+### Default Anchor
+
+```jsx live
+<Anchor href="/">Anchor text</Anchor>
+```
+
+### Small Anchor
+
+```jsx live
+<Anchor href="/" size="small">
+  Anchor text
+</Anchor>
+```
+
+### Large Anchor
+
+```jsx live
+<Anchor href="/" size="large">
+  Anchor text
+</Anchor>
+```
+
+### External Anchor
+
+```jsx live
+<Anchor href="/" isExternal>
+  Anchor text
+</Anchor>
+```
+
+### Anchor with no Underline
+
+```jsx live
+<Anchor href="/" noUnderline>
+  Anchor text
+</Anchor>
+```
+
+## Props
+
+All standard HTML anchor properties along with the following:
+
+### isExternal?: `boolean`
+
+Description here.
+
+### noUnderline?: `boolean`
+
+Description here.
+
+### noUnderline?: `boolean`
+
+Description here.
+
+### href?: `string`
+
+Description here.
+
+### to?: `string`
+
+Description here.
+
+### tabIndex?: `AnchorTabIndexes`
+
+Description here.
+
+<Box css={{ marginBottom: "$40" }}>
+  <Stack direction="horizontal" spacing="$30">
+    <Status filled>0</Status>
+    <Status filled>-1</Status>
+  </Stack>
+</Box>
+
+### target?: `AnchorTargets`
+
+Description here.
+
+<Box css={{ marginBottom: "$40" }}>
+  <Stack direction="horizontal" spacing="$30">
+    <Status filled>_self</Status>
+    <Status filled>_blank</Status>
+    <Status filled>_parent</Status>
+    <Status filled>_top</Status>
+  </Stack>
+</Box>
+
+### size?: `AnchorSizes`
+
+Description here. **Default:** `medium`
+
+<Box css={{ marginBottom: "$40" }}>
+  <Stack direction="horizontal" spacing="$30">
+    <Status filled>small</Status>
+    <Status filled>medium</Status>
+    <Status filled>large</Status>
+  </Stack>
+</Box>
