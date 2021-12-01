@@ -8,7 +8,8 @@
   "license": "UNLICENSED",
   "workspaces": [
     "configs/**",
-    "packages/**"
+    "packages/**",
+    "website"
   ],
   "scripts": {
     "build:storybook": "build-storybook -c .storybook -o ./docs -s .storybook/static",
@@ -31,7 +32,10 @@
     "version:all": "yarn version check --interactive && yarn version apply --all",
     "publish:all": "yarn workspace @trueplan/forecast-theme publish && yarn workspace @trueplan/forecast-icons publish && yarn workspace @trueplan/forecast-components publish",
     "postinstall": "husky install",
-    "prepare": "is-ci || husky install"
+    "prepare": "is-ci || husky install",
+    "dev:website": "yarn workspace @trueplan/forecast-website dev",
+    "start:website": "yarn workspace @trueplan/forecast-website start",
+    "build:website": "yarn workspace @trueplan/forecast-website build"
   },
   "lint-staged": {
     "**/*": "prettier --write --ignore-unknown",

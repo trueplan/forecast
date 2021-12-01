@@ -92,7 +92,7 @@ module.exports = {
           "error",
           { ignoreFunctionTypeParameterNameValueShadow: true },
         ],
-        // Makes no sense to allow type inferrence for expression parameters, but require typing the response
+        // Makes no sense to allow type inference for expression parameters, but require typing the response
         "@typescript-eslint/explicit-function-return-type": [
           "error",
           {
@@ -153,6 +153,22 @@ module.exports = {
     {
       files: ["*.{ts,tsx,js,jsx,cjs}"],
       extends: ["prettier"],
+    },
+    {
+      files: ["website/**/*.{ts,tsx}"],
+      rules: {
+        // suppress errors for missing 'import React' in files
+        "react/react-in-jsx-scope": "off",
+        // allow jsx syntax in js files (for next.js project)
+        "react/jsx-filename-extension": [1, { extensions: [".ts", ".tsx"] }],
+      },
+    },
+    // Next.js needs default exports for pages and API points
+    {
+      files: ["website/pages/**/*"],
+      rules: {
+        "import/no-default-export": "off",
+      },
     },
   ],
 };
