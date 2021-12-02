@@ -16,6 +16,7 @@ export * from "./components/label";
 export * from "./components/modal";
 export * from "./components/paragraph";
 export * from "./components/pill";
+export * from "./components/priority";
 export * from "./components/progress";
 export * from "./components/radio-group";
 export * from "./components/spinner";
