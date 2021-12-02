@@ -15,6 +15,7 @@ export { ChevronUpIcon } from "./src/ChevronUpIcon";
 export { CloseCircleIcon } from "./src/CloseCircleIcon";
 export { CloseIcon } from "./src/CloseIcon";
 export { CloseSquareIcon } from "./src/CloseSquareIcon";
+export { ColumnsIcon } from "./src/ColumnsIcon";
 export { DocumentCheckIcon } from "./src/DocumentCheckIcon";
 export { DocumentCloseIcon } from "./src/DocumentCloseIcon";
 export { DocumentListIcon } from "./src/DocumentListIcon";

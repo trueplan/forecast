@@ -16,6 +16,7 @@
   { "name": "CloseCircleIcon", "svg": "/svg/CloseCircleIcon.svg" },
   { "name": "CloseIcon", "svg": "/svg/CloseIcon.svg" },
   { "name": "CloseSquareIcon", "svg": "/svg/CloseSquareIcon.svg" },
+  { "name": "ColumnsIcon", "svg": "/svg/ColumnsIcon.svg" },
   { "name": "DocumentCheckIcon", "svg": "/svg/DocumentCheckIcon.svg" },
   { "name": "DocumentCloseIcon", "svg": "/svg/DocumentCloseIcon.svg" },
   { "name": "DocumentListIcon", "svg": "/svg/DocumentListIcon.svg" },
