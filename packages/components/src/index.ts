@@ -7,6 +7,7 @@ export * from "./components/card";
 export * from "./components/checkbox";
 export * from "./components/drawer";
 export * from "./components/dropdown-menu";
+export * from "./components/dropdown-menu/src/FauxSelect";
 export * from "./components/heading";
 export * from "./components/help-text";
 export * from "./components/icon-container";
