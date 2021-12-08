@@ -13,6 +13,7 @@ export const StyledInputBox = styled("div", {
   lineHeight: theme.lineHeights[20],
   transition: "border-color 100ms ease-in",
   cursor: "auto",
+  position: "relative",
   "&:active": {
     borderColor: theme.colors.borderMedium,
   },
