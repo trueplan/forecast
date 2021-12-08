@@ -20,6 +20,7 @@ export * from "./components/pill";
 export * from "./components/priority";
 export * from "./components/progress";
 export * from "./components/radio-group";
+export * from "./components/select";
 export * from "./components/spinner";
 export * from "./components/stat";
 export * from "./components/status";
