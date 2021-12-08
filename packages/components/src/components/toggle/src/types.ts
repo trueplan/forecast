@@ -1,4 +1,7 @@
-export interface ToggleProps {
+import type React from "react";
+
+export interface ToggleProps
+  extends Omit<React.ButtonHTMLAttributes<HTMLButtonElement>, "css"> {
   checked?: boolean;
   defaultChecked?: boolean;
   id: string;
