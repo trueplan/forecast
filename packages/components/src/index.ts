@@ -26,6 +26,7 @@ export * from "./components/status";
 export * from "./components/tab";
 export * from "./components/textarea";
 export * from "./components/tooltip";
+export * from "./components/toggle";
 export * from "./components/truncate";
 export * from "./components/visually-hidden";
 export * from "./layout/stack";
