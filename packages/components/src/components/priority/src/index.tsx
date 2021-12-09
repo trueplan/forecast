@@ -40,3 +40,4 @@ const Priority = React.forwardRef<HTMLSpanElement, PriorityProps>(
 Priority.displayName = "Priority";
 
 export { Priority };
+export * from "./types";

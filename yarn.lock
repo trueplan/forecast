@@ -3274,6 +3274,25 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@radix-ui/react-switch@npm:0.1.1":
+  version: 0.1.1
+  resolution: "@radix-ui/react-switch@npm:0.1.1"
+  dependencies:
+    "@babel/runtime": ^7.13.10
+    "@radix-ui/primitive": 0.1.0
+    "@radix-ui/react-compose-refs": 0.1.0
+    "@radix-ui/react-context": 0.1.1
+    "@radix-ui/react-label": 0.1.1
+    "@radix-ui/react-primitive": 0.1.1
+    "@radix-ui/react-use-controllable-state": 0.1.0
+    "@radix-ui/react-use-previous": 0.1.0
+    "@radix-ui/react-use-size": 0.1.0
+  peerDependencies:
+    react: ^16.8 || ^17.0
+  checksum: d1b9353d362018ee9c9326cb6945ab520e43749918e9bc0c5e53f2a3b03429c4a1bb4fdd9736e9ae3a322afdbcbcbb41bf1e3ea91175a0f18c9e95e6ccddce4e
+  languageName: node
+  linkType: hard
+
 "@radix-ui/react-tabs@npm:0.1.1":
   version: 0.1.1
   resolution: "@radix-ui/react-tabs@npm:0.1.1"
@@ -4823,6 +4842,7 @@ __metadata:
     "@radix-ui/react-dropdown-menu": ^0.1.0
     "@radix-ui/react-progress": ^0.1.1
     "@radix-ui/react-radio-group": ^0.1.1
+    "@radix-ui/react-switch": 0.1.1
     "@radix-ui/react-tabs": 0.1.1
     "@radix-ui/react-tooltip": ^0.1.0
     "@radix-ui/react-visually-hidden": ^0.1.0
@@ -4850,6 +4870,8 @@ __metadata:
     "@radix-ui/react-dropdown-menu": ^0.1.0
     "@radix-ui/react-progress": ^0.1.1
     "@radix-ui/react-radio-group": ^0.1.1
+    "@radix-ui/react-switch": 0.1.1
+    "@radix-ui/react-tabs": 0.1.1
     "@radix-ui/react-tooltip": ^0.1.0
     "@radix-ui/react-visually-hidden": ^0.1.0
     "@stitches/react": ^1.2.0

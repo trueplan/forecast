@@ -1,6 +1,7 @@
 import { styled, theme } from "@trueplan/forecast-theme";
 
 export const StyledTextArea = styled("textarea", {
+  appearance: "none",
   backgroundColor: "transparent",
   border: "none",
   borderRadius: theme.radii[30],
@@ -19,6 +20,7 @@ export const StyledTextArea = styled("textarea", {
   resize: "vertical",
   width: "100%",
   "&:disabled": {
+    color: theme.colors.gray70,
     cursor: "not-allowed",
     "-webkit-text-fill-color": theme.colors.gray70,
     "-webkit-opacity": "1",
