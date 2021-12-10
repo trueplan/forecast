@@ -1,0 +1,6 @@
+reviewers:
+  defaults:
+    - team:front-end-engineers
+
+options:
+  ignore_drafts: true
