@@ -88,20 +88,24 @@ export const StyledButton = styled("button", {
         "&:hover": {
           backgroundColor: theme.colors.green110,
           borderColor: theme.colors.green110,
+          color: theme.colors.white,
         },
         "&:focus": {
           backgroundColor: theme.colors.green110,
           borderColor: theme.colors.white,
+          color: theme.colors.white,
           outline: "$borderWidths$20 solid $colors$green50 !important",
           outlineOffset: "1px",
         },
         "&:active": {
           backgroundColor: theme.colors.green110,
           borderColor: theme.colors.green110,
+          color: theme.colors.white,
         },
         "&:disabled": {
           backgroundColor: theme.colors.gray50,
           borderColor: theme.colors.gray50,
+          color: theme.colors.white,
         },
       },
       secondary: {
@@ -110,15 +114,18 @@ export const StyledButton = styled("button", {
         color: theme.colors.textMedium,
         "&:hover": {
           borderColor: theme.colors.borderDark,
+          color: theme.colors.textMedium,
         },
         "&:focus": {
           borderColor: theme.colors.borderDark,
+          color: theme.colors.textMedium,
           outline: "$borderWidths$20 solid $colors$gray40 !important",
           outlineOffset: "1px",
         },
         "&:active": {
           backgroundColor: theme.colors.gray20,
           borderColor: theme.colors.borderDark,
+          color: theme.colors.textMedium,
         },
         "&:disabled": {
           borderColor: theme.colors.gray50,
@@ -159,16 +166,19 @@ export const StyledButton = styled("button", {
         "&:hover": {
           backgroundColor: theme.colors.gray20,
           borderColor: theme.colors.gray20,
+          color: theme.colors.gray80,
         },
         "&:focus": {
           backgroundColor: theme.colors.gray20,
           borderColor: theme.colors.gray20,
+          color: theme.colors.gray80,
           outline: "$borderWidths$20 solid $colors$gray20 !important",
           outlineOffset: "1px",
         },
         "&:active": {
           backgroundColor: theme.colors.gray30,
           borderColor: theme.colors.gray30,
+          color: theme.colors.gray80,
         },
         "&:disabled": {
           backgroundColor: theme.colors.gray50,
@@ -209,15 +219,18 @@ export const StyledButton = styled("button", {
         color: theme.colors.white,
         "&:hover": {
           borderColor: theme.colors.white,
+          color: theme.colors.white,
         },
         "&:focus": {
           borderColor: theme.colors.white,
+          color: theme.colors.white,
           outline: "$borderWidths$20 solid $colors$gray70 !important",
           outlineOffset: "1px",
         },
         "&:active": {
           backgroundColor: theme.colors.gray80,
           borderColor: theme.colors.white,
+          color: theme.colors.white,
         },
         "&:disabled": {
           borderColor: theme.colors.gray70,
