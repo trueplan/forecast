@@ -11,6 +11,7 @@ const InputBox = React.forwardRef<HTMLDivElement, InputBoxProps>(
       disabled,
       fontFamily,
       hasError,
+      hasHover,
       readOnly,
       type,
       ...props
@@ -25,6 +26,7 @@ const InputBox = React.forwardRef<HTMLDivElement, InputBoxProps>(
       data-hidden={type === "hidden" ? true : null}
       data-read-only={readOnly}
       fontFamily={fontFamily}
+      hasHover={hasHover}
       ref={ref}
       {...props}
     >
