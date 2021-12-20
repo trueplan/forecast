@@ -56,7 +56,7 @@ export interface SelectProps
 const Select = React.forwardRef<HTMLSelectElement, SelectProps>(
   ({ children, disabled, hasError, id, name, required, ...props }, ref) => {
     return (
-      <InputBox data-disabled={disabled} data-has-error={hasError}>
+      <InputBox data-disabled={disabled} data-has-error={hasError} hasHover>
         <StyledSelect
           disabled={disabled}
           id={id}
