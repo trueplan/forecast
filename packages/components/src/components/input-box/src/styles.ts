@@ -52,5 +52,15 @@ export const StyledInputBox = styled("div", {
         textAlign: "center",
       },
     },
+    hasHover: {
+      true: {
+        "&:hover": {
+          borderColor: theme.colors.borderDark,
+        },
+        '&[data-disabled="true"]:hover': {
+          borderColor: theme.colors.gray50,
+        },
+      },
+    },
   },
 });

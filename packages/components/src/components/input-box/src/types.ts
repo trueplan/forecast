@@ -17,6 +17,7 @@ export interface InputBoxProps
   disabled?: boolean;
   fontFamily?: "roboto";
   hasError?: boolean;
+  hasHover?: boolean;
   readOnly?: boolean;
   type?: InputBoxTypes;
 }
