@@ -15,6 +15,7 @@ export * from "./components/input";
 export * from "./components/input-box";
 export * from "./components/label";
 export * from "./components/modal";
+export * from "./components/pagination";
 export * from "./components/paragraph";
 export * from "./components/pill";
 export * from "./components/priority";
