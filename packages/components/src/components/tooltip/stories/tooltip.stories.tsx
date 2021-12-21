@@ -185,3 +185,18 @@ export const SingleLineOpen: React.FC = () => (
     </div>
   </Box>
 );
+
+export const WithBadge: React.FC = () => (
+  <Box css={{ padding: "5rem" }}>
+    <Tooltip delayDuration={0}>
+      <TooltipTrigger asChild>
+        <Button size="iconSmall" variant="secondary">
+          <InfoCircleIcon decorative size="small" />
+        </Button>
+      </TooltipTrigger>
+      <TooltipContent badge={3} side="right">
+        Approvals
+      </TooltipContent>
+    </Tooltip>
+  </Box>
+);
