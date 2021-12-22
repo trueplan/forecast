@@ -192,7 +192,8 @@ export const { styled, css, theme, keyframes } = createStitches({
     },
     lineHeights: {
       0: "0", // 0px for icon lineHeight
-      5: "1.375rem", // 20px
+      2: "1rem", // 16px
+      5: "1.25rem", // 20px
       10: "1.375rem", // 22px
       20: "1.5rem", // 24px
       30: "1.625rem", // 26px
