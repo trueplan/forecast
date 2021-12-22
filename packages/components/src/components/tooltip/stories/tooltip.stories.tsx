@@ -194,7 +194,7 @@ export const WithBadge: React.FC = () => (
           <InfoCircleIcon decorative size="small" />
         </Button>
       </TooltipTrigger>
-      <TooltipContent badge={3} side="right">
+      <TooltipContent badge="3" side="right">
         Approvals
       </TooltipContent>
     </Tooltip>

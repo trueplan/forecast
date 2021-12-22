@@ -45,7 +45,7 @@ const StyledArrow = styled(TooltipPrimitive.Arrow, {
 
 export interface ToolTipContentProps
   extends Omit<TooltipPrimitive.TooltipContentProps, "css"> {
-  badge?: number;
+  badge?: string;
 }
 
 export const TooltipContent: React.FC<ToolTipContentProps> = ({
