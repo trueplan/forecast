@@ -2,6 +2,8 @@ import * as React from "react";
 import * as TooltipPrimitive from "@radix-ui/react-tooltip";
 import { keyframes } from "@stitches/react";
 import { styled } from "@trueplan/forecast-theme";
+import { Badge } from "../../badge";
+import { Stack } from "../../../layout/stack";
 
 const slideUpAndFade = keyframes({
   "0%": { opacity: 0, transform: "translateY(2px)" },
@@ -41,11 +43,26 @@ const StyledArrow = styled(TooltipPrimitive.Arrow, {
   fill: "$gray100",
 });
 
-export const TooltipContent: React.FC<
-  Omit<TooltipPrimitive.TooltipContentProps, "css">
-> = ({ children, sideOffset = 2, side = "top", ...props }) => (
+export interface ToolTipContentProps
+  extends Omit<TooltipPrimitive.TooltipContentProps, "css"> {
+  badge?: string;
+}
+
+export const TooltipContent: React.FC<ToolTipContentProps> = ({
+  children,
+  sideOffset = 2,
+  side = "top",
+  badge,
+  ...props
+}) => (
   <StyledContent sideOffset={sideOffset} side={side} {...props}>
-    {children}
+    {badge ? (
+      <Stack direction="horizontal" spacing="$25" align="center">
+        Approvals <Badge color="green">{badge}</Badge>
+      </Stack>
+    ) : (
+      children
+    )}
     <StyledArrow width={9} height={6} />
   </StyledContent>
 );
