@@ -1,4 +1,8 @@
 import * as React from "react";
+// Framer blows up unless we use the dist import here.
+import { motion } from "framer-motion/dist/framer-motion";
+import { Box } from "../../../primitives/box";
+import { Text } from "../../../primitives/text";
 import {
   StyledAvatar,
   StyledAvatarInitials,
@@ -18,12 +22,60 @@ const AvatarContents: React.FC<AvatarContentProps> = ({ name, src }) => {
   );
 };
 
+const AnimatedText = motion(Box);
+
 const Avatar = React.forwardRef<HTMLDivElement, AvatarProps>(
-  ({ color = "lilac", name, size = "medium", src, ...props }, ref) => {
+  (
+    {
+      animate,
+      animationDuration = 0.25,
+      color = "lilac",
+      name,
+      showName,
+      size = "medium",
+      title,
+      src,
+      ...props
+    },
+    ref
+  ) => {
     return (
-      <StyledAvatar color={color} ref={ref} size={size} {...props}>
-        <AvatarContents name={name} src={src} />
-      </StyledAvatar>
+      <Box
+        css={{
+          display: showName ? "flex" : "inline-block",
+          alignItems: "center",
+        }}
+      >
+        <StyledAvatar color={color} ref={ref} size={size} {...props}>
+          <AvatarContents name={name} src={src} />
+        </StyledAvatar>
+        {showName ? (
+          <AnimatedText
+            css={{ marginLeft: "$20" }}
+            animate={animate ? { opacity: 0 } : { opacity: 1 }}
+            transition={{ duration: animationDuration }}
+          >
+            <Text
+              display="block"
+              fontSize="fontSize10"
+              lineHeight="lineHeight2"
+              fontWeight="semiBold"
+            >
+              {name}
+            </Text>
+            {title && size !== "small" ? (
+              <Text
+                display="block"
+                fontSize="fontSize10"
+                lineHeight="lineHeight2"
+                fontWeight="normal"
+              >
+                {title}
+              </Text>
+            ) : null}
+          </AnimatedText>
+        ) : null}
+      </Box>
     );
   }
 );

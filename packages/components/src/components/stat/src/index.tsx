@@ -114,7 +114,7 @@ const StatInformation = React.forwardRef<HTMLSpanElement, StatInformationProps>(
         lineHeight="lineHeight5"
         fontFamily="inter"
         fontSize="fontSize10"
-        fontWeight="medium"
+        fontWeight="normal"
         ref={ref}
         {...props}
       >
