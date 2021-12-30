@@ -25,6 +25,7 @@ export * from "./components/select";
 export * from "./components/spinner";
 export * from "./components/stat";
 export * from "./components/status";
+export * from "./components/status-icon";
 export * from "./components/tab";
 export * from "./components/textarea";
 export * from "./components/tooltip";
