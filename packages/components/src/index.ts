@@ -33,4 +33,5 @@ export * from "./components/truncate";
 export * from "./components/visually-hidden";
 export * from "./layout/stack";
 export * from "./primitives/box";
+export * from "./primitives/collapsible";
 export * from "./primitives/text";
