@@ -39,14 +39,14 @@ export const Arrows: React.FC = () => (
     <PaginationList>
       <PaginationButton label="Go to first page" hasIcon>
         <SkipBackIcon
-          size="xsmall"
+          size="xxsmall"
           decorative={false}
           title="Go to first page"
         />
       </PaginationButton>
       <PaginationButton label="Go to first page" hasIcon>
         <ChevronLeftIcon
-          size="xsmall"
+          size="xxsmall"
           decorative={false}
           title="Go to previous page"
         />
@@ -60,14 +60,14 @@ export const Arrows: React.FC = () => (
       <PaginationButton label="Go to page 5">5</PaginationButton>
       <PaginationButton label="Go to first page" hasIcon>
         <ChevronRightIcon
-          size="xsmall"
+          size="xxsmall"
           decorative={false}
           title="Go to next page"
         />
       </PaginationButton>
       <PaginationButton label="Go to first page" hasIcon>
         <SkipForwardIcon
-          size="xsmall"
+          size="xxsmall"
           decorative={false}
           title="Go to last page"
         />
@@ -89,14 +89,14 @@ export const FirstPage: React.FC = () => (
       <PaginationButton label="Go to page 5">5</PaginationButton>
       <PaginationButton label="Go to first page" hasIcon>
         <ChevronRightIcon
-          size="xsmall"
+          size="xxsmall"
           decorative={false}
           title="Go to next page"
         />
       </PaginationButton>
       <PaginationButton label="Go to first page" hasIcon>
         <SkipForwardIcon
-          size="xsmall"
+          size="xxsmall"
           decorative={false}
           title="Go to last page"
         />
@@ -111,14 +111,14 @@ export const LastPage: React.FC = () => (
     <PaginationList>
       <PaginationButton label="Go to first page" hasIcon>
         <SkipBackIcon
-          size="xsmall"
+          size="xxsmall"
           decorative={false}
           title="Go to first page"
         />
       </PaginationButton>
       <PaginationButton label="Go to first page" hasIcon>
         <ChevronLeftIcon
-          size="xsmall"
+          size="xxsmall"
           decorative={false}
           title="Go to previous page"
         />
