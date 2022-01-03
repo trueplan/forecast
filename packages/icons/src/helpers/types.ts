@@ -18,7 +18,7 @@ export type IconDisplayOptions =
   | "block"
   | "flex"
   | "inlineFlex";
-export type IconSizes = "xsmall" | "small" | "medium";
+export type IconSizes = "xxsmall" | "xsmall" | "small" | "medium";
 
 export interface IconWrapperProps {
   as?: keyof JSX.IntrinsicElements;

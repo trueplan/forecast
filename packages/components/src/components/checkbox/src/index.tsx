@@ -38,10 +38,10 @@ const Checkbox = React.forwardRef<HTMLButtonElement, CheckboxProps>(
           >
             <StyledCheckboxIndicator>
               {checked === "indeterminate" && (
-                <InterdeterminateIcon decorative size="xsmall" />
+                <InterdeterminateIcon decorative size="xxsmall" />
               )}
               {(checked === true || defaultChecked === true) && (
-                <CheckboxIcon decorative size="xsmall" />
+                <CheckboxIcon decorative size="xxsmall" />
               )}
             </StyledCheckboxIndicator>
           </StyledCheckbox>

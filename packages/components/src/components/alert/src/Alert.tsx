@@ -40,7 +40,7 @@ const Alert = React.forwardRef<HTMLDivElement, AlertProps>(
               decorative={false}
               title="Close"
               color="current"
-              size="xsmall"
+              size="xxsmall"
             />
           </StyledAlertClose>
         )}

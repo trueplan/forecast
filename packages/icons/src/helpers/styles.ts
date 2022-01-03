@@ -69,9 +69,13 @@ export const StyledIconWrapper = styled("span", {
       },
     },
     size: {
-      xsmall: {
+      xxsmall: {
         height: "0.625rem",
         width: "0.625rem",
+      },
+      xsmall: {
+        height: "0.75rem",
+        width: "0.75rem",
       },
       small: {
         height: "1rem",

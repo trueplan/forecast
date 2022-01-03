@@ -40,7 +40,7 @@ const SelectIconWrapper: React.FC = () => (
       marginTop: "-0.313rem",
     }}
   >
-    <ChevronDownIcon decorative size="xsmall" />
+    <ChevronDownIcon decorative size="xxsmall" />
   </Box>
 );
 
