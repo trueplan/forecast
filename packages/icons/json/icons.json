@@ -42,6 +42,7 @@
   { "name": "LogoutIcon", "svg": "/svg/LogoutIcon.svg" },
   { "name": "MenuCircleIcon", "svg": "/svg/MenuCircleIcon.svg" },
   { "name": "MinusCircleIcon", "svg": "/svg/MinusCircleIcon.svg" },
+  { "name": "MoreIcon", "svg": "/svg/MoreIcon.svg" },
   { "name": "OrgChartIcon", "svg": "/svg/OrgChartIcon.svg" },
   { "name": "OutIcon", "svg": "/svg/OutIcon.svg" },
   { "name": "PencilIcon", "svg": "/svg/PencilIcon.svg" },

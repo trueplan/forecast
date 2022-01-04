@@ -41,6 +41,7 @@ export { LocationIcon } from "./src/LocationIcon";
 export { LogoutIcon } from "./src/LogoutIcon";
 export { MenuCircleIcon } from "./src/MenuCircleIcon";
 export { MinusCircleIcon } from "./src/MinusCircleIcon";
+export { MoreIcon } from "./src/MoreIcon";
 export { OrgChartIcon } from "./src/OrgChartIcon";
 export { OutIcon } from "./src/OutIcon";
 export { PencilIcon } from "./src/PencilIcon";
