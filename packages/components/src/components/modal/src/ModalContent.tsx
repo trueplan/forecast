@@ -5,7 +5,7 @@ import type { ModalContentProps } from "./types";
 const ModalContent = React.forwardRef<HTMLDivElement, ModalContentProps>(
   ({ children, size = "default", ...props }, ref) => {
     return (
-      <StyledModalContent size={size} ref={ref} {...props}>
+      <StyledModalContent aria-modal={true} size={size} ref={ref} {...props}>
         {children}
       </StyledModalContent>
     );

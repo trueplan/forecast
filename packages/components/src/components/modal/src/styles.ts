@@ -2,12 +2,12 @@ import * as DialogPrimitive from "@radix-ui/react-dialog";
 import { keyframes } from "@stitches/react";
 import { styled, theme } from "@trueplan/forecast-theme";
 
-const overlayShow = keyframes({
+export const modalOverlayShow = keyframes({
   "0%": { opacity: 0 },
   "100%": { opacity: 1 },
 });
 
-const contentShow = keyframes({
+export const modalContentShow = keyframes({
   "0%": { opacity: 0, transform: "translate(-50%, -48%) scale(.96)" },
   "100%": { opacity: 1, transform: "translate(-50%, -50%) scale(1)" },
 });
@@ -17,7 +17,7 @@ export const StyledModalOverlay = styled(DialogPrimitive.Overlay, {
   position: "fixed",
   inset: 0,
   "@media (prefers-reduced-motion: no-preference)": {
-    animation: `${overlayShow} 150ms cubic-bezier(0.16, 1, 0.3, 1)`,
+    animation: `${modalOverlayShow} 150ms cubic-bezier(0.16, 1, 0.3, 1)`,
   },
 });
 
@@ -33,7 +33,7 @@ export const StyledModalContent = styled(DialogPrimitive.Content, {
   width: "90vw",
   maxHeight: "90vh",
   "@media (prefers-reduced-motion: no-preference)": {
-    animation: `${contentShow} 150ms cubic-bezier(0.16, 1, 0.3, 1)`,
+    animation: `${modalContentShow} 150ms cubic-bezier(0.16, 1, 0.3, 1)`,
     willChange: "transform",
   },
   "&:focus": { outline: "none" },
@@ -68,7 +68,7 @@ export const StyledSubTitle = styled("span", {
   lineHeight: theme.lineHeights[10],
 });
 
-export const StyledModalBody = styled("div", {
+export const StyledModalBody = styled(DialogPrimitive.Description, {
   overflowY: "auto",
   variants: {
     padding: {

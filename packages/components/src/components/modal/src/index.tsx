@@ -6,4 +6,11 @@ export * from "./ModalHeaderActions";
 export * from "./ModalHeading";
 export * from "./ModalFooter";
 export * from "./types";
-export { ModalTrigger } from "./styles";
+export {
+  ModalClose,
+  ModalRoot,
+  ModalTitle,
+  ModalTrigger,
+  StyledModalOverlay,
+  StyledModalContent,
+} from "./styles";
