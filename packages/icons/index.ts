@@ -14,6 +14,7 @@ export { ChevronDownIcon } from "./src/ChevronDownIcon";
 export { ChevronLeftIcon } from "./src/ChevronLeftIcon";
 export { ChevronRightIcon } from "./src/ChevronRightIcon";
 export { ChevronUpIcon } from "./src/ChevronUpIcon";
+export { ClockForwardIcon } from "./src/ClockForwardIcon";
 export { CloseCircleIcon } from "./src/CloseCircleIcon";
 export { CloseIcon } from "./src/CloseIcon";
 export { CloseSquareIcon } from "./src/CloseSquareIcon";
