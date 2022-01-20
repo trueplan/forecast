@@ -1,6 +1,7 @@
+import type * as DialogPrimitive from "@radix-ui/react-dialog";
 import type { HeadingProps } from "../../heading";
 
-export interface ModalProps {
+export interface ModalProps extends Omit<DialogPrimitive.DialogProps, "css"> {
   children: React.ReactNode;
   defaultOpen?: boolean;
   open?: boolean;
@@ -9,7 +10,7 @@ export interface ModalProps {
 }
 
 export interface ModalContentProps
-  extends Omit<React.HTMLAttributes<HTMLDivElement>, "css"> {
+  extends Omit<DialogPrimitive.DialogContentProps, "css"> {
   children: React.ReactNode;
   size?: "default" | "wide";
   onOpenAutoFocus?: (event: Event) => void;
@@ -18,6 +19,7 @@ export interface ModalContentProps
 export interface ModalHeaderActionsProps
   extends Omit<React.HTMLAttributes<HTMLDivElement>, "css"> {
   children?: React.ReactNode;
+  customCloseButton?: boolean;
 }
 
 export interface ModalHeaderProps
@@ -32,7 +34,7 @@ export interface ModalHeadingProps
 }
 
 export interface ModalBodyProps
-  extends Omit<React.HTMLAttributes<HTMLDivElement>, "css"> {
+  extends Omit<DialogPrimitive.DialogDescriptionProps, "css"> {
   children: React.ReactNode;
   padding?: "space0" | "space35";
 }

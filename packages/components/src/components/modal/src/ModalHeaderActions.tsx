@@ -8,7 +8,7 @@ import type { ModalHeaderActionsProps } from "./types";
 const ModalHeaderActions = React.forwardRef<
   HTMLDivElement,
   ModalHeaderActionsProps
->(({ children, ...props }, ref) => {
+>(({ children, customCloseButton = false, ...props }, ref) => {
   return (
     <Box
       css={{ display: "flex", alignItems: "center", gap: "$20" }}
@@ -16,11 +16,13 @@ const ModalHeaderActions = React.forwardRef<
       {...props}
     >
       {children}
-      <ModalClose asChild>
-        <Button variant="iconOnly" size="iconSmall">
-          <CloseIcon decorative={false} title="Close modal" size="small" />
-        </Button>
-      </ModalClose>
+      {!customCloseButton && (
+        <ModalClose asChild>
+          <Button variant="iconOnly" size="iconSmall">
+            <CloseIcon decorative={false} title="Close modal" size="small" />
+          </Button>
+        </ModalClose>
+      )}
     </Box>
   );
 });
