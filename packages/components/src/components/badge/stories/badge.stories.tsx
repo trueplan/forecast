@@ -1,44 +1,38 @@
 import * as React from "react";
+import type { Story } from "@storybook/react";
+import type { BadgeProps } from "../src";
 import { Badge } from "../src";
 
 // eslint-disable-next-line import/no-default-export
 export default {
   title: "Components/Badge",
   component: Badge,
+  args: {},
 };
 
-export const Small: React.FC = () => (
+const Template: Story<BadgeProps> = (props) => (
   <div style={{ display: "flex", gap: "10px" }}>
-    <Badge size="small" color="lilac">
+    <Badge color="lilac" {...props}>
       0
     </Badge>
-    <Badge size="small" color="green">
+    <Badge color="green" {...props}>
       1
     </Badge>
-    <Badge size="small" color="red">
+    <Badge color="red" {...props}>
       2
     </Badge>
-    <Badge size="small" color="gray">
+    <Badge color="gray" {...props}>
       3
     </Badge>
-    <Badge size="small">100</Badge>
+    <Badge {...props}>100</Badge>
   </div>
 );
 
-export const Large: React.FC = () => (
-  <div style={{ display: "flex", gap: "10px" }}>
-    <Badge size="large" color="lilac">
-      0
-    </Badge>
-    <Badge size="large" color="green">
-      1
-    </Badge>
-    <Badge size="large" color="red">
-      2
-    </Badge>
-    <Badge size="large" color="gray">
-      3
-    </Badge>
-    <Badge size="large">100</Badge>
-  </div>
-);
+export const Small = Template.bind({});
+Small.args = { size: "small" };
+
+export const Medium = Template.bind({});
+Medium.args = { size: "medium" };
+
+export const Large = Template.bind({});
+Large.args = { size: "large" };

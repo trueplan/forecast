@@ -14,13 +14,18 @@ export const StyledBadge = styled("span", {
     size: {
       small: {
         fontSize: "$10",
-        minWidth: "1.25rem",
-        height: "1.25rem",
+        minWidth: "$space$30",
+        height: "$space$30",
+      },
+      medium: {
+        fontSize: "$10",
+        minWidth: "$space$35",
+        height: "$space$35",
       },
       large: {
-        fontSize: "",
-        minWidth: "1.5rem",
-        height: "1.5rem",
+        fontSize: "$20",
+        minWidth: "$space$40",
+        height: "$space$40",
       },
     },
     color: {

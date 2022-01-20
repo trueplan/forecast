@@ -1,4 +1,4 @@
-export type BadgeSizes = "small" | "large";
+export type BadgeSizes = "small" | "medium" | "large";
 export type BadgeColors = "lilac" | "green" | "red" | "gray";
 export type BadgeFontFamilies = "inter" | "roboto";
 
