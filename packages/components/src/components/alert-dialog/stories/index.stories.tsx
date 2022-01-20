@@ -21,9 +21,9 @@ export default {
   chromatic: { pauseAnimationAtEnd: true },
 };
 
-export const Default: React.FC = () => {
+export const Default = (): React.ReactNode => {
   return (
-    <Box css={{ height: "1000px", width: "1000px" }}>
+    <Box css={{ height: "1000px", width: "1350px" }}>
       <AlertDialog defaultOpen>
         <AlertDialogContent>
           <AlertDialogHeader>
@@ -51,122 +51,150 @@ export const Default: React.FC = () => {
   );
 };
 
-export const HeaderIcon: React.FC = () => {
+Default.parameters = {
+  chromatic: { pauseAnimationAtEnd: true },
+};
+
+export const HeaderIcon = (): React.ReactNode => {
   return (
-    <AlertDialog defaultOpen>
-      <AlertDialogContent>
-        <AlertDialogHeader>
-          <IconContainer color="yellow" size="large">
-            <DocumentListIcon decorative size="medium" />
-          </IconContainer>
-          <AlertDialogHeading>
-            Are you sure you want to do this?
-          </AlertDialogHeading>
-        </AlertDialogHeader>
-        <AlertDialogBody>
-          <Box css={{ textAlign: "center" }}>
-            <Paragraph marginBottom="space0">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce et
-              imperdiet erat. Mauris tempus ligula eros, sed elementum leo.
-            </Paragraph>
-          </Box>
-        </AlertDialogBody>
-        <AlertDialogFooter>
-          <AlertDialogClose asChild>
-            <Button variant="secondary">Cancel</Button>
-          </AlertDialogClose>
-          <Button variant="primary">Submit</Button>
-        </AlertDialogFooter>
-      </AlertDialogContent>
-    </AlertDialog>
+    <Box css={{ height: "1000px", width: "1350px" }}>
+      <AlertDialog defaultOpen>
+        <AlertDialogContent>
+          <AlertDialogHeader>
+            <IconContainer color="yellow" size="large">
+              <DocumentListIcon decorative size="medium" />
+            </IconContainer>
+            <AlertDialogHeading>
+              Are you sure you want to do this?
+            </AlertDialogHeading>
+          </AlertDialogHeader>
+          <AlertDialogBody>
+            <Box css={{ textAlign: "center" }}>
+              <Paragraph marginBottom="space0">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+                et imperdiet erat. Mauris tempus ligula eros, sed elementum leo.
+              </Paragraph>
+            </Box>
+          </AlertDialogBody>
+          <AlertDialogFooter>
+            <AlertDialogClose asChild>
+              <Button variant="secondary">Cancel</Button>
+            </AlertDialogClose>
+            <Button variant="primary">Submit</Button>
+          </AlertDialogFooter>
+        </AlertDialogContent>
+      </AlertDialog>
+    </Box>
   );
 };
 
-export const SingleAction: React.FC = () => {
+HeaderIcon.parameters = {
+  chromatic: { pauseAnimationAtEnd: true },
+};
+
+export const SingleAction = (): React.ReactNode => {
   return (
-    <AlertDialog defaultOpen>
-      <AlertDialogContent>
-        <AlertDialogHeader>
-          <AlertDialogHeading>
-            Are you sure you want to do this?
-          </AlertDialogHeading>
-        </AlertDialogHeader>
-        <AlertDialogBody>
-          <Box css={{ textAlign: "center" }}>
-            <Paragraph marginBottom="space0">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce et
-              imperdiet erat. Mauris tempus ligula eros, sed elementum leo.
-            </Paragraph>
-          </Box>
-        </AlertDialogBody>
-        <AlertDialogFooter>
-          <Button variant="primary">Submit</Button>
-        </AlertDialogFooter>
-      </AlertDialogContent>
-    </AlertDialog>
+    <Box css={{ height: "1000px", width: "1350px" }}>
+      <AlertDialog defaultOpen>
+        <AlertDialogContent>
+          <AlertDialogHeader>
+            <AlertDialogHeading>
+              Are you sure you want to do this?
+            </AlertDialogHeading>
+          </AlertDialogHeader>
+          <AlertDialogBody>
+            <Box css={{ textAlign: "center" }}>
+              <Paragraph marginBottom="space0">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+                et imperdiet erat. Mauris tempus ligula eros, sed elementum leo.
+              </Paragraph>
+            </Box>
+          </AlertDialogBody>
+          <AlertDialogFooter>
+            <Button variant="primary">Submit</Button>
+          </AlertDialogFooter>
+        </AlertDialogContent>
+      </AlertDialog>
+    </Box>
   );
 };
 
-export const FullWidthAction: React.FC = () => {
-  return (
-    <AlertDialog defaultOpen>
-      <AlertDialogContent>
-        <AlertDialogHeader>
-          <AlertDialogHeading>
-            Are you sure you want to do this?
-          </AlertDialogHeading>
-        </AlertDialogHeader>
-        <AlertDialogBody>
-          <Box css={{ textAlign: "center" }}>
-            <Paragraph marginBottom="space0">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce et
-              imperdiet erat. Mauris tempus ligula eros, sed elementum leo.
-            </Paragraph>
-          </Box>
-        </AlertDialogBody>
-        <AlertDialogFooter>
-          <Button variant="primary" fullWidth>
-            Submit
-          </Button>
-        </AlertDialogFooter>
-      </AlertDialogContent>
-    </AlertDialog>
-  );
+SingleAction.parameters = {
+  chromatic: { pauseAnimationAtEnd: true },
 };
 
-export const HalfWidthActions: React.FC = () => {
+export const FullWidthAction = (): React.ReactNode => {
   return (
-    <AlertDialog defaultOpen>
-      <AlertDialogContent>
-        <AlertDialogHeader>
-          <AlertDialogHeading>
-            Are you sure you want to do this?
-          </AlertDialogHeading>
-        </AlertDialogHeader>
-        <AlertDialogBody>
-          <Box css={{ textAlign: "center" }}>
-            <Paragraph marginBottom="space0">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce et
-              imperdiet erat. Mauris tempus ligula eros, sed elementum leo.
-            </Paragraph>
-          </Box>
-        </AlertDialogBody>
-        <AlertDialogFooter>
-          <AlertDialogClose asChild>
-            <Button variant="secondary" fullWidth>
-              Cancel
+    <Box css={{ height: "1000px", width: "1350px" }}>
+      <AlertDialog defaultOpen>
+        <AlertDialogContent>
+          <AlertDialogHeader>
+            <AlertDialogHeading>
+              Are you sure you want to do this?
+            </AlertDialogHeading>
+          </AlertDialogHeader>
+          <AlertDialogBody>
+            <Box css={{ textAlign: "center" }}>
+              <Paragraph marginBottom="space0">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+                et imperdiet erat. Mauris tempus ligula eros, sed elementum leo.
+              </Paragraph>
+            </Box>
+          </AlertDialogBody>
+          <AlertDialogFooter>
+            <Button variant="primary" fullWidth>
+              Submit
             </Button>
-          </AlertDialogClose>
-          <Button variant="primary" fullWidth>
-            Submit
-          </Button>
-        </AlertDialogFooter>
-      </AlertDialogContent>
-    </AlertDialog>
+          </AlertDialogFooter>
+        </AlertDialogContent>
+      </AlertDialog>
+    </Box>
   );
 };
 
-export const OpenFromButton: React.FC = () => {
+FullWidthAction.parameters = {
+  chromatic: { pauseAnimationAtEnd: true },
+};
+
+export const HalfWidthActions = (): React.ReactNode => {
+  return (
+    <Box css={{ height: "1000px", width: "1350px" }}>
+      <AlertDialog defaultOpen>
+        <AlertDialogContent>
+          <AlertDialogHeader>
+            <AlertDialogHeading>
+              Are you sure you want to do this?
+            </AlertDialogHeading>
+          </AlertDialogHeader>
+          <AlertDialogBody>
+            <Box css={{ textAlign: "center" }}>
+              <Paragraph marginBottom="space0">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+                et imperdiet erat. Mauris tempus ligula eros, sed elementum leo.
+              </Paragraph>
+            </Box>
+          </AlertDialogBody>
+          <AlertDialogFooter>
+            <AlertDialogClose asChild>
+              <Button variant="secondary" fullWidth>
+                Cancel
+              </Button>
+            </AlertDialogClose>
+            <Button variant="primary" fullWidth>
+              Submit
+            </Button>
+          </AlertDialogFooter>
+        </AlertDialogContent>
+      </AlertDialog>
+    </Box>
+  );
+};
+
+HalfWidthActions.parameters = {
+  chromatic: { pauseAnimationAtEnd: true },
+};
+
+export const OpenFromButton = (): React.ReactNode => {
   const [open, setOpen] = React.useState(false);
   return (
     <>
@@ -200,50 +228,60 @@ export const OpenFromButton: React.FC = () => {
   );
 };
 
-export const OverflowContent: React.FC = () => {
+OpenFromButton.parameters = {
+  chromatic: { pauseAnimationAtEnd: true },
+};
+
+export const OverflowContent = (): React.ReactNode => {
   return (
-    <AlertDialog defaultOpen>
-      <AlertDialogContent>
-        <AlertDialogHeader>
-          <AlertDialogHeading>
-            Are you sure you want to do this?
-          </AlertDialogHeading>
-        </AlertDialogHeader>
-        <AlertDialogBody>
-          <Box css={{ textAlign: "center" }}>
-            <Paragraph>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce et
-              imperdiet erat. Mauris tempus ligula eros, sed elementum leo.
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce et
-              imperdiet erat. Mauris tempus ligula eros, sed elementum leo.
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce et
-              imperdiet erat. Mauris tempus ligula eros, sed elementum leo.
-            </Paragraph>
-            <Paragraph>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce et
-              imperdiet erat. Mauris tempus ligula eros, sed elementum leo.
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce et
-              imperdiet erat. Mauris tempus ligula eros, sed elementum leo.
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce et
-              imperdiet erat. Mauris tempus ligula eros, sed elementum leo.
-            </Paragraph>
-            <Paragraph marginBottom="space0">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce et
-              imperdiet erat. Mauris tempus ligula eros, sed elementum leo.
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce et
-              imperdiet erat. Mauris tempus ligula eros, sed elementum leo.
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce et
-              imperdiet erat. Mauris tempus ligula eros, sed elementum leo.
-            </Paragraph>
-          </Box>
-        </AlertDialogBody>
-        <AlertDialogFooter>
-          <AlertDialogClose asChild>
-            <Button variant="secondary">Cancel</Button>
-          </AlertDialogClose>
-          <Button variant="primary">Submit</Button>
-        </AlertDialogFooter>
-      </AlertDialogContent>
-    </AlertDialog>
+    <Box css={{ height: "1000px", width: "1350px" }}>
+      <AlertDialog defaultOpen>
+        <AlertDialogContent>
+          <AlertDialogHeader>
+            <AlertDialogHeading>
+              Are you sure you want to do this?
+            </AlertDialogHeading>
+          </AlertDialogHeader>
+          <AlertDialogBody>
+            <Box css={{ textAlign: "center" }}>
+              <Paragraph>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+                et imperdiet erat. Mauris tempus ligula eros, sed elementum leo.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+                et imperdiet erat. Mauris tempus ligula eros, sed elementum leo.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+                et imperdiet erat. Mauris tempus ligula eros, sed elementum leo.
+              </Paragraph>
+              <Paragraph>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+                et imperdiet erat. Mauris tempus ligula eros, sed elementum leo.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+                et imperdiet erat. Mauris tempus ligula eros, sed elementum leo.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+                et imperdiet erat. Mauris tempus ligula eros, sed elementum leo.
+              </Paragraph>
+              <Paragraph marginBottom="space0">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+                et imperdiet erat. Mauris tempus ligula eros, sed elementum leo.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+                et imperdiet erat. Mauris tempus ligula eros, sed elementum leo.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+                et imperdiet erat. Mauris tempus ligula eros, sed elementum leo.
+              </Paragraph>
+            </Box>
+          </AlertDialogBody>
+          <AlertDialogFooter>
+            <AlertDialogClose asChild>
+              <Button variant="secondary">Cancel</Button>
+            </AlertDialogClose>
+            <Button variant="primary">Submit</Button>
+          </AlertDialogFooter>
+        </AlertDialogContent>
+      </AlertDialog>
+    </Box>
   );
+};
+
+OverflowContent.parameters = {
+  chromatic: { pauseAnimationAtEnd: true },
 };
