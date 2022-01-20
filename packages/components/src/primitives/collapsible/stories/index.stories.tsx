@@ -17,7 +17,9 @@ export const Default: React.FC = () => {
   return (
     <Collapsible open={open} onOpenChange={setOpen}>
       <CollapsibleTrigger asChild>
-        <button>{open ? "close" : "open"}</button>
+        <Button variant="secondary" size="small">
+          {open ? "close" : "open"}
+        </Button>
       </CollapsibleTrigger>
       <Box>
         <Text>Solutions</Text>
