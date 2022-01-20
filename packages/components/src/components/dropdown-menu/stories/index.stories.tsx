@@ -16,6 +16,7 @@ import {
 import { FauxSelectBox } from "../src/FauxSelect";
 import { Button } from "../../button";
 import { Box } from "../../../primitives/box";
+import { Badge } from "../../badge";
 
 // eslint-disable-next-line import/no-default-export
 export default {
@@ -137,6 +138,33 @@ export const DefaultOpen: React.FC = () => (
         </DropdownMenuGroup>
       </DropdownMenuContent>
     </DropdownMenu>
+  </Box>
+);
+
+export const RightSide: React.FC = () => (
+  <Box css={{ position: "absolute", top: 20, left: 20 }}>
+    <Box css={{ marginBottom: "$25" }}>
+      <DropdownMenu>
+        <DropdownMenuTrigger asChild>
+          <Button variant="primary">Open Menu</Button>
+        </DropdownMenuTrigger>
+
+        <DropdownMenuContent align="start" side="right" sideOffset={8}>
+          <DropdownMenuItem as="a" href="#">
+            Recruiter Capacity
+          </DropdownMenuItem>
+          <DropdownMenuItem as="a" href="#">
+            Approved Hires
+          </DropdownMenuItem>
+          <DropdownMenuItem as="a" href="#">
+            Unclaimed Hires
+            <DropdownMenuItemRightSlot>
+              <Badge size="small">3</Badge>
+            </DropdownMenuItemRightSlot>
+          </DropdownMenuItem>
+        </DropdownMenuContent>
+      </DropdownMenu>
+    </Box>
   </Box>
 );
 
