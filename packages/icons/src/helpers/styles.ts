@@ -74,8 +74,8 @@ export const StyledIconWrapper = styled("span", {
         width: "0.625rem",
       },
       xsmall: {
-        height: "0.75rem",
-        width: "0.75rem",
+        height: "0.875rem",
+        width: "0.875rem",
       },
       small: {
         height: "1rem",
