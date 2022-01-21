@@ -10,8 +10,6 @@ export type AvatarSizes = "small" | "medium" | "large";
 
 export interface AvatarProps
   extends Omit<React.HTMLAttributes<HTMLDivElement>, "color" | "css"> {
-  animate?: boolean;
-  animationDuration?: number;
   color?: AvatarColors;
   name: string;
   showName?: boolean;

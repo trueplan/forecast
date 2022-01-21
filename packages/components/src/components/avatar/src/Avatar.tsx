@@ -1,6 +1,4 @@
 import * as React from "react";
-// Framer blows up unless we use the dist import here.
-import { motion } from "framer-motion/dist/framer-motion";
 import { Box } from "../../../primitives/box";
 import { Text } from "../../../primitives/text";
 import {
@@ -22,21 +20,9 @@ const AvatarContents: React.FC<AvatarContentProps> = ({ name, src }) => {
   );
 };
 
-const AnimatedText = motion(Box);
-
 const Avatar = React.forwardRef<HTMLDivElement, AvatarProps>(
   (
-    {
-      animate,
-      animationDuration = 0.25,
-      color = "lilac",
-      name,
-      showName,
-      size = "medium",
-      title,
-      src,
-      ...props
-    },
+    { color = "lilac", name, showName, size = "medium", title, src, ...props },
     ref
   ) => {
     return (
@@ -50,11 +36,7 @@ const Avatar = React.forwardRef<HTMLDivElement, AvatarProps>(
           <AvatarContents name={name} src={src} />
         </StyledAvatar>
         {showName ? (
-          <AnimatedText
-            css={{ marginLeft: "$20" }}
-            animate={animate ? { opacity: 0 } : { opacity: 1 }}
-            transition={{ duration: animationDuration }}
-          >
+          <Text css={{ marginLeft: "$20" }}>
             <Text
               display="block"
               fontSize="fontSize10"
@@ -73,7 +55,7 @@ const Avatar = React.forwardRef<HTMLDivElement, AvatarProps>(
                 {title}
               </Text>
             ) : null}
-          </AnimatedText>
+          </Text>
         ) : null}
       </Box>
     );

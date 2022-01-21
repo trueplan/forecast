@@ -39,7 +39,6 @@
     "@radix-ui/react-tooltip": "^0.1.0",
     "@radix-ui/react-visually-hidden": "^0.1.0",
     "@stitches/react": "^1.2.0",
-    "framer-motion": "5.5.5",
     "react-uid": "^2.3.1"
   },
   "peerDependencies": {
