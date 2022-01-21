@@ -6,22 +6,22 @@ import { useUID } from "react-uid";
 import { IconWrapper } from "./helpers/IconWrapper";
 import type { IconWrapperProps } from "./helpers/types";
 
-export interface CollapseIconProps extends IconWrapperProps {
+export interface GrowIconProps extends IconWrapperProps {
   title?: string;
   decorative: boolean;
 }
 
-const CollapseIcon: React.FC<CollapseIconProps> = ({
+const GrowIcon: React.FC<GrowIconProps> = ({
   display = "block",
   size = "medium",
   color = "current",
   title,
   decorative,
 }) => {
-  const titleId = `CollapseIcon-${useUID()}`;
+  const titleId = `GrowIcon-${useUID()}`;
 
   if (!decorative && title == null) {
-    throw new Error("[CollapseIcon]: Missing a title for non-decorative icon.");
+    throw new Error("[GrowIcon]: Missing a title for non-decorative icon.");
   }
 
   return (
@@ -40,7 +40,7 @@ const CollapseIcon: React.FC<CollapseIconProps> = ({
         <path
           fill="currentColor"
           clipRule="evenodd"
-          d="M18 2H2v16h16zM2 0a2 2 0 00-2 2v16a2 2 0 002 2h16a2 2 0 002-2V2a2 2 0 00-2-2zm6.521 6.147a1 1 0 01.332 1.374l-1.65 2.701 1.603 2.187a1 1 0 11-1.612 1.182l-2.397-3.268 2.35-3.844a1 1 0 011.374-.332zm6.332 1.374a1 1 0 00-1.706-1.042l-2.35 3.844 2.397 3.268a1 1 0 001.612-1.182l-1.603-2.187z"
+          d="M14.001.998a.999.999 0 011-.998h4a1 1 0 011 .998L20 5.032a.999.999 0 01-2 0V3.418l-4.29 4.311c-.39.391-1.023.393-1.415.004s-.394-1.02-.004-1.41l4.306-4.327h-1.596c-.552 0-1-.447-1-.998zM7.706 12.267a.996.996 0 01.004 1.41l-4.306 4.327H5A.999.999 0 115 20H1a1.001 1.001 0 01-1-.998l.001-4.034a.999.999 0 012 0v1.614l4.291-4.311a1.001 1.001 0 011.414-.004z"
           fillRule="evenodd"
         />
       </svg>
@@ -48,5 +48,5 @@ const CollapseIcon: React.FC<CollapseIconProps> = ({
   );
 };
 
-CollapseIcon.displayName = "CollapseIcon";
-export { CollapseIcon };
+GrowIcon.displayName = "GrowIcon";
+export { GrowIcon };
