@@ -212,25 +212,3 @@ export const WithName = (): React.ReactNode => {
     </Stack>
   );
 };
-
-export const AnimatedName = (): React.ReactNode => {
-  const [hidden, setHidden] = React.useState(false);
-  return (
-    <Stack direction="vertical" spacing="$40">
-      <Avatar
-        name="Nate Schulte"
-        size="large"
-        showName
-        title="Founding Designer"
-        animate={hidden}
-      />
-      <Button
-        size="small"
-        variant="secondary"
-        onClick={() => setHidden(!hidden)}
-      >
-        Toggle Text Visibility
-      </Button>
-    </Stack>
-  );
-};
