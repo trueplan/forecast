@@ -30,6 +30,7 @@ export { DollarCircleIcon } from "./src/DollarCircleIcon";
 export { DownloadIcon } from "./src/DownloadIcon";
 export { ExpandIcon } from "./src/ExpandIcon";
 export { GearIcon } from "./src/GearIcon";
+export { GrowIcon } from "./src/GrowIcon";
 export { HiddenIcon } from "./src/HiddenIcon";
 export { HomeIcon } from "./src/HomeIcon";
 export { InfoCircleIcon } from "./src/InfoCircleIcon";
