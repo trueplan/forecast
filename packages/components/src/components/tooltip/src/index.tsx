@@ -2,6 +2,7 @@ import * as React from "react";
 import * as TooltipPrimitive from "@radix-ui/react-tooltip";
 import { keyframes } from "@stitches/react";
 import { styled } from "@trueplan/forecast-theme";
+import type { BadgeProps } from "../../badge";
 import { Badge } from "../../badge";
 import { Stack } from "../../../layout/stack";
 
@@ -46,6 +47,7 @@ const StyledArrow = styled(TooltipPrimitive.Arrow, {
 export interface ToolTipContentProps
   extends Omit<TooltipPrimitive.TooltipContentProps, "css"> {
   badge?: string;
+  badgeColor?: BadgeProps["color"];
 }
 
 export const TooltipContent: React.FC<ToolTipContentProps> = ({
@@ -53,12 +55,14 @@ export const TooltipContent: React.FC<ToolTipContentProps> = ({
   sideOffset = 2,
   side = "top",
   badge,
+  badgeColor,
   ...props
 }) => (
   <StyledContent sideOffset={sideOffset} side={side} {...props}>
     {badge ? (
       <Stack direction="horizontal" spacing="$25" align="center">
-        Approvals <Badge color="green">{badge}</Badge>
+        {children}
+        <Badge color={badgeColor}>{badge}</Badge>
       </Stack>
     ) : (
       children
