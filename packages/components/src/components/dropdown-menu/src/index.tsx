@@ -15,7 +15,6 @@ export const DropdownMenuContent = styled(DropdownMenuPrimitive.Content, {
   borderRadius: theme.radii[30],
   padding: theme.space[25],
   minWidth: "180px",
-  marginTop: theme.space[10],
   animationDuration: "400ms",
   animationTimingFunction: "cubic-bezier(0.16, 1, 0.3, 1)",
   willChange: "transform, opacity",
@@ -23,6 +22,9 @@ export const DropdownMenuContent = styled(DropdownMenuPrimitive.Content, {
     animationName: slideUpAndFade,
   },
 });
+DropdownMenuContent.defaultProps = {
+  sideOffset: 4,
+};
 
 const dropdownMenuItemStyles = {
   all: "unset",
@@ -64,6 +66,7 @@ export const DropdownMenuItemLeftSlot = styled("div", {
 });
 
 export const DropdownMenuItemRightSlot = styled("div", {
+  display: "flex",
   marginLeft: "auto",
   paddingLeft: theme.space[25],
   color: theme.colors.textMedium,
