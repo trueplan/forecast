@@ -1,5 +1,4 @@
 import * as React from "react";
-import * as DialogPrimitive from "@radix-ui/react-dialog";
 import { Box } from "../../../primitives/box";
 import type { ModalBodyProps as AlertDialogBodyProps } from "../../modal";
 
@@ -7,7 +6,6 @@ const AlertDialogBody = React.forwardRef<HTMLDivElement, AlertDialogBodyProps>(
   ({ children, ...props }, ref) => {
     return (
       <Box
-        as={DialogPrimitive.Description}
         css={{
           paddingTop: "$0",
           paddingRight: "$50",
