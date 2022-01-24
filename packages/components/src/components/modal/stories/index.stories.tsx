@@ -1,4 +1,5 @@
 import * as React from "react";
+import { useUID } from "react-uid";
 import { Box } from "../../../primitives/box";
 import { Button } from "../../button";
 import { Heading } from "../../heading";
@@ -21,13 +22,14 @@ export default {
 };
 
 export const Default = (): React.ReactNode => {
+  const descriptionId = useUID();
   return (
     <Box css={{ height: "1000px", width: "1350px" }}>
       <Modal defaultOpen>
         <ModalTrigger asChild>
           <Button variant="primary">Open Modal</Button>
         </ModalTrigger>
-        <ModalContent>
+        <ModalContent aria-describedby={descriptionId}>
           <ModalHeader>
             <ModalHeading subTitle="This is the subtitle">
               This is the Title
@@ -38,7 +40,7 @@ export const Default = (): React.ReactNode => {
             <Heading as="h3" size="heading30">
               Modal Body Heading
             </Heading>
-            <Paragraph>
+            <Paragraph id={descriptionId}>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               Vestibulum dignissim sit amet quam nec vehicula. Nullam lectus
               leo, mattis ut erat quis, fringilla consectetur magna. Praesent
@@ -66,13 +68,14 @@ Default.parameters = {
 };
 
 export const Wide = (): React.ReactNode => {
+  const descriptionId = useUID();
   return (
     <Box css={{ height: "1000px", width: "1350px" }}>
       <Modal defaultOpen>
         <ModalTrigger asChild>
           <Button variant="primary">Open Modal</Button>
         </ModalTrigger>
-        <ModalContent size="wide">
+        <ModalContent aria-describedby={descriptionId} size="wide">
           <ModalHeader>
             <ModalHeading subTitle="This is the subtitle">
               This is the Title
@@ -87,7 +90,7 @@ export const Wide = (): React.ReactNode => {
             <Heading as="h3" size="heading30">
               Modal Body Heading
             </Heading>
-            <Paragraph>
+            <Paragraph id={descriptionId}>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               Vestibulum dignissim sit amet quam nec vehicula. Nullam lectus
               leo, mattis ut erat quis, fringilla consectetur magna. Praesent
@@ -120,13 +123,14 @@ Wide.parameters = {
 };
 
 export const NoPaddingOnBody = (): React.ReactNode => {
+  const descriptionId = useUID();
   return (
     <Box css={{ height: "1000px", width: "1350px" }}>
       <Modal defaultOpen>
         <ModalTrigger asChild>
           <Button variant="primary">Open Modal</Button>
         </ModalTrigger>
-        <ModalContent>
+        <ModalContent aria-describedby={descriptionId}>
           <ModalHeader>
             <ModalHeading subTitle="This is the subtitle">
               This is the Title
@@ -137,7 +141,7 @@ export const NoPaddingOnBody = (): React.ReactNode => {
             <Heading as="h3" size="heading30">
               Modal Body Heading
             </Heading>
-            <Paragraph>
+            <Paragraph id={descriptionId}>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               Vestibulum dignissim sit amet quam nec vehicula. Nullam lectus
               leo, mattis ut erat quis, fringilla consectetur magna. Praesent
@@ -165,13 +169,14 @@ NoPaddingOnBody.parameters = {
 };
 
 export const OverflowBodyContent = (): React.ReactNode => {
+  const descriptionId = useUID();
   return (
     <Box css={{ height: "1000px", width: "1350px" }}>
       <Modal defaultOpen>
         <ModalTrigger asChild>
           <Button variant="primary">Open Modal</Button>
         </ModalTrigger>
-        <ModalContent>
+        <ModalContent aria-describedby={descriptionId}>
           <ModalHeader>
             <ModalHeading subTitle="This is the subtitle">
               This is the Title
@@ -186,7 +191,7 @@ export const OverflowBodyContent = (): React.ReactNode => {
             <Heading as="h3" size="heading30">
               Modal Body Heading
             </Heading>
-            <Paragraph>
+            <Paragraph id={descriptionId}>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               Vestibulum dignissim sit amet quam nec vehicula. Nullam lectus
               leo, mattis ut erat quis, fringilla consectetur magna. Praesent
@@ -264,13 +269,14 @@ OverflowBodyContent.parameters = {
 };
 
 export const ReallyLongHeader = (): React.ReactNode => {
+  const descriptionId = useUID();
   return (
     <Box css={{ height: "1000px", width: "1350px" }}>
       <Modal defaultOpen>
         <ModalTrigger asChild>
           <Button variant="primary">Open Modal</Button>
         </ModalTrigger>
-        <ModalContent>
+        <ModalContent aria-describedby={descriptionId}>
           <ModalHeader>
             <ModalHeading>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
@@ -282,7 +288,7 @@ export const ReallyLongHeader = (): React.ReactNode => {
             <Heading as="h3" size="heading30">
               Modal Body Heading
             </Heading>
-            <Paragraph>
+            <Paragraph id={descriptionId}>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               Vestibulum dignissim sit amet quam nec vehicula. Nullam lectus
               leo, mattis ut erat quis, fringilla consectetur magna. Praesent
@@ -310,13 +316,14 @@ ReallyLongHeader.parameters = {
 };
 
 export const MultipleHeaderActions = (): React.ReactNode => {
+  const descriptionId = useUID();
   return (
     <Box css={{ height: "1000px", width: "1350px" }}>
       <Modal defaultOpen>
         <ModalTrigger asChild>
           <Button variant="primary">Open Modal</Button>
         </ModalTrigger>
-        <ModalContent>
+        <ModalContent aria-describedby={descriptionId}>
           <ModalHeader>
             <ModalHeading>This is the Title</ModalHeading>
             <ModalHeaderActions>
@@ -329,7 +336,7 @@ export const MultipleHeaderActions = (): React.ReactNode => {
             <Heading as="h3" size="heading30">
               Modal Body Heading
             </Heading>
-            <Paragraph>
+            <Paragraph id={descriptionId}>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               Vestibulum dignissim sit amet quam nec vehicula. Nullam lectus
               leo, mattis ut erat quis, fringilla consectetur magna. Praesent
@@ -357,13 +364,14 @@ MultipleHeaderActions.parameters = {
 };
 
 export const MultipleFooterActions = (): React.ReactNode => {
+  const descriptionId = useUID();
   return (
     <Box css={{ height: "1000px", width: "1350px" }}>
       <Modal defaultOpen>
         <ModalTrigger asChild>
           <Button variant="primary">Open Modal</Button>
         </ModalTrigger>
-        <ModalContent>
+        <ModalContent aria-describedby={descriptionId}>
           <ModalHeader>
             <ModalHeading>This is the Title</ModalHeading>
             <ModalHeaderActions />
@@ -372,7 +380,7 @@ export const MultipleFooterActions = (): React.ReactNode => {
             <Heading as="h3" size="heading30">
               Modal Body Heading
             </Heading>
-            <Paragraph>
+            <Paragraph id={descriptionId}>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               Vestibulum dignissim sit amet quam nec vehicula. Nullam lectus
               leo, mattis ut erat quis, fringilla consectetur magna. Praesent
@@ -406,13 +414,17 @@ MultipleFooterActions.parameters = {
 
 export const Controlled = (): React.ReactNode => {
   const [open, setOpen] = React.useState(false);
+  const descriptionId = useUID();
   return (
     <>
       <Button variant="primary" onClick={() => setOpen(true)}>
         Open Modal
       </Button>
       <Modal open={open}>
-        <ModalContent onInteractOutside={() => setOpen(false)}>
+        <ModalContent
+          aria-describedby={descriptionId}
+          onInteractOutside={() => setOpen(false)}
+        >
           <ModalHeader>
             <ModalHeading>This is the Title</ModalHeading>
             <ModalHeaderActions customCloseButton>
@@ -429,7 +441,7 @@ export const Controlled = (): React.ReactNode => {
             <Heading as="h3" size="heading30">
               Modal Body Heading
             </Heading>
-            <Paragraph>
+            <Paragraph id={descriptionId}>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               Vestibulum dignissim sit amet quam nec vehicula. Nullam lectus
               leo, mattis ut erat quis, fringilla consectetur magna. Praesent

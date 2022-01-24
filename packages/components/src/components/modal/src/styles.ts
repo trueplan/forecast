@@ -68,7 +68,7 @@ export const StyledSubTitle = styled("span", {
   lineHeight: theme.lineHeights[10],
 });
 
-export const StyledModalBody = styled(DialogPrimitive.Description, {
+export const StyledModalBody = styled("div", {
   overflowY: "auto",
   variants: {
     padding: {
@@ -99,3 +99,5 @@ export const ModalTrigger = DialogPrimitive.Trigger;
 export const ModalClose = DialogPrimitive.Close;
 
 export const ModalTitle = DialogPrimitive.Title;
+
+export const ModalDescription = DialogPrimitive.Description;
