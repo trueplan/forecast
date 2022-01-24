@@ -8,6 +8,7 @@ export * from "./ModalFooter";
 export * from "./types";
 export {
   ModalClose,
+  ModalDescription,
   ModalRoot,
   ModalTitle,
   ModalTrigger,

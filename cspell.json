@@ -24,7 +24,8 @@
     "npmrc",
     "labelledby",
     "noreferrer",
-    "noopener"
+    "noopener",
+    "describedby"
   ],
   "ignoreWords": [
     "btlr",
