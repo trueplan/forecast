@@ -4932,8 +4932,8 @@ __metadata:
     "@radix-ui/react-tooltip": ^0.1.0
     "@radix-ui/react-visually-hidden": ^0.1.0
     "@stitches/react": ^1.2.0
-    "@trueplan/forecast-icons": ^1.0.3
-    "@trueplan/forecast-theme": ^1.0.3
+    "@trueplan/forecast-icons": ^1.0.4
+    "@trueplan/forecast-theme": ^1.0.4
     react: ^17.0.2
     react-dom: ^17.0.2
     react-uid: ^2.3.1
@@ -4969,8 +4969,8 @@ __metadata:
     "@svgr/babel-plugin-add-jsx-attribute": ^5.4.0
     "@svgr/babel-plugin-remove-jsx-attribute": ^5.4.0
     "@svgr/plugin-svgo": ^5.5.0
-    "@trueplan/forecast-components": ^1.0.3
-    "@trueplan/forecast-theme": ^1.0.3
+    "@trueplan/forecast-components": ^1.0.4
+    "@trueplan/forecast-theme": ^1.0.4
     "@twilio-labs/svg-to-react": ^2.1.0
     chalk: ^4.1.2
     commander: ^8.2.0
