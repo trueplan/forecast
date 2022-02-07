@@ -1,7 +1,6 @@
 import * as React from "react";
 import { Avatar } from "../src";
 import { Box } from "../../../primitives/box";
-import { Button } from "../../button";
 import { Stack } from "../../../layout/stack";
 
 // eslint-disable-next-line import/no-default-export
