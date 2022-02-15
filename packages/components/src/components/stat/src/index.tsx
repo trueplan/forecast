@@ -3,6 +3,22 @@ import { styled, theme } from "@trueplan/forecast-theme";
 import { Stack } from "../../../layout/stack";
 import { Text } from "../../../primitives/text";
 
+export const StyledStat = styled("div", {
+  boxSizing: "border-box",
+  textAlign: "left",
+  position: "relative",
+  variants: {
+    padding: {
+      space0: {
+        padding: theme.space[0],
+      },
+      space40: {
+        padding: theme.space[40],
+      },
+    },
+  },
+});
+
 export const StyledStatButton = styled("button", {
   all: "unset",
   appearance: "none",
@@ -26,11 +42,33 @@ export const StyledStatButton = styled("button", {
 });
 
 export interface StatProps
+  extends Omit<React.HTMLAttributes<HTMLDivElement>, "css"> {
+  children: React.ReactNode;
+  padding?: "space0" | "space40";
+}
+
+const Stat = React.forwardRef<HTMLDivElement, StatProps>(
+  ({ children, padding = "space0", ...props }, ref) => {
+    return (
+      <StyledStat padding={padding} ref={ref} {...props}>
+        <Stack direction="vertical" spacing="$20">
+          {children}
+        </Stack>
+      </StyledStat>
+    );
+  }
+);
+
+Stat.displayName = "Stat";
+
+export { Stat };
+
+export interface StatButtonProps
   extends Omit<React.ButtonHTMLAttributes<HTMLButtonElement>, "css"> {
   children: React.ReactNode;
 }
 
-const Stat = React.forwardRef<HTMLButtonElement, StatProps>(
+const StatButton = React.forwardRef<HTMLButtonElement, StatButtonProps>(
   ({ children, ...props }, ref) => {
     return (
       <StyledStatButton ref={ref} {...props}>
@@ -42,9 +80,9 @@ const Stat = React.forwardRef<HTMLButtonElement, StatProps>(
   }
 );
 
-Stat.displayName = "Stat";
+StatButton.displayName = "StatButton";
 
-export { Stat };
+export { StatButton };
 
 export interface StatNameProps {
   children: React.ReactNode;
