@@ -1,6 +1,12 @@
 import * as React from "react";
 import { render, screen } from "@testing-library/react";
-import { Stat, StatName, StatNumber, StatInformation } from "../src";
+import {
+  Stat,
+  StatButton,
+  StatName,
+  StatNumber,
+  StatInformation,
+} from "../src";
 
 describe("Stat", () => {
   it("should render a stat container", () => {
@@ -9,16 +15,22 @@ describe("Stat", () => {
     expect(renderedStat).not.toBeNull();
   });
 
+  it("should render a stat button container", () => {
+    render(<StatButton>stat</StatButton>);
+    const renderedStatButton = screen.getByRole("button");
+    expect(renderedStatButton).not.toBeNull();
+  });
+
   it("should render a stat name", () => {
     render(<StatName data-testid="stat-name">stat-name</StatName>);
-    const renderedStat = screen.getByTestId("stat-name");
-    expect(renderedStat).not.toBeNull();
+    const renderedStatName = screen.getByTestId("stat-name");
+    expect(renderedStatName).not.toBeNull();
   });
 
   it("should render a stat number", () => {
     render(<StatNumber data-testid="stat-number">stat-number</StatNumber>);
-    const renderedStat = screen.getByTestId("stat-number");
-    expect(renderedStat).not.toBeNull();
+    const renderedStatNumber = screen.getByTestId("stat-number");
+    expect(renderedStatNumber).not.toBeNull();
   });
 
   it("should render a stat information", () => {
@@ -27,7 +39,7 @@ describe("Stat", () => {
         stat-information
       </StatInformation>
     );
-    const renderedStat = screen.getByTestId("stat-information");
-    expect(renderedStat).not.toBeNull();
+    const renderedStatInformation = screen.getByTestId("stat-information");
+    expect(renderedStatInformation).not.toBeNull();
   });
 });
