@@ -1,6 +1,8 @@
 import * as React from "react";
+import { Box } from "../../../primitives/box";
 import { Pill } from "../../pill";
 import { ProgressBar } from "../../progress";
+import { Status } from "../../status";
 import {
   Stat,
   StatButton,
@@ -79,8 +81,11 @@ export const StatButtonProgress: React.FC = () => (
     <StatNumber>100</StatNumber>
     <StatInformation>More information</StatInformation>
     <ProgressBar value={50} />
-    <Pill color="green" size="small" fontFamily="roboto">
-      99%
-    </Pill>
+    <Box css={{ display: "flex", gap: "$25", alignItems: "center" }}>
+      <StatInformation>From 980k</StatInformation>
+      <Pill color="green" size="small" fontFamily="roboto">
+        99%
+      </Pill>
+    </Box>
   </StatButton>
 );
