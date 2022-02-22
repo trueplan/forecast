@@ -35,7 +35,10 @@
     "prepare": "is-ci || husky install",
     "dev:website": "yarn workspace @trueplan/forecast-website dev",
     "start:website": "yarn workspace @trueplan/forecast-website start",
-    "build:website": "yarn workspace @trueplan/forecast-website build"
+    "build:website": "yarn workspace @trueplan/forecast-website build",
+    "changeset": "changeset",
+    "release": "yarn changeset publish",
+    "version": "yarn changeset version && yarn install --mode=update-lockfile"
   },
   "lint-staged": {
     "**/*": "prettier --write --ignore-unknown",
@@ -44,6 +47,7 @@
     ]
   },
   "dependencies": {
+    "@changesets/cli": "2.20.0",
     "@svgr/babel-plugin-add-jsx-attribute": "^5.4.0",
     "@svgr/babel-plugin-remove-jsx-attribute": "^5.4.0",
     "@svgr/plugin-svgo": "^5.5.0",

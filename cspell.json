@@ -39,7 +39,8 @@
     "sonarjs",
     "immer",
     "linkify",
-    "toastify"
+    "toastify",
+    "chromaui"
   ],
   "flagWords": ["hte"],
   "allowCompoundWords": true,

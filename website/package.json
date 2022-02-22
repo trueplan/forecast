@@ -4,6 +4,7 @@
   "description": "Forecast Design System Website",
   "author": "TruePlan Inc.",
   "license": "UNLICENSED",
+  "private": true,
   "repository": {
     "type": "git",
     "url": "ssh://git@github.com/trueplan/forecast",

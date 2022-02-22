@@ -2,6 +2,8 @@ name: "Main"
 
 on:
   push:
+    paths:
+      - "packages/**"
     branches:
       - main
 
@@ -18,8 +20,61 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
+  version_or_publish:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node
+        uses: actions/setup-node@v1
+        with:
+          node-version: "16.2.x"
+
+      # Cache Yarn dependencies
+      # https://github.com/actions/cache/blob/main/examples.md#node---yarn-2
+      - name: Get yarn cache directory path
+        id: yarn-cache-dir-path
+        run: echo "::set-output name=dir::$(yarn config get cacheFolder)"
+      - uses: actions/cache@v2
+        id: yarn-cache # use this to check for `cache-hit` (`steps.yarn-cache.outputs.cache-hit != 'true'`)
+        with:
+          path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
+          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-yarn-
+
+      # Bootstrap Forecast
+      - name: Install Node dependencies
+        run: yarn install --immutable
+
+      # Build Forecast
+      - name: Build Forecast
+        run: yarn build
+
+      # Version or Release Forecast
+      - name: Setup CI Git User
+        run: |
+          git config --global user.email "automaton@trueplan.io"
+          git config --global user.name "trueplan-automaton"
+
+      - name: "Create Pull Request or Publish to npm"
+        uses: changesets/action@master
+        with:
+          version: yarn version
+          publish: yarn release
+          commit: "chore(release): version packages"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # due to this bug in yarn https://github.com/yarnpkg/berry/issues/3606 we need to manually turn off immutable installs to update the lockfile
+          YARN_ENABLE_IMMUTABLE_INSTALLS: false
+
   vrt:
     runs-on: ubuntu-latest
+    if: "!contains(github.event.head_commit.message, 'chore(release): version packages')"
 
     steps:
       - name: Checkout Repo
