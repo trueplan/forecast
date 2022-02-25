@@ -28,6 +28,7 @@ export * from "./components/stat";
 export * from "./components/status";
 export * from "./components/status-icon";
 export * from "./components/tab";
+export * from "./components/tag";
 export * from "./components/textarea";
 export * from "./components/tooltip";
 export * from "./components/toggle";
