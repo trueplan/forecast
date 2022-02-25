@@ -9,13 +9,13 @@ export default {
 
 export const Default: React.FC = () => <Tag>Tag Name</Tag>;
 
-export const Dismissable: React.FC = () => (
+export const Dismissible: React.FC = () => (
   <Tag onDismiss={() => console.log("clicked")}>Tag Name</Tag>
 );
 
 export const Medium: React.FC = () => <Tag size="medium">Tag Name</Tag>;
 
-export const MediumDismissable: React.FC = () => (
+export const MediumDismissible: React.FC = () => (
   <Tag onDismiss={() => console.log("clicked")} size="medium">
     Tag Name
   </Tag>

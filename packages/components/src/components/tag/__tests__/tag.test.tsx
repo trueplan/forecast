@@ -9,9 +9,9 @@ describe("Tag", () => {
     expect(renderedTag).not.toBeNull();
   });
 
-  it("should render a dismissable tag", () => {
+  it("should render a dismissible tag", () => {
     render(<Tag onDismiss={() => void 0}>tag</Tag>);
-    const renderedDismissableTagButton = screen.getByRole("button");
-    expect(renderedDismissableTagButton).not.toBeNull();
+    const renderedDismissibleTagButton = screen.getByRole("button");
+    expect(renderedDismissibleTagButton).not.toBeNull();
   });
 });
