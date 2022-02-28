@@ -64,8 +64,8 @@ jobs:
       - name: "Create Pull Request or Publish to npm"
         uses: changesets/action@master
         with:
-          version: yarn version
-          publish: yarn release
+          version: yarn changeset version && yarn install --mode=update-lockfile
+          publish: yarn changeset publish
           commit: "chore(release): version packages"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
