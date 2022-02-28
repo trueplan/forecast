@@ -61,7 +61,7 @@ jobs:
           git config --global user.email "automaton@trueplan.io"
           git config --global user.name "trueplan-automaton"
 
-      - name: "Create Pull Request or Publish to npm"
+      - name: "Creates Pull Request or Publish to npm"
         uses: changesets/action@master
         with:
           version: yarn changeset version && yarn install --mode=update-lockfile
