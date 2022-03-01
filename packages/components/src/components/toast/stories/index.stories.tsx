@@ -12,7 +12,8 @@ export default {
   component: Toast,
   args: {
     title: "This is a toast",
-    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    content:
+      "Lorem ipsum dolor sit amet, consectetur. Lorem ipsum dolor sit amet, consectetur.",
   },
 };
 
