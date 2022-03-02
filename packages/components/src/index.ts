@@ -30,6 +30,7 @@ export * from "./components/status-icon";
 export * from "./components/tab";
 export * from "./components/tag";
 export * from "./components/textarea";
+export * from "./components/toast";
 export * from "./components/tooltip";
 export * from "./components/toggle";
 export * from "./components/truncate";
