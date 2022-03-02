@@ -6,6 +6,7 @@ import {
   InfoCircleIcon,
   CloseIcon,
 } from "@trueplan/forecast-icons";
+import type * as ToastPrimitive from "@radix-ui/react-toast";
 import { Box } from "@trueplan/forecast-components";
 import {
   ToastRoot,
@@ -32,16 +33,9 @@ const printToastIcon = (
   }
 };
 
-// Hack for now. Radix toast isn't export the props yet.
 export interface ToastProps
-  extends Omit<React.HTMLAttributes<HTMLLIElement>, "css"> {
+  extends Omit<React.ComponentProps<typeof ToastPrimitive.Root>, "css"> {
   actionAltText?: string;
-  duration?: number;
-  defaultOpen?: boolean;
-  open?: boolean;
-  onOpenChange?: (open: boolean) => void;
-  forceMount?: true;
-  title: string;
   content?: string;
   variant?: ToastVariants;
 }
