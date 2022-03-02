@@ -62,15 +62,13 @@ jobs:
           git config --global user.name "trueplan-automaton"
 
       - name: "Creates Pull Request or Publish to npm"
-        uses: changesets/action@master
+        uses: changesets/action@v1
         with:
-          version: yarn changeset version && yarn install --mode=update-lockfile
+          version: yarn changeset version
           publish: yarn changeset publish
           commit: "chore(release): version packages"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          # due to this bug in yarn https://github.com/yarnpkg/berry/issues/3606 we need to manually turn off immutable installs to update the lockfile
-          YARN_ENABLE_IMMUTABLE_INSTALLS: false
 
   vrt:
     runs-on: ubuntu-latest
