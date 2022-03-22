@@ -1,13 +1,12 @@
 import * as React from "react";
 import Head from "next/head";
-import { globalFonts, globalStyles } from "@trueplan/forecast-theme";
+import { globalStyles } from "@trueplan/forecast-theme";
 import { Box } from "@trueplan/forecast-components";
 import { Sidebar } from "../sidebar";
 import { Navigation } from "../sidebar/navigation";
 
 const Layout: React.FC = ({ children }) => {
   globalStyles();
-  globalFonts();
   return (
     <>
       <Head>

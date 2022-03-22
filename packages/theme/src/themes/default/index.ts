@@ -181,8 +181,7 @@ export const { styled, css, theme, keyframes, getCssText } = createStitches({
       80: "5rem", // 80px
     },
     fonts: {
-      inter:
-        '"Inter var experimental", "Inter var", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif',
+      inter: '"Inter", sans-serif',
       roboto: '"Roboto Mono", monospace',
     },
     fontWeights: {
