@@ -1,4 +1,6 @@
 import * as React from "react";
+import { Heading } from "../../heading";
+import { Paragraph } from "../../paragraph";
 import { Anchor } from "../src";
 
 // eslint-disable-next-line import/no-default-export
@@ -39,24 +41,24 @@ export const External: React.FC = () => (
   </Anchor>
 );
 
-export const Heading: React.FC = () => (
-  <h2>
+export const InHeading: React.FC = () => (
+  <Heading size="heading20" as="h2">
     <Anchor href="#">
       I'm an anchor which inherits font size from the heading
     </Anchor>
-  </h2>
+  </Heading>
 );
 
 export const InParagraph: React.FC = () => (
   <>
-    <p>
+    <Paragraph>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nec erat
       id nisi tristique dignissim. Phasellus a sem a ligula sollicitudin dictum
       et quis lacus. <Anchor href="#">I'm an anchor</Anchor> Lorem ipsum dolor
       sit amet, consectetur adipiscing elit. Mauris nec erat id nisi tristique
       dignissim. Phasellus a sem a ligula sollicitudin dictum et quis lacus.
-    </p>
-    <p>
+    </Paragraph>
+    <Paragraph>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nec erat
       id nisi tristique dignissim. Phasellus a sem a ligula sollicitudin dictum
       et quis lacus.{" "}
@@ -66,6 +68,6 @@ export const InParagraph: React.FC = () => (
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nec erat
       id nisi tristique dignissim. Phasellus a sem a ligula sollicitudin dictum
       et quis lacus.
-    </p>
+    </Paragraph>
   </>
 );
