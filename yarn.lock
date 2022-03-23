@@ -3193,6 +3193,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@popperjs/core@npm:^2.11.2":
+  version: 2.11.4
+  resolution: "@popperjs/core@npm:2.11.4"
+  checksum: 36168d274aa164368a50aef2e7b2f858e1b9145d9250af9dc1315ff719d874a367177760f8285efb75c8cf48267194a50e7dc9cdb41bf0b1958c38805c13564c
+  languageName: node
+  linkType: hard
+
 "@popperjs/core@npm:^2.5.4, @popperjs/core@npm:^2.6.0":
   version: 2.10.2
   resolution: "@popperjs/core@npm:2.10.2"
@@ -5295,6 +5302,7 @@ __metadata:
     "@types/node": ^14.14.45
     "@types/react": ^16.14.6
     "@types/react-dom": ^16.9.12
+    ariakit: 2.0.0-alpha.19
     react: ^17.0.2
     react-dom: ^17.0.2
     react-uid: ^2.3.1
@@ -5318,6 +5326,7 @@ __metadata:
     "@stitches/react": ^1.2.0
     "@trueplan/forecast-icons": ^1.0.5
     "@trueplan/forecast-theme": ^1.0.6
+    ariakit: 2.0.0-alpha.19
     react: ^17.0.2
     react-dom: ^17.0.2
     react-uid: ^2.3.1
@@ -6930,6 +6939,28 @@ __metadata:
   version: 5.0.0
   resolution: "aria-query@npm:5.0.0"
   checksum: c41f98866c5a304561ee8cae55856711cddad6f3f85d8cb43cc5f79667078d9b8979ce32d244c1ff364e6463a4d0b6865804a33ccc717fed701b281cf7dc6296
+  languageName: node
+  linkType: hard
+
+"ariakit-utils@npm:^0.17.0-alpha.12":
+  version: 0.17.0-alpha.12
+  resolution: "ariakit-utils@npm:0.17.0-alpha.12"
+  peerDependencies:
+    react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^18.0.0-beta
+  checksum: 7b12b2c362ef01d112481697d987091ae333391f5a7994f920c451ae770dc45aa6b2db5eb0d60b946280b3ab8cc8b36a305a318e6037293ef8e0887659b660a1
+  languageName: node
+  linkType: hard
+
+"ariakit@npm:2.0.0-alpha.19":
+  version: 2.0.0-alpha.19
+  resolution: "ariakit@npm:2.0.0-alpha.19"
+  dependencies:
+    "@popperjs/core": ^2.11.2
+    ariakit-utils: ^0.17.0-alpha.12
+  peerDependencies:
+    react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^18.0.0-beta
+    react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^18.0.0-beta
+  checksum: 437ecd6c05eefa570d40d0b00ba193e59898781262b30e591b6b1ca9109bee7317a45fe8aa27ee273fe8a1e6f4275f51067eb4b58c5baa0f8fbffea29b9d700d
   languageName: node
   linkType: hard
 
