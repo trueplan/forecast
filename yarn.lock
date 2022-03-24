@@ -5297,7 +5297,7 @@ __metadata:
     "@testing-library/jest-dom": ^5.15.0
     "@testing-library/react": ^12.1.2
     "@trueplan/forecast-icons": ^1.0.5
-    "@trueplan/forecast-theme": ^1.0.6
+    "@trueplan/forecast-theme": ^1.1.0
     "@types/jest": ^27.0.2
     "@types/node": ^14.14.45
     "@types/react": ^16.14.6
@@ -5375,7 +5375,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@trueplan/forecast-theme@^1.0.6, @trueplan/forecast-theme@workspace:packages/theme":
+"@trueplan/forecast-theme@^1.0.6, @trueplan/forecast-theme@^1.1.0, @trueplan/forecast-theme@workspace:packages/theme":
   version: 0.0.0-use.local
   resolution: "@trueplan/forecast-theme@workspace:packages/theme"
   dependencies:
