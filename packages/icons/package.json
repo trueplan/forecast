@@ -25,7 +25,6 @@
     "compile": "rollup -c node:forecast --environment NODE_ENV:production",
     "compile:dev": "rollup -c node:forecast --environment NODE_ENV:development",
     "type-check": "tsc --noEmit --composite false",
-    "publish": "yarn npm publish --tolerate-republish",
     "convert:icons": "node ./tools/cli.js convert",
     "convert:icons-new": "node ./tools/cli.js convert-new"
   },
