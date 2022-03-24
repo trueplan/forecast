@@ -24,8 +24,7 @@
     "clean": "rm -rf ./dist",
     "compile": "rollup -c node:forecast --environment NODE_ENV:production",
     "compile:dev": "rollup -c node:forecast --environment NODE_ENV:development",
-    "type-check": "tsc --noEmit --composite false",
-    "publish": "yarn npm publish --tolerate-republish"
+    "type-check": "tsc --noEmit --composite false"
   },
   "dependencies": {
     "@stitches/react": "^1.2.0",
