@@ -20,6 +20,7 @@ export * from "./components/modal";
 export * from "./components/pagination";
 export * from "./components/paragraph";
 export * from "./components/pill";
+export * from "./components/popover";
 export * from "./components/priority";
 export * from "./components/progress";
 export * from "./components/radio-group";
