@@ -40,7 +40,10 @@
     "immer",
     "linkify",
     "toastify",
-    "chromaui"
+    "chromaui",
+    "jayarnielsen",
+    "richbachman",
+    "trueplan-automaton"
   ],
   "flagWords": ["hte"],
   "allowCompoundWords": true,
