@@ -5269,7 +5269,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@trueplan/forecast-components@workspace:packages/components":
+"@trueplan/forecast-components@^1.0.8, @trueplan/forecast-components@workspace:packages/components":
   version: 0.0.0-use.local
   resolution: "@trueplan/forecast-components@workspace:packages/components"
   dependencies:
@@ -5289,8 +5289,8 @@ __metadata:
     "@storybook/react": ^6.2.9
     "@testing-library/jest-dom": ^5.15.0
     "@testing-library/react": ^12.1.2
-    "@trueplan/forecast-icons": "workspace:packages/icons"
-    "@trueplan/forecast-theme": "workspace:packages/theme"
+    "@trueplan/forecast-icons": ^1.0.5
+    "@trueplan/forecast-theme": ^1.0.6
     "@types/jest": ^27.0.2
     "@types/node": ^14.14.45
     "@types/react": ^16.14.6
@@ -5324,15 +5324,15 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@trueplan/forecast-icons@workspace:packages/icons":
+"@trueplan/forecast-icons@^1.0.5, @trueplan/forecast-icons@workspace:packages/icons":
   version: 0.0.0-use.local
   resolution: "@trueplan/forecast-icons@workspace:packages/icons"
   dependencies:
     "@svgr/babel-plugin-add-jsx-attribute": ^5.4.0
     "@svgr/babel-plugin-remove-jsx-attribute": ^5.4.0
     "@svgr/plugin-svgo": ^5.5.0
-    "@trueplan/forecast-components": "workspace:packages/components"
-    "@trueplan/forecast-theme": "workspace:packages/theme"
+    "@trueplan/forecast-components": ^1.0.8
+    "@trueplan/forecast-theme": ^1.0.6
     "@twilio-labs/svg-to-react": ^2.1.0
     "@types/node": ^14.14.45
     "@types/react": ^16.14.6
@@ -5366,7 +5366,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@trueplan/forecast-theme@workspace:packages/theme":
+"@trueplan/forecast-theme@^1.0.6, @trueplan/forecast-theme@workspace:packages/theme":
   version: 0.0.0-use.local
   resolution: "@trueplan/forecast-theme@workspace:packages/theme"
   dependencies:
