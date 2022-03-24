@@ -1,51 +1,40 @@
-name: 'Release'
+name: "Release"
 
 on:
   release:
     types: [published]
 
 jobs:
-  publish_and_deploy:
+  slack-notifications:
     runs-on: ubuntu-latest
-
-    permissions:
-      contents: read
-      packages: write
+    name: Sends a message to Slack when a package is released
 
     steps:
-      - name: Checkout Repo
-        uses: actions/checkout@v2
+      - uses: actions/checkout@v2
+      - run: |
+          echo "${{ github.event.release.tag_name }}"
+          echo "${{ github.event.release.name }}"
+          echo "${{ github.event.release.body }}"
+      - name: Send message to Slack API
+        uses: archive/github-actions-slack@v2.0.0
+        id: send-message
         with:
-          fetch-depth: 0
+          slack-function: send-message
+          slack-bot-user-oauth-access-token: ${{ secrets.SLACK_BOT_USER_OAUTH_ACCESS_TOKEN }}
+          slack-channel: ${{ secrets.SLACK_RELEASE_CHANNEL_ID }}
+          slack-text: ${{ github.event.release.tag_name }} has been released.
 
-      - name: Setup Node
-        uses: actions/setup-node@v1
+      - name: Result from "Send Message"
+        run: echo "The result was ${{ steps.notify.outputs.slack-result }}"
+
+      - name: Send Thread Message
+        uses: archive/github-actions-slack@master
         with:
-          node-version: '16.2.x'
+          slack-function: send-message
+          slack-bot-user-oauth-access-token: ${{ secrets.SLACK_BOT_USER_OAUTH_ACCESS_TOKEN }}
+          slack-channel: ${{ fromJson(steps.send-message.outputs.slack-result).response.channel }}
+          slack-optional-thread_ts: ${{ fromJson(steps.send-message.outputs.slack-result).response.message.ts }}
+          slack-text: ${{ github.event.release.body }}
 
-      # Cache Yarn dependencies
-      # https://github.com/actions/cache/blob/main/examples.md#node---yarn-2
-      - name: Get yarn cache directory path
-        id: yarn-cache-dir-path
-        run: echo "::set-output name=dir::$(yarn config get cacheFolder)"
-      - uses: actions/cache@v2
-        id: yarn-cache # use this to check for `cache-hit` (`steps.yarn-cache.outputs.cache-hit != 'true'`)
-        with:
-          path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
-          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-yarn-
-
-      # Bootstrap Forecast
-      - name: Install Node dependencies
-        run: yarn install --immutable
-
-      # Build Forecast
-      - name: Build Forecast
-        run: yarn build
-
-      # Publish NPM Packages
-      - name: Publish packages
-        run: yarn publish:all
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Send "Send Thread Message" Result
+        run: echo "Data - ${{ steps.send-message.outputs.slack-result }}"

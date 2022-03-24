@@ -70,6 +70,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@babel/preset-env", "virtual:83930a02e406f078247fc9b9d21de38a337fcb78679a3d66298da2df309f013f7be5bb231811c0f7e8543d93b976930cd65092f5c1c34eb2317b35770703c6a9#npm:7.16.0"],
             ["@babel/preset-react", "virtual:83930a02e406f078247fc9b9d21de38a337fcb78679a3d66298da2df309f013f7be5bb231811c0f7e8543d93b976930cd65092f5c1c34eb2317b35770703c6a9#npm:7.16.0"],
             ["@babel/preset-typescript", "virtual:83930a02e406f078247fc9b9d21de38a337fcb78679a3d66298da2df309f013f7be5bb231811c0f7e8543d93b976930cd65092f5c1c34eb2317b35770703c6a9#npm:7.16.0"],
+            ["@changesets/changelog-github", "npm:0.4.3"],
             ["@changesets/cli", "npm:2.20.0"],
             ["@commitlint/cli", "npm:14.1.0"],
             ["@commitlint/config-conventional", "npm:14.1.0"],
@@ -4274,6 +4275,18 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["@changesets/changelog-github", [
+        ["npm:0.4.3", {
+          "packageLocation": "./.yarn/cache/@changesets-changelog-github-npm-0.4.3-aa0bb1dc0f-4bca5c4f15.zip/node_modules/@changesets/changelog-github/",
+          "packageDependencies": [
+            ["@changesets/changelog-github", "npm:0.4.3"],
+            ["@changesets/get-github-info", "npm:0.5.0"],
+            ["@changesets/types", "npm:4.1.0"],
+            ["dotenv", "npm:8.6.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["@changesets/cli", [
         ["npm:2.20.0", {
           "packageLocation": "./.yarn/cache/@changesets-cli-npm-2.20.0-a8908b60c7-c75c61ecc3.zip/node_modules/@changesets/cli/",
@@ -4349,6 +4362,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["chalk", "npm:2.4.2"],
             ["fs-extra", "npm:7.0.1"],
             ["semver", "npm:5.7.1"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@changesets/get-github-info", [
+        ["npm:0.5.0", {
+          "packageLocation": "./.yarn/cache/@changesets-get-github-info-npm-0.5.0-1ad8cdd598-9867a78753.zip/node_modules/@changesets/get-github-info/",
+          "packageDependencies": [
+            ["@changesets/get-github-info", "npm:0.5.0"],
+            ["dataloader", "npm:1.4.0"],
+            ["node-fetch", "virtual:1ad8cdd598b996476be1c6089c020c528b0ba46008745c12b0da227ecc3ccf69100e1d6ef858b95530514901a0bb94850e0785ff0476108021fcd743e5895070#npm:2.6.7"]
           ],
           "linkType": "HARD",
         }]
@@ -4450,6 +4474,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@changesets-types-npm-4.0.2-fdb0022f88-098ed02b44.zip/node_modules/@changesets/types/",
           "packageDependencies": [
             ["@changesets/types", "npm:4.0.2"]
+          ],
+          "linkType": "HARD",
+        }],
+        ["npm:4.1.0", {
+          "packageLocation": "./.yarn/cache/@changesets-types-npm-4.1.0-c7ed225741-72c1f58044.zip/node_modules/@changesets/types/",
+          "packageDependencies": [
+            ["@changesets/types", "npm:4.1.0"]
           ],
           "linkType": "HARD",
         }]
@@ -16753,6 +16784,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["dataloader", [
+        ["npm:1.4.0", {
+          "packageLocation": "./.yarn/cache/dataloader-npm-1.4.0-ba03bd2183-e2c93d43af.zip/node_modules/dataloader/",
+          "packageDependencies": [
+            ["dataloader", "npm:1.4.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["debug", [
         ["npm:2.6.9", {
           "packageLocation": "./.yarn/cache/debug-npm-2.6.9-7d4cb597dc-d2f51589ca.zip/node_modules/debug/",
@@ -19050,6 +19090,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@babel/preset-env", "virtual:83930a02e406f078247fc9b9d21de38a337fcb78679a3d66298da2df309f013f7be5bb231811c0f7e8543d93b976930cd65092f5c1c34eb2317b35770703c6a9#npm:7.16.0"],
             ["@babel/preset-react", "virtual:83930a02e406f078247fc9b9d21de38a337fcb78679a3d66298da2df309f013f7be5bb231811c0f7e8543d93b976930cd65092f5c1c34eb2317b35770703c6a9#npm:7.16.0"],
             ["@babel/preset-typescript", "virtual:83930a02e406f078247fc9b9d21de38a337fcb78679a3d66298da2df309f013f7be5bb231811c0f7e8543d93b976930cd65092f5c1c34eb2317b35770703c6a9#npm:7.16.0"],
+            ["@changesets/changelog-github", "npm:0.4.3"],
             ["@changesets/cli", "npm:2.20.0"],
             ["@commitlint/cli", "npm:14.1.0"],
             ["@commitlint/config-conventional", "npm:14.1.0"],
@@ -23952,6 +23993,27 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["node-fetch", "npm:2.6.6"],
             ["whatwg-url", "npm:5.0.0"]
+          ],
+          "linkType": "HARD",
+        }],
+        ["npm:2.6.7", {
+          "packageLocation": "./.yarn/cache/node-fetch-npm-2.6.7-777aa2a6df-8d816ffd1e.zip/node_modules/node-fetch/",
+          "packageDependencies": [
+            ["node-fetch", "npm:2.6.7"]
+          ],
+          "linkType": "SOFT",
+        }],
+        ["virtual:1ad8cdd598b996476be1c6089c020c528b0ba46008745c12b0da227ecc3ccf69100e1d6ef858b95530514901a0bb94850e0785ff0476108021fcd743e5895070#npm:2.6.7", {
+          "packageLocation": "./.yarn/__virtual__/node-fetch-virtual-5a77f5f874/0/cache/node-fetch-npm-2.6.7-777aa2a6df-8d816ffd1e.zip/node_modules/node-fetch/",
+          "packageDependencies": [
+            ["node-fetch", "virtual:1ad8cdd598b996476be1c6089c020c528b0ba46008745c12b0da227ecc3ccf69100e1d6ef858b95530514901a0bb94850e0785ff0476108021fcd743e5895070#npm:2.6.7"],
+            ["@types/encoding", null],
+            ["encoding", null],
+            ["whatwg-url", "npm:5.0.0"]
+          ],
+          "packagePeers": [
+            "@types/encoding",
+            "encoding"
           ],
           "linkType": "HARD",
         }]

@@ -14,10 +14,10 @@
     "directory": "packages/icons"
   },
   "publishConfig": {
+    "access": "public",
     "main": "dist/index.js",
     "module": "dist/index.mjs",
-    "types": "dist/index.d.ts",
-    "registry": "https://npm.pkg.github.com/"
+    "types": "dist/index.d.ts"
   },
   "scripts": {
     "build": "yarn clean && yarn compile",
