@@ -59,7 +59,8 @@
     "**/docs/**",
     "**/dist/**",
     "build-storybook.log",
-    ".gitignore"
+    ".gitignore",
+    "CHANGELOG.md"
   ],
   "overrides": [
     {
