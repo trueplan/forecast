@@ -2,7 +2,6 @@ import * as React from "react";
 import { Box } from "../../../primitives/box";
 import { Pill } from "../../pill";
 import { ProgressBar } from "../../progress";
-import { Status } from "../../status";
 import {
   Stat,
   StatButton,
