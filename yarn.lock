@@ -11470,6 +11470,9 @@ __metadata:
   peerDependencies:
     react: 17.x
     react-dom: 17.x
+  dependenciesMeta:
+    open@7.4.2:
+      unplugged: true
   languageName: unknown
   linkType: soft
 
