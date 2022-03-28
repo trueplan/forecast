@@ -25,7 +25,8 @@
     "labelledby",
     "noreferrer",
     "noopener",
-    "describedby"
+    "describedby",
+    "ariakit"
   ],
   "ignoreWords": [
     "btlr",

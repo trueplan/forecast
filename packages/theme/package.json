@@ -4,7 +4,10 @@
   "description": "Forecast Design System Theme",
   "author": "TruePlan Inc.",
   "license": "UNLICENSED",
-  "main": "src/index.ts",
+  "source": "src/index.ts",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
   "files": [
     "dist"
   ],
@@ -14,10 +17,7 @@
     "directory": "packages/theme"
   },
   "publishConfig": {
-    "access": "public",
-    "main": "dist/index.js",
-    "module": "dist/index.mjs",
-    "types": "dist/index.d.ts"
+    "access": "public"
   },
   "scripts": {
     "build": "yarn clean && yarn compile",

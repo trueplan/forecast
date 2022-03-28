@@ -7,7 +7,7 @@ import {
   CloseIcon,
 } from "@trueplan/forecast-icons";
 import type * as ToastPrimitive from "@radix-ui/react-toast";
-import { Box } from "@trueplan/forecast-components";
+import { Box } from "../../../primitives/box";
 import {
   ToastRoot,
   ToastTitle,

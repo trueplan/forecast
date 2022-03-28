@@ -14,15 +14,11 @@ const pkg = JSON.parse(
 
 // eslint-disable-next-line import/no-default-export
 export default {
-  input: pkg.main,
+  input: pkg.source,
   output: [
     {
-      file: pkg.publishConfig.main,
+      file: pkg.main,
       format: "cjs",
-    },
-    {
-      file: pkg.publishConfig.module,
-      format: "esm",
     },
   ],
   external: [...Object.keys(pkg.peerDependencies || {})],
