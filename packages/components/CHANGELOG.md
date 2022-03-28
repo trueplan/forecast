@@ -1,5 +1,12 @@
 # @trueplan/forecast-components
 
+## 1.2.0
+
+### Minor Changes
+
+- [#63](https://github.com/trueplan/forecast/pull/63) [`05d7048`](https://github.com/trueplan/forecast/commit/05d7048c6ed99f73d8f96888343ee82bce04c824) Thanks [@richbachman](https://github.com/richbachman)! - - [popover]: added popover component package and stories
+  - [stat]: removed unused status import
+
 ## 1.1.0
 
 ### Minor Changes
