@@ -4,7 +4,8 @@
   "description": "Forecast Design System Icons",
   "author": "TruePlan Inc.",
   "license": "UNLICENSED",
-  "main": "index.ts",
+  "main:dev": "index.ts",
+  "main": "dist/index.js",
   "files": [
     "dist"
   ],
