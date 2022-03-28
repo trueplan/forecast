@@ -4,7 +4,10 @@
   "description": "Forecast Design System Icons",
   "author": "TruePlan Inc.",
   "license": "UNLICENSED",
-  "main": "index.ts",
+  "source": "index.ts",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
   "files": [
     "dist"
   ],
@@ -14,10 +17,7 @@
     "directory": "packages/icons"
   },
   "publishConfig": {
-    "access": "public",
-    "main": "dist/index.js",
-    "module": "dist/index.mjs",
-    "types": "dist/index.d.ts"
+    "access": "public"
   },
   "scripts": {
     "build": "yarn clean && yarn compile",
