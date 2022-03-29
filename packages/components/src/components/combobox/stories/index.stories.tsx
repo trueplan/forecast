@@ -2,11 +2,14 @@ import * as React from "react";
 import { useUID } from "react-uid";
 import { HelpText } from "../../help-text";
 import { Label } from "../../label";
+import { Text } from "../../../primitives/text";
 import {
   Combobox,
   ComboboxItem,
   ComboboxPopover,
   useComboboxState,
+  ComboboxMultiple,
+  ComboboxMultipleItem,
 } from "../src";
 import { itemList as list } from "../__fixtures__/item-list";
 
@@ -57,9 +60,38 @@ export const Matches: React.FC = () => {
             <ComboboxItem key={value} value={value} />
           ))
         ) : (
-          <div>No results found</div>
+          <Text>No results found</Text>
         )}
       </ComboboxPopover>
+    </>
+  );
+};
+
+export const Multiple: React.FC = () => {
+  const comboboxID = useUID();
+  const [values, setValues] = React.useState<string[]>([]);
+  const [matches, setMatches] = React.useState<string[]>([]);
+  const printedValues = JSON.stringify(values);
+  return (
+    <>
+      <Label htmlFor={comboboxID}>Combobox</Label>
+      <ComboboxMultiple
+        id={comboboxID}
+        defaultList={list}
+        onFilter={setMatches}
+        values={values}
+        onValuesChange={setValues}
+        placeholder="Placeholder text..."
+      >
+        {matches.length > 0 ? (
+          matches.map((value) => (
+            <ComboboxMultipleItem key={value} value={value} />
+          ))
+        ) : (
+          <Text>No results found</Text>
+        )}
+      </ComboboxMultiple>
+      {printedValues && <pre>{printedValues}</pre>}
     </>
   );
 };
