@@ -1,5 +1,11 @@
 # @trueplan/forecast-components
 
+## 1.2.2
+
+### Patch Changes
+
+- [#65](https://github.com/trueplan/forecast/pull/65) [`25ef099`](https://github.com/trueplan/forecast/commit/25ef09941d5bda3eb79a342734243bcaf44a3cd7) Thanks [@richbachman](https://github.com/richbachman)! - [combobox]: added combobox multiple select component and story.
+
 ## 1.2.1
 
 ### Patch Changes
