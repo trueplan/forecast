@@ -57,7 +57,9 @@ export const Matches: React.FC = () => {
       <ComboboxPopover state={comboboxState}>
         {comboboxState.matches.length > 0 ? (
           comboboxState.matches.map((value) => (
-            <ComboboxItem key={value} value={value} />
+            <ComboboxItem key={value} value={value}>
+              {value}
+            </ComboboxItem>
           ))
         ) : (
           <Text>No results found</Text>
