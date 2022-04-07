@@ -1,5 +1,11 @@
 # @trueplan/forecast-components
 
+## 1.2.3
+
+### Patch Changes
+
+- [#72](https://github.com/trueplan/forecast/pull/72) [`c9f1d2f`](https://github.com/trueplan/forecast/commit/c9f1d2f3b6c227ebdebbb042515b1679a623c053) Thanks [@richbachman](https://github.com/richbachman)! - [combobox]: Adjusts ComboboxMultiple and ComboboxMultipleItem to use Select from AriaKit. This fixes the type ahead matching as well.
+
 ## 1.2.2
 
 ### Patch Changes
