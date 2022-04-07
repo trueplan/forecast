@@ -40,7 +40,7 @@
     "@radix-ui/react-tooltip": "^0.1.0",
     "@radix-ui/react-visually-hidden": "^0.1.0",
     "@stitches/react": "^1.2.0",
-    "ariakit": "2.0.0-alpha.19",
+    "ariakit": "2.0.0-alpha.21",
     "react-uid": "^2.3.1"
   },
   "peerDependencies": {
@@ -59,7 +59,7 @@
     "@stitches/react": "^1.2.0",
     "@trueplan/forecast-icons": "^1.0.5",
     "@trueplan/forecast-theme": "^1.0.6",
-    "ariakit": "2.0.0-alpha.19",
+    "ariakit": "2.0.0-alpha.21",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-uid": "^2.3.1"
