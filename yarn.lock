@@ -5397,7 +5397,7 @@ __metadata:
     "@types/node": ^14.14.45
     "@types/react": ^16.14.6
     "@types/react-dom": ^16.9.12
-    ariakit: 2.0.0-alpha.19
+    ariakit: 2.0.0-alpha.21
     react: ^17.0.2
     react-dom: ^17.0.2
     react-uid: ^2.3.1
@@ -5422,7 +5422,7 @@ __metadata:
     "@stitches/react": ^1.2.0
     "@trueplan/forecast-icons": ^1.0.5
     "@trueplan/forecast-theme": ^1.0.6
-    ariakit: 2.0.0-alpha.19
+    ariakit: 2.0.0-alpha.21
     react: ^17.0.2
     react-dom: ^17.0.2
     react-uid: ^2.3.1
@@ -7038,25 +7038,25 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ariakit-utils@npm:^0.17.0-alpha.12":
-  version: 0.17.0-alpha.12
-  resolution: "ariakit-utils@npm:0.17.0-alpha.12"
+"ariakit-utils@npm:^0.17.0-alpha.14":
+  version: 0.17.0-alpha.14
+  resolution: "ariakit-utils@npm:0.17.0-alpha.14"
   peerDependencies:
-    react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^18.0.0-beta
-  checksum: 7b12b2c362ef01d112481697d987091ae333391f5a7994f920c451ae770dc45aa6b2db5eb0d60b946280b3ab8cc8b36a305a318e6037293ef8e0887659b660a1
+    react: ^16.8.0 || ^17.0.0 || ^18.0.0
+  checksum: d39040f6353929e66f6fb6265f4a97af1124858dbc3d06c41a41e652b5127ab36f774ea391c436ed19b74d8b732c61a3f03921b2c2f08d0882b1864a1aba4388
   languageName: node
   linkType: hard
 
-"ariakit@npm:2.0.0-alpha.19":
-  version: 2.0.0-alpha.19
-  resolution: "ariakit@npm:2.0.0-alpha.19"
+"ariakit@npm:2.0.0-alpha.21":
+  version: 2.0.0-alpha.21
+  resolution: "ariakit@npm:2.0.0-alpha.21"
   dependencies:
     "@popperjs/core": ^2.11.2
-    ariakit-utils: ^0.17.0-alpha.12
+    ariakit-utils: ^0.17.0-alpha.14
   peerDependencies:
-    react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^18.0.0-beta
-    react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^18.0.0-beta
-  checksum: 437ecd6c05eefa570d40d0b00ba193e59898781262b30e591b6b1ca9109bee7317a45fe8aa27ee273fe8a1e6f4275f51067eb4b58c5baa0f8fbffea29b9d700d
+    react: ^16.8.0 || ^17.0.0 || ^18.0.0
+    react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0
+  checksum: 21b562d58e92cb18f0a71c4511255ab84467d3091809938c165e7f3bb6cbf35d615e10f0e3acb20415910fcc7718cd140681c8cce824ad36b1754aec3dc04b49
   languageName: node
   linkType: hard
 

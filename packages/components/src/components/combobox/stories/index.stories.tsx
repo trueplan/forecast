@@ -21,7 +21,7 @@ export default {
 
 export const Default: React.FC = () => {
   const comboboxID = useUID();
-  const comboboxState = useComboboxState({ gutter: 8 });
+  const comboboxState = useComboboxState({ gutter: 8, sameWidth: true });
   return (
     <>
       <Label htmlFor={comboboxID}>Combobox</Label>
@@ -44,7 +44,7 @@ export const Default: React.FC = () => {
 
 export const Matches: React.FC = () => {
   const comboboxID = useUID();
-  const comboboxState = useComboboxState({ gutter: 8, list });
+  const comboboxState = useComboboxState({ gutter: 8, sameWidth: true, list });
   return (
     <>
       <Label htmlFor={comboboxID}>Combobox</Label>
@@ -57,7 +57,9 @@ export const Matches: React.FC = () => {
       <ComboboxPopover state={comboboxState}>
         {comboboxState.matches.length > 0 ? (
           comboboxState.matches.map((value) => (
-            <ComboboxItem key={value} value={value} />
+            <ComboboxItem key={value} value={value}>
+              {value}
+            </ComboboxItem>
           ))
         ) : (
           <Text>No results found</Text>
@@ -98,7 +100,7 @@ export const Multiple: React.FC = () => {
 
 export const Required: React.FC = () => {
   const comboboxID = useUID();
-  const comboboxState = useComboboxState({ gutter: 8 });
+  const comboboxState = useComboboxState({ gutter: 8, sameWidth: true });
   return (
     <>
       <Label htmlFor={comboboxID} required>
@@ -124,7 +126,7 @@ export const Required: React.FC = () => {
 
 export const ReadOnly: React.FC = () => {
   const comboboxID = useUID();
-  const comboboxState = useComboboxState({ gutter: 8 });
+  const comboboxState = useComboboxState({ gutter: 8, sameWidth: true });
   return (
     <>
       <Label htmlFor={comboboxID}>Combobox</Label>
@@ -141,7 +143,7 @@ export const ReadOnly: React.FC = () => {
 
 export const Disabled: React.FC = () => {
   const comboboxID = useUID();
-  const comboboxState = useComboboxState({ gutter: 8 });
+  const comboboxState = useComboboxState({ gutter: 8, sameWidth: true });
   return (
     <>
       <Label htmlFor={comboboxID}>Combobox</Label>
@@ -158,7 +160,7 @@ export const Disabled: React.FC = () => {
 
 export const Error: React.FC = () => {
   const comboboxID = useUID();
-  const comboboxState = useComboboxState({ gutter: 8 });
+  const comboboxState = useComboboxState({ gutter: 8, sameWidth: true });
   const helpTextID = useUID();
   return (
     <>

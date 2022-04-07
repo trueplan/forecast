@@ -1,12 +1,10 @@
 import * as React from "react";
-import { useCheckboxState } from "ariakit/checkbox";
-import { ComboboxCheckboxContext } from "./ComboboxCheckboxContext";
-import { useComboboxState, ComboboxPopover, Combobox } from ".";
-import type { ComboboxProps } from ".";
+import { SelectList, useSelectState } from "ariakit/select";
+import { Combobox, ComboboxPopover, useComboboxState } from ".";
 
 export type ComboboxMultipleProps = Omit<
-  ComboboxProps,
-  "state" | "onChange"
+  React.InputHTMLAttributes<HTMLInputElement>,
+  "autoComplete"
 > & {
   defaultValue?: string;
   value?: string;
@@ -38,11 +36,12 @@ const ComboboxMultiple = React.forwardRef<
   } = props;
 
   const combobox = useComboboxState({
-    gutter: 8,
     // VoiceOver has issues with multi-selectable comboboxes where the DOM focus
     // is on the combobox input, so we set `virtualFocus` to `false` to disable
     // this behavior and put DOM focus on the items.
     virtualFocus: false,
+    sameWidth: true,
+    gutter: 8,
     defaultValue,
     value,
     setValue: onChange,
@@ -50,7 +49,8 @@ const ComboboxMultiple = React.forwardRef<
     list,
   });
 
-  const checkbox = useCheckboxState({
+  const select = useSelectState({
+    ...combobox,
     defaultValue: defaultValues,
     value: values,
     setValue: onValuesChange,
@@ -58,20 +58,33 @@ const ComboboxMultiple = React.forwardRef<
 
   React.useEffect(() => {
     onFilter?.(combobox.matches);
-  }, [combobox.matches, onFilter]);
+  }, [combobox.matches]);
 
   // Reset the combobox value whenever an item is checked or unchecked.
   React.useEffect(() => {
     combobox.setValue("");
-  }, [checkbox.value, combobox, combobox.setValue]);
+  }, [select.value, combobox.setValue]);
+
+  // const element = ;
 
   return (
     <>
       <Combobox ref={ref} state={combobox} {...comboboxProps} />
-      <ComboboxPopover state={combobox} aria-multiselectable>
-        <ComboboxCheckboxContext.Provider value={checkbox}>
-          {children}
-        </ComboboxCheckboxContext.Provider>
+      <ComboboxPopover state={combobox}>
+        {(popoverProps) => (
+          <SelectList
+            state={select}
+            // Disable the composite behavior on the select list since combobox
+            // will handle it.
+            composite={false}
+            // Disable typeahead so it doesn't conflict with typing on the
+            // combobox input.
+            typeahead={false}
+            {...popoverProps}
+          >
+            {children}
+          </SelectList>
+        )}
       </ComboboxPopover>
     </>
   );
