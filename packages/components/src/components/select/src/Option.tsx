@@ -1,29 +1,33 @@
 import * as React from "react";
+import { SelectItem } from "ariakit/select";
 import { styled, theme } from "@trueplan/forecast-theme";
+import type { OptionProps } from "./types";
 
-export const StyledOption = styled("option", {
+export const StyledItem = styled(SelectItem, {
+  borderRadius: theme.radii[30],
   color: "inherit",
+  cursor: "pointer",
   fontFamily: "inherit",
   fontSize: "inherit",
   fontWeight: "inherit",
   lineHeight: "inherit",
-  paddingTop: theme.space[20],
-  paddingBottom: theme.space[20],
-  paddingLeft: theme.space[20],
+  padding: theme.space[20],
+  "&:hover": {
+    backgroundColor: theme.colors.gray20,
+  },
+  "&:focus": {
+    backgroundColor: theme.colors.gray20,
+    outline: "none",
+  },
 });
 
-export interface OptionProps
-  extends Omit<React.OptionHTMLAttributes<HTMLOptionElement>, "css"> {
-  children: React.ReactNode;
-  value: string;
-}
-
-const Option = React.forwardRef<HTMLOptionElement, OptionProps>(
+const Option = React.forwardRef<HTMLDivElement, OptionProps>(
   ({ children, value, ...props }, ref) => {
     return (
-      <StyledOption value={value} ref={ref} {...props}>
+      // <SelectItem>{children}</SelectItem>
+      <StyledItem value={value} ref={ref} {...props}>
         {children}
-      </StyledOption>
+      </StyledItem>
     );
   }
 );
