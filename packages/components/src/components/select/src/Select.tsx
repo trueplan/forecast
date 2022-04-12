@@ -1,22 +1,7 @@
 import * as React from "react";
-import { ChevronDownIcon, ChevronUpIcon } from "@trueplan/forecast-icons";
-import { Box } from "../../../primitives/box";
 import { InputBox } from "../../input-box";
 import type { SelectProps } from "./types";
 import { SelectPopover, StyledSelect } from ".";
-
-const SelectIconWrapper: React.FC = () => (
-  <Box
-    css={{
-      position: "absolute",
-      top: "50%",
-      right: 12,
-      marginTop: "-0.313rem",
-    }}
-  >
-    <ChevronDownIcon decorative size="xxsmall" />
-  </Box>
-);
 
 const Select = React.forwardRef<HTMLButtonElement, SelectProps>(
   (
@@ -45,7 +30,6 @@ const Select = React.forwardRef<HTMLButtonElement, SelectProps>(
           state={state}
           {...props}
         />
-        {/* <SelectIconWrapper /> */}
         <SelectPopover state={state}>{children}</SelectPopover>
       </InputBox>
     );
