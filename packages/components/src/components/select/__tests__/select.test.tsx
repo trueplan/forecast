@@ -29,13 +29,6 @@ describe("Select", () => {
     expect(renderedSelect).not.toBeNull();
   });
 
-  // eslint-disable-next-line jest/no-commented-out-tests
-  // it("should render a required select", () => {
-  //   render(<MockSelect data-testid="select" required />);
-  //   const renderedSelect = screen.getByTestId("select");
-  //   expect(renderedSelect.getAttribute("required")).toEqual("");
-  // });
-
   it("should render a disabled select", () => {
     render(<MockSelect data-testid="select" disabled />);
     const renderedSelect = screen.getByTestId("select");
@@ -47,13 +40,6 @@ describe("Select", () => {
     const renderedSelect = screen.getByTestId("select");
     expect(renderedSelect.getAttribute("id")).toEqual("select-id");
   });
-
-  // eslint-disable-next-line jest/no-commented-out-tests
-  // it("should render a select name", () => {
-  //   render(<MockSelect data-testid="select" disabled />);
-  //   const renderedSelect = screen.getByTestId("select");
-  //   expect(renderedSelect.getAttribute("name")).toEqual("select");
-  // });
 });
 
 describe("Option", () => {
