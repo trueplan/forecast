@@ -1,5 +1,12 @@
 # @trueplan/forecast-icons
 
+## 2.0.0
+
+### Patch Changes
+
+- Updated dependencies [[`96a4a0c`](https://github.com/trueplan/forecast/commit/96a4a0cc0e7f2527bc0d5b5d767fbb86de663d8d)]:
+  - @trueplan/forecast-components@2.0.0
+
 ## 1.0.6
 
 ### Patch Changes
