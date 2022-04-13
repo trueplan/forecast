@@ -18,7 +18,6 @@ export default {
 
 const Template: Story<AlertProps> = ({ onDismiss, ...props }) => (
   <Box css={{ display: "grid", gridRowGap: "$35", maxWidth: "434px" }}>
-    {console.log(props)}
     <Alert onDismiss={onDismiss} {...props}>
       <Paragraph marginBottom="space0">
         Lorem ipsum dolor sit amet, consectetur. Lorem ipsum dolor sit amet,
