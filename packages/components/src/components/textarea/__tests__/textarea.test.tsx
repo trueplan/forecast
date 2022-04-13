@@ -1,5 +1,5 @@
 import * as React from "react";
-import { render } from "@testing-library/react";
+import { render, screen } from "@testing-library/react";
 import { TextArea } from "../src";
 
 describe("TextArea", () => {
@@ -13,8 +13,9 @@ describe("TextArea", () => {
     placeholder: "Enter your name",
   };
 
-  const { getByRole } = render(<TextArea {...initialProps} />);
-  const TextAreaElement = getByRole("textbox");
+  render(<TextArea {...initialProps} />);
+
+  const TextAreaElement = screen.getByRole("textbox");
 
   it("should render a textarea", () => {
     expect(TextAreaElement).toBeDefined();

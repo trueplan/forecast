@@ -2,7 +2,7 @@ import * as React from "react";
 import { StyledIconWrapper } from "./styles";
 import type { IconWrapperProps } from "./types";
 
-const IconWrapper = React.forwardRef<HTMLDivElement, IconWrapperProps>(
+const IconWrapper = React.forwardRef<HTMLElement, IconWrapperProps>(
   (
     {
       as = "span",

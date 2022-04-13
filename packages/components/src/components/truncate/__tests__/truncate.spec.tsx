@@ -1,9 +1,9 @@
 import * as React from "react";
-import { render } from "@testing-library/react";
+import { render, screen } from "@testing-library/react";
 import { Truncate } from "../src";
 
 describe("Truncate", () => {
-  const { getByTestId } = render(
+  render(
     <Truncate
       title="Some very long text to truncate"
       data-testid="test-truncate"
@@ -11,7 +11,7 @@ describe("Truncate", () => {
       Some very long text to truncate
     </Truncate>
   );
-  const TruncateElement = getByTestId("test-truncate");
+  const TruncateElement = screen.getByTestId("test-truncate");
 
   it("should render truncate", () => {
     expect(TruncateElement).toBeDefined();

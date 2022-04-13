@@ -23,7 +23,7 @@ export type IconDisplayOptions =
 export type IconSizes = "xxsmall" | "xsmall" | "small" | "medium";
 
 export interface IconWrapperProps
-  extends Omit<React.HTMLAttributes<HTMLDivElement>, "css"> {
+  extends Omit<React.HTMLAttributes<HTMLElement>, "css"> {
   as?: keyof JSX.IntrinsicElements;
   color?: IconColors;
   display?: IconDisplayOptions;
