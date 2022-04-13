@@ -1,5 +1,7 @@
+import type * as TabsPrimitive from "@radix-ui/react-tabs";
+
 export interface TabsProps
-  extends Omit<React.HTMLAttributes<HTMLDivElement>, "css" | "dir"> {
+  extends Omit<TabsPrimitive.TabsProps, "css" | "dir"> {
   children: React.ReactNode;
   defaultValue?: string;
   onValueChange?: (value: string) => void;
@@ -7,21 +9,21 @@ export interface TabsProps
 }
 
 export interface TabsListProps
-  extends Omit<React.HTMLAttributes<HTMLDivElement>, "css"> {
+  extends Omit<TabsPrimitive.TabsListProps, "css"> {
   children: React.ReactNode;
   centered?: boolean;
   loop?: boolean;
 }
 
 export interface TabTriggerProps
-  extends Omit<React.HTMLAttributes<HTMLDivElement>, "css"> {
+  extends Omit<TabsPrimitive.TabsTriggerProps, "css"> {
   children: React.ReactNode;
   disabled?: boolean;
   value: string;
 }
 
 export interface TabContentProps
-  extends Omit<React.HTMLAttributes<HTMLDivElement>, "css" | "dir"> {
+  extends Omit<TabsPrimitive.TabsContentProps, "css" | "dir"> {
   children: React.ReactNode;
   value: string;
 }

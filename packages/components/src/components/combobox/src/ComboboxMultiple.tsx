@@ -71,23 +71,29 @@ const ComboboxMultiple = React.forwardRef<
     <>
       <Combobox ref={ref} state={combobox} {...comboboxProps} />
       <ComboboxPopover state={combobox}>
-        {(popoverProps) => (
-          <SelectList
-            state={select}
-            // Disable the composite behavior on the select list since combobox
-            // will handle it.
-            composite={false}
-            // Disable typeahead so it doesn't conflict with typing on the
-            // combobox input.
-            typeahead={false}
-            {...popoverProps}
-          >
-            {children}
-          </SelectList>
-        )}
+        {
+          // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+          // @ts-ignore Should be fixed in a future Ariakit update
+          (popoverProps) => (
+            <SelectList
+              state={select}
+              // Disable the composite behavior on the select list since combobox
+              // will handle it.
+              composite={false}
+              // Disable typeahead so it doesn't conflict with typing on the
+              // combobox input.
+              typeahead={false}
+              {...popoverProps}
+            >
+              {children}
+            </SelectList>
+          )
+        }
       </ComboboxPopover>
     </>
   );
 });
+
+ComboboxMultiple.displayName = "ComboboxMultiple";
 
 export { ComboboxMultiple };

@@ -2,23 +2,29 @@ import * as React from "react";
 import { StyledIconWrapper } from "./styles";
 import type { IconWrapperProps } from "./types";
 
-const IconWrapper: React.FC<IconWrapperProps> = ({
-  as = "span",
-  color = "white",
-  display = "block",
-  size = "medium",
-  ...props
-}) => {
-  return (
-    <StyledIconWrapper
-      as={as}
-      color={color}
-      display={display}
-      size={size}
-      {...props}
-    />
-  );
-};
+const IconWrapper = React.forwardRef<HTMLDivElement, IconWrapperProps>(
+  (
+    {
+      as = "span",
+      color = "white",
+      display = "block",
+      size = "medium",
+      ...props
+    },
+    ref
+  ) => {
+    return (
+      <StyledIconWrapper
+        as={as}
+        color={color}
+        display={display}
+        size={size}
+        ref={ref}
+        {...props}
+      />
+    );
+  }
+);
 
 IconWrapper.displayName = "IconWrapper";
 export { IconWrapper };

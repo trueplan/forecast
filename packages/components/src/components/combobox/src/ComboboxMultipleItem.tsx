@@ -14,6 +14,8 @@ const ComboboxMultipleItem = React.forwardRef<
     // Here we're combining both SelectItem and ComboboxItem into the same
     // element. SelectItem adds the multi-selectable attributes to the element
     // (for example, aria-selected).
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+    // @ts-ignore Should be fixed in a future Ariakit update
     <SelectItem
       ref={ref}
       value={value}

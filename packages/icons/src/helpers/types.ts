@@ -1,3 +1,5 @@
+import type React from "react";
+
 export type IconColors =
   | "current"
   | "white"
@@ -20,7 +22,8 @@ export type IconDisplayOptions =
   | "inlineFlex";
 export type IconSizes = "xxsmall" | "xsmall" | "small" | "medium";
 
-export interface IconWrapperProps {
+export interface IconWrapperProps
+  extends Omit<React.HTMLAttributes<HTMLDivElement>, "css"> {
   as?: keyof JSX.IntrinsicElements;
   color?: IconColors;
   display?: IconDisplayOptions;
