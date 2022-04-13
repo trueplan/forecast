@@ -78,3 +78,10 @@ jspm_packages/
 # TODO Fix lint errors here
 # Icon tools
 packages/icons/tools/**/*
+
+# Config files
+commitlint.config.js
+.eslintrc.js
+**/rollup.config.js
+jest.config.js
+**/next.config.js
