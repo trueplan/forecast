@@ -1,5 +1,6 @@
 import * as React from "react";
 import { render, screen } from "@testing-library/react";
+import { useSelectState } from "ariakit/select";
 import { Select, Option, OptionGroup } from "../src";
 
 interface MockSelectProps {
@@ -8,8 +9,12 @@ interface MockSelectProps {
 }
 
 const MockSelect: React.FC<MockSelectProps> = ({ ...props }) => {
+  const selectState = useSelectState({
+    gutter: 8,
+    sameWidth: true,
+  });
   return (
-    <Select id="select-id" name="select" {...props}>
+    <Select id="select-id" name="select" {...props} state={selectState}>
       <Option value="option1">Option One</Option>
       <Option value="option2">Option Two</Option>
       <Option value="option3">Option Three</Option>
@@ -24,12 +29,6 @@ describe("Select", () => {
     expect(renderedSelect).not.toBeNull();
   });
 
-  it("should render a required select", () => {
-    render(<MockSelect data-testid="select" required />);
-    const renderedSelect = screen.getByTestId("select");
-    expect(renderedSelect.getAttribute("required")).toEqual("");
-  });
-
   it("should render a disabled select", () => {
     render(<MockSelect data-testid="select" disabled />);
     const renderedSelect = screen.getByTestId("select");
@@ -40,12 +39,6 @@ describe("Select", () => {
     render(<MockSelect data-testid="select" disabled />);
     const renderedSelect = screen.getByTestId("select");
     expect(renderedSelect.getAttribute("id")).toEqual("select-id");
-  });
-
-  it("should render a select name", () => {
-    render(<MockSelect data-testid="select" disabled />);
-    const renderedSelect = screen.getByTestId("select");
-    expect(renderedSelect.getAttribute("name")).toEqual("select");
   });
 });
 
@@ -58,19 +51,20 @@ describe("Option", () => {
     );
     const renderedOption = screen.getByTestId("option");
     expect(renderedOption).not.toBeNull();
-    expect(renderedOption.getAttribute("value")).toEqual("option one");
   });
 });
 
 describe("OptionGroup", () => {
-  it("should render an option group", () => {
+  it("should render an option group with options", () => {
     render(
-      <OptionGroup data-testid="option-group" label="group one">
-        group one
+      <OptionGroup data-testid="option-group">
+        <Option value="option1">Option One</Option>
       </OptionGroup>
     );
     const renderedOptionGroup = screen.getByTestId("option-group");
+    const renderedOptionOne = screen.getByText("Option One");
     expect(renderedOptionGroup).not.toBeNull();
-    expect(renderedOptionGroup.getAttribute("label")).toEqual("group one");
+    expect(renderedOptionGroup.getAttribute("role")).toEqual("group");
+    expect(renderedOptionOne).not.toBeNull();
   });
 });
