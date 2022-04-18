@@ -6524,7 +6524,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@trueplan/forecast-components@^1.2.3, @trueplan/forecast-components@workspace:packages/components":
+"@trueplan/forecast-components@^2.0.0, @trueplan/forecast-components@workspace:packages/components":
   version: 0.0.0-use.local
   resolution: "@trueplan/forecast-components@workspace:packages/components"
   dependencies:
@@ -6545,7 +6545,7 @@ __metadata:
     "@storybook/react": ^6.4.21
     "@testing-library/jest-dom": ^5.16.4
     "@testing-library/react": ^13.0.1
-    "@trueplan/forecast-icons": ^1.0.6
+    "@trueplan/forecast-icons": ^2.0.0
     "@trueplan/forecast-theme": ^1.1.1
     "@types/jest": ^27.4.1
     "@types/node": ^17.0.23
@@ -6574,7 +6574,7 @@ __metadata:
     "@radix-ui/react-tooltip": ^0.1.7
     "@radix-ui/react-visually-hidden": ^0.1.4
     "@stitches/react": ^1.2.7
-    "@trueplan/forecast-icons": ^1.0.6
+    "@trueplan/forecast-icons": ^2.0.0
     "@trueplan/forecast-theme": ^1.1.1
     ariakit: 2.0.0-next.22
     react: ^18.0.0
@@ -6583,14 +6583,14 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@trueplan/forecast-icons@^1.0.6, @trueplan/forecast-icons@workspace:packages/icons":
+"@trueplan/forecast-icons@^2.0.0, @trueplan/forecast-icons@workspace:packages/icons":
   version: 0.0.0-use.local
   resolution: "@trueplan/forecast-icons@workspace:packages/icons"
   dependencies:
     "@svgr/babel-plugin-add-jsx-attribute": ^6.0.0
     "@svgr/babel-plugin-remove-jsx-attribute": ^6.0.0
     "@svgr/plugin-svgo": ^5.5.0
-    "@trueplan/forecast-components": ^1.2.3
+    "@trueplan/forecast-components": ^2.0.0
     "@trueplan/forecast-theme": ^1.1.1
     "@twilio-labs/svg-to-react": ^2.1.1
     "@types/node": ^17.0.23
@@ -6613,7 +6613,7 @@ __metadata:
     "@svgr/babel-plugin-add-jsx-attribute": ^6.0.0
     "@svgr/babel-plugin-remove-jsx-attribute": ^6.0.0
     "@svgr/plugin-svgo": ^5.5.0
-    "@trueplan/forecast-components": ^1.2.3
+    "@trueplan/forecast-components": ^2.0.0
     "@trueplan/forecast-theme": ^1.1.1
     "@twilio-labs/svg-to-react": ^2.1.1
     ansi-styles: 6.1.0

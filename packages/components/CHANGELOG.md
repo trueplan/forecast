@@ -1,5 +1,17 @@
 # @trueplan/forecast-components
 
+## 2.0.0
+
+### Major Changes
+
+- [#74](https://github.com/trueplan/forecast/pull/74) [`96a4a0c`](https://github.com/trueplan/forecast/commit/96a4a0cc0e7f2527bc0d5b5d767fbb86de663d8d) Thanks [@bwll-tpio](https://github.com/bwll-tpio)! - [select] updates Select, Option, and OptionGroup to use Select from ariakit.
+  BREAKING CHANGE: Removed label prop from OptionGroup, use OptionGroupLabel component as a child instead
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @trueplan/forecast-icons@2.0.0
+
 ## 1.2.3
 
 ### Patch Changes
