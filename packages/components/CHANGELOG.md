@@ -1,5 +1,11 @@
 # @trueplan/forecast-components
 
+## 3.0.1
+
+### Patch Changes
+
+- [#78](https://github.com/trueplan/forecast/pull/78) [`18e6923`](https://github.com/trueplan/forecast/commit/18e6923955c16ebcbc2f5d94c05f7c15c75f0356) Thanks [@richbachman](https://github.com/richbachman)! - [select]: export `useSelectState` from AriaKit.
+
 ## 3.0.0
 
 ### Major Changes
