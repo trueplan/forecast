@@ -9,3 +9,4 @@ export {
   OptionGroupLabel,
 } from "./styles";
 export * from "./types";
+export { useSelectState } from "ariakit/select";
