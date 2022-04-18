@@ -1,5 +1,5 @@
 import * as React from "react";
-import { render } from "@testing-library/react";
+import { render, screen } from "@testing-library/react";
 import { InputBox } from "../src";
 import type { InputBoxTypes } from "../src";
 
@@ -12,10 +12,9 @@ describe("InputBox", () => {
     "data-testid": "input-box",
   };
 
-  const { getByTestId } = render(
-    <InputBox {...initialProps}>Input Box</InputBox>
-  );
-  const InputBoxElement = getByTestId("input-box");
+  render(<InputBox {...initialProps}>Input Box</InputBox>);
+
+  const InputBoxElement = screen.getByTestId("input-box");
 
   it("should render an input box", () => {
     expect(InputBoxElement).toBeDefined();

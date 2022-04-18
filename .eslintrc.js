@@ -148,6 +148,7 @@ module.exports = {
         "@typescript-eslint/no-empty-function": "off",
         "import/no-default-export": "off",
         "react/display-name": "off",
+        "unicorn/prefer-dom-node-dataset": "off",
       },
     },
     {

@@ -41,7 +41,7 @@ describe("Button", () => {
       const onFocusMock: jest.Mock = jest.fn();
       const onBlurMock: jest.Mock = jest.fn();
 
-      const { getByRole } = render(
+      render(
         <Button
           variant="secondary"
           onClick={onClickMock}
@@ -56,19 +56,21 @@ describe("Button", () => {
         </Button>
       );
 
-      fireEvent.click(getByRole("button"));
+      const button = screen.getByRole("button");
+
+      fireEvent.click(button);
       expect(onClickMock).toHaveBeenCalledTimes(1);
-      fireEvent.mouseDown(getByRole("button"));
+      fireEvent.mouseDown(button);
       expect(onMouseDownMock).toHaveBeenCalledTimes(1);
-      fireEvent.mouseUp(getByRole("button"));
+      fireEvent.mouseUp(button);
       expect(onMouseUpMock).toHaveBeenCalledTimes(1);
-      fireEvent.mouseEnter(getByRole("button"));
+      fireEvent.mouseEnter(button);
       expect(onMouseEnterMock).toHaveBeenCalledTimes(1);
-      fireEvent.mouseLeave(getByRole("button"));
+      fireEvent.mouseLeave(button);
       expect(onMouseLeaveMock).toHaveBeenCalledTimes(1);
-      fireEvent.focus(getByRole("button"));
+      fireEvent.focus(button);
       expect(onFocusMock).toHaveBeenCalledTimes(1);
-      fireEvent.blur(getByRole("button"));
+      fireEvent.blur(button);
       expect(onBlurMock).toHaveBeenCalledTimes(1);
     });
   });

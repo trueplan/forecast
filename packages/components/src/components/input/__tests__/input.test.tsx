@@ -1,5 +1,5 @@
 import * as React from "react";
-import { render } from "@testing-library/react";
+import { render, screen } from "@testing-library/react";
 import type { InputTypes } from "../src";
 import { Input } from "../src";
 
@@ -16,8 +16,9 @@ describe("Input", () => {
     placeholder: "Enter your name",
   };
 
-  const { getByPlaceholderText } = render(<Input {...initialProps} />);
-  const InputElement = getByPlaceholderText(initialProps.placeholder);
+  render(<Input {...initialProps} />);
+
+  const InputElement = screen.getByPlaceholderText(initialProps.placeholder);
 
   it("should render an input", () => {
     expect(InputElement).toBeDefined();

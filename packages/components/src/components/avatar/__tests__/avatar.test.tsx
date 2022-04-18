@@ -20,6 +20,7 @@ describe("Avatar", () => {
       render(<Avatar name="Rich Bachman" data-testid="avatar" />);
       const renderedAvatar = screen.getByTestId("avatar");
       expect(
+        // eslint-disable-next-line testing-library/no-node-access
         renderedAvatar.querySelector("abbr")?.getAttribute("title")
       ).toEqual("Rich Bachman");
     });

@@ -9,6 +9,8 @@ import { terser } from "rollup-plugin-terser";
 import typescript from "rollup-plugin-typescript2";
 
 const pkg = JSON.parse(
+  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+  // @ts-ignore
   fs.readFileSync(path.join(process.cwd(), "package.json"))
 );
 
@@ -28,6 +30,7 @@ export default {
     commonjs(),
     typescript({
       clean: true,
+      // eslint-disable-next-line unicorn/prefer-module
       typescript: require("typescript"),
       tsconfig: "./tsconfig.json",
     }),
