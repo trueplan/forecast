@@ -6524,7 +6524,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@trueplan/forecast-components@^2.0.0, @trueplan/forecast-components@workspace:packages/components":
+"@trueplan/forecast-components@^3.0.0, @trueplan/forecast-components@workspace:packages/components":
   version: 0.0.0-use.local
   resolution: "@trueplan/forecast-components@workspace:packages/components"
   dependencies:
@@ -6545,8 +6545,8 @@ __metadata:
     "@storybook/react": ^6.4.21
     "@testing-library/jest-dom": ^5.16.4
     "@testing-library/react": ^13.0.1
-    "@trueplan/forecast-icons": ^2.0.0
-    "@trueplan/forecast-theme": ^1.1.1
+    "@trueplan/forecast-icons": ^3.0.0
+    "@trueplan/forecast-theme": ^2.0.0
     "@types/jest": ^27.4.1
     "@types/node": ^17.0.23
     "@types/react": ^18.0.4
@@ -6574,8 +6574,8 @@ __metadata:
     "@radix-ui/react-tooltip": ^0.1.7
     "@radix-ui/react-visually-hidden": ^0.1.4
     "@stitches/react": ^1.2.7
-    "@trueplan/forecast-icons": ^2.0.0
-    "@trueplan/forecast-theme": ^1.1.1
+    "@trueplan/forecast-icons": ^3.0.0
+    "@trueplan/forecast-theme": ^2.0.0
     ariakit: 2.0.0-next.22
     react: ^18.0.0
     react-dom: ^18.0.0
@@ -6583,15 +6583,15 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@trueplan/forecast-icons@^2.0.0, @trueplan/forecast-icons@workspace:packages/icons":
+"@trueplan/forecast-icons@^3.0.0, @trueplan/forecast-icons@workspace:packages/icons":
   version: 0.0.0-use.local
   resolution: "@trueplan/forecast-icons@workspace:packages/icons"
   dependencies:
     "@svgr/babel-plugin-add-jsx-attribute": ^6.0.0
     "@svgr/babel-plugin-remove-jsx-attribute": ^6.0.0
     "@svgr/plugin-svgo": ^5.5.0
-    "@trueplan/forecast-components": ^2.0.0
-    "@trueplan/forecast-theme": ^1.1.1
+    "@trueplan/forecast-components": ^3.0.0
+    "@trueplan/forecast-theme": ^2.0.0
     "@twilio-labs/svg-to-react": ^2.1.1
     "@types/node": ^17.0.23
     "@types/react": ^18.0.4
@@ -6613,8 +6613,8 @@ __metadata:
     "@svgr/babel-plugin-add-jsx-attribute": ^6.0.0
     "@svgr/babel-plugin-remove-jsx-attribute": ^6.0.0
     "@svgr/plugin-svgo": ^5.5.0
-    "@trueplan/forecast-components": ^2.0.0
-    "@trueplan/forecast-theme": ^1.1.1
+    "@trueplan/forecast-components": ^3.0.0
+    "@trueplan/forecast-theme": ^2.0.0
     "@twilio-labs/svg-to-react": ^2.1.1
     ansi-styles: 6.1.0
     chalk: ^4.1.2
@@ -6627,7 +6627,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@trueplan/forecast-theme@^1.1.1, @trueplan/forecast-theme@workspace:packages/theme":
+"@trueplan/forecast-theme@^2.0.0, @trueplan/forecast-theme@workspace:packages/theme":
   version: 0.0.0-use.local
   resolution: "@trueplan/forecast-theme@workspace:packages/theme"
   dependencies:
