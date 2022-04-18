@@ -6539,12 +6539,12 @@ __metadata:
     "@radix-ui/react-switch": 0.1.5
     "@radix-ui/react-tabs": 0.1.5
     "@radix-ui/react-toast": 0.1.1
-    "@radix-ui/react-tooltip": ^0.1.0
-    "@radix-ui/react-visually-hidden": ^0.1.0
-    "@stitches/react": ^1.2.0
-    "@storybook/react": ^6.2.9
-    "@testing-library/jest-dom": ^5.15.0
-    "@testing-library/react": ^12.1.2
+    "@radix-ui/react-tooltip": ^0.1.7
+    "@radix-ui/react-visually-hidden": ^0.1.4
+    "@stitches/react": ^1.2.7
+    "@storybook/react": ^6.4.21
+    "@testing-library/jest-dom": ^5.16.4
+    "@testing-library/react": ^13.0.1
     "@trueplan/forecast-icons": ^2.0.0
     "@trueplan/forecast-theme": ^1.1.1
     "@types/jest": ^27.4.1
@@ -6571,15 +6571,15 @@ __metadata:
     "@radix-ui/react-switch": 0.1.5
     "@radix-ui/react-tabs": 0.1.5
     "@radix-ui/react-toast": 0.1.1
-    "@radix-ui/react-tooltip": ^0.1.0
-    "@radix-ui/react-visually-hidden": ^0.1.0
-    "@stitches/react": ^1.2.0
+    "@radix-ui/react-tooltip": ^0.1.7
+    "@radix-ui/react-visually-hidden": ^0.1.4
+    "@stitches/react": ^1.2.7
     "@trueplan/forecast-icons": ^2.0.0
-    "@trueplan/forecast-theme": ^1.0.6
-    ariakit: 2.0.0-alpha.21
-    react: ^17.0.2
-    react-dom: ^17.0.2
-    react-uid: ^2.3.1
+    "@trueplan/forecast-theme": ^1.1.1
+    ariakit: 2.0.0-next.22
+    react: ^18.0.0
+    react-dom: ^18.0.0
+    react-uid: ^2.3.2
   languageName: unknown
   linkType: soft
 
@@ -6614,8 +6614,9 @@ __metadata:
     "@svgr/babel-plugin-remove-jsx-attribute": ^6.0.0
     "@svgr/plugin-svgo": ^5.5.0
     "@trueplan/forecast-components": ^2.0.0
-    "@trueplan/forecast-theme": ^1.0.6
-    "@twilio-labs/svg-to-react": ^2.1.0
+    "@trueplan/forecast-theme": ^1.1.1
+    "@twilio-labs/svg-to-react": ^2.1.1
+    ansi-styles: 6.1.0
     chalk: ^4.1.2
     commander: ^8.2.0
     lodash.difference: ^4.5.0
