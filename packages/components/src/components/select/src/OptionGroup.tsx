@@ -1,13 +1,32 @@
 import * as React from "react";
+import { OptionGroupUnstyled } from "@mui/base";
 import type { OptionGroupProps } from "./types";
-import { SelectGroup } from ".";
+import {
+  StyledOptionGroupRoot,
+  StyledOptionGroupLabel,
+  StyledOptionGroup,
+} from ".";
 
-const OptionGroup = React.forwardRef<HTMLDivElement, OptionGroupProps>(
-  ({ children, ...props }, ref) => {
+const CustomOptionGroup = React.forwardRef(function CustomOptionGroup(
+  props: OptionGroupProps,
+  ref: React.ForwardedRef<HTMLLIElement>
+) {
+  const components: OptionGroupProps["components"] = {
+    Root: StyledOptionGroupRoot,
+    Label: StyledOptionGroupLabel,
+    List: StyledOptionGroup,
+    ...props.components,
+  };
+
+  return <OptionGroupUnstyled {...props} ref={ref} components={components} />;
+});
+
+const OptionGroup = React.forwardRef<HTMLLIElement, OptionGroupProps>(
+  (props, ref) => {
     return (
-      <SelectGroup ref={ref} {...props}>
-        {children}
-      </SelectGroup>
+      <CustomOptionGroup ref={ref} {...props}>
+        {props.children}
+      </CustomOptionGroup>
     );
   }
 );

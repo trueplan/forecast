@@ -1,13 +1,7 @@
-import {
-  Select,
-  SelectGroup,
-  SelectGroupLabel,
-  SelectItem,
-  SelectPopover,
-} from "ariakit/select";
+import { OptionUnstyled, PopperUnstyled } from "@mui/base";
 import { styled, theme } from "@trueplan/forecast-theme";
 
-export const StyledSelect = styled(Select, {
+export const StyledSelect = styled("button", {
   appearance: "none",
   backgroundColor: "transparent",
   border: "none",
@@ -49,7 +43,12 @@ export const StyledSelect = styled(Select, {
   },
 });
 
-export const StyledPopover = styled(SelectPopover, {
+export const StyledPopper = styled(PopperUnstyled, {
+  width: "100%",
+  zIndex: 1,
+});
+
+export const StyledListbox = styled("ul", {
   backgroundColor: theme.colors.white,
   borderColor: theme.colors.gray50,
   borderRadius: theme.radii[30],
@@ -59,17 +58,17 @@ export const StyledPopover = styled(SelectPopover, {
   fontWeight: theme.fontWeights.normal,
   lineHeight: theme.lineHeights[20],
   padding: theme.space[20],
+  marginTop: theme.space[20],
 });
 
-export const StyledItem = styled(SelectItem, {
-  borderRadius: theme.radii[30],
+export const StyledItem = styled(OptionUnstyled, {
   color: "inherit",
   cursor: "pointer",
   fontFamily: "inherit",
   fontSize: "inherit",
   fontWeight: "inherit",
   lineHeight: "inherit",
-  padding: theme.space[20],
+  listStyle: "none",
   "&:hover": {
     backgroundColor: theme.colors.gray20,
   },
@@ -77,20 +76,26 @@ export const StyledItem = styled(SelectItem, {
     backgroundColor: theme.colors.gray20,
     outline: "none",
   },
+  padding: theme.space[20],
 });
 
-export const StyledOptionGroup = styled(SelectGroup, {
-  color: "inherit",
-  fontFamily: "inherit",
-  fontSize: "inherit",
-  fontWeight: "inherit",
-  lineHeight: "inherit",
+export const StyledOptionGroupRoot = styled("li", {
+  listStyle: "none",
 });
 
-export const OptionGroupLabel = styled(SelectGroupLabel, {
+export const StyledOptionGroupLabel = styled("span", {
   all: "unset",
   color: theme.colors.textLight,
   fontSize: theme.fontSizes[10],
   lineHeight: theme.lineHeights[10],
   px: theme.space[20],
+});
+
+export const StyledOptionGroup = styled("ul", {
+  color: "inherit",
+  fontFamily: "inherit",
+  fontSize: "inherit",
+  fontWeight: "inherit",
+  lineHeight: "inherit",
+  listStyle: "none",
 });

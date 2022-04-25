@@ -57,7 +57,7 @@ describe("Option", () => {
 describe("OptionGroup", () => {
   it("should render an option group with options", () => {
     render(
-      <OptionGroup data-testid="option-group">
+      <OptionGroup label="Group One" data-testid="option-group">
         <Option value="option1">Option One</Option>
       </OptionGroup>
     );

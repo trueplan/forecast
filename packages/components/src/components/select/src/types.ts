@@ -1,34 +1,24 @@
+import type React from "react";
 import type {
-  SelectProps as SelectPrimitiveProps,
-  SelectItemProps as SelectItemPrimitiveProps,
-  SelectGroupProps as SelectGroupPrimitiveProps,
-  SelectGroupLabelProps as SelectGroupLabelPrimitiveProps,
-} from "ariakit/select";
+  OptionUnstyledProps,
+  OptionGroupUnstyledProps,
+  PopperUnstyledProps,
+} from "@mui/base";
 
 export interface SelectProps
-  extends Omit<React.ButtonHTMLAttributes<HTMLButtonElement>, "css">,
-    Omit<SelectPrimitiveProps, "css"> {
+  extends Omit<React.HTMLAttributes<HTMLButtonElement>, "css"> {
   children: React.ReactNode;
   defaultValue?: string;
   disabled?: boolean;
   hasError?: boolean;
   id?: string;
   name?: string;
+  onChange?: () => void;
   required?: boolean;
   size?: "small" | "medium";
+  value?: string;
 }
 
-export interface OptionProps extends Omit<SelectItemPrimitiveProps, "css"> {
-  children: React.ReactNode;
-  value: string;
-}
-
-export interface OptionGroupProps
-  extends Omit<SelectGroupPrimitiveProps, "css"> {
-  children: React.ReactNode;
-}
-
-export interface OptionGroupLabelProps
-  extends Omit<SelectGroupLabelPrimitiveProps, "css"> {
-  children: React.ReactNode;
-}
+export type OptionProps = OptionUnstyledProps<string>;
+export type OptionGroupProps = OptionGroupUnstyledProps;
+export type PopperProps = PopperUnstyledProps;
