@@ -19,6 +19,15 @@ export const StyledInput = styled("input", {
   resize: "none",
   textAlign: "inherit",
   width: "100%",
+  "&::-webkit-inner-spin-button": {
+    "-webkit-appearance": "none",
+  },
+  "&::-webkit-outer-spin-button": {
+    "-webkit-appearance": "none",
+  },
+  "&[type=number]": {
+    " -moz-appearance": "textfield",
+  },
   "&:disabled": {
     color: theme.colors.gray70,
     cursor: "not-allowed",

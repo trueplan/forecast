@@ -1,13 +1,27 @@
 import * as React from "react";
-import type { OptionGroupProps } from "./types";
-import { SelectGroup } from ".";
+import { styled, theme } from "@trueplan/forecast-theme";
 
-const OptionGroup = React.forwardRef<HTMLDivElement, OptionGroupProps>(
-  ({ children, ...props }, ref) => {
+export const StyledOptionGroup = styled("optgroup", {
+  color: "inherit",
+  fontFamily: "inherit",
+  fontSize: "inherit",
+  fontWeight: theme.fontWeights.semiBold,
+  lineHeight: "inherit",
+  margin: theme.space[10],
+});
+
+export interface OptionGroupProps
+  extends Omit<React.OptgroupHTMLAttributes<HTMLOptGroupElement>, "css"> {
+  children: React.ReactNode;
+  label: string;
+}
+
+const OptionGroup = React.forwardRef<HTMLOptGroupElement, OptionGroupProps>(
+  ({ children, label, ...props }, ref) => {
     return (
-      <SelectGroup ref={ref} {...props}>
+      <StyledOptionGroup label={label} ref={ref} {...props}>
         {children}
-      </SelectGroup>
+      </StyledOptionGroup>
     );
   }
 );

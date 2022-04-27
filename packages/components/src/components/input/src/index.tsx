@@ -26,9 +26,6 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
 
     // https://technology.blog.gov.uk/2020/02/24/why-the-gov-uk-design-system-team-changed-the-input-type-for-numbers/
     if (type === "number") {
-      typeProps.type = "text";
-      typeProps.inputmode = "numeric";
-      typeProps.pattern = "[0-9]*";
       fontFamily = "roboto";
     }
 

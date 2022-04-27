@@ -1,13 +1,29 @@
 import * as React from "react";
-import type { OptionProps } from "./types";
-import { SelectItem } from ".";
+import { styled, theme } from "@trueplan/forecast-theme";
 
-const Option = React.forwardRef<HTMLDivElement, OptionProps>(
+export const StyledOption = styled("option", {
+  color: "inherit",
+  fontFamily: "inherit",
+  fontSize: "inherit",
+  fontWeight: "inherit",
+  lineHeight: "inherit",
+  paddingTop: theme.space[20],
+  paddingBottom: theme.space[20],
+  paddingLeft: theme.space[20],
+});
+
+export interface OptionProps
+  extends Omit<React.OptionHTMLAttributes<HTMLOptionElement>, "css"> {
+  children: React.ReactNode;
+  value: string;
+}
+
+const Option = React.forwardRef<HTMLOptionElement, OptionProps>(
   ({ children, value, ...props }, ref) => {
     return (
-      <SelectItem value={value} ref={ref} {...props}>
+      <StyledOption value={value} ref={ref} {...props}>
         {children}
-      </SelectItem>
+      </StyledOption>
     );
   }
 );
