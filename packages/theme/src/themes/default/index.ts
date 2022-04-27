@@ -227,6 +227,13 @@ export const { styled, css, theme, keyframes, getCssText } = createStitches({
       80: "4rem", // 64px
       90: "5rem", // 80px
     },
+    zIndices: {
+      0: "1",
+      10: "10",
+      20: "100",
+      30: "1000",
+      40: "10000",
+    },
   },
   utils: {
     br: (value: Stitches.ScaleValue<"radii">) => ({
