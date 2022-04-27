@@ -1,9 +1,8 @@
 import * as React from "react";
 import { useUID } from "react-uid";
-import { useSelectState } from "ariakit/select";
 import { HelpText } from "../../help-text";
 import { Label } from "../../label";
-import { Select, Option, OptionGroup, OptionGroupLabel } from "../src";
+import { Select, Option, OptionGroup } from "../src";
 
 // eslint-disable-next-line import/no-default-export
 export default {
@@ -13,17 +12,13 @@ export default {
 
 export const Default: React.FC = () => {
   const selectID = useUID();
-  const selectState = useSelectState({
-    gutter: 8,
-    sameWidth: true,
-  });
   return (
     <>
       <Label htmlFor={selectID}>Select</Label>
-      <Select id={selectID} name="select" state={selectState}>
-        <Option value="Option One">Option One</Option>
-        <Option value="Option Two">Option Two</Option>
-        <Option value="Option Three">Option Three</Option>
+      <Select id={selectID} name="select">
+        <Option value="option1">Option One</Option>
+        <Option value="option2">Option Two</Option>
+        <Option value="option3">Option Three</Option>
       </Select>
     </>
   );
@@ -31,19 +26,15 @@ export const Default: React.FC = () => {
 
 export const Required: React.FC = () => {
   const selectID = useUID();
-  const selectState = useSelectState({
-    gutter: 8,
-    sameWidth: true,
-  });
   return (
     <>
       <Label htmlFor={selectID} required>
         Select
       </Label>
-      <Select id={selectID} name="select" required state={selectState}>
-        <Option value="Option One">Option One</Option>
-        <Option value="Option Two">Option Two</Option>
-        <Option value="Option Three">Option Three</Option>
+      <Select id={selectID} name="select" required>
+        <Option value="option1">Option One</Option>
+        <Option value="option2">Option Two</Option>
+        <Option value="option3">Option Three</Option>
       </Select>
     </>
   );
@@ -51,17 +42,13 @@ export const Required: React.FC = () => {
 
 export const Disabled: React.FC = () => {
   const selectID = useUID();
-  const selectState = useSelectState({
-    gutter: 8,
-    sameWidth: true,
-  });
   return (
     <>
       <Label htmlFor={selectID}>Select</Label>
-      <Select id={selectID} name="select" disabled state={selectState}>
-        <Option value="Option One">Option One</Option>
-        <Option value="Option Two">Option Two</Option>
-        <Option value="Option Three">Option Three</Option>
+      <Select id={selectID} name="select" disabled>
+        <Option value="option1">Option One</Option>
+        <Option value="option2">Option Two</Option>
+        <Option value="option3">Option Three</Option>
       </Select>
     </>
   );
@@ -70,17 +57,13 @@ export const Disabled: React.FC = () => {
 export const Error: React.FC = () => {
   const selectID = useUID();
   const helpTextID = useUID();
-  const selectState = useSelectState({
-    gutter: 8,
-    sameWidth: true,
-  });
   return (
     <>
       <Label htmlFor={selectID}>Select</Label>
-      <Select id={selectID} name="select" hasError state={selectState}>
-        <Option value="Option One">Option One</Option>
-        <Option value="Option Two">Option Two</Option>
-        <Option value="Option Three">Option Three</Option>
+      <Select id={selectID} name="select" hasError>
+        <Option value="option1">Option One</Option>
+        <Option value="option2">Option Two</Option>
+        <Option value="option3">Option Three</Option>
       </Select>
       <HelpText hasError id={helpTextID}>
         This is an error message.
@@ -91,25 +74,19 @@ export const Error: React.FC = () => {
 
 export const OptionGroups: React.FC = () => {
   const selectID = useUID();
-  const selectState = useSelectState({
-    gutter: 8,
-    sameWidth: true,
-  });
   return (
     <>
       <Label htmlFor={selectID}>Select</Label>
-      <Select id={selectID} name="select" state={selectState}>
-        <OptionGroup>
-          <OptionGroupLabel>Group One</OptionGroupLabel>
-          <Option value="Group One - Option One">Option One</Option>
-          <Option value="Group One - Option Two">Option Two</Option>
-          <Option value="Group One - Option Three">Option Three</Option>
+      <Select id={selectID} name="select">
+        <OptionGroup label="group one">
+          <Option value="one-option1">Option One</Option>
+          <Option value="one-option2">Option Two</Option>
+          <Option value="one-option3">Option Three</Option>
         </OptionGroup>
-        <OptionGroup>
-          <OptionGroupLabel>Group Two</OptionGroupLabel>
-          <Option value="Group Two - Option One">Option One</Option>
-          <Option value="Group Two - Option Two">Option Two</Option>
-          <Option value="Group Two - Option Three">Option Three</Option>
+        <OptionGroup label="group two">
+          <Option value="two-option1">Option One</Option>
+          <Option value="two-option2">Option Two</Option>
+          <Option value="two-option3">Option Three</Option>
         </OptionGroup>
       </Select>
     </>
