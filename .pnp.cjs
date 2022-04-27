@@ -6371,6 +6371,25 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["@floating-ui/core", [
+        ["npm:0.6.2", {
+          "packageLocation": "./.yarn/cache/@floating-ui-core-npm-0.6.2-287de7a0e0-b3e1844da8.zip/node_modules/@floating-ui/core/",
+          "packageDependencies": [
+            ["@floating-ui/core", "npm:0.6.2"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@floating-ui/dom", [
+        ["npm:0.4.5", {
+          "packageLocation": "./.yarn/cache/@floating-ui-dom-npm-0.4.5-bddc63e888-3024aba55f.zip/node_modules/@floating-ui/dom/",
+          "packageDependencies": [
+            ["@floating-ui/dom", "npm:0.4.5"],
+            ["@floating-ui/core", "npm:0.6.2"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["@gar/promisify", [
         ["npm:1.1.2", {
           "packageLocation": "./.yarn/cache/@gar-promisify-npm-1.1.2-2343f94380-d05081e088.zip/node_modules/@gar/promisify/",
@@ -7226,13 +7245,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@popperjs-core-npm-2.10.2-aba0bab6b1-43c189e3eb.zip/node_modules/@popperjs/core/",
           "packageDependencies": [
             ["@popperjs/core", "npm:2.10.2"]
-          ],
-          "linkType": "HARD",
-        }],
-        ["npm:2.11.4", {
-          "packageLocation": "./.yarn/cache/@popperjs-core-npm-2.11.4-aced735dab-36168d274a.zip/node_modules/@popperjs/core/",
-          "packageDependencies": [
-            ["@popperjs/core", "npm:2.11.4"]
           ],
           "linkType": "HARD",
         }]
@@ -11047,7 +11059,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/stitches__react", null],
             ["@types/trueplan__forecast-icons", null],
             ["@types/trueplan__forecast-theme", null],
-            ["ariakit", "virtual:66ef534ac91fed1f106aa593639d4f7597eb1dbd64d59ca4b3b7fe6dfbfe14222aeba5a3c48f82e35150521aa8ab9940509f5fd0d64f8e57980014099f6a7e71#npm:2.0.0-next.22"],
+            ["ariakit", "virtual:66ef534ac91fed1f106aa593639d4f7597eb1dbd64d59ca4b3b7fe6dfbfe14222aeba5a3c48f82e35150521aa8ab9940509f5fd0d64f8e57980014099f6a7e71#npm:2.0.0-next.24"],
             ["react", "npm:18.0.0"],
             ["react-dom", "virtual:83930a02e406f078247fc9b9d21de38a337fcb78679a3d66298da2df309f013f7be5bb231811c0f7e8543d93b976930cd65092f5c1c34eb2317b35770703c6a9#npm:18.0.0"],
             ["react-uid", "virtual:83930a02e406f078247fc9b9d21de38a337fcb78679a3d66298da2df309f013f7be5bb231811c0f7e8543d93b976930cd65092f5c1c34eb2317b35770703c6a9#npm:2.3.2"],
@@ -11128,7 +11140,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/stitches__react", null],
             ["@types/trueplan__forecast-icons", null],
             ["@types/trueplan__forecast-theme", null],
-            ["ariakit", "virtual:66ef534ac91fed1f106aa593639d4f7597eb1dbd64d59ca4b3b7fe6dfbfe14222aeba5a3c48f82e35150521aa8ab9940509f5fd0d64f8e57980014099f6a7e71#npm:2.0.0-next.22"],
+            ["ariakit", "virtual:66ef534ac91fed1f106aa593639d4f7597eb1dbd64d59ca4b3b7fe6dfbfe14222aeba5a3c48f82e35150521aa8ab9940509f5fd0d64f8e57980014099f6a7e71#npm:2.0.0-next.24"],
             ["react", "npm:18.0.0"],
             ["react-dom", "virtual:83930a02e406f078247fc9b9d21de38a337fcb78679a3d66298da2df309f013f7be5bb231811c0f7e8543d93b976930cd65092f5c1c34eb2317b35770703c6a9#npm:18.0.0"],
             ["react-uid", "virtual:83930a02e406f078247fc9b9d21de38a337fcb78679a3d66298da2df309f013f7be5bb231811c0f7e8543d93b976930cd65092f5c1c34eb2317b35770703c6a9#npm:2.3.2"],
@@ -11193,7 +11205,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/node", "npm:17.0.23"],
             ["@types/react", "npm:18.0.4"],
             ["@types/react-dom", "npm:18.0.0"],
-            ["ariakit", "virtual:66ef534ac91fed1f106aa593639d4f7597eb1dbd64d59ca4b3b7fe6dfbfe14222aeba5a3c48f82e35150521aa8ab9940509f5fd0d64f8e57980014099f6a7e71#npm:2.0.0-next.22"],
+            ["ariakit", "virtual:66ef534ac91fed1f106aa593639d4f7597eb1dbd64d59ca4b3b7fe6dfbfe14222aeba5a3c48f82e35150521aa8ab9940509f5fd0d64f8e57980014099f6a7e71#npm:2.0.0-next.24"],
             ["react", "npm:18.0.0"],
             ["react-dom", "virtual:83930a02e406f078247fc9b9d21de38a337fcb78679a3d66298da2df309f013f7be5bb231811c0f7e8543d93b976930cd65092f5c1c34eb2317b35770703c6a9#npm:18.0.0"],
             ["react-uid", "virtual:83930a02e406f078247fc9b9d21de38a337fcb78679a3d66298da2df309f013f7be5bb231811c0f7e8543d93b976930cd65092f5c1c34eb2317b35770703c6a9#npm:2.3.2"],
@@ -13336,21 +13348,21 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["ariakit", [
-        ["npm:2.0.0-next.22", {
-          "packageLocation": "./.yarn/cache/ariakit-npm-2.0.0-next.22-ad3acb832c-10e91399e6.zip/node_modules/ariakit/",
+        ["npm:2.0.0-next.24", {
+          "packageLocation": "./.yarn/cache/ariakit-npm-2.0.0-next.24-d187ff4e05-6de1906bf3.zip/node_modules/ariakit/",
           "packageDependencies": [
-            ["ariakit", "npm:2.0.0-next.22"]
+            ["ariakit", "npm:2.0.0-next.24"]
           ],
           "linkType": "SOFT",
         }],
-        ["virtual:66ef534ac91fed1f106aa593639d4f7597eb1dbd64d59ca4b3b7fe6dfbfe14222aeba5a3c48f82e35150521aa8ab9940509f5fd0d64f8e57980014099f6a7e71#npm:2.0.0-next.22", {
-          "packageLocation": "./.yarn/__virtual__/ariakit-virtual-e46658b112/0/cache/ariakit-npm-2.0.0-next.22-ad3acb832c-10e91399e6.zip/node_modules/ariakit/",
+        ["virtual:66ef534ac91fed1f106aa593639d4f7597eb1dbd64d59ca4b3b7fe6dfbfe14222aeba5a3c48f82e35150521aa8ab9940509f5fd0d64f8e57980014099f6a7e71#npm:2.0.0-next.24", {
+          "packageLocation": "./.yarn/__virtual__/ariakit-virtual-6fa7fd7d85/0/cache/ariakit-npm-2.0.0-next.24-d187ff4e05-6de1906bf3.zip/node_modules/ariakit/",
           "packageDependencies": [
-            ["ariakit", "virtual:66ef534ac91fed1f106aa593639d4f7597eb1dbd64d59ca4b3b7fe6dfbfe14222aeba5a3c48f82e35150521aa8ab9940509f5fd0d64f8e57980014099f6a7e71#npm:2.0.0-next.22"],
-            ["@popperjs/core", "npm:2.11.4"],
+            ["ariakit", "virtual:66ef534ac91fed1f106aa593639d4f7597eb1dbd64d59ca4b3b7fe6dfbfe14222aeba5a3c48f82e35150521aa8ab9940509f5fd0d64f8e57980014099f6a7e71#npm:2.0.0-next.24"],
+            ["@floating-ui/dom", "npm:0.4.5"],
             ["@types/react", "npm:18.0.4"],
             ["@types/react-dom", "npm:18.0.0"],
-            ["ariakit-utils", "virtual:e46658b112e74928ad4290d60e69b2a202871d566059ae47890865847cc0457e48f4157507904580c413659b0cfdda5c1e9b82786da0a8196bf18b212525e802#npm:0.17.0-next.15"],
+            ["ariakit-utils", "virtual:6fa7fd7d85a16e90dabff13f2caeb856e39dfffa331733f7a22d4f93e93739b3735a71fceebc984624ffd9c2af655abf0e95ddf0bf303e5e0b7e60380fee4113#npm:0.17.0-next.17"],
             ["react", "npm:18.0.0"],
             ["react-dom", "virtual:83930a02e406f078247fc9b9d21de38a337fcb78679a3d66298da2df309f013f7be5bb231811c0f7e8543d93b976930cd65092f5c1c34eb2317b35770703c6a9#npm:18.0.0"]
           ],
@@ -13364,17 +13376,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["ariakit-utils", [
-        ["npm:0.17.0-next.15", {
-          "packageLocation": "./.yarn/cache/ariakit-utils-npm-0.17.0-next.15-63f46eb6b0-7d1cddbe03.zip/node_modules/ariakit-utils/",
+        ["npm:0.17.0-next.17", {
+          "packageLocation": "./.yarn/cache/ariakit-utils-npm-0.17.0-next.17-de60bc5448-e92f2fbc98.zip/node_modules/ariakit-utils/",
           "packageDependencies": [
-            ["ariakit-utils", "npm:0.17.0-next.15"]
+            ["ariakit-utils", "npm:0.17.0-next.17"]
           ],
           "linkType": "SOFT",
         }],
-        ["virtual:e46658b112e74928ad4290d60e69b2a202871d566059ae47890865847cc0457e48f4157507904580c413659b0cfdda5c1e9b82786da0a8196bf18b212525e802#npm:0.17.0-next.15", {
-          "packageLocation": "./.yarn/__virtual__/ariakit-utils-virtual-3741c3ec27/0/cache/ariakit-utils-npm-0.17.0-next.15-63f46eb6b0-7d1cddbe03.zip/node_modules/ariakit-utils/",
+        ["virtual:6fa7fd7d85a16e90dabff13f2caeb856e39dfffa331733f7a22d4f93e93739b3735a71fceebc984624ffd9c2af655abf0e95ddf0bf303e5e0b7e60380fee4113#npm:0.17.0-next.17", {
+          "packageLocation": "./.yarn/__virtual__/ariakit-utils-virtual-9169354cea/0/cache/ariakit-utils-npm-0.17.0-next.17-de60bc5448-e92f2fbc98.zip/node_modules/ariakit-utils/",
           "packageDependencies": [
-            ["ariakit-utils", "virtual:e46658b112e74928ad4290d60e69b2a202871d566059ae47890865847cc0457e48f4157507904580c413659b0cfdda5c1e9b82786da0a8196bf18b212525e802#npm:0.17.0-next.15"],
+            ["ariakit-utils", "virtual:6fa7fd7d85a16e90dabff13f2caeb856e39dfffa331733f7a22d4f93e93739b3735a71fceebc984624ffd9c2af655abf0e95ddf0bf303e5e0b7e60380fee4113#npm:0.17.0-next.17"],
             ["@types/react", "npm:18.0.4"],
             ["react", "npm:18.0.0"]
           ],
