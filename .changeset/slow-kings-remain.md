@@ -3,5 +3,5 @@
 "@trueplan/forecast-theme": minor
 ---
 
-refactor: add z-index tokens to theme
-refactor: apply z-index token to modal component
+[theme]: add z-index tokens to theme
+[components]: apply z-index token to modal component
