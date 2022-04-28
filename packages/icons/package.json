@@ -1,6 +1,6 @@
 {
   "name": "@trueplan/forecast-icons",
-  "version": "4.0.0",
+  "version": "4.0.1",
   "description": "Forecast Design System Icons",
   "author": "TruePlan Inc.",
   "license": "UNLICENSED",
@@ -8,7 +8,6 @@
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
-  "type": "module",
   "files": [
     "dist"
   ],

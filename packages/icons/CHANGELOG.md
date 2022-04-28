@@ -1,5 +1,11 @@
 # @trueplan/forecast-icons
 
+## 4.0.1
+
+### Patch Changes
+
+- [#86](https://github.com/trueplan/forecast/pull/86) [`bd60920`](https://github.com/trueplan/forecast/commit/bd6092001726daec4b79355617f2eadd52ac119d) Thanks [@richbachman](https://github.com/richbachman)! - [icons]: remove module type from package.json
+
 ## 4.0.0
 
 ### Major Changes
