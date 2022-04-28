@@ -19,6 +19,7 @@ export const StyledModalOverlay = styled(DialogPrimitive.Overlay, {
   "@media (prefers-reduced-motion: no-preference)": {
     animation: `${modalOverlayShow} 150ms cubic-bezier(0.16, 1, 0.3, 1)`,
   },
+  zIndex: theme.zIndices[30],
 });
 
 export const StyledModalContent = styled(DialogPrimitive.Content, {
@@ -30,6 +31,7 @@ export const StyledModalContent = styled(DialogPrimitive.Content, {
   top: "50%",
   left: "50%",
   transform: "translate(-50%, -50%)",
+  zIndex: theme.zIndices[30],
   width: "90vw",
   maxHeight: "90vh",
   "@media (prefers-reduced-motion: no-preference)": {
