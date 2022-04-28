@@ -8,6 +8,7 @@
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
+  "type": "module",
   "files": [
     "dist"
   ],
@@ -52,8 +53,8 @@
     "commander": "^8.2.0",
     "lodash.difference": "^4.5.0",
     "lodash.startcase": "^4.4.0",
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
     "react-uid": "^2.3.2"
   },
   "devDependencies": {
@@ -71,8 +72,8 @@
     "commander": "^8.2.0",
     "lodash.difference": "^4.5.0",
     "lodash.startcase": "^4.4.0",
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
     "react-uid": "^2.3.2",
     "rollup": "^2.70.1",
     "rollup-config-forecast": "workspace:configs/rollup",
