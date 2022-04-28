@@ -1,5 +1,17 @@
 # @trueplan/forecast-components
 
+## 4.0.0
+
+### Major Changes
+
+- [#84](https://github.com/trueplan/forecast/pull/84) [`ebc7309`](https://github.com/trueplan/forecast/commit/ebc73092b3eda58746d339e32cbf81d0d0bca7d5) Thanks [@richbachman](https://github.com/richbachman)! - BREAKING CHANGE: Downgraded to use React 17.0.2
+
+### Patch Changes
+
+- Updated dependencies [[`ebc7309`](https://github.com/trueplan/forecast/commit/ebc73092b3eda58746d339e32cbf81d0d0bca7d5)]:
+  - @trueplan/forecast-icons@4.0.0
+  - @trueplan/forecast-theme@3.0.0
+
 ## 3.0.2
 
 ### Patch Changes
