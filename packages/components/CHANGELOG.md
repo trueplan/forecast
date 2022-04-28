@@ -1,5 +1,14 @@
 # @trueplan/forecast-components
 
+## 3.0.2
+
+### Patch Changes
+
+- [#82](https://github.com/trueplan/forecast/pull/82) [`aaaf6b4`](https://github.com/trueplan/forecast/commit/aaaf6b4d79dcf03bbd9c45080aed6a11604d8deb) Thanks [@richbachman](https://github.com/richbachman)! - [select-combobox]: add alpha component version which is just exported styled components.
+
+* [#80](https://github.com/trueplan/forecast/pull/80) [`607c993`](https://github.com/trueplan/forecast/commit/607c993c91572114d820d5fbea5608fe1ae6d282) Thanks [@richbachman](https://github.com/richbachman)! - - [input]: remove input type number override
+  - [select]: revert to base form select element
+
 ## 3.0.1
 
 ### Patch Changes
