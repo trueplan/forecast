@@ -1,5 +1,12 @@
 # @trueplan/forecast-theme
 
+## 3.1.0
+
+### Minor Changes
+
+- [#83](https://github.com/trueplan/forecast/pull/83) [`32d848f`](https://github.com/trueplan/forecast/commit/32d848f68137b245fb6079a46cc845aabc064273) Thanks [@bwll-tpio](https://github.com/bwll-tpio)! - [theme]: add z-index tokens to theme
+  [components]: apply z-index token to modal component
+
 ## 3.0.0
 
 ### Major Changes
