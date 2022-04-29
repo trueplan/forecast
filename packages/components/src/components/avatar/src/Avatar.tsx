@@ -40,7 +40,7 @@ const Avatar = React.forwardRef<HTMLDivElement, AvatarProps>(
             <Text
               display="block"
               fontSize="fontSize10"
-              lineHeight="lineHeight2"
+              lineHeight="lineHeight5"
               fontWeight="semiBold"
             >
               {name}
@@ -49,7 +49,7 @@ const Avatar = React.forwardRef<HTMLDivElement, AvatarProps>(
               <Text
                 display="block"
                 fontSize="fontSize10"
-                lineHeight="lineHeight2"
+                lineHeight="lineHeight5"
                 fontWeight="normal"
               >
                 {title}

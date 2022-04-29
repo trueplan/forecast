@@ -53,9 +53,6 @@ export const StyledText = styled("span", {
       },
     },
     lineHeight: {
-      lineHeight2: {
-        lineHeight: theme.lineHeights[2],
-      },
       lineHeight5: {
         lineHeight: theme.lineHeights[5],
       },

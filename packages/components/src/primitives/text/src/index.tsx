@@ -14,7 +14,6 @@ export interface TextProps
     | "textRed"
     | "textBlue";
   lineHeight?:
-    | "lineHeight2"
     | "lineHeight5"
     | "lineHeight10"
     | "lineHeight20"
