@@ -1,7 +1,9 @@
 import * as React from "react";
+import type { AvatarColors } from "../src";
 import { Avatar } from "../src";
 import { Box } from "../../../primitives/box";
 import { Stack } from "../../../layout/stack";
+import { getAvatarColor } from "../src/utils";
 
 // eslint-disable-next-line import/no-default-export
 export default {
@@ -204,6 +206,35 @@ export const WithName = (): React.ReactNode => {
       />
       <Avatar
         name="Nate Schulte"
+        size="large"
+        showName
+        title="Founding Designer"
+      />
+    </Stack>
+  );
+};
+
+export const WithNameAndRandomBackgroundColor = (): React.ReactNode => {
+  return (
+    <Stack direction="vertical" spacing="$40">
+      <Avatar
+        name="Nate Schulte"
+        // eslint-disable-next-line sonarjs/no-duplicate-string
+        color={getAvatarColor("Nate Schulte") as AvatarColors}
+        size="small"
+        showName
+        title="Founding Designer"
+      />
+      <Avatar
+        name="Nate Schulte"
+        color={getAvatarColor("Nate Schulte") as AvatarColors}
+        size="medium"
+        showName
+        title="Founding Designer"
+      />
+      <Avatar
+        name="Nate Schulte"
+        color={getAvatarColor("Nate Schulte") as AvatarColors}
         size="large"
         showName
         title="Founding Designer"
