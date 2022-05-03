@@ -14,7 +14,7 @@ export const StyledTag = styled("span", {
     size: {
       default: {
         fontSize: theme.fontSizes[10],
-        lineHeight: theme.lineHeights[2],
+        lineHeight: theme.lineHeights[5],
         paddingTop: theme.space[10],
         paddingRight: theme.space[25],
         paddingBottom: theme.space[10],
@@ -22,7 +22,7 @@ export const StyledTag = styled("span", {
       },
       medium: {
         fontSize: theme.fontSizes[20],
-        lineHeight: theme.lineHeights[2],
+        lineHeight: theme.lineHeights[5],
         paddingTop: theme.space[20],
         paddingRight: theme.space[25],
         paddingBottom: theme.space[20],
