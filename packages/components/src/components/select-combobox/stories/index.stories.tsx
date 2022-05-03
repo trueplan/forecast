@@ -4,7 +4,6 @@ import { Box } from "../../../primitives/box";
 import {
   StyledComboboxItem,
   StyledCombobox,
-  ComboboxList,
   useComboboxState,
 } from "../../combobox";
 import {
@@ -12,6 +11,7 @@ import {
   useSelectComboboxState,
   SelectCombobox,
   SelectComboboxPopover,
+  SelectComboboxList,
 } from "../index";
 import { itemList as list } from "../../combobox/__fixtures__/item-list";
 
@@ -48,7 +48,10 @@ export const Default: React.FC = () => {
       <SelectComboboxPopover
         state={select}
         composite={false}
-        className="popover"
+        // style={{
+        //   display: "flex",
+        //   flexDirection: "column",
+        // }}
       >
         <Box css={{ marginBottom: "$25" }}>
           <InputBox>
@@ -59,13 +62,13 @@ export const Default: React.FC = () => {
             />
           </InputBox>
         </Box>
-        <ComboboxList state={combobox}>
+        <SelectComboboxList state={combobox}>
           {combobox.matches.map((itemValue, i) => (
             <StyledComboboxItem key={itemValue + i} focusOnHover>
               {(props) => <SelectComboboxItem {...props} value={itemValue} />}
             </StyledComboboxItem>
           ))}
-        </ComboboxList>
+        </SelectComboboxList>
       </SelectComboboxPopover>
     </>
   );

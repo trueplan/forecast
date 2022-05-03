@@ -3,6 +3,11 @@ import {
   SelectPopover as SelectPopoverPrimitive,
 } from "ariakit/select";
 import { styled, theme } from "@trueplan/forecast-theme";
+import { ComboboxList } from "../../combobox";
+
+export const StyledComboboxList = styled(ComboboxList, {
+  overflow: "auto",
+});
 
 export const StyledSelect = styled(SelectPrimitive, {
   appearance: "none",
