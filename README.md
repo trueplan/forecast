@@ -28,6 +28,14 @@ Run Storybook.
 yarn storybook
 ```
 
+### Local Development with Dev Containers
+
+This repo has [dev containers](https://microsoft.github.io/code-with-engineering-playbook/developer-experience/devcontainers/) set up to quickly get your developer environment set up. You will need the following set up as a prerequisite: [Docker](https://www.docker.com/get-started), [VS Code](https://code.visualstudio.com/), and [the VS Code Remote - Containers extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers).
+
+Open up the folder in VS Code and you'll get a prompt to reopen the folder in a container. Alternatively, you can run `>Remote-Containers: Open Folder in Container` through the VS Code Command Palette (⇧⌘P on Mac or Ctrl+Shift+P in Windows/Linux).
+
+Once it's running (the first time will take a couple minutes), you can run `yarn storybook` to get started.
+
 ## Getting Started
 
 👋 Hi. Follow the steps below to begin building with Forecast
