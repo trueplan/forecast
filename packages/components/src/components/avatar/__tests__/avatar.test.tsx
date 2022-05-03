@@ -1,7 +1,7 @@
 import * as React from "react";
 import { render, screen } from "@testing-library/react";
 import { Avatar } from "../src";
-import { getInitialsFromName } from "../src/utils";
+import { getInitialsFromName, getAvatarColor } from "../src/utils";
 
 describe("Avatar", () => {
   describe("Utils", () => {
@@ -11,6 +11,15 @@ describe("Avatar", () => {
         expect(getInitialsFromName("Rich")).toEqual("R");
         expect(getInitialsFromName("Rich Ngozi Bachman")).toEqual("RB");
         expect(getInitialsFromName("Super Long Name Example")).toEqual("SE");
+      });
+    });
+
+    describe("getAvatarColor", () => {
+      it("should return a color name from a person's name", () => {
+        expect(getAvatarColor("Jimmy Tang")).toEqual("sky");
+        expect(getAvatarColor("Rich")).toEqual("yellow");
+        expect(getAvatarColor("Rich Ngozi Bachman")).toEqual("yellow");
+        expect(getAvatarColor("Super Long Name Example")).toEqual("lilac");
       });
     });
   });
