@@ -191,16 +191,15 @@ export const { styled, css, theme, keyframes, getCssText } = createStitches({
     },
     lineHeights: {
       0: "0", // 0px for icon lineHeight
-      2: "1rem", // 16px
-      5: "1.25rem", // 20px
-      10: "1.375rem", // 22px
+      5: "1rem", // 16px
+      10: "1.25rem", // 20px
       20: "1.5rem", // 24px
-      30: "1.625rem", // 26px
-      40: "1.875rem", // 30px
-      50: "2.125rem", // 34px
-      60: "2.625rem", // 42px
-      70: "3.125rem", // 50px
-      80: "5.625rem", // 90px
+      30: "1.75rem", // 28px
+      40: "2rem", // 32px
+      50: "2.5rem", // 40px
+      60: "3rem", // 48px
+      70: "3.5rem", // 56px
+      80: "6rem", // 99px
     },
     borderWidths: {
       10: "1px",
