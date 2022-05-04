@@ -45,14 +45,7 @@ export const Default: React.FC = () => {
       <InputBox hasHover>
         <SelectCombobox state={select} />
       </InputBox>
-      <SelectComboboxPopover
-        state={select}
-        composite={false}
-        // style={{
-        //   display: "flex",
-        //   flexDirection: "column",
-        // }}
-      >
+      <SelectComboboxPopover state={select} composite={false}>
         <Box css={{ marginBottom: "$25" }}>
           <InputBox>
             <StyledCombobox
