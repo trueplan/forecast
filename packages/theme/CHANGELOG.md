@@ -1,5 +1,11 @@
 # @trueplan/forecast-theme
 
+## 3.2.0
+
+### Minor Changes
+
+- [#89](https://github.com/trueplan/forecast/pull/89) [`8881fb2`](https://github.com/trueplan/forecast/commit/8881fb20aa523cba36754392a35601ddb929a9e8) Thanks [@bwll-tpio](https://github.com/bwll-tpio)! - [theme]: new line height values. lineHeight[2] key was removed and value moved to lineHeight[5].
+
 ## 3.1.0
 
 ### Minor Changes

@@ -1,5 +1,17 @@
 # @trueplan/forecast-components
 
+## 4.2.0
+
+### Minor Changes
+
+- [#89](https://github.com/trueplan/forecast/pull/89) [`8881fb2`](https://github.com/trueplan/forecast/commit/8881fb20aa523cba36754392a35601ddb929a9e8) Thanks [@bwll-tpio](https://github.com/bwll-tpio)! - [avatar]: lineHeight prop updated to use new key
+
+### Patch Changes
+
+- [#90](https://github.com/trueplan/forecast/pull/90) [`97c6786`](https://github.com/trueplan/forecast/commit/97c678604ca7eb454d02e4ecd209cd3949f3880b) Thanks [@bwll-tpio](https://github.com/bwll-tpio)! - [avatar]: adds helper function to generate an avatar background color using the length of a person's full name
+
+* [#92](https://github.com/trueplan/forecast/pull/92) [`a25af79`](https://github.com/trueplan/forecast/commit/a25af79b54801e39171c569bd7001745e568d372) Thanks [@richbachman](https://github.com/richbachman)! - [select-combobox]: add `overflow: auto` to the select combobox listbox.
+
 ## 4.1.0
 
 ### Minor Changes
