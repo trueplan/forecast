@@ -4,7 +4,6 @@ import { Box } from "../../../primitives/box";
 import {
   StyledComboboxItem,
   StyledCombobox,
-  ComboboxList,
   useComboboxState,
 } from "../../combobox";
 import {
@@ -12,13 +11,13 @@ import {
   useSelectComboboxState,
   SelectCombobox,
   SelectComboboxPopover,
+  SelectComboboxList,
 } from "../index";
 import { itemList as list } from "../../combobox/__fixtures__/item-list";
 
 // eslint-disable-next-line import/no-default-export
 export default {
   title: "Components/SelectCombobox",
-  // component: Example,
 };
 
 export const Default: React.FC = () => {
@@ -45,11 +44,7 @@ export const Default: React.FC = () => {
       <InputBox hasHover>
         <SelectCombobox state={select} />
       </InputBox>
-      <SelectComboboxPopover
-        state={select}
-        composite={false}
-        className="popover"
-      >
+      <SelectComboboxPopover state={select} composite={false}>
         <Box css={{ marginBottom: "$25" }}>
           <InputBox>
             <StyledCombobox
@@ -59,13 +54,68 @@ export const Default: React.FC = () => {
             />
           </InputBox>
         </Box>
-        <ComboboxList state={combobox}>
+        <SelectComboboxList state={combobox}>
           {combobox.matches.map((itemValue, i) => (
             <StyledComboboxItem key={itemValue + i} focusOnHover>
               {(props) => <SelectComboboxItem {...props} value={itemValue} />}
             </StyledComboboxItem>
           ))}
-        </ComboboxList>
+        </SelectComboboxList>
+      </SelectComboboxPopover>
+    </>
+  );
+};
+
+export const DefaultOpen: React.FC = () => {
+  const combobox = useComboboxState({
+    list,
+    gutter: 4,
+    sameWidth: true,
+    visible: true,
+  });
+  // value and setValue shouldn't be passed to the select state because the
+  // select value and the combobox value are different things.
+  // value and setValue are in the combobox state
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  const { value, setValue, ...selectProps } = combobox;
+  const select = useSelectComboboxState({
+    ...selectProps,
+    defaultValue: "Apple",
+    visible: true,
+  });
+
+  // Resets combobox value when popover is collapsed
+  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+  // eslint-disable-next-line unicorn/consistent-destructuring
+  if (!select.mounted && combobox.value) {
+    combobox.setValue("");
+  }
+
+  return (
+    <>
+      <InputBox hasHover>
+        <SelectCombobox state={select} />
+      </InputBox>
+      <SelectComboboxPopover state={select} composite={false}>
+        <Box css={{ marginBottom: "$25" }}>
+          <InputBox>
+            <StyledCombobox
+              state={combobox}
+              autoSelect
+              placeholder="Search..."
+            />
+          </InputBox>
+        </Box>
+        <SelectComboboxList state={combobox}>
+          {
+            // eslint-disable-next-line sonarjs/no-identical-functions
+            combobox.matches.map((itemValue, i) => (
+              <StyledComboboxItem key={itemValue + i} focusOnHover>
+                {(props) => <SelectComboboxItem {...props} value={itemValue} />}
+              </StyledComboboxItem>
+            ))
+          }
+        </SelectComboboxList>
       </SelectComboboxPopover>
     </>
   );

@@ -5,4 +5,5 @@ export {
 export {
   StyledSelect as SelectCombobox,
   StyledSelectPopover as SelectComboboxPopover,
+  StyledComboboxList as SelectComboboxList,
 } from "./src/styles";
