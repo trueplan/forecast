@@ -1,23 +1,13 @@
 import * as React from "react";
-import { InputBox } from "../../input-box";
-import { Box } from "../../../primitives/box";
-import {
-  StyledComboboxItem,
-  StyledCombobox,
-  useComboboxState,
-} from "../../combobox";
-import {
-  SelectComboboxItem,
-  useSelectComboboxState,
-  SelectCombobox,
-  SelectComboboxPopover,
-  SelectComboboxList,
-} from "../index";
+import { useUID } from "react-uid";
+import { useComboboxState } from "../../combobox";
+import { SelectCombobox, useSelectComboboxState } from "../index";
 import { itemList as list } from "../../combobox/__fixtures__/item-list";
 
 // eslint-disable-next-line import/no-default-export
 export default {
   title: "Components/SelectCombobox",
+  component: SelectCombobox,
 };
 
 export const Default: React.FC = () => {
@@ -39,30 +29,14 @@ export const Default: React.FC = () => {
     combobox.setValue("");
   }
 
+  const selectComboboxID = useUID();
+
   return (
-    <>
-      <InputBox hasHover>
-        <SelectCombobox state={select} />
-      </InputBox>
-      <SelectComboboxPopover state={select} composite={false}>
-        <Box css={{ marginBottom: "$25" }}>
-          <InputBox>
-            <StyledCombobox
-              state={combobox}
-              autoSelect
-              placeholder="Search..."
-            />
-          </InputBox>
-        </Box>
-        <SelectComboboxList state={combobox}>
-          {combobox.matches.map((itemValue, i) => (
-            <StyledComboboxItem key={itemValue + i} focusOnHover>
-              {(props) => <SelectComboboxItem {...props} value={itemValue} />}
-            </StyledComboboxItem>
-          ))}
-        </SelectComboboxList>
-      </SelectComboboxPopover>
-    </>
+    <SelectCombobox
+      id={selectComboboxID}
+      selectState={select}
+      comboboxState={combobox}
+    />
   );
 };
 
@@ -91,32 +65,13 @@ export const DefaultOpen: React.FC = () => {
     combobox.setValue("");
   }
 
+  const selectComboboxID = useUID();
+
   return (
-    <>
-      <InputBox hasHover>
-        <SelectCombobox state={select} />
-      </InputBox>
-      <SelectComboboxPopover state={select} composite={false}>
-        <Box css={{ marginBottom: "$25" }}>
-          <InputBox>
-            <StyledCombobox
-              state={combobox}
-              autoSelect
-              placeholder="Search..."
-            />
-          </InputBox>
-        </Box>
-        <SelectComboboxList state={combobox}>
-          {
-            // eslint-disable-next-line sonarjs/no-identical-functions
-            combobox.matches.map((itemValue, i) => (
-              <StyledComboboxItem key={itemValue + i} focusOnHover>
-                {(props) => <SelectComboboxItem {...props} value={itemValue} />}
-              </StyledComboboxItem>
-            ))
-          }
-        </SelectComboboxList>
-      </SelectComboboxPopover>
-    </>
+    <SelectCombobox
+      id={selectComboboxID}
+      selectState={select}
+      comboboxState={combobox}
+    />
   );
 };
