@@ -1,3 +1,7 @@
+// eslint-disable-next-line eslint-comments/disable-enable-pair
+/* eslint-disable @typescript-eslint/no-unused-vars */
+// eslint-disable-next-line eslint-comments/disable-enable-pair
+/* eslint-disable unicorn/consistent-destructuring */
 import * as React from "react";
 import { useUID } from "react-uid";
 import { useComboboxState } from "../../combobox";
@@ -12,19 +16,12 @@ export default {
 
 export const Default: React.FC = () => {
   const combobox = useComboboxState({ list, gutter: 4, sameWidth: true });
-  // value and setValue shouldn't be passed to the select state because the
-  // select value and the combobox value are different things.
-  // value and setValue are in the combobox state
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const { value, setValue, ...selectProps } = combobox;
   const select = useSelectComboboxState({
     ...selectProps,
     defaultValue: "Apple",
   });
 
-  // Resets combobox value when popover is collapsed
-  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-  // eslint-disable-next-line unicorn/consistent-destructuring
   if (!select.mounted && combobox.value) {
     combobox.setValue("");
   }
@@ -48,10 +45,6 @@ export const DefaultOpen: React.FC = () => {
     sameWidth: true,
     visible: true,
   });
-  // value and setValue shouldn't be passed to the select state because the
-  // select value and the combobox value are different things.
-  // value and setValue are in the combobox state
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const { value, setValue, ...selectProps } = combobox;
   const select = useSelectComboboxState({
     ...selectProps,
@@ -59,9 +52,6 @@ export const DefaultOpen: React.FC = () => {
     visible: true,
   });
 
-  // Resets combobox value when popover is collapsed
-  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-  // eslint-disable-next-line unicorn/consistent-destructuring
   if (!select.mounted && combobox.value) {
     combobox.setValue("");
   }
@@ -84,19 +74,12 @@ export const EmptyValue: React.FC = () => {
     gutter: 4,
     sameWidth: true,
   });
-  // value and setValue shouldn't be passed to the select state because the
-  // select value and the combobox value are different things.
-  // value and setValue are in the combobox state
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const { value, setValue, ...selectProps } = combobox;
   const select = useSelectComboboxState({
     ...selectProps,
     defaultValue: "",
   });
 
-  // Resets combobox value when popover is collapsed
-  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-  // eslint-disable-next-line unicorn/consistent-destructuring
   if (!select.mounted && combobox.value) {
     combobox.setValue("");
   }
