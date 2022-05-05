@@ -33,9 +33,10 @@ export const Default: React.FC = () => {
 
   return (
     <SelectCombobox
-      id={selectComboboxID}
-      selectState={select}
       comboboxState={combobox}
+      id={selectComboboxID}
+      label="Select a fruit"
+      selectState={select}
     />
   );
 };
@@ -69,9 +70,10 @@ export const DefaultOpen: React.FC = () => {
 
   return (
     <SelectCombobox
-      id={selectComboboxID}
-      selectState={select}
       comboboxState={combobox}
+      id={selectComboboxID}
+      label="Select a fruit"
+      selectState={select}
     />
   );
 };
