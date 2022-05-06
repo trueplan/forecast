@@ -9,7 +9,7 @@ export const StyledComboboxList = styled(ComboboxList, {
   overflow: "auto",
 });
 
-export const StyledSelect = styled(SelectPrimitive, {
+export const StyledSelectElement = styled(SelectPrimitive, {
   appearance: "none",
   backgroundColor: "transparent",
   border: "none",
@@ -29,6 +29,12 @@ export const StyledSelect = styled(SelectPrimitive, {
   padding: theme.space[20],
   textAlign: "inherit",
   width: "100%",
+  // Fix for empty value
+  minHeight: "40px",
+  "& span": {
+    marginLeft: "auto",
+  },
+  // End fix for empty value
   "&:disabled": {
     color: theme.colors.gray70,
     cursor: "not-allowed",
