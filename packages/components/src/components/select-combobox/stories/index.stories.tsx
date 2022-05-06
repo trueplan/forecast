@@ -22,8 +22,8 @@ export const Default: React.FC = () => {
     defaultValue: "Apple",
   });
 
-  if (!select.mounted && combobox.value) {
-    combobox.setValue("");
+  if (!select.mounted && value) {
+    setValue("");
   }
 
   const selectComboboxID = useUID();
