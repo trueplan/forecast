@@ -1,5 +1,11 @@
 # @trueplan/forecast-components
 
+## 4.3.0
+
+### Minor Changes
+
+- [#94](https://github.com/trueplan/forecast/pull/94) [`931cd84`](https://github.com/trueplan/forecast/commit/931cd84f0b938a8396b32048dcc632a2f362d977) Thanks [@richbachman](https://github.com/richbachman)! - [select-combobox]: creates a reusable version that gets passed select and combobox state. Also still exports styled parts.
+
 ## 4.2.0
 
 ### Minor Changes
