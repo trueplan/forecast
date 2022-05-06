@@ -1,7 +1,3 @@
-// eslint-disable-next-line eslint-comments/disable-enable-pair
-/* eslint-disable @typescript-eslint/no-unused-vars */
-// eslint-disable-next-line eslint-comments/disable-enable-pair
-/* eslint-disable unicorn/consistent-destructuring */
 import * as React from "react";
 import { useUID } from "react-uid";
 import { useComboboxState } from "../../combobox";
@@ -52,8 +48,8 @@ export const DefaultOpen: React.FC = () => {
     visible: true,
   });
 
-  if (!select.mounted && combobox.value) {
-    combobox.setValue("");
+  if (!select.mounted && value) {
+    setValue("");
   }
 
   const selectComboboxID = useUID();
@@ -80,8 +76,8 @@ export const EmptyValue: React.FC = () => {
     defaultValue: "",
   });
 
-  if (!select.mounted && combobox.value) {
-    combobox.setValue("");
+  if (!select.mounted && value) {
+    setValue("");
   }
 
   const selectComboboxID = useUID();
