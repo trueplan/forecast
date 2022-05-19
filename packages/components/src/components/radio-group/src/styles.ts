@@ -10,7 +10,6 @@ export const StyledRadio = styled(RadioGroupPrimitive.Item, {
   borderStyle: "solid",
   borderWidth: theme.borderWidths[10],
   height: "16px",
-  marginTop: "4px",
   transition: "border-color 100ms ease-in",
   width: "16px",
   "&:hover": {
