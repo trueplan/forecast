@@ -7,29 +7,31 @@ import type { RadioProps } from "./types";
 const Radio = React.forwardRef<HTMLButtonElement, RadioProps>(
   ({ children, disabled, id, required, value, ...props }, ref) => {
     return (
-      <Box css={{ display: "flex" }}>
-        <Box css={{ flexShrink: 0 }}>
-          <StyledRadio
-            disabled={disabled}
-            id={id}
-            value={value}
-            required={required}
-            ref={ref}
-            {...props}
-          >
-            <StyledRadioIndicator />
-          </StyledRadio>
-        </Box>
-        <Box css={{ marginLeft: "$20" }}>
-          <Label
-            disabled={disabled}
-            htmlFor={id}
-            marginBottom="space0"
-            radiocheckbox
-          >
-            {children}
-          </Label>
-        </Box>
+      <Box
+        css={{
+          display: "flex",
+          alignItems: "center",
+          columnGap: ".5rem",
+        }}
+      >
+        <StyledRadio
+          disabled={disabled}
+          id={id}
+          value={value}
+          required={required}
+          ref={ref}
+          {...props}
+        >
+          <StyledRadioIndicator />
+        </StyledRadio>
+        <Label
+          disabled={disabled}
+          htmlFor={id}
+          marginBottom="space0"
+          radiocheckbox
+        >
+          {children}
+        </Label>
       </Box>
     );
   }
