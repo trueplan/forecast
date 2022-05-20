@@ -1,5 +1,13 @@
 # @trueplan/forecast-components
 
+## 4.3.1
+
+### Patch Changes
+
+- [#98](https://github.com/trueplan/forecast/pull/98) [`2e6dd6b`](https://github.com/trueplan/forecast/commit/2e6dd6b87ac6ee284535a3dce2977ea147db8993) Thanks [@richbachman](https://github.com/richbachman)! - [select-combobox]: added `isClearable` button prop that enables a button to clear the select `value` using `setValue`.
+
+* [#96](https://github.com/trueplan/forecast/pull/96) [`79d2312`](https://github.com/trueplan/forecast/commit/79d23127b80f8737dfdc2771d84145d5a35706aa) Thanks [@bwll-tpio](https://github.com/bwll-tpio)! - [radio]: removes wrapper element around radio button and label components to improve alignment with flexbox.
+
 ## 4.3.0
 
 ### Minor Changes
