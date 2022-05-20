@@ -44,4 +44,12 @@ describe("SelectCombobox", () => {
     fireEvent.change(comboboxes[1], { target: { value: "Bacon" } });
     expect(comboboxes[1]).toHaveDisplayValue("Bacon");
   });
+
+  it("should clear a SelectCombobox value", () => {
+    render(<Default />);
+    const clearButton = screen.getByRole("img");
+    expect(clearButton).toBeDefined();
+    fireEvent.click(clearButton);
+    expect(screen.getByRole("combobox")).toHaveTextContent("");
+  });
 });
