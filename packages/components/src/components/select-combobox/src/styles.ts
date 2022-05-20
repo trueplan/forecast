@@ -63,3 +63,22 @@ export const StyledSelectPopover = styled(SelectPopoverPrimitive, {
   position: "relative",
   zIndex: 50,
 });
+
+export const StyledSelectClearButton = styled("button", {
+  position: "absolute",
+  top: "5px",
+  right: "30px",
+  padding: "10px",
+  border: "none",
+  background: "none",
+  cursor: "pointer",
+  color: "$gray70",
+  backgroundColor: "$backgroundInverse",
+  "&:hover": {
+    color: "$gray80",
+  },
+  "&:focus": {
+    outline: "$borderWidths$20 solid $colors$gray40 !important",
+    outlineOffset: "1px",
+  },
+});

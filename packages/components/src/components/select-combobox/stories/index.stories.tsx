@@ -28,6 +28,7 @@ export const Default: React.FC = () => {
     <SelectCombobox
       comboboxState={combobox}
       id={selectComboboxID}
+      isClearable
       label="Select a fruit"
       selectState={select}
     />
@@ -86,6 +87,7 @@ export const EmptyValue: React.FC = () => {
     <SelectCombobox
       comboboxState={combobox}
       id={selectComboboxID}
+      isClearable
       label="Select a fruit"
       selectState={select}
     />
