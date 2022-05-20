@@ -20,7 +20,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v1
         with:
-          node-version: "16.2.x"
+          node-version: "16.15.x"
 
       # Cache Yarn dependencies
       # https://github.com/actions/cache/blob/main/examples.md#node---yarn-2
@@ -73,7 +73,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v1
         with:
-          node-version: "16.2.x"
+          node-version: "16.15.x"
 
       # Cache Yarn dependencies
       # https://github.com/actions/cache/blob/main/examples.md#node---yarn-2
