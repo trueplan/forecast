@@ -18,62 +18,56 @@ import {
 export interface SelectComoboxElementProps {
   comboboxState: ComboboxState;
   id: string;
+  isClearable?: boolean;
   label: string;
   selectState: SelectState;
-  hasClearButton?: boolean;
 }
 
 const SelectCombobox = React.forwardRef<
   HTMLButtonElement,
   SelectComoboxElementProps
->(
-  (
-    { comboboxState, id, hasClearButton, label, selectState, ...props },
-    ref
-  ) => {
-    return (
-      <>
-        <VisuallyHidden>
-          <Label htmlFor={id}>{label}</Label>
-        </VisuallyHidden>
-        <InputBox hasHover {...props}>
-          <SelectComboboxElement state={selectState} id={id} ref={ref} />
-          {hasClearButton &&
-            selectState.value !== ("" as SelectState["value"]) && (
-              <StyledSelectClearButton onClick={() => selectState.setValue("")}>
-                <CloseIcon
-                  decorative={false}
-                  title="Remove selection"
-                  color="current"
-                  size="xxsmall"
-                />
-              </StyledSelectClearButton>
-            )}
-        </InputBox>
-        <SelectComboboxPopover state={selectState} composite={false}>
-          <Box css={{ marginBottom: "$25" }}>
-            <InputBox>
-              <StyledCombobox
-                state={comboboxState}
-                autoSelect
-                placeholder="Search..."
-              />
-            </InputBox>
-          </Box>
-          <SelectComboboxList state={comboboxState}>
-            {comboboxState.matches.map((itemValue, i) => (
-              <StyledComboboxItem key={itemValue + i} focusOnHover>
-                {(itemProps) => (
-                  <SelectComboboxItem {...itemProps} value={itemValue} />
-                )}
-              </StyledComboboxItem>
-            ))}
-          </SelectComboboxList>
-        </SelectComboboxPopover>
-      </>
-    );
-  }
-);
+>(({ comboboxState, id, isClearable, label, selectState, ...props }, ref) => {
+  return (
+    <>
+      <VisuallyHidden>
+        <Label htmlFor={id}>{label}</Label>
+      </VisuallyHidden>
+      <InputBox hasHover {...props}>
+        <SelectComboboxElement state={selectState} id={id} ref={ref} />
+        {isClearable && selectState.value !== ("" as SelectState["value"]) && (
+          <StyledSelectClearButton onClick={() => selectState.setValue("")}>
+            <CloseIcon
+              decorative={false}
+              title="Remove selection"
+              color="current"
+              size="xxsmall"
+            />
+          </StyledSelectClearButton>
+        )}
+      </InputBox>
+      <SelectComboboxPopover state={selectState} composite={false}>
+        <Box css={{ marginBottom: "$25" }}>
+          <InputBox>
+            <StyledCombobox
+              state={comboboxState}
+              autoSelect
+              placeholder="Search..."
+            />
+          </InputBox>
+        </Box>
+        <SelectComboboxList state={comboboxState}>
+          {comboboxState.matches.map((itemValue) => (
+            <StyledComboboxItem key={itemValue} focusOnHover>
+              {(itemProps) => (
+                <SelectComboboxItem {...itemProps} value={itemValue} />
+              )}
+            </StyledComboboxItem>
+          ))}
+        </SelectComboboxList>
+      </SelectComboboxPopover>
+    </>
+  );
+});
 
 SelectCombobox.displayName = "SelectComobox";
 
