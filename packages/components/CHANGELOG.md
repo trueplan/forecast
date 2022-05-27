@@ -1,5 +1,11 @@
 # @trueplan/forecast-components
 
+## 4.3.2
+
+### Patch Changes
+
+- [#99](https://github.com/trueplan/forecast/pull/99) [`c8baa3f`](https://github.com/trueplan/forecast/commit/c8baa3f91a2b63e757fc08bda8854e86b966428e) Thanks [@bwll-tpio](https://github.com/bwll-tpio)! - fix(avatar): export getAvatarColor util
+
 ## 4.3.1
 
 ### Patch Changes
