@@ -44,7 +44,8 @@
     "chromaui",
     "jayarnielsen",
     "richbachman",
-    "trueplan-automaton"
+    "trueplan-automaton",
+    "asana"
   ],
   "flagWords": ["hte"],
   "allowCompoundWords": true,

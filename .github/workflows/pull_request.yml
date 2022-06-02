@@ -40,12 +40,17 @@ jobs:
       - name: Build Forecast
         run: yarn build
 
-      # Test
-      - name: Run prettier check
-        run: yarn prettier:check
-      - name: Run eslint
-        run: yarn lint:js
-      - name: Run type checker
+      # Type check
+      - name: Type Check
         run: yarn type-check
+
+      # Linters
+      - name: Run Linters
+        uses: wearerequired/lint-action@v2
+        with:
+          eslint: true
+          prettier: true
+
+      # Test
       - name: Run tests
         run: yarn test:ci
