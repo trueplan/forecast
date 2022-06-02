@@ -22,8 +22,14 @@ export const StyledCard = styled("div", {
       space20: {
         padding: theme.space[20],
       },
+      space25: {
+        padding: theme.space[25],
+      },
       space30: {
         padding: theme.space[30],
+      },
+      space35: {
+        padding: theme.space[35],
       },
       space40: {
         padding: theme.space[40],
@@ -54,8 +60,14 @@ export const StyledCard = styled("div", {
       space20: {
         paddingTop: theme.space[20],
       },
+      space25: {
+        paddingTop: theme.space[25],
+      },
       space30: {
         paddingTop: theme.space[30],
+      },
+      space35: {
+        paddingTop: theme.space[35],
       },
       space40: {
         paddingTop: theme.space[40],
@@ -86,8 +98,14 @@ export const StyledCard = styled("div", {
       space20: {
         paddingRight: theme.space[20],
       },
+      space25: {
+        paddingRight: theme.space[25],
+      },
       space30: {
         paddingRight: theme.space[30],
+      },
+      space35: {
+        paddingRight: theme.space[35],
       },
       space40: {
         paddingRight: theme.space[40],
@@ -118,8 +136,14 @@ export const StyledCard = styled("div", {
       space20: {
         paddingBottom: theme.space[20],
       },
+      space25: {
+        paddingBottom: theme.space[25],
+      },
       space30: {
         paddingBottom: theme.space[30],
+      },
+      space35: {
+        paddingBottom: theme.space[35],
       },
       space40: {
         paddingBottom: theme.space[40],
@@ -150,8 +174,14 @@ export const StyledCard = styled("div", {
       space20: {
         paddingLeft: theme.space[20],
       },
+      space25: {
+        paddingLeft: theme.space[25],
+      },
       space30: {
         paddingLeft: theme.space[30],
+      },
+      space35: {
+        paddingLeft: theme.space[35],
       },
       space40: {
         paddingLeft: theme.space[40],

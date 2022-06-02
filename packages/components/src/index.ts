@@ -24,6 +24,7 @@ export * from "./components/popover";
 export * from "./components/priority";
 export * from "./components/progress";
 export * from "./components/radio-group";
+export * from "./components/resource-link";
 export * from "./components/select";
 export * from "./components/select-combobox";
 export * from "./components/spinner";
