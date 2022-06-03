@@ -1,5 +1,13 @@
 # @trueplan/forecast-components
 
+## 4.4.0
+
+### Minor Changes
+
+- [#101](https://github.com/trueplan/forecast/pull/101) [`90cdb3e`](https://github.com/trueplan/forecast/commit/90cdb3e3c768039e656e3edbe61978cb9d4d371d) Thanks [@richbachman](https://github.com/richbachman)! - [ResourceLink]: added a new anchor card component for linking a resource (article or video).
+
+  [Card]: added `space25` and `space35` as padding prop options.
+
 ## 4.3.2
 
 ### Patch Changes

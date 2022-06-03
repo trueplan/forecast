@@ -1,5 +1,11 @@
 # @trueplan/forecast-icons
 
+## 4.0.2
+
+### Patch Changes
+
+- [#101](https://github.com/trueplan/forecast/pull/101) [`7daaa96`](https://github.com/trueplan/forecast/commit/7daaa96eebbe1d68bc403a0706c095fe7330330c) Thanks [@richbachman](https://github.com/richbachman)! - [Icons]: added the resource and video icons.
+
 ## 4.0.1
 
 ### Patch Changes
