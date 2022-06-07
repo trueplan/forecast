@@ -53,5 +53,5 @@ jobs:
           eslint_extensions: ts
 
       # Test
-      - name: Run tests
+      - name: Run Tests
         run: yarn test:ci
