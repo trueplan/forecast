@@ -50,6 +50,7 @@ jobs:
         with:
           eslint: true
           prettier: true
+          eslint_extensions: ts
 
       # Test
       - name: Run tests
