@@ -1,0 +1,17 @@
+name: "Move Asana Task to Complete"
+on:
+  pull_request:
+    types: [closed]
+
+jobs:
+  move-task-to-merged:
+    if: github.event.pull_request.merged == true
+    runs-on: ubuntu-latest
+    steps:
+      - name: Asana Github Actions
+        uses: everphone-gmbh/github-asana-action@385529c13a4c0d311ac611ef4049f5a6ccf1048e
+        with:
+          asana-pat: ${{ secrets.ASANA_PAT }}
+          action: "move-section"
+          # The space at the end of the section name is intentional - it must match the section title exactly.
+          targets: '[{"project": "Current Sprint", "section": "Complete 🎉 "}]'
