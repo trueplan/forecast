@@ -207,6 +207,7 @@ export const { styled, css, theme, keyframes, getCssText } = createStitches({
     },
     radii: {
       30: "3px",
+      50: "5px",
       100: "100px",
       circle: "50%",
     },
