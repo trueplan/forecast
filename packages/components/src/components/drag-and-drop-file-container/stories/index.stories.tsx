@@ -1,6 +1,6 @@
 import type { ComponentMeta, ComponentStory } from "@storybook/react";
 import React, { useState } from "react";
-import { Box } from "../../..";
+import { Box, Text } from "../../..";
 import { DragAndDropFileContainer } from "../src";
 
 // eslint-disable-next-line import/no-default-export
@@ -33,7 +33,7 @@ const Template: ComponentStory<typeof DragAndDropFileContainer> = ({
         {...args}
       />
 
-      <b style={{ marginTop: "20px" }}>Accepted Files:</b>
+      <Text css={{ marginTop: "20px" }}>Accepted Files:</Text>
       <ul>
         {files.map((file) => (
           <li key={file.name}>
