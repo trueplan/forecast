@@ -1,5 +1,11 @@
 # @trueplan/forecast-theme
 
+## 3.2.1
+
+### Patch Changes
+
+- [#105](https://github.com/trueplan/forecast/pull/105) [`c76644a`](https://github.com/trueplan/forecast/commit/c76644a9e59cc49c34c06fa8ad17371d0bb68b8b) Thanks [@bwll-tpio](https://github.com/bwll-tpio)! - [theme]: add 5px radii to theme
+
 ## 3.2.0
 
 ### Minor Changes
