@@ -52,10 +52,18 @@ export const Default = Template.bind({});
 export const WithIllustrations = Template.bind({});
 WithIllustrations.args = {
   Illustration: (
-    <img src="https://www.placecage.com/130/100" alt="Nicholas Cage" />
+    <img
+      src="https://www.placecage.com/130/100"
+      alt="Nicholas Cage"
+      className="chromatic-ignore"
+    />
   ),
   RejectIllustration: (
-    <img src="https://www.placecage.com/c/130/100" alt="Nicholas Cage" />
+    <img
+      src="https://www.placecage.com/c/130/100"
+      alt="Nicholas Cage"
+      className="chromatic-ignore"
+    />
   ),
 };
 WithIllustrations.parameters = {
