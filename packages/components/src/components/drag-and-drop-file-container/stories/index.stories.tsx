@@ -33,7 +33,9 @@ const Template: ComponentStory<typeof DragAndDropFileContainer> = ({
         {...args}
       />
 
-      <Text css={{ marginTop: "20px" }}>Accepted Files:</Text>
+      <Text display="block" css={{ marginTop: "20px" }}>
+        Accepted Files:
+      </Text>
       <ul>
         {files.map((file) => (
           <li key={file.name}>
