@@ -11053,6 +11053,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/radix-ui__react-visually-hidden", null],\
             ["@types/react", "npm:18.0.4"],\
             ["@types/react-dom", "npm:18.0.0"],\
+            ["@types/react-dropzone", null],\
             ["@types/react-uid", null],\
             ["@types/stitches__react", null],\
             ["@types/testing-library__jest-dom", "npm:5.14.3"],\
@@ -11061,6 +11062,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["ariakit", "virtual:66ef534ac91fed1f106aa593639d4f7597eb1dbd64d59ca4b3b7fe6dfbfe14222aeba5a3c48f82e35150521aa8ab9940509f5fd0d64f8e57980014099f6a7e71#npm:2.0.0-next.27"],\
             ["react", "npm:17.0.2"],\
             ["react-dom", "virtual:83930a02e406f078247fc9b9d21de38a337fcb78679a3d66298da2df309f013f7be5bb231811c0f7e8543d93b976930cd65092f5c1c34eb2317b35770703c6a9#npm:17.0.2"],\
+            ["react-dropzone", "virtual:66ef534ac91fed1f106aa593639d4f7597eb1dbd64d59ca4b3b7fe6dfbfe14222aeba5a3c48f82e35150521aa8ab9940509f5fd0d64f8e57980014099f6a7e71#npm:14.2.1"],\
             ["react-uid", "virtual:83930a02e406f078247fc9b9d21de38a337fcb78679a3d66298da2df309f013f7be5bb231811c0f7e8543d93b976930cd65092f5c1c34eb2317b35770703c6a9#npm:2.3.2"],\
             ["rollup", "npm:2.70.1"],\
             ["rollup-config-forecast", "virtual:66ef534ac91fed1f106aa593639d4f7597eb1dbd64d59ca4b3b7fe6dfbfe14222aeba5a3c48f82e35150521aa8ab9940509f5fd0d64f8e57980014099f6a7e71#workspace:configs/rollup"],\
@@ -11085,6 +11087,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             "@types/radix-ui__react-tooltip",\
             "@types/radix-ui__react-visually-hidden",\
             "@types/react-dom",\
+            "@types/react-dropzone",\
             "@types/react-uid",\
             "@types/react",\
             "@types/stitches__react",\
@@ -11135,6 +11138,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/radix-ui__react-visually-hidden", null],\
             ["@types/react", "npm:18.0.4"],\
             ["@types/react-dom", "npm:18.0.0"],\
+            ["@types/react-dropzone", null],\
             ["@types/react-uid", null],\
             ["@types/stitches__react", null],\
             ["@types/testing-library__jest-dom", "npm:5.14.3"],\
@@ -11143,6 +11147,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["ariakit", "virtual:66ef534ac91fed1f106aa593639d4f7597eb1dbd64d59ca4b3b7fe6dfbfe14222aeba5a3c48f82e35150521aa8ab9940509f5fd0d64f8e57980014099f6a7e71#npm:2.0.0-next.27"],\
             ["react", "npm:17.0.2"],\
             ["react-dom", "virtual:83930a02e406f078247fc9b9d21de38a337fcb78679a3d66298da2df309f013f7be5bb231811c0f7e8543d93b976930cd65092f5c1c34eb2317b35770703c6a9#npm:17.0.2"],\
+            ["react-dropzone", "virtual:66ef534ac91fed1f106aa593639d4f7597eb1dbd64d59ca4b3b7fe6dfbfe14222aeba5a3c48f82e35150521aa8ab9940509f5fd0d64f8e57980014099f6a7e71#npm:14.2.1"],\
             ["react-uid", "virtual:83930a02e406f078247fc9b9d21de38a337fcb78679a3d66298da2df309f013f7be5bb231811c0f7e8543d93b976930cd65092f5c1c34eb2317b35770703c6a9#npm:2.3.2"],\
             ["rollup", "npm:2.70.1"],\
             ["rollup-config-forecast", "virtual:66ef534ac91fed1f106aa593639d4f7597eb1dbd64d59ca4b3b7fe6dfbfe14222aeba5a3c48f82e35150521aa8ab9940509f5fd0d64f8e57980014099f6a7e71#workspace:configs/rollup"],\
@@ -11167,6 +11172,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             "@types/radix-ui__react-tooltip",\
             "@types/radix-ui__react-visually-hidden",\
             "@types/react-dom",\
+            "@types/react-dropzone",\
             "@types/react-uid",\
             "@types/react",\
             "@types/stitches__react",\
@@ -11209,6 +11215,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["ariakit", "virtual:66ef534ac91fed1f106aa593639d4f7597eb1dbd64d59ca4b3b7fe6dfbfe14222aeba5a3c48f82e35150521aa8ab9940509f5fd0d64f8e57980014099f6a7e71#npm:2.0.0-next.27"],\
             ["react", "npm:17.0.2"],\
             ["react-dom", "virtual:83930a02e406f078247fc9b9d21de38a337fcb78679a3d66298da2df309f013f7be5bb231811c0f7e8543d93b976930cd65092f5c1c34eb2317b35770703c6a9#npm:17.0.2"],\
+            ["react-dropzone", "virtual:66ef534ac91fed1f106aa593639d4f7597eb1dbd64d59ca4b3b7fe6dfbfe14222aeba5a3c48f82e35150521aa8ab9940509f5fd0d64f8e57980014099f6a7e71#npm:14.2.1"],\
             ["react-uid", "virtual:83930a02e406f078247fc9b9d21de38a337fcb78679a3d66298da2df309f013f7be5bb231811c0f7e8543d93b976930cd65092f5c1c34eb2317b35770703c6a9#npm:2.3.2"],\
             ["rollup", "npm:2.70.1"],\
             ["rollup-config-forecast", "virtual:66ef534ac91fed1f106aa593639d4f7597eb1dbd64d59ca4b3b7fe6dfbfe14222aeba5a3c48f82e35150521aa8ab9940509f5fd0d64f8e57980014099f6a7e71#workspace:configs/rollup"],\
@@ -13675,6 +13682,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/atob-npm-2.1.2-bcb583261e-dfeeeb7009.zip/node_modules/atob/",\
           "packageDependencies": [\
             ["atob", "npm:2.1.2"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["attr-accept", [\
+        ["npm:2.2.2", {\
+          "packageLocation": "./.yarn/cache/attr-accept-npm-2.2.2-b9cd0d8eac-496f724935.zip/node_modules/attr-accept/",\
+          "packageDependencies": [\
+            ["attr-accept", "npm:2.2.2"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -18544,6 +18560,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packagePeers": [\
             "@types/webpack",\
             "webpack"\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["file-selector", [\
+        ["npm:0.6.0", {\
+          "packageLocation": "./.yarn/cache/file-selector-npm-0.6.0-04259af1f7-7d051b6e5d.zip/node_modules/file-selector/",\
+          "packageDependencies": [\
+            ["file-selector", "npm:0.6.0"],\
+            ["tslib", "npm:2.4.0"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -25991,6 +26017,31 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["react-dropzone", [\
+        ["npm:14.2.1", {\
+          "packageLocation": "./.yarn/cache/react-dropzone-npm-14.2.1-0de144dac0-8556d997d6.zip/node_modules/react-dropzone/",\
+          "packageDependencies": [\
+            ["react-dropzone", "npm:14.2.1"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:66ef534ac91fed1f106aa593639d4f7597eb1dbd64d59ca4b3b7fe6dfbfe14222aeba5a3c48f82e35150521aa8ab9940509f5fd0d64f8e57980014099f6a7e71#npm:14.2.1", {\
+          "packageLocation": "./.yarn/__virtual__/react-dropzone-virtual-7d5d4f38e5/0/cache/react-dropzone-npm-14.2.1-0de144dac0-8556d997d6.zip/node_modules/react-dropzone/",\
+          "packageDependencies": [\
+            ["react-dropzone", "virtual:66ef534ac91fed1f106aa593639d4f7597eb1dbd64d59ca4b3b7fe6dfbfe14222aeba5a3c48f82e35150521aa8ab9940509f5fd0d64f8e57980014099f6a7e71#npm:14.2.1"],\
+            ["@types/react", "npm:18.0.4"],\
+            ["attr-accept", "npm:2.2.2"],\
+            ["file-selector", "npm:0.6.0"],\
+            ["prop-types", "npm:15.8.1"],\
+            ["react", "npm:17.0.2"]\
+          ],\
+          "packagePeers": [\
+            "@types/react",\
+            "react"\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["react-element-to-jsx-string", [\
         ["npm:14.3.4", {\
           "packageLocation": "./.yarn/cache/react-element-to-jsx-string-npm-14.3.4-47e7176d93-42bcd4423f.zip/node_modules/react-element-to-jsx-string/",\
@@ -29109,6 +29160,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/tslib-npm-2.3.1-0e21e18015-de17a98d46.zip/node_modules/tslib/",\
           "packageDependencies": [\
             ["tslib", "npm:2.3.1"]\
+          ],\
+          "linkType": "HARD"\
+        }],\
+        ["npm:2.4.0", {\
+          "packageLocation": "./.yarn/cache/tslib-npm-2.4.0-9cb6dc5030-8c4aa6a3c5.zip/node_modules/tslib/",\
+          "packageDependencies": [\
+            ["tslib", "npm:2.4.0"]\
           ],\
           "linkType": "HARD"\
         }]\
