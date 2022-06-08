@@ -10,19 +10,19 @@ import { StyledContainer } from "./styles";
 type DragAndDropFileContainerProps = {
   /** Callback to be called when a file is dropped or selected */
   onDrop: DropzoneOptions["onDropAccepted"];
-  // Max number of files that a user can select/drop
+  /** Max number of files that a user can select/drop */
   maxFiles?: number;
-  // The filetype and the supported extensions that are acceptable (i.e. {"text/csv": [".csv"]})
+  /** The filetype and the supported extensions that are acceptable (i.e. {"text/csv": [".csv"]}) */
   acceptedFileTypes?: Record<string, string[]>;
-  // Text that displays about what a user should do
+  /** Text that displays about what a user should do */
   uploadText: string;
-  // Illustration to display in the container
+  /** Illustration to display in the container */
   Illustration?: JSX.Element;
-  // Text that displays when a user tries to drag a file type that is not accepted
+  /** Text that displays when a user tries to drag a file type that is not accepted */
   rejectText: string;
-  // Illustration to display when a user tries to drag a file type that is not accepted
+  /** Illustration to display when a user tries to drag a file type that is not accepted */
   RejectIllustration?: JSX.Element;
-  // Shows loading state
+  /** Shows loading state */
   isLoading?: boolean;
 };
 
