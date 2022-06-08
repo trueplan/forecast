@@ -1,5 +1,11 @@
 # @trueplan/forecast-components
 
+## 4.5.0
+
+### Minor Changes
+
+- [#104](https://github.com/trueplan/forecast/pull/104) [`f3b69c5`](https://github.com/trueplan/forecast/commit/f3b69c539f1761fdece7126622a8934fe2f4079a) Thanks [@RohitRajendran](https://github.com/RohitRajendran)! - [DragAndDropFileContainer]: added a component to handle drag and drop of files
+
 ## 4.4.0
 
 ### Minor Changes

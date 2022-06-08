@@ -1,6 +1,6 @@
 {
   "name": "@trueplan/forecast-components",
-  "version": "4.4.0",
+  "version": "4.5.0",
   "description": "Forecast Design System Components",
   "author": "TruePlan Inc.",
   "license": "UNLICENSED",
@@ -80,7 +80,7 @@
     "@testing-library/jest-dom": "5.16.4",
     "@testing-library/react": "12.1.2",
     "@trueplan/forecast-icons": "^4.0.2",
-    "@trueplan/forecast-theme": "^3.2.0",
+    "@trueplan/forecast-theme": "^3.2.1",
     "@types/jest": "^27.4.1",
     "@types/node": "^17.0.23",
     "@types/react": "^18.0.4",
