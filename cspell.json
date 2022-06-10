@@ -65,7 +65,8 @@
     "CHANGELOG.md",
     "**/CHANGELOG.md",
     ".devcontainer/**",
-    ".eslintignore"
+    ".eslintignore",
+    "**/__snapshots__/**"
   ],
   "overrides": [
     {

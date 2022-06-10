@@ -43,4 +43,5 @@ export * from "./layout/stack";
 export * from "./primitives/box";
 export * from "./primitives/collapsible";
 export * from "./primitives/text";
+export * from "./components/table";
 // COMPONENT EXPORTS
