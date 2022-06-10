@@ -1,0 +1,20 @@
+import type { ComponentMeta, ComponentStory } from "@storybook/react";
+import React from "react";
+import { {{pascalCase name}} } from "../src";
+
+// eslint-disable-next-line import/no-default-export
+export default {
+  title: "Components/{{titleCase name}}",
+  component: {{pascalCase name}},
+} as ComponentMeta<typeof {{pascalCase name}}>;
+
+const Template: ComponentStory<typeof {{pascalCase name}}> = ({ args }) => {
+  return <{{pascalCase name}} {...args} />;
+};
+
+export const Default = Template.bind({});
+Default.parameters = {
+  docs: {
+    storyDescription: "Add any additional helper text for the story."
+  }
+}

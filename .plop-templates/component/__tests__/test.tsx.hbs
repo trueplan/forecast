@@ -1,0 +1,13 @@
+import { render, screen } from "@testing-library/react";
+import React from "react";
+import { {{pascalCase name}} } from "../src";
+
+const props = {};
+
+describe("{{pascalCase name}}", () => {
+  it("should render", async () => {
+    render(<{{pascalCase name}} {...props} />);
+
+    expect(screen.getByText("Hello World")).toBeVisible();
+  });
+});

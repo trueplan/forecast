@@ -66,3 +66,11 @@ Enough said.
 ## 4. Feedback
 
 Let us know if you have any [feedback](https://github.com/trueplan/forecast/discussions/new) or [issues](https://github.com/trueplan/forecast/issues/new).
+
+## Generators
+
+This repo leverage [Plop](https://plopjs.com/) to help scaffold out the files that you need when you're creating a new component.
+
+### New Components
+
+Running `yarn generate:component` will create the folder and files you need to start building out your component. Each component at the very least should have an export, documentation, testing, and a story file.

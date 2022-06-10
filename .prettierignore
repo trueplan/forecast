@@ -17,3 +17,6 @@ docs/*
 
 # Next
 **/.next/**
+
+# Plop Templates
+.plop-templates/*
