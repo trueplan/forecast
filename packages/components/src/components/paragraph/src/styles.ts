@@ -31,6 +31,18 @@ export const StyledParagraph = styled("p", {
       space0: {
         marginBottom: theme.space[0],
       },
+      space10: {
+        marginBottom: theme.space[10],
+      },
+      space20: {
+        marginBottom: theme.space[20],
+      },
+      space25: {
+        marginBottom: theme.space[25],
+      },
+      space30: {
+        marginBottom: theme.space[30],
+      },
       space40: {
         marginBottom: theme.space[40],
       },
