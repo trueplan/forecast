@@ -5,6 +5,7 @@ const cellPadding = `$30 $35`;
 
 export const StyledTable = styled("table", {
   border,
+  backgroundColor: theme.colors.white,
   borderCollapse: "collapse",
   width: "100%",
   variants: {
