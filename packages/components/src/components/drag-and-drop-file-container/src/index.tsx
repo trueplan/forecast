@@ -27,82 +27,94 @@ type DragAndDropFileContainerProps = {
 };
 
 /** A container that enables users to drag and drop or select file(s) */
-export const DragAndDropFileContainer = ({
-  acceptedFileTypes,
-  Illustration,
-  isLoading,
-  maxFiles,
-  onDrop,
-  RejectIllustration,
-  rejectText,
-  uploadText,
-}: DragAndDropFileContainerProps): JSX.Element => {
-  const {
-    acceptedFiles,
-    getRootProps,
-    getInputProps,
-    open,
-    isDragAccept,
-    isDragReject,
-  } = useDropzone({
-    noClick: true,
-    maxFiles,
-    accept: acceptedFileTypes,
-    onDropAccepted: onDrop,
-  });
+const DragAndDropFileContainer = React.forwardRef<
+  HTMLDivElement,
+  DragAndDropFileContainerProps
+>(
+  (
+    {
+      acceptedFileTypes,
+      Illustration,
+      isLoading,
+      maxFiles,
+      onDrop,
+      RejectIllustration,
+      rejectText,
+      uploadText,
+    },
+    ref
+  ) => {
+    const {
+      acceptedFiles,
+      getRootProps,
+      getInputProps,
+      open,
+      isDragAccept,
+      isDragReject,
+    } = useDropzone({
+      noClick: true,
+      maxFiles,
+      accept: acceptedFileTypes,
+      onDropAccepted: onDrop,
+    });
 
-  const containerState = isDragReject
-    ? "rejected"
-    : isDragAccept
-    ? "accepted"
-    : "neutral";
+    const containerState = isDragReject
+      ? "rejected"
+      : isDragAccept
+      ? "accepted"
+      : "neutral";
 
-  const canDisplayIllustration =
-    (isDragReject && RejectIllustration) || (!isDragReject && Illustration);
+    const canDisplayIllustration =
+      (isDragReject && RejectIllustration) || (!isDragReject && Illustration);
 
-  return (
-    <StyledContainer state={containerState} {...getRootProps()}>
-      <input data-testid="dnd-input" {...getInputProps()} />
+    return (
+      <StyledContainer state={containerState} {...getRootProps()} ref={ref}>
+        <input data-testid="dnd-input" {...getInputProps()} />
 
-      {isLoading ? (
-        <>
-          <Spinner
-            label="" // Label would be redundant with text below
-            size="large"
-          />
-          <Text css={{ marginTop: "$30" }}>
-            Checking your file{" "}
-            {acceptedFiles.map((value) => value.name).join(", ")}
-          </Text>
-        </>
-      ) : (
-        <>
-          {canDisplayIllustration && (
-            <Box css={{ marginBottom: "$20" }}>
-              {isDragReject ? RejectIllustration : Illustration}
-            </Box>
-          )}
+        {isLoading ? (
+          <>
+            <Spinner
+              label="" // Label would be redundant with text below
+              size="large"
+            />
+            <Text css={{ marginTop: "$30" }}>
+              Checking your file{" "}
+              {acceptedFiles.map((value) => value.name).join(", ")}
+            </Text>
+          </>
+        ) : (
+          <>
+            {canDisplayIllustration && (
+              <Box css={{ marginBottom: "$20" }}>
+                {isDragReject ? RejectIllustration : Illustration}
+              </Box>
+            )}
 
-          <Text css={{ marginBottom: "$35" }}>
-            {isDragReject ? rejectText : uploadText}
-          </Text>
+            <Text css={{ marginBottom: "$35" }}>
+              {isDragReject ? rejectText : uploadText}
+            </Text>
 
-          <Button
-            variant="secondary"
-            onClick={open}
-            css={
-              isDragAccept
-                ? {
-                    backgroundColor: `${theme.colors.gray20}`,
-                    transition: "none",
-                  }
-                : undefined
-            }
-          >
-            Choose File
-          </Button>
-        </>
-      )}
-    </StyledContainer>
-  );
-};
+            <Button
+              variant="secondary"
+              onClick={open}
+              css={
+                isDragAccept
+                  ? {
+                      backgroundColor: `${theme.colors.gray20}`,
+                      transition: "none",
+                    }
+                  : undefined
+              }
+            >
+              Choose File
+            </Button>
+          </>
+        )}
+      </StyledContainer>
+    );
+  }
+);
+
+DragAndDropFileContainer.displayName = "DragAndDropFileContainer";
+
+export { DragAndDropFileContainer };
