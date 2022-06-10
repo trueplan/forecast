@@ -3,7 +3,7 @@
 exports[`Table should render 1`] = `
 <div>
   <table
-    class="tp-c-gVqKZS tp-c-gVqKZS-ktwPXh-tableLayout-fixed"
+    class="tp-c-lgSICH tp-c-lgSICH-ktwPXh-tableLayout-fixed"
   >
     <thead
       class="tp-c-buOltT"
