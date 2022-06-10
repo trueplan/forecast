@@ -1,5 +1,11 @@
 # @trueplan/forecast-components
 
+## 4.6.0
+
+### Minor Changes
+
+- [#107](https://github.com/trueplan/forecast/pull/107) [`c3c0ad1`](https://github.com/trueplan/forecast/commit/c3c0ad10b44e6c24171284f8f016424e6b934890) Thanks [@RohitRajendran](https://github.com/RohitRajendran)! - [Drag and Drop File] - Now wrapped in a forwardRef
+
 ## 4.5.0
 
 ### Minor Changes
