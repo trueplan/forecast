@@ -1,0 +1,13 @@
+import React from "react";
+import { Box } from "../../..";
+
+type {{pascalCase name}}Props = {};
+
+/** {{sentenceCase description}} */
+const {{pascalCase name}} = React.forwardRef<HTMLDivElement, {{pascalCase name}}Props>(({}, ref) => {
+  return <Box ref={ref}>Hello World</Box>;
+});
+
+{{pascalCase name}}.displayName = "{{pascalCase name}}";
+
+export { {{pascalCase name}} };
