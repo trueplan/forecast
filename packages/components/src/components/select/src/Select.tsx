@@ -38,6 +38,7 @@ const SelectIconWrapper: React.FC = () => (
       top: "50%",
       right: 12,
       marginTop: "-0.313rem",
+      pointerEvents: "none",
     }}
   >
     <ChevronDownIcon decorative size="xxsmall" />
