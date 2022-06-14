@@ -1,5 +1,11 @@
 # @trueplan/forecast-components
 
+## 4.7.1
+
+### Patch Changes
+
+- [#114](https://github.com/trueplan/forecast/pull/114) [`a53c592`](https://github.com/trueplan/forecast/commit/a53c59282a05c40ea585b1db98c3f292e14cba72) Thanks [@richbachman](https://github.com/richbachman)! - [Select]: Added `pointer-events: none` to the chevron container in order to fix the select not opening when a user clicks on the icon.
+
 ## 4.7.0
 
 ### Minor Changes
