@@ -1,5 +1,13 @@
 # @trueplan/forecast-components
 
+## 4.7.0
+
+### Minor Changes
+
+- [#112](https://github.com/trueplan/forecast/pull/112) [`3b6ee5c`](https://github.com/trueplan/forecast/commit/3b6ee5c40e042f736286e086182645e83f1eca02) Thanks [@RohitRajendran](https://github.com/RohitRajendran)! - [Table] Created a new table component
+
+* [#110](https://github.com/trueplan/forecast/pull/110) [`2b637b0`](https://github.com/trueplan/forecast/commit/2b637b0b1859de83a04df611d775359d72fd05f6) Thanks [@RohitRajendran](https://github.com/RohitRajendran)! - [Drag and Drop File Container] Fix exporting of the component
+
 ## 4.6.0
 
 ### Minor Changes
