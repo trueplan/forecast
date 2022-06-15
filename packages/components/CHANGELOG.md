@@ -1,5 +1,11 @@
 # @trueplan/forecast-components
 
+## 4.7.2
+
+### Patch Changes
+
+- [#116](https://github.com/trueplan/forecast/pull/116) [`0277832`](https://github.com/trueplan/forecast/commit/0277832e5bc527a1d76ffe20768acf5945a33e41) Thanks [@RohitRajendran](https://github.com/RohitRajendran)! - [Drag and Drop File Container] Added ability to pass in a loading illustration
+
 ## 4.7.1
 
 ### Patch Changes
