@@ -72,6 +72,7 @@ WithIllustrations.args = {
       className="chromatic-ignore"
     />
   ),
+  isLoading: true,
 };
 WithIllustrations.parameters = {
   docs: {
@@ -83,4 +84,16 @@ WithIllustrations.parameters = {
 export const Loading = Template.bind({});
 Loading.args = {
   isLoading: true,
+};
+
+export const LoadingWithIllustration = Template.bind({});
+LoadingWithIllustration.args = {
+  isLoading: true,
+  LoadingIllustration: (
+    <img
+      src="https://www.placecage.com/gif/130/100"
+      alt="Nicholas Cage"
+      className="chromatic-ignore"
+    />
+  ),
 };
