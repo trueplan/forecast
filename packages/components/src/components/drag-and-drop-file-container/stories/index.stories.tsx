@@ -72,7 +72,6 @@ WithIllustrations.args = {
       className="chromatic-ignore"
     />
   ),
-  isLoading: true,
 };
 WithIllustrations.parameters = {
   docs: {
