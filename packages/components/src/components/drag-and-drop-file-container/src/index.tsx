@@ -76,7 +76,9 @@ const DragAndDropFileContainer = React.forwardRef<
 
         {isLoading ? (
           <>
-            <Box css={{ marginBottom: "$20" }}>{LoadingIllustration}</Box>
+            {LoadingIllustration && (
+              <Box css={{ marginBottom: "$20" }}>{LoadingIllustration}</Box>
+            )}
             <Spinner
               label="" // Label would be redundant with text below
               size="large"
