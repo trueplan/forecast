@@ -16,12 +16,14 @@ type DragAndDropFileContainerProps = {
   acceptedFileTypes?: Record<string, string[]>;
   /** Text that displays about what a user should do */
   uploadText: string;
-  /** Illustration to display in the container */
-  Illustration?: JSX.Element;
   /** Text that displays when a user tries to drag a file type that is not accepted */
   rejectText: string;
+  /** Illustration to display in the container */
+  Illustration?: JSX.Element;
   /** Illustration to display when a user tries to drag a file type that is not accepted */
   RejectIllustration?: JSX.Element;
+  /** Illustration to display during the loading state */
+  LoadingIllustration?: JSX.Element;
   /** Shows loading state */
   isLoading?: boolean;
 };
@@ -34,11 +36,12 @@ const DragAndDropFileContainer = React.forwardRef<
   (
     {
       acceptedFileTypes,
-      Illustration,
       isLoading,
       maxFiles,
       onDrop,
+      Illustration,
       RejectIllustration,
+      LoadingIllustration,
       rejectText,
       uploadText,
     },
@@ -73,6 +76,7 @@ const DragAndDropFileContainer = React.forwardRef<
 
         {isLoading ? (
           <>
+            <Box css={{ marginBottom: "$20" }}>{LoadingIllustration}</Box>
             <Spinner
               label="" // Label would be redundant with text below
               size="large"

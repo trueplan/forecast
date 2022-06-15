@@ -65,6 +65,13 @@ WithIllustrations.args = {
       className="chromatic-ignore"
     />
   ),
+  LoadingIllustration: (
+    <img
+      src="https://www.placecage.com/gif/130/100"
+      alt="Nicholas Cage"
+      className="chromatic-ignore"
+    />
+  ),
 };
 WithIllustrations.parameters = {
   docs: {
