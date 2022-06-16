@@ -27,8 +27,11 @@ module.exports = {
     "plugin:import/recommended",
     "plugin:unicorn/recommended",
     "plugin:sonarjs/recommended",
+    "plugin:jsdoc/recommended",
   ],
   rules: {
+    "jsdoc/require-description-complete-sentence": ["warn"],
+    "jsdoc/require-hyphen-before-param-description": ["warn"],
     // Too restrictive, writing ugly code to defend against a very unlikely scenario: https://eslint.org/docs/rules/no-prototype-builtins
     "no-prototype-builtins": "off",
     eqeqeq: ["error", "smart"],
@@ -75,6 +78,11 @@ module.exports = {
         "plugin:import/typescript",
       ],
       rules: {
+        // jsdoc types are redundant with typescript
+        "jsdoc/no-types": ["error", { contexts: ["any"] }],
+        "jsdoc/require-returns-type": "off",
+        "jsdoc/require-param-type": "off",
+        "jsdoc/require-property-type": "off",
         // This rule tells people to do something (import foo = require('foo')) which doesn't work
         // with babel compiled typescript.
         "@typescript-eslint/no-var-requires": "off",
