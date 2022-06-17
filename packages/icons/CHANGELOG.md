@@ -1,5 +1,11 @@
 # @trueplan/forecast-icons
 
+## 4.0.3
+
+### Patch Changes
+
+- [#121](https://github.com/trueplan/forecast/pull/121) [`daecaa1`](https://github.com/trueplan/forecast/commit/daecaa12edd990a5278d1ae5bdc6f71ce18ee45c) Thanks [@richbachman](https://github.com/richbachman)! - [Icons]: added archive, unarchive, merge, and unmerge icons
+
 ## 4.0.2
 
 ### Patch Changes
