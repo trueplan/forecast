@@ -1,4 +1,5 @@
 [
+  { "name": "ArchiveIcon", "svg": "/svg/ArchiveIcon.svg" },
   { "name": "ArrowDownIcon", "svg": "/svg/ArrowDownIcon.svg" },
   { "name": "ArrowSwapIcon", "svg": "/svg/ArrowSwapIcon.svg" },
   { "name": "ArrowUpIcon", "svg": "/svg/ArrowUpIcon.svg" },
@@ -43,6 +44,7 @@
   { "name": "LocationIcon", "svg": "/svg/LocationIcon.svg" },
   { "name": "LogoutIcon", "svg": "/svg/LogoutIcon.svg" },
   { "name": "MenuCircleIcon", "svg": "/svg/MenuCircleIcon.svg" },
+  { "name": "MergeIcon", "svg": "/svg/MergeIcon.svg" },
   { "name": "MinusCircleIcon", "svg": "/svg/MinusCircleIcon.svg" },
   { "name": "MoreIcon", "svg": "/svg/MoreIcon.svg" },
   { "name": "OrgChartIcon", "svg": "/svg/OrgChartIcon.svg" },
@@ -67,6 +69,8 @@
   { "name": "TargetIcon", "svg": "/svg/TargetIcon.svg" },
   { "name": "TimerIcon", "svg": "/svg/TimerIcon.svg" },
   { "name": "TrashIcon", "svg": "/svg/TrashIcon.svg" },
+  { "name": "UnarchiveIcon", "svg": "/svg/UnarchiveIcon.svg" },
+  { "name": "UnmergeIcon", "svg": "/svg/UnmergeIcon.svg" },
   { "name": "UploadIcon", "svg": "/svg/UploadIcon.svg" },
   { "name": "UserCircleIcon", "svg": "/svg/UserCircleIcon.svg" },
   { "name": "UserSquareIcon", "svg": "/svg/UserSquareIcon.svg" },
