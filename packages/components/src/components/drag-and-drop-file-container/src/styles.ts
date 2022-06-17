@@ -19,10 +19,16 @@ export const StyledContainer = styled("div", {
       accepted: {
         backgroundColor: theme.colors.gray20,
         borderColor: baseBorderColor,
+        "*": {
+          pointerEvents: "none",
+        },
       },
       rejected: {
         borderColor: theme.colors.red,
         backgroundColor: theme.colors.red10,
+        "*": {
+          pointerEvents: "none",
+        },
       },
     },
   },

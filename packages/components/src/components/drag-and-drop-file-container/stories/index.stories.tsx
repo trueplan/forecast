@@ -21,7 +21,7 @@ const Template: ComponentStory<typeof DragAndDropFileContainer> = ({
   const [files, setFiles] = useState<File[]>([]);
 
   return (
-    <Box>
+    <Box css={{ maxWidth: "700px", height: "400px", width: "100%" }}>
       <DragAndDropFileContainer
         uploadText={uploadText}
         acceptedFileTypes={acceptedFileTypes}
@@ -36,13 +36,17 @@ const Template: ComponentStory<typeof DragAndDropFileContainer> = ({
       <Text display="block" css={{ marginTop: "20px" }}>
         Accepted Files:
       </Text>
-      <ul>
-        {files.map((file) => (
-          <li key={file.name}>
-            {file.name} - {file.size} bytes
-          </li>
-        ))}
-      </ul>
+      {files.length > 0 ? (
+        <ul>
+          {files.map((file) => (
+            <Box as="li" key={file.name} css={{ marginLeft: "$35" }}>
+              {file.name} - {file.size} bytes
+            </Box>
+          ))}
+        </ul>
+      ) : (
+        "No accepted files"
+      )}
     </Box>
   );
 };
