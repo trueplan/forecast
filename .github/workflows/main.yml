@@ -52,13 +52,12 @@ jobs:
       - name: "Creates Pull Request or Publish to npm"
         uses: changesets/action@v1
         with:
-          version: yarn changeset version
+          version: yarn changeset version && yarn install --mode=update-lockfile
           publish: yarn changeset publish
           commit: "chore(release): version packages"
         env:
           GITHUB_TOKEN: ${{ secrets.AUTOMATON_GH_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_PUBLISH_TOKEN }}
-          YARN_ENABLE_IMMUTABLE_INSTALLS: false
 
   vrt:
     runs-on: ubuntu-latest
