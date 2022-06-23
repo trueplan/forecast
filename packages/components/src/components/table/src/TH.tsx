@@ -5,7 +5,7 @@ type THProps = {
   children?: React.ReactNode;
   /** To make a cell span over multiple rows. */
   rowSpan?: number;
-  /** To make a cell span over multiple columns */
+  /** To make a cell span over multiple columns. */
   colSpan?: number;
 };
 
