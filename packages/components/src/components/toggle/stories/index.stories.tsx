@@ -36,3 +36,18 @@ export const On: React.FC = () => {
     />
   );
 };
+
+export const HiddenLabelText: React.FC = () => {
+  const [checked, setChecked] = React.useState(true);
+  const id = useUID();
+  return (
+    <Toggle
+      id={id}
+      checked={checked}
+      onCheckedChange={() =>
+        setChecked((prevIsChecked) => (prevIsChecked === true ? false : true))
+      }
+      showLabelText={false}
+    />
+  );
+};

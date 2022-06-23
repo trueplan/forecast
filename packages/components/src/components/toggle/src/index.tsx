@@ -3,6 +3,7 @@ import { Stack } from "../../../layout/stack";
 import { StyledToggle, StyledCircle, StyledLabel } from "./styles";
 import type { ToggleProps } from "./types";
 
+/** A control that allows the user to toggle between checked and not checked. */
 const Toggle = React.forwardRef<HTMLButtonElement, ToggleProps>(
   (
     {
@@ -13,6 +14,7 @@ const Toggle = React.forwardRef<HTMLButtonElement, ToggleProps>(
       onCheckedChange,
       required,
       value = "Off",
+      showLabelText = true,
       ...props
     },
     ref
@@ -32,9 +34,11 @@ const Toggle = React.forwardRef<HTMLButtonElement, ToggleProps>(
         >
           <StyledCircle />
         </StyledToggle>
-        <StyledLabel htmlFor={id}>
-          {checked || defaultChecked ? "On" : "Off"}
-        </StyledLabel>
+        {showLabelText && (
+          <StyledLabel htmlFor={id}>
+            {checked || defaultChecked ? "On" : "Off"}
+          </StyledLabel>
+        )}
       </Stack>
     );
   }
