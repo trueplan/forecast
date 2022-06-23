@@ -20,7 +20,7 @@ export default {
   chromatic: { pauseAnimationAtEnd: true },
 };
 
-export const Default: React.FC = () => {
+export const Default = (): JSX.Element => {
   return (
     <Box css={{ height: "1000px", width: "1350px" }}>
       <Drawer defaultOpen>
@@ -52,7 +52,7 @@ export const Default: React.FC = () => {
   );
 };
 
-export const NoPaddingOnBody: React.FC = () => {
+export const NoPaddingOnBody = (): JSX.Element => {
   return (
     <Box css={{ height: "1000px", width: "1350px" }}>
       <Drawer defaultOpen>
@@ -84,7 +84,7 @@ export const NoPaddingOnBody: React.FC = () => {
   );
 };
 
-export const OverflowBodyContent: React.FC = () => {
+export const OverflowBodyContent = (): JSX.Element => {
   return (
     <Box css={{ height: "1000px", width: "1350px" }}>
       <Drawer defaultOpen>
