@@ -26,7 +26,9 @@
     "noreferrer",
     "noopener",
     "describedby",
-    "ariakit"
+    "ariakit",
+    "unmerge",
+    "Unmerge"
   ],
   "ignoreWords": [
     "btlr",

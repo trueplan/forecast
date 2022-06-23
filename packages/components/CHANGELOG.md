@@ -1,5 +1,11 @@
 # @trueplan/forecast-components
 
+## 4.7.3
+
+### Patch Changes
+
+- [#119](https://github.com/trueplan/forecast/pull/119) [`a9d5a03`](https://github.com/trueplan/forecast/commit/a9d5a03bb3af0b5355a8bf6ff4a52648a2e60cea) Thanks [@RohitRajendran](https://github.com/RohitRajendran)! - [Drag and Drop File Container] Fix styling when draging over the image or button in the container
+
 ## 4.7.2
 
 ### Patch Changes
