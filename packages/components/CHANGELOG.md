@@ -1,5 +1,13 @@
 # @trueplan/forecast-components
 
+## 4.7.4
+
+### Patch Changes
+
+- [#124](https://github.com/trueplan/forecast/pull/124) [`6daa8c4`](https://github.com/trueplan/forecast/commit/6daa8c410243e31bbc117ba7990f959572452cf8) Thanks [@RohitRajendran](https://github.com/RohitRajendran)! - [TD/TH] Ability to set rowSpan and colSpan
+
+* [#126](https://github.com/trueplan/forecast/pull/126) [`b685db8`](https://github.com/trueplan/forecast/commit/b685db8f29ee92cf4856c0e7b1272207247c7750) Thanks [@richbachman](https://github.com/richbachman)! - [Toggle]: add prop to show the label text. `showLabelText` defaults to true.
+
 ## 4.7.3
 
 ### Patch Changes
