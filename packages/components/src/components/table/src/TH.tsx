@@ -3,12 +3,20 @@ import { StyledTH } from "./styles";
 
 type THProps = {
   children?: React.ReactNode;
+  /** To make a cell span over multiple rows. */
+  rowSpan?: number;
+  /** To make a cell span over multiple columns. */
+  colSpan?: number;
 };
 
-/** A header cell in the table, use within a <THead> */
+/** A header cell in the table, use within a <THead>. */
 const TH = React.forwardRef<HTMLTableCellElement, THProps>(
-  ({ children }, ref) => {
-    return <StyledTH ref={ref}>{children}</StyledTH>;
+  ({ children, rowSpan, colSpan }, ref) => {
+    return (
+      <StyledTH ref={ref} rowSpan={rowSpan} colSpan={colSpan}>
+        {children}
+      </StyledTH>
+    );
   }
 );
 
