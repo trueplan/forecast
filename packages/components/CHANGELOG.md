@@ -1,5 +1,11 @@
 # @trueplan/forecast-components
 
+## 4.7.5
+
+### Patch Changes
+
+- [#128](https://github.com/trueplan/forecast/pull/128) [`3452d0a`](https://github.com/trueplan/forecast/commit/3452d0acd4efaea2553180e71cf4888b4966ea43) Thanks [@RohitRajendran](https://github.com/RohitRajendran)! - [Table] Fix table text stylings
+
 ## 4.7.4
 
 ### Patch Changes
