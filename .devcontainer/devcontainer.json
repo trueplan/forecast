@@ -1,17 +1,29 @@
 {
-  "dockerFile": "./Dockerfile",
-  "extensions": [
-    "dbaeumer.vscode-eslint",
-    "editorconfig.editorconfig",
-    "esbenp.prettier-vscode",
-    "github.vscode-pull-request-github",
-    "orta.vscode-jest",
-    "eamodio.gitlens",
-    "arcanis.vscode-zipfs"
-  ],
-  "forwardPorts": [6006],
+  "name": "Forecast",
+  "build": {
+    "dockerfile": "Dockerfile",
+    // Update 'VARIANT' to pick a Node version: 18, 16, 14.
+    // Append -bullseye or -buster to pin to an OS version.
+    // Use -bullseye variants on local arm64/Apple Silicon.
+    "args": { "VARIANT": "16-bullseye" }
+  },
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "jest.jestCommandLine": "yarn jest"
+      },
+      "extensions": [
+        "dbaeumer.vscode-eslint",
+        "editorconfig.editorconfig",
+        "esbenp.prettier-vscode",
+        "github.vscode-pull-request-github",
+        "orta.vscode-jest",
+        "eamodio.gitlens",
+        "arcanis.vscode-zipfs"
+      ]
+    }
+  },
   "postCreateCommand": "yarn && yarn build",
-  "settings": {
-    "jest.jestCommandLine": "yarn jest"
-  }
+  "forwardPorts": [6006],
+  "remoteUser": "node"
 }
