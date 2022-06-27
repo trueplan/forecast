@@ -1,5 +1,11 @@
 # @trueplan/forecast-components
 
+## 4.7.6
+
+### Patch Changes
+
+- [#131](https://github.com/trueplan/forecast/pull/131) [`825431a`](https://github.com/trueplan/forecast/commit/825431aaf584b464b6173f0f01769c0912edfd1d) Thanks [@RohitRajendran](https://github.com/RohitRajendran)! - [Modal] Add a medium size variant
+
 ## 4.7.5
 
 ### Patch Changes
