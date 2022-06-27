@@ -37,7 +37,7 @@
     "@types/react": "18.0.14",
     "@types/react-dom": "18.0.5",
     "tsconfig-forecast": "workspace:configs/tsconfig",
-    "tslib": "2.3.1",
+    "tslib": "2.4.0",
     "typescript": "4.4.3"
   }
 }

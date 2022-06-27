@@ -11258,7 +11258,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["rollup", "npm:2.75.7"],\
             ["rollup-config-forecast", "virtual:66ef534ac91fed1f106aa593639d4f7597eb1dbd64d59ca4b3b7fe6dfbfe14222aeba5a3c48f82e35150521aa8ab9940509f5fd0d64f8e57980014099f6a7e71#workspace:configs/rollup"],\
             ["tsconfig-forecast", "workspace:configs/tsconfig"],\
-            ["tslib", "npm:2.3.1"],\
+            ["tslib", "npm:2.4.0"],\
             ["typescript", "patch:typescript@npm%3A4.4.3#~builtin<compat/typescript>::version=4.4.3&hash=7ad353"]\
           ],\
           "packagePeers": [\
@@ -11315,7 +11315,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["rollup", "npm:2.75.7"],\
             ["rollup-config-forecast", "virtual:66ef534ac91fed1f106aa593639d4f7597eb1dbd64d59ca4b3b7fe6dfbfe14222aeba5a3c48f82e35150521aa8ab9940509f5fd0d64f8e57980014099f6a7e71#workspace:configs/rollup"],\
             ["tsconfig-forecast", "workspace:configs/tsconfig"],\
-            ["tslib", "npm:2.3.1"],\
+            ["tslib", "npm:2.4.0"],\
             ["typescript", "patch:typescript@npm%3A4.4.3#~builtin<compat/typescript>::version=4.4.3&hash=7ad353"]\
           ],\
           "packagePeers": [\
@@ -11369,7 +11369,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["rollup", "npm:2.75.7"],\
             ["rollup-config-forecast", "virtual:66ef534ac91fed1f106aa593639d4f7597eb1dbd64d59ca4b3b7fe6dfbfe14222aeba5a3c48f82e35150521aa8ab9940509f5fd0d64f8e57980014099f6a7e71#workspace:configs/rollup"],\
             ["tsconfig-forecast", "workspace:configs/tsconfig"],\
-            ["tslib", "npm:2.3.1"],\
+            ["tslib", "npm:2.4.0"],\
             ["typescript", "patch:typescript@npm%3A4.4.3#~builtin<compat/typescript>::version=4.4.3&hash=7ad353"]\
           ],\
           "linkType": "SOFT"\
@@ -11403,7 +11403,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["rollup", "npm:2.75.7"],\
             ["rollup-config-forecast", "virtual:66ef534ac91fed1f106aa593639d4f7597eb1dbd64d59ca4b3b7fe6dfbfe14222aeba5a3c48f82e35150521aa8ab9940509f5fd0d64f8e57980014099f6a7e71#workspace:configs/rollup"],\
             ["tsconfig-forecast", "workspace:configs/tsconfig"],\
-            ["tslib", "npm:2.3.1"],\
+            ["tslib", "npm:2.4.0"],\
             ["typescript", "patch:typescript@npm%3A4.4.3#~builtin<compat/typescript>::version=4.4.3&hash=7ad353"]\
           ],\
           "packagePeers": [\
@@ -11446,7 +11446,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["rollup", "npm:2.75.7"],\
             ["rollup-config-forecast", "virtual:66ef534ac91fed1f106aa593639d4f7597eb1dbd64d59ca4b3b7fe6dfbfe14222aeba5a3c48f82e35150521aa8ab9940509f5fd0d64f8e57980014099f6a7e71#workspace:configs/rollup"],\
             ["tsconfig-forecast", "workspace:configs/tsconfig"],\
-            ["tslib", "npm:2.3.1"],\
+            ["tslib", "npm:2.4.0"],\
             ["typescript", "patch:typescript@npm%3A4.4.3#~builtin<compat/typescript>::version=4.4.3&hash=7ad353"]\
           ],\
           "packagePeers": [\
@@ -11487,7 +11487,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["rollup", "npm:2.75.7"],\
             ["rollup-config-forecast", "virtual:66ef534ac91fed1f106aa593639d4f7597eb1dbd64d59ca4b3b7fe6dfbfe14222aeba5a3c48f82e35150521aa8ab9940509f5fd0d64f8e57980014099f6a7e71#workspace:configs/rollup"],\
             ["tsconfig-forecast", "workspace:configs/tsconfig"],\
-            ["tslib", "npm:2.3.1"],\
+            ["tslib", "npm:2.4.0"],\
             ["typescript", "patch:typescript@npm%3A4.4.3#~builtin<compat/typescript>::version=4.4.3&hash=7ad353"]\
           ],\
           "linkType": "SOFT"\
@@ -11514,7 +11514,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["rollup", "npm:2.75.7"],\
             ["rollup-config-forecast", "virtual:66ef534ac91fed1f106aa593639d4f7597eb1dbd64d59ca4b3b7fe6dfbfe14222aeba5a3c48f82e35150521aa8ab9940509f5fd0d64f8e57980014099f6a7e71#workspace:configs/rollup"],\
             ["tsconfig-forecast", "workspace:configs/tsconfig"],\
-            ["tslib", "npm:2.3.1"],\
+            ["tslib", "npm:2.4.0"],\
             ["typescript", "patch:typescript@npm%3A4.4.3#~builtin<compat/typescript>::version=4.4.3&hash=7ad353"]\
           ],\
           "packagePeers": [\
@@ -11547,7 +11547,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["rollup", "npm:2.75.7"],\
             ["rollup-config-forecast", "virtual:66ef534ac91fed1f106aa593639d4f7597eb1dbd64d59ca4b3b7fe6dfbfe14222aeba5a3c48f82e35150521aa8ab9940509f5fd0d64f8e57980014099f6a7e71#workspace:configs/rollup"],\
             ["tsconfig-forecast", "workspace:configs/tsconfig"],\
-            ["tslib", "npm:2.3.1"],\
+            ["tslib", "npm:2.4.0"],\
             ["typescript", "patch:typescript@npm%3A4.4.3#~builtin<compat/typescript>::version=4.4.3&hash=7ad353"]\
           ],\
           "packagePeers": [\
@@ -11581,7 +11581,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["rollup", "npm:2.75.7"],\
             ["rollup-config-forecast", "virtual:66ef534ac91fed1f106aa593639d4f7597eb1dbd64d59ca4b3b7fe6dfbfe14222aeba5a3c48f82e35150521aa8ab9940509f5fd0d64f8e57980014099f6a7e71#workspace:configs/rollup"],\
             ["tsconfig-forecast", "workspace:configs/tsconfig"],\
-            ["tslib", "npm:2.3.1"],\
+            ["tslib", "npm:2.4.0"],\
             ["typescript", "patch:typescript@npm%3A4.4.3#~builtin<compat/typescript>::version=4.4.3&hash=7ad353"]\
           ],\
           "packagePeers": [\
@@ -11614,7 +11614,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["rollup", "npm:2.75.7"],\
             ["rollup-config-forecast", "virtual:66ef534ac91fed1f106aa593639d4f7597eb1dbd64d59ca4b3b7fe6dfbfe14222aeba5a3c48f82e35150521aa8ab9940509f5fd0d64f8e57980014099f6a7e71#workspace:configs/rollup"],\
             ["tsconfig-forecast", "workspace:configs/tsconfig"],\
-            ["tslib", "npm:2.3.1"],\
+            ["tslib", "npm:2.4.0"],\
             ["typescript", "patch:typescript@npm%3A4.4.3#~builtin<compat/typescript>::version=4.4.3&hash=7ad353"]\
           ],\
           "linkType": "SOFT"\
@@ -11643,7 +11643,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["react-dom", "virtual:83930a02e406f078247fc9b9d21de38a337fcb78679a3d66298da2df309f013f7be5bb231811c0f7e8543d93b976930cd65092f5c1c34eb2317b35770703c6a9#npm:17.0.2"],\
             ["react-live", "virtual:1ef90ee51e98eb402c8d28d6646acea3d1cd1b1ce590aaf01ed3b744130a207a0e0c3cbfd85ea26cff7e0bf0706b05e3427ae479d2a6b461815731ade03e21dd#npm:2.4.1"],\
             ["tsconfig-forecast", "workspace:configs/tsconfig"],\
-            ["tslib", "npm:2.3.1"],\
+            ["tslib", "npm:2.4.0"],\
             ["typescript", "patch:typescript@npm%3A4.4.3#~builtin<compat/typescript>::version=4.4.3&hash=7ad353"]\
           ],\
           "linkType": "SOFT"\
@@ -28474,7 +28474,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["rollup", "npm:2.75.7"],\
             ["rollup-plugin-terser", "virtual:d9736faea6870543b045cce100fcd970540f3881780c34a9741e89e0ba58c248f917ced7c24c4a667061fb162a7d383b99cbd1bbb4f907461bfc2e00c658a047#npm:7.0.2"],\
             ["rollup-plugin-typescript2", "virtual:e4af0851b5f7002f592e333c2677102c8a9a6fc9d6c910c11b6d561afa90702d4a57d9279191a35cac1610acbf6cfcc10c7522e8a478311ef935dab39aab15ef#npm:0.32.1"],\
-            ["tslib", "npm:2.3.1"],\
+            ["tslib", "npm:2.4.0"],\
             ["typescript", "patch:typescript@npm%3A4.4.3#~builtin<compat/typescript>::version=4.4.3&hash=7ad353"]\
           ],\
           "packagePeers": [\
