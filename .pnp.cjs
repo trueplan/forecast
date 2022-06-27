@@ -82,7 +82,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@storybook/react", "virtual:83930a02e406f078247fc9b9d21de38a337fcb78679a3d66298da2df309f013f7be5bb231811c0f7e8543d93b976930cd65092f5c1c34eb2317b35770703c6a9#npm:6.4.21"],\
             ["@svgr/babel-plugin-add-jsx-attribute", "virtual:83930a02e406f078247fc9b9d21de38a337fcb78679a3d66298da2df309f013f7be5bb231811c0f7e8543d93b976930cd65092f5c1c34eb2317b35770703c6a9#npm:6.0.0"],\
             ["@svgr/babel-plugin-remove-jsx-attribute", "virtual:83930a02e406f078247fc9b9d21de38a337fcb78679a3d66298da2df309f013f7be5bb231811c0f7e8543d93b976930cd65092f5c1c34eb2317b35770703c6a9#npm:6.0.0"],\
-            ["@svgr/plugin-svgo", "npm:5.5.0"],\
+            ["@svgr/plugin-svgo", "virtual:83930a02e406f078247fc9b9d21de38a337fcb78679a3d66298da2df309f013f7be5bb231811c0f7e8543d93b976930cd65092f5c1c34eb2317b35770703c6a9#npm:6.2.0"],\
             ["@testing-library/jest-dom", "npm:5.16.4"],\
             ["@testing-library/react", "virtual:83930a02e406f078247fc9b9d21de38a337fcb78679a3d66298da2df309f013f7be5bb231811c0f7e8543d93b976930cd65092f5c1c34eb2317b35770703c6a9#npm:12.1.2"],\
             ["@twilio-labs/svg-to-react", "npm:2.1.1"],\
@@ -96,9 +96,9 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@yarnpkg/pnpify", "npm:4.0.0-rc.10"],\
             ["ansi-styles", "npm:6.1.0"],\
             ["babel-eslint", "virtual:83930a02e406f078247fc9b9d21de38a337fcb78679a3d66298da2df309f013f7be5bb231811c0f7e8543d93b976930cd65092f5c1c34eb2317b35770703c6a9#npm:10.1.0"],\
-            ["chalk", "npm:4.1.2"],\
+            ["chalk", "npm:5.0.1"],\
             ["chromatic", "npm:6.5.4"],\
-            ["commander", "npm:8.2.0"],\
+            ["commander", "npm:9.3.0"],\
             ["cspell", "npm:6.1.2"],\
             ["eslint", "npm:8.13.0"],\
             ["eslint-config-prettier", "virtual:83930a02e406f078247fc9b9d21de38a337fcb78679a3d66298da2df309f013f7be5bb231811c0f7e8543d93b976930cd65092f5c1c34eb2317b35770703c6a9#npm:8.5.0"],\
@@ -11244,6 +11244,29 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["svgo", "npm:1.3.2"]\
           ],\
           "linkType": "HARD"\
+        }],\
+        ["npm:6.2.0", {\
+          "packageLocation": "./.yarn/cache/@svgr-plugin-svgo-npm-6.2.0-5e0b51a5c6-74d3aedd0f.zip/node_modules/@svgr/plugin-svgo/",\
+          "packageDependencies": [\
+            ["@svgr/plugin-svgo", "npm:6.2.0"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:83930a02e406f078247fc9b9d21de38a337fcb78679a3d66298da2df309f013f7be5bb231811c0f7e8543d93b976930cd65092f5c1c34eb2317b35770703c6a9#npm:6.2.0", {\
+          "packageLocation": "./.yarn/__virtual__/@svgr-plugin-svgo-virtual-c9a1da446e/0/cache/@svgr-plugin-svgo-npm-6.2.0-5e0b51a5c6-74d3aedd0f.zip/node_modules/@svgr/plugin-svgo/",\
+          "packageDependencies": [\
+            ["@svgr/plugin-svgo", "virtual:83930a02e406f078247fc9b9d21de38a337fcb78679a3d66298da2df309f013f7be5bb231811c0f7e8543d93b976930cd65092f5c1c34eb2317b35770703c6a9#npm:6.2.0"],\
+            ["@svgr/core", null],\
+            ["@types/svgr__core", null],\
+            ["cosmiconfig", "npm:7.0.1"],\
+            ["deepmerge", "npm:4.2.2"],\
+            ["svgo", "npm:2.8.0"]\
+          ],\
+          "packagePeers": [\
+            "@svgr/core",\
+            "@types/svgr__core"\
+          ],\
+          "linkType": "HARD"\
         }]\
       ]],\
       ["@szmarczak/http-timer", [\
@@ -11493,7 +11516,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@trueplan/forecast-icons", "virtual:1ef90ee51e98eb402c8d28d6646acea3d1cd1b1ce590aaf01ed3b744130a207a0e0c3cbfd85ea26cff7e0bf0706b05e3427ae479d2a6b461815731ade03e21dd#workspace:packages/icons"],\
             ["@svgr/babel-plugin-add-jsx-attribute", "virtual:98e8e5f66a3abef84ea721b8372216260d67feaa9dc97d04bf5f3bd7e9c077ac00e53a24b4f178ab92d3d2d54bde009a5d6eb643b34169f0abd4bd733c700da5#npm:6.0.0"],\
             ["@svgr/babel-plugin-remove-jsx-attribute", "virtual:98e8e5f66a3abef84ea721b8372216260d67feaa9dc97d04bf5f3bd7e9c077ac00e53a24b4f178ab92d3d2d54bde009a5d6eb643b34169f0abd4bd733c700da5#npm:6.0.0"],\
-            ["@svgr/plugin-svgo", "npm:5.5.0"],\
+            ["@svgr/plugin-svgo", "virtual:83930a02e406f078247fc9b9d21de38a337fcb78679a3d66298da2df309f013f7be5bb231811c0f7e8543d93b976930cd65092f5c1c34eb2317b35770703c6a9#npm:6.2.0"],\
             ["@trueplan/forecast-components", "virtual:1ef90ee51e98eb402c8d28d6646acea3d1cd1b1ce590aaf01ed3b744130a207a0e0c3cbfd85ea26cff7e0bf0706b05e3427ae479d2a6b461815731ade03e21dd#workspace:packages/components"],\
             ["@trueplan/forecast-theme", "virtual:1ef90ee51e98eb402c8d28d6646acea3d1cd1b1ce590aaf01ed3b744130a207a0e0c3cbfd85ea26cff7e0bf0706b05e3427ae479d2a6b461815731ade03e21dd#workspace:packages/theme"],\
             ["@twilio-labs/svg-to-react", "npm:2.1.1"],\
@@ -11504,8 +11527,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/trueplan__forecast-components", null],\
             ["@types/trueplan__forecast-theme", null],\
             ["ansi-styles", "npm:6.1.0"],\
-            ["chalk", "npm:4.1.2"],\
-            ["commander", "npm:8.2.0"],\
+            ["chalk", "npm:5.0.1"],\
+            ["commander", "npm:9.3.0"],\
             ["lodash.difference", "npm:4.5.0"],\
             ["lodash.startcase", "npm:4.4.0"],\
             ["react", "npm:17.0.2"],\
@@ -11536,7 +11559,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@trueplan/forecast-icons", "virtual:66ef534ac91fed1f106aa593639d4f7597eb1dbd64d59ca4b3b7fe6dfbfe14222aeba5a3c48f82e35150521aa8ab9940509f5fd0d64f8e57980014099f6a7e71#workspace:packages/icons"],\
             ["@svgr/babel-plugin-add-jsx-attribute", "virtual:98e8e5f66a3abef84ea721b8372216260d67feaa9dc97d04bf5f3bd7e9c077ac00e53a24b4f178ab92d3d2d54bde009a5d6eb643b34169f0abd4bd733c700da5#npm:6.0.0"],\
             ["@svgr/babel-plugin-remove-jsx-attribute", "virtual:98e8e5f66a3abef84ea721b8372216260d67feaa9dc97d04bf5f3bd7e9c077ac00e53a24b4f178ab92d3d2d54bde009a5d6eb643b34169f0abd4bd733c700da5#npm:6.0.0"],\
-            ["@svgr/plugin-svgo", "npm:5.5.0"],\
+            ["@svgr/plugin-svgo", "virtual:83930a02e406f078247fc9b9d21de38a337fcb78679a3d66298da2df309f013f7be5bb231811c0f7e8543d93b976930cd65092f5c1c34eb2317b35770703c6a9#npm:6.2.0"],\
             ["@trueplan/forecast-components", "workspace:packages/components"],\
             ["@trueplan/forecast-theme", "virtual:66ef534ac91fed1f106aa593639d4f7597eb1dbd64d59ca4b3b7fe6dfbfe14222aeba5a3c48f82e35150521aa8ab9940509f5fd0d64f8e57980014099f6a7e71#workspace:packages/theme"],\
             ["@twilio-labs/svg-to-react", "npm:2.1.1"],\
@@ -11547,8 +11570,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/trueplan__forecast-components", null],\
             ["@types/trueplan__forecast-theme", null],\
             ["ansi-styles", "npm:6.1.0"],\
-            ["chalk", "npm:4.1.2"],\
-            ["commander", "npm:8.2.0"],\
+            ["chalk", "npm:5.0.1"],\
+            ["commander", "npm:9.3.0"],\
             ["lodash.difference", "npm:4.5.0"],\
             ["lodash.startcase", "npm:4.4.0"],\
             ["react", "npm:17.0.2"],\
@@ -11580,7 +11603,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@trueplan/forecast-icons", "workspace:packages/icons"],\
             ["@svgr/babel-plugin-add-jsx-attribute", "virtual:98e8e5f66a3abef84ea721b8372216260d67feaa9dc97d04bf5f3bd7e9c077ac00e53a24b4f178ab92d3d2d54bde009a5d6eb643b34169f0abd4bd733c700da5#npm:6.0.0"],\
             ["@svgr/babel-plugin-remove-jsx-attribute", "virtual:98e8e5f66a3abef84ea721b8372216260d67feaa9dc97d04bf5f3bd7e9c077ac00e53a24b4f178ab92d3d2d54bde009a5d6eb643b34169f0abd4bd733c700da5#npm:6.0.0"],\
-            ["@svgr/plugin-svgo", "npm:5.5.0"],\
+            ["@svgr/plugin-svgo", "virtual:83930a02e406f078247fc9b9d21de38a337fcb78679a3d66298da2df309f013f7be5bb231811c0f7e8543d93b976930cd65092f5c1c34eb2317b35770703c6a9#npm:6.2.0"],\
             ["@trueplan/forecast-components", "virtual:3cd2e854f208793ee271cdabc3743c20d2df5608f52c3ca739d68b1bcf9462b3750f3b9395f1b102bebf60a79e13b0cfd12271cf5b8762bcdfb8b315e33eaf22#workspace:packages/components"],\
             ["@trueplan/forecast-theme", "virtual:3cd2e854f208793ee271cdabc3743c20d2df5608f52c3ca739d68b1bcf9462b3750f3b9395f1b102bebf60a79e13b0cfd12271cf5b8762bcdfb8b315e33eaf22#workspace:packages/theme"],\
             ["@twilio-labs/svg-to-react", "npm:2.1.1"],\
@@ -11588,8 +11611,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/react", "npm:18.0.4"],\
             ["@types/react-dom", "npm:18.0.0"],\
             ["ansi-styles", "npm:6.1.0"],\
-            ["chalk", "npm:4.1.2"],\
-            ["commander", "npm:8.2.0"],\
+            ["chalk", "npm:5.0.1"],\
+            ["commander", "npm:9.3.0"],\
             ["lodash.difference", "npm:4.5.0"],\
             ["lodash.startcase", "npm:4.4.0"],\
             ["react", "npm:17.0.2"],\
@@ -11758,6 +11781,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["typescript", "patch:typescript@npm%3A4.4.3#~builtin<compat/typescript>::version=4.4.3&hash=7ad353"]\
           ],\
           "linkType": "SOFT"\
+        }]\
+      ]],\
+      ["@trysound/sax", [\
+        ["npm:0.2.0", {\
+          "packageLocation": "./.yarn/cache/@trysound-sax-npm-0.2.0-9f763d0295-11226c39b5.zip/node_modules/@trysound/sax/",\
+          "packageDependencies": [\
+            ["@trysound/sax", "npm:0.2.0"]\
+          ],\
+          "linkType": "HARD"\
         }]\
       ]],\
       ["@tsconfig/node10", [\
@@ -15948,10 +15980,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],\
           "linkType": "HARD"\
         }],\
-        ["npm:8.2.0", {\
-          "packageLocation": "./.yarn/cache/commander-npm-8.2.0-c925691796-e868805bc2.zip/node_modules/commander/",\
+        ["npm:7.2.0", {\
+          "packageLocation": "./.yarn/cache/commander-npm-7.2.0-19178180f8-53501cbeee.zip/node_modules/commander/",\
           "packageDependencies": [\
-            ["commander", "npm:8.2.0"]\
+            ["commander", "npm:7.2.0"]\
           ],\
           "linkType": "HARD"\
         }],\
@@ -19379,7 +19411,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@storybook/react", "virtual:83930a02e406f078247fc9b9d21de38a337fcb78679a3d66298da2df309f013f7be5bb231811c0f7e8543d93b976930cd65092f5c1c34eb2317b35770703c6a9#npm:6.4.21"],\
             ["@svgr/babel-plugin-add-jsx-attribute", "virtual:83930a02e406f078247fc9b9d21de38a337fcb78679a3d66298da2df309f013f7be5bb231811c0f7e8543d93b976930cd65092f5c1c34eb2317b35770703c6a9#npm:6.0.0"],\
             ["@svgr/babel-plugin-remove-jsx-attribute", "virtual:83930a02e406f078247fc9b9d21de38a337fcb78679a3d66298da2df309f013f7be5bb231811c0f7e8543d93b976930cd65092f5c1c34eb2317b35770703c6a9#npm:6.0.0"],\
-            ["@svgr/plugin-svgo", "npm:5.5.0"],\
+            ["@svgr/plugin-svgo", "virtual:83930a02e406f078247fc9b9d21de38a337fcb78679a3d66298da2df309f013f7be5bb231811c0f7e8543d93b976930cd65092f5c1c34eb2317b35770703c6a9#npm:6.2.0"],\
             ["@testing-library/jest-dom", "npm:5.16.4"],\
             ["@testing-library/react", "virtual:83930a02e406f078247fc9b9d21de38a337fcb78679a3d66298da2df309f013f7be5bb231811c0f7e8543d93b976930cd65092f5c1c34eb2317b35770703c6a9#npm:12.1.2"],\
             ["@twilio-labs/svg-to-react", "npm:2.1.1"],\
@@ -19393,9 +19425,9 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@yarnpkg/pnpify", "npm:4.0.0-rc.10"],\
             ["ansi-styles", "npm:6.1.0"],\
             ["babel-eslint", "virtual:83930a02e406f078247fc9b9d21de38a337fcb78679a3d66298da2df309f013f7be5bb231811c0f7e8543d93b976930cd65092f5c1c34eb2317b35770703c6a9#npm:10.1.0"],\
-            ["chalk", "npm:4.1.2"],\
+            ["chalk", "npm:5.0.1"],\
             ["chromatic", "npm:6.5.4"],\
-            ["commander", "npm:8.2.0"],\
+            ["commander", "npm:9.3.0"],\
             ["cspell", "npm:6.1.2"],\
             ["eslint", "npm:8.13.0"],\
             ["eslint-config-prettier", "virtual:83930a02e406f078247fc9b9d21de38a337fcb78679a3d66298da2df309f013f7be5bb231811c0f7e8543d93b976930cd65092f5c1c34eb2317b35770703c6a9#npm:8.5.0"],\
@@ -29706,6 +29738,20 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["stable", "npm:0.1.8"],\
             ["unquote", "npm:1.1.1"],\
             ["util.promisify", "npm:1.0.1"]\
+          ],\
+          "linkType": "HARD"\
+        }],\
+        ["npm:2.8.0", {\
+          "packageLocation": "./.yarn/cache/svgo-npm-2.8.0-43b4f3debe-b92f71a854.zip/node_modules/svgo/",\
+          "packageDependencies": [\
+            ["svgo", "npm:2.8.0"],\
+            ["@trysound/sax", "npm:0.2.0"],\
+            ["commander", "npm:7.2.0"],\
+            ["css-select", "npm:4.1.3"],\
+            ["css-tree", "npm:1.1.3"],\
+            ["csso", "npm:4.2.0"],\
+            ["picocolors", "npm:1.0.0"],\
+            ["stable", "npm:0.1.8"]\
           ],\
           "linkType": "HARD"\
         }]\

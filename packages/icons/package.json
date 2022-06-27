@@ -29,13 +29,6 @@
     "convert:icons-new": "node ./tools/cli.js convert-new"
   },
   "dependencies": {
-    "@svgr/babel-plugin-add-jsx-attribute": "6.0.0",
-    "@svgr/babel-plugin-remove-jsx-attribute": "6.0.0",
-    "@svgr/plugin-svgo": "5.5.0",
-    "@twilio-labs/svg-to-react": "2.1.1",
-    "ansi-styles": "6.1.0",
-    "chalk": "4.1.2",
-    "commander": "8.2.0",
     "lodash.difference": "4.5.0",
     "lodash.startcase": "4.4.0"
   },
@@ -49,7 +42,7 @@
   "devDependencies": {
     "@svgr/babel-plugin-add-jsx-attribute": "6.0.0",
     "@svgr/babel-plugin-remove-jsx-attribute": "6.0.0",
-    "@svgr/plugin-svgo": "5.5.0",
+    "@svgr/plugin-svgo": "6.2.0",
     "@trueplan/forecast-components": "workspace:packages/components",
     "@trueplan/forecast-theme": "workspace:packages/theme",
     "@twilio-labs/svg-to-react": "2.1.1",
@@ -57,8 +50,8 @@
     "@types/react": "18.0.4",
     "@types/react-dom": "18.0.0",
     "ansi-styles": "6.1.0",
-    "chalk": "4.1.2",
-    "commander": "8.2.0",
+    "chalk": "5.0.1",
+    "commander": "9.3.0",
     "lodash.difference": "4.5.0",
     "lodash.startcase": "4.4.0",
     "react": "17.0.2",
