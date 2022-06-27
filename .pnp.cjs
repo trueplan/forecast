@@ -97,7 +97,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["ansi-styles", "npm:6.1.0"],\
             ["babel-eslint", "virtual:83930a02e406f078247fc9b9d21de38a337fcb78679a3d66298da2df309f013f7be5bb231811c0f7e8543d93b976930cd65092f5c1c34eb2317b35770703c6a9#npm:10.1.0"],\
             ["chalk", "npm:5.0.1"],\
-            ["chromatic", "npm:6.5.4"],\
+            ["chromatic", "npm:6.6.4"],\
             ["commander", "npm:9.3.0"],\
             ["cspell", "npm:6.1.2"],\
             ["eslint", "npm:8.18.0"],\
@@ -12476,6 +12476,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/webpack-env", "npm:1.16.3"]\
           ],\
           "linkType": "HARD"\
+        }],\
+        ["npm:1.17.0", {\
+          "packageLocation": "./.yarn/cache/@types-webpack-env-npm-1.17.0-9889dbff28-9ad4d208c4.zip/node_modules/@types/webpack-env/",\
+          "packageDependencies": [\
+            ["@types/webpack-env", "npm:1.17.0"]\
+          ],\
+          "linkType": "HARD"\
         }]\
       ]],\
       ["@types/webpack-sources", [\
@@ -15546,10 +15553,11 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["chromatic", [\
-        ["npm:6.5.4", {\
-          "packageLocation": "./.yarn/cache/chromatic-npm-6.5.4-34c15906e0-79e036b305.zip/node_modules/chromatic/",\
+        ["npm:6.6.4", {\
+          "packageLocation": "./.yarn/cache/chromatic-npm-6.6.4-f98f0d72ee-48f1fd5636.zip/node_modules/chromatic/",\
           "packageDependencies": [\
-            ["chromatic", "npm:6.5.4"]\
+            ["chromatic", "npm:6.6.4"],\
+            ["@types/webpack-env", "npm:1.17.0"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -19491,7 +19499,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["ansi-styles", "npm:6.1.0"],\
             ["babel-eslint", "virtual:83930a02e406f078247fc9b9d21de38a337fcb78679a3d66298da2df309f013f7be5bb231811c0f7e8543d93b976930cd65092f5c1c34eb2317b35770703c6a9#npm:10.1.0"],\
             ["chalk", "npm:5.0.1"],\
-            ["chromatic", "npm:6.5.4"],\
+            ["chromatic", "npm:6.6.4"],\
             ["commander", "npm:9.3.0"],\
             ["cspell", "npm:6.1.2"],\
             ["eslint", "npm:8.18.0"],\
