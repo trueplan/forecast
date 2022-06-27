@@ -29,7 +29,6 @@
     "test:ci": "jest --ci",
     "test:coverage": "jest --runInBand --coverage",
     "type-check": "yarn workspaces foreach run type-check",
-    "version:all": "yarn version check --interactive && yarn version apply --all",
     "publish:all": "yarn workspace @trueplan/forecast-theme publish && yarn workspace @trueplan/forecast-icons publish && yarn workspace @trueplan/forecast-components publish",
     "postinstall": "husky install",
     "prepare": "is-ci || husky install",
@@ -140,7 +139,7 @@
     "node": "16.x",
     "npm": "7.x"
   },
-  "packageManager": "yarn@3.2.0",
+  "packageManager": "yarn@3.2.1",
   "dependenciesMeta": {
     "open@7.4.2": {
       "unplugged": true
