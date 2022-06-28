@@ -75,6 +75,6 @@ Info.args = { variant: "info" };
 Info.parameters = {
   docs: {
     storyDescription:
-      "Use a informational alert to notify a user of a change that's relevant for them.",
+      "Use an informational alert to notify a user of a change that's relevant for them.",
   },
 };
