@@ -1,5 +1,3 @@
-// eslint-disable-next-line eslint-comments/disable-enable-pair
-/* eslint-disable jsdoc/require-description-complete-sentence */
 import * as React from "react";
 import { StyledAnchor } from "./styles";
 import type { AnchorProps } from "./types";
