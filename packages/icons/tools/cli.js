@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import program from "commander";
+import { program } from "commander";
 import { listIconsAction } from "./actions/listIconsAction.js";
 import { convertNewAction } from "./actions/convertNewAction.js";
 import { convertAllAction } from "./actions/convertAllAction.js";
