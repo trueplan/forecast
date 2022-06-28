@@ -1,8 +1,7 @@
 import * as React from "react";
 import { StyledText } from "./styles";
 
-export interface TextProps
-  extends Omit<React.HTMLAttributes<HTMLSpanElement>, "css"> {
+export interface TextProps extends React.HTMLAttributes<HTMLSpanElement> {
   as?: React.ReactNode;
   children: React.ReactNode;
   color?:

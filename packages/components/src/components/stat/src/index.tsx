@@ -41,8 +41,7 @@ export const StyledStatButton = styled("button", {
   "&:active": { textDecoration: "none", borderColor: theme.colors.gray50 },
 });
 
-export interface StatProps
-  extends Omit<React.HTMLAttributes<HTMLDivElement>, "css"> {
+export interface StatProps extends React.HTMLAttributes<HTMLDivElement> {
   children: React.ReactNode;
   padding?: "space0" | "space40";
 }
@@ -64,7 +63,7 @@ Stat.displayName = "Stat";
 export { Stat };
 
 export interface StatButtonProps
-  extends Omit<React.ButtonHTMLAttributes<HTMLButtonElement>, "css"> {
+  extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   children: React.ReactNode;
 }
 

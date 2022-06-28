@@ -16,7 +16,7 @@ export interface InputTypeProps {
 }
 
 export interface InputProps
-  extends Omit<React.InputHTMLAttributes<HTMLInputElement>, "css"> {
+  extends React.InputHTMLAttributes<HTMLInputElement> {
   borderless?: boolean;
   centeredText?: boolean;
   disabled?: boolean;

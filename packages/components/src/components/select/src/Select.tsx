@@ -46,7 +46,7 @@ const SelectIconWrapper: React.FC = () => (
 );
 
 export interface SelectProps
-  extends Omit<React.SelectHTMLAttributes<HTMLSelectElement>, "css"> {
+  extends React.SelectHTMLAttributes<HTMLSelectElement> {
   children: React.ReactNode;
   disabled?: boolean;
   hasError?: boolean;

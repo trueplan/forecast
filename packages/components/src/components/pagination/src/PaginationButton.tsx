@@ -3,7 +3,7 @@ import { styled, theme } from "@trueplan/forecast-theme";
 import { Box } from "../../../primitives/box";
 
 export interface PaginationButtonProps
-  extends Omit<React.ButtonHTMLAttributes<HTMLButtonElement>, "css"> {
+  extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   children: React.ReactNode;
   hasIcon?: boolean;
   isCurrent?: boolean;

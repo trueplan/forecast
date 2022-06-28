@@ -1,5 +1,4 @@
-export interface PillProps
-  extends Omit<React.HTMLAttributes<HTMLSpanElement>, "css"> {
+export interface PillProps extends React.HTMLAttributes<HTMLSpanElement> {
   children: React.ReactNode;
   color?: "green" | "blue" | "lilac" | "grey" | "red";
   fontFamily?: "roboto";

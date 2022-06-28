@@ -2,7 +2,7 @@ import * as React from "react";
 import { Text } from "../../../primitives/text";
 
 export interface ResourceLinkTitleProps
-  extends Omit<React.HTMLAttributes<HTMLSpanElement>, "css" | "color"> {
+  extends Omit<React.HTMLAttributes<HTMLSpanElement>, "color"> {
   children: React.ReactNode;
 }
 
@@ -16,7 +16,7 @@ const ResourceLinkTitle = React.forwardRef<
       fontSize="fontSize10"
       fontWeight="semiBold"
       lineHeight="lineHeight5"
-      css={{
+      style={{
         overflow: "hidden",
         display: "-webkit-box",
         WebkitBoxOrient: "vertical",

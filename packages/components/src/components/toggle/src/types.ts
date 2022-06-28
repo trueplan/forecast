@@ -1,7 +1,7 @@
 import type React from "react";
 
 export interface ToggleProps
-  extends Omit<React.ButtonHTMLAttributes<HTMLButtonElement>, "css"> {
+  extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   /** The controlled state of the toggle. Must be used in conjunction with onCheckedChange. */
   checked?: boolean;
   /** The state of the toggle when it is initially rendered. Use when you do not need to control its state. */

@@ -65,10 +65,7 @@ const StyledPopoverClose = styled(PopoverPrimitive.Close, {
   },
 });
 
-export type PopoverContentProps = Omit<
-  PopoverPrimitive.PopoverContentProps,
-  "css"
->;
+export type PopoverContentProps = PopoverPrimitive.PopoverContentProps;
 
 export const PopoverContent: React.FC<PopoverContentProps> = ({
   children,

@@ -12,8 +12,7 @@ export type CardPaddingOptions =
   | "space80"
   | "space90";
 
-export interface CardProps
-  extends Omit<React.HTMLAttributes<HTMLDivElement>, "css"> {
+export interface CardProps extends React.HTMLAttributes<HTMLDivElement> {
   children: React.ReactNode;
   borderless?: boolean;
   padding?: CardPaddingOptions;

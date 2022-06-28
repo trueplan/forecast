@@ -1,16 +1,14 @@
 import * as React from "react";
-import type * as Stitches from "@stitches/react";
 import { styled } from "@trueplan/forecast-theme";
+import type { CSSProp } from "../../../types";
 
 const StyledBox = styled("div", {
   boxSizing: "border-box",
 });
 
-export interface BoxProps
-  extends Omit<React.HTMLAttributes<HTMLElement>, "css"> {
+export interface BoxProps extends React.HTMLAttributes<HTMLElement>, CSSProp {
   as?: React.ReactNode;
   children?: React.ReactNode;
-  css?: Stitches.CSS;
   decorative?: boolean;
 }
 
@@ -18,7 +16,7 @@ const Box = React.forwardRef<HTMLElement, BoxProps>(
   ({ children, ...props }, ref) => {
     return (
       // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-      // @ts-ignore - we're using a custom `css` prop.
+      // @ts-ignore - StyledBox is a div, but can be any HTMLElement.
       <StyledBox ref={ref} {...props}>
         {children}
       </StyledBox>

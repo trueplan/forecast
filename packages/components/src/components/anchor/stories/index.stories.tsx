@@ -1,4 +1,5 @@
 import * as React from "react";
+import type { ComponentStory, ComponentMeta } from "@storybook/react";
 import { Heading } from "../../heading";
 import { Paragraph } from "../../paragraph";
 import { Anchor } from "../src";
@@ -7,49 +8,83 @@ import { Anchor } from "../src";
 export default {
   title: "Components/Anchor",
   component: Anchor,
+} as ComponentMeta<typeof Anchor>;
+
+const Template: ComponentStory<typeof Anchor> = (args) => (
+  <Anchor href="https://trueplan.io" {...args}>
+    I'm an anchor
+  </Anchor>
+);
+
+export const Default = Template.bind({});
+
+export const Small = Template.bind({});
+Small.args = {
+  size: "small",
+};
+Small.parameters = {
+  docs: {
+    storyDescription: "Use the small size prop for a smaller font size.",
+  },
 };
 
-export const Default: React.FC = () => <Anchor href="#">I'm an anchor</Anchor>;
+export const Medium = Template.bind({});
+Medium.args = {
+  size: "medium",
+};
+Medium.parameters = {
+  docs: {
+    storyDescription:
+      "Use the medium size prop for the base Trueplan font size.",
+  },
+};
 
-export const Small: React.FC = () => (
-  <Anchor href="#" size="small">
-    I'm an small anchor
-  </Anchor>
-);
+export const Large = Template.bind({});
+Large.args = {
+  size: "large",
+};
+Large.parameters = {
+  docs: {
+    storyDescription: "Use the large size prop for a larger font size.",
+  },
+};
 
-export const Medium: React.FC = () => (
-  <Anchor href="#" size="medium">
-    I'm an medium anchor
-  </Anchor>
-);
+export const NoUnderline = Template.bind({});
+NoUnderline.args = {
+  noUnderline: true,
+};
+NoUnderline.parameters = {
+  docs: {
+    storyDescription:
+      "Use the `noUnderline` prop when you want to remove the underline style. The underline will still appear on hover.",
+  },
+};
 
-export const Large: React.FC = () => (
-  <Anchor href="#" size="large">
-    I'm an large anchor
-  </Anchor>
-);
+export const External = Template.bind({});
+External.args = {
+  isExternal: true,
+};
+External.parameters = {
+  docs: {
+    storyDescription:
+      "Setting the `isExternal` prop will sets the `target` to `_blank` and the `rel` to `noreferrer noopener`.",
+  },
+};
 
-export const NoUnderline: React.FC = () => (
-  <Anchor href="#" noUnderline>
-    I'm an anchor with no underline
-  </Anchor>
-);
-
-export const External: React.FC = () => (
-  <Anchor href="#" isExternal>
-    I'm an anchor that opens an external url
-  </Anchor>
-);
-
-export const InHeading: React.FC = () => (
+export const InHeading: ComponentStory<typeof Anchor> = () => (
   <Heading size="heading20" as="h2">
     <Anchor href="#">
       I'm an anchor which inherits font size from the heading
     </Anchor>
   </Heading>
 );
+InHeading.parameters = {
+  docs: {
+    storyDescription: "The Anchor will inherit its parents font size.",
+  },
+};
 
-export const InParagraph: React.FC = () => (
+export const InParagraph: ComponentStory<typeof Anchor> = () => (
   <>
     <Paragraph>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nec erat
@@ -71,3 +106,8 @@ export const InParagraph: React.FC = () => (
     </Paragraph>
   </>
 );
+InParagraph.parameters = {
+  docs: {
+    storyDescription: "Anchors should be clearly visible in paragraphs.",
+  },
+};

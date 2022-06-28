@@ -1,5 +1,4 @@
-export interface ProgressBarProps
-  extends Omit<React.HTMLAttributes<HTMLDivElement>, "css"> {
+export interface ProgressBarProps extends React.HTMLAttributes<HTMLDivElement> {
   value: number;
   color?: "blue" | "green" | "red" | "yellow";
 }

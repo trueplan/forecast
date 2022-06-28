@@ -3,7 +3,7 @@ import { Box } from "../../../primitives/box";
 import { Text } from "../../../primitives/text";
 
 export interface ResourceLinkTimeStampProps
-  extends Omit<React.HTMLAttributes<HTMLSpanElement>, "css" | "color"> {
+  extends Omit<React.HTMLAttributes<HTMLSpanElement>, "color"> {
   children: React.ReactNode;
 }
 

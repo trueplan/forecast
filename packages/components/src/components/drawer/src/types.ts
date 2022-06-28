@@ -9,34 +9,33 @@ export interface DrawerProps {
 }
 
 export interface DrawerContentProps
-  extends Omit<React.HTMLAttributes<HTMLDivElement>, "css"> {
+  extends React.HTMLAttributes<HTMLDivElement> {
   children: React.ReactNode;
   onOpenAutoFocus?: (event: Event) => void;
 }
 
 export interface DrawerHeaderActionsProps
-  extends Omit<React.HTMLAttributes<HTMLDivElement>, "css"> {
+  extends React.HTMLAttributes<HTMLDivElement> {
   children?: React.ReactNode;
 }
 
 export interface DrawerHeaderProps
-  extends Omit<React.HTMLAttributes<HTMLHeadElement>, "css"> {
+  extends React.HTMLAttributes<HTMLHeadElement> {
   children: React.ReactNode;
 }
 
 export interface DrawerHeadingProps
-  extends Omit<HeadingProps, "marginBottom" | "size" | "css"> {
+  extends Omit<HeadingProps, "marginBottom" | "size"> {
   children: React.ReactNode;
 }
 
-export interface DrawerBodyProps
-  extends Omit<React.HTMLAttributes<HTMLDivElement>, "css"> {
+export interface DrawerBodyProps extends React.HTMLAttributes<HTMLDivElement> {
   children: React.ReactNode;
   padding?: "space0" | "space35";
 }
 
 export interface DrawerFooterProps
-  extends Omit<React.HTMLAttributes<HTMLDivElement>, "css"> {
+  extends React.HTMLAttributes<HTMLDivElement> {
   children: React.ReactNode;
   helpText?: string;
 }

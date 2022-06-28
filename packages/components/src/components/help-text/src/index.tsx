@@ -18,8 +18,7 @@ const StyledHelpText = styled("span", {
   },
 });
 
-export interface HelpTextProps
-  extends Omit<React.HTMLAttributes<HTMLSpanElement>, "css"> {
+export interface HelpTextProps extends React.HTMLAttributes<HTMLSpanElement> {
   children: React.ReactNode;
   hasError?: boolean;
 }

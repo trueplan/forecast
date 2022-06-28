@@ -1,5 +1,4 @@
-export interface StackProps
-  extends Omit<React.HTMLAttributes<HTMLDivElement>, "css"> {
+export interface StackProps extends React.HTMLAttributes<HTMLDivElement> {
   align?: "flex-start" | "center" | "flex-end" | "stretch" | "baseline";
   as?: keyof JSX.IntrinsicElements;
   direction?: "horizontal" | "vertical";

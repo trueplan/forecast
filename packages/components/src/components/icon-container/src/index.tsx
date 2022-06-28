@@ -2,7 +2,7 @@ import * as React from "react";
 import { StyledIconContainer } from "./styles";
 
 export interface IconContainerProps
-  extends Omit<React.HTMLAttributes<HTMLDivElement>, "css"> {
+  extends React.HTMLAttributes<HTMLDivElement> {
   children: React.ReactNode;
   size?: "small" | "medium" | "large";
   color?: "blue" | "green" | "lilac" | "sky" | "yellow" | "red" | "royal";

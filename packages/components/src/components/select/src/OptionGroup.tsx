@@ -11,7 +11,7 @@ export const StyledOptionGroup = styled("optgroup", {
 });
 
 export interface OptionGroupProps
-  extends Omit<React.OptgroupHTMLAttributes<HTMLOptGroupElement>, "css"> {
+  extends React.OptgroupHTMLAttributes<HTMLOptGroupElement> {
   children: React.ReactNode;
   label: string;
 }

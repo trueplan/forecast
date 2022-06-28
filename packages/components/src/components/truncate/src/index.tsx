@@ -2,7 +2,7 @@ import * as React from "react";
 import { Box } from "../../../primitives/box";
 
 export interface TruncateProps
-  extends Omit<React.HtmlHTMLAttributes<HTMLSpanElement>, "css"> {
+  extends React.HtmlHTMLAttributes<HTMLSpanElement> {
   children: React.ReactNode;
   title: string;
 }

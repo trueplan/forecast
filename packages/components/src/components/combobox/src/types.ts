@@ -7,9 +7,9 @@ import type {
 export interface ComboboxProps
   extends Omit<
       React.InputHTMLAttributes<HTMLInputElement>,
-      "css" | "autoComplete" | "children"
+      "autoComplete" | "children"
     >,
-    Omit<ComboboxPrimitiveProps, "css"> {
+    ComboboxPrimitiveProps {
   borderless?: boolean;
   centeredText?: boolean;
   disabled?: boolean;
