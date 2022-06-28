@@ -2,7 +2,7 @@ import type React from "react";
 
 type LabelMarginBottom = "space0" | "space10";
 export interface LabelProps
-  extends Omit<React.LabelHTMLAttributes<HTMLLabelElement>, "css"> {
+  extends React.LabelHTMLAttributes<HTMLLabelElement> {
   disabled?: boolean;
   htmlFor: string;
   marginBottom?: LabelMarginBottom;

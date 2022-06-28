@@ -9,7 +9,7 @@ export type AvatarColors =
 export type AvatarSizes = "small" | "medium" | "large";
 
 export interface AvatarProps
-  extends Omit<React.HTMLAttributes<HTMLDivElement>, "color" | "css"> {
+  extends Omit<React.HTMLAttributes<HTMLDivElement>, "color"> {
   color?: AvatarColors;
   name: string;
   showName?: boolean;

@@ -7,8 +7,7 @@ export type HeadingSizes =
   | "heading50"
   | "heading60";
 type ParagraphMarginBottom = "space0" | "space40";
-export interface HeadingProps
-  extends Omit<React.HTMLAttributes<HTMLHeadingElement>, "css"> {
+export interface HeadingProps extends React.HTMLAttributes<HTMLHeadingElement> {
   as?: HeadingLevels;
   marginBottom?: ParagraphMarginBottom;
   size?: HeadingSizes;

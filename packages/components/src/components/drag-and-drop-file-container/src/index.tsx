@@ -8,27 +8,27 @@ import { Spinner } from "../../spinner";
 import { StyledContainer } from "./styles";
 
 type DragAndDropFileContainerProps = {
-  /** Callback to be called when a file is dropped or selected */
+  /** Callback to be called when a file is dropped or selected. */
   onDrop: DropzoneOptions["onDropAccepted"];
-  /** Max number of files that a user can select/drop */
+  /** Max number of files that a user can select/drop. */
   maxFiles?: number;
-  /** The filetype and the supported extensions that are acceptable (i.e. {"text/csv": [".csv"]}) */
+  /** The filetype and the supported extensions that are acceptable (i.e. {"text/csv": [".csv"]}). */
   acceptedFileTypes?: Record<string, string[]>;
-  /** Text that displays about what a user should do */
+  /** Text that displays about what a user should do. */
   uploadText: string;
-  /** Text that displays when a user tries to drag a file type that is not accepted */
+  /** Text that displays when a user tries to drag a file type that is not accepted. */
   rejectText: string;
-  /** Illustration to display in the container */
+  /** Illustration to display in the container. */
   Illustration?: JSX.Element;
-  /** Illustration to display when a user tries to drag a file type that is not accepted */
+  /** Illustration to display when a user tries to drag a file type that is not accepted. */
   RejectIllustration?: JSX.Element;
-  /** Illustration to display during the loading state */
+  /** Illustration to display during the loading state. */
   LoadingIllustration?: JSX.Element;
-  /** Shows loading state */
+  /** Shows loading state. */
   isLoading?: boolean;
 };
 
-/** A container that enables users to drag and drop or select file(s) */
+/** A container that enables users to drag and drop or select file(s). */
 const DragAndDropFileContainer = React.forwardRef<
   HTMLDivElement,
   DragAndDropFileContainerProps
@@ -83,10 +83,12 @@ const DragAndDropFileContainer = React.forwardRef<
               label="" // Label would be redundant with text below
               size="large"
             />
-            <Text css={{ marginTop: "$30" }}>
-              Checking your file{" "}
-              {acceptedFiles.map((value) => value.name).join(", ")}
-            </Text>
+            <Box css={{ marginTop: "$30" }}>
+              <Text>
+                Checking your file{" "}
+                {acceptedFiles.map((value) => value.name).join(", ")}
+              </Text>
+            </Box>
           </>
         ) : (
           <>
@@ -96,14 +98,14 @@ const DragAndDropFileContainer = React.forwardRef<
               </Box>
             )}
 
-            <Text css={{ marginBottom: "$35" }}>
-              {isDragReject ? rejectText : uploadText}
-            </Text>
+            <Box css={{ marginBottom: "$35" }}>
+              <Text>{isDragReject ? rejectText : uploadText}</Text>
+            </Box>
 
             <Button
               variant="secondary"
               onClick={open}
-              css={
+              style={
                 isDragAccept
                   ? {
                       backgroundColor: `${theme.colors.gray20}`,

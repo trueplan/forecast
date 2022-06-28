@@ -1,5 +1,5 @@
 export interface CheckboxProps
-  extends Omit<React.ButtonHTMLAttributes<HTMLButtonElement>, "css"> {
+  extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   checked?: boolean | "indeterminate";
   children: React.ReactNode;
   defaultChecked?: boolean;

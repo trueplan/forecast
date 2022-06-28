@@ -9,8 +9,7 @@ export type InputBoxTypes =
   | "date"
   | "time";
 
-export interface InputBoxProps
-  extends Omit<React.HTMLAttributes<HTMLDivElement>, "css"> {
+export interface InputBoxProps extends React.HTMLAttributes<HTMLDivElement> {
   borderless?: boolean;
   centeredText?: boolean;
   children: React.ReactNode;

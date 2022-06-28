@@ -7,7 +7,7 @@ export type AnchorTargets = "_self" | "_blank" | "_parent" | "_top";
 export type AnchorSizes = "small" | "medium" | "large";
 
 export interface AnchorProps
-  extends Omit<React.AnchorHTMLAttributes<HTMLAnchorElement>, "css"> {
+  extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
   /**
    * Sets the render element of the component. Prefer 'a' or 'button'.
    */

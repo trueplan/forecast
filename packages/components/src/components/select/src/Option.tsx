@@ -13,7 +13,7 @@ export const StyledOption = styled("option", {
 });
 
 export interface OptionProps
-  extends Omit<React.OptionHTMLAttributes<HTMLOptionElement>, "css"> {
+  extends React.OptionHTMLAttributes<HTMLOptionElement> {
   children: React.ReactNode;
   value: string;
 }

@@ -6,7 +6,7 @@ import {
   InfoCircleIcon,
   CloseIcon,
 } from "@trueplan/forecast-icons";
-import type * as ToastPrimitive from "@radix-ui/react-toast";
+import type ToastPrimitive from "@radix-ui/react-toast";
 import { Box } from "../../../primitives/box";
 import {
   ToastRoot,
@@ -34,7 +34,7 @@ const printToastIcon = (
 };
 
 export interface ToastProps
-  extends Omit<React.ComponentProps<typeof ToastPrimitive.Root>, "css"> {
+  extends React.ComponentProps<typeof ToastPrimitive.Root> {
   actionAltText?: string;
   content?: string;
   variant?: ToastVariants;

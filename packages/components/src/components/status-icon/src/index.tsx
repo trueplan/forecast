@@ -1,8 +1,7 @@
 import * as React from "react";
 import { Box } from "../../../primitives/box";
 
-export interface StatusIconProps
-  extends Omit<React.HTMLAttributes<HTMLDivElement>, "css"> {
+export interface StatusIconProps extends React.HTMLAttributes<HTMLDivElement> {
   children: React.ReactNode;
   mediumIcon?: boolean;
   status?: "green" | "lilac";

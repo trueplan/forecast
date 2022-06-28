@@ -2,8 +2,7 @@ import * as React from "react";
 import { VisuallyHidden } from "../../visually-hidden";
 import { StyledSpinner } from "./styles";
 
-export interface SpinnerProps
-  extends Omit<React.HTMLAttributes<HTMLDivElement>, "css"> {
+export interface SpinnerProps extends React.HTMLAttributes<HTMLDivElement> {
   label: string;
   size?: "small" | "medium" | "large";
   inverse?: boolean;

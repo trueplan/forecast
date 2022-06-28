@@ -3,7 +3,7 @@ import { Box } from "../../../primitives/box";
 import { Text } from "../../../primitives/text";
 
 export interface PaginationLabelProps
-  extends Omit<React.HtmlHTMLAttributes<HTMLSpanElement>, "css"> {
+  extends React.HtmlHTMLAttributes<HTMLSpanElement> {
   children: React.ReactNode;
 }
 

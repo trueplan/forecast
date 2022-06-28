@@ -2,7 +2,7 @@ import * as React from "react";
 import { Box } from "../../../primitives/box";
 
 export interface PaginationProps
-  extends Omit<React.HtmlHTMLAttributes<HTMLDivElement>, "css"> {
+  extends React.HtmlHTMLAttributes<HTMLDivElement> {
   children: React.ReactNode;
   label: string;
 }

@@ -18,7 +18,7 @@ export type ButtonVariants =
   | "inverse";
 
 export interface ButtonProps
-  extends Omit<React.ButtonHTMLAttributes<HTMLButtonElement>, "css"> {
+  extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   as?: ButtonAsOptions;
   fullWidth?: boolean;
   href?: string;

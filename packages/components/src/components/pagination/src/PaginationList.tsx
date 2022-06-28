@@ -3,7 +3,7 @@ import { useUIDSeed } from "react-uid";
 import { Box } from "../../../primitives/box";
 
 export interface PaginationListProps
-  extends Omit<React.HtmlHTMLAttributes<HTMLUListElement>, "css"> {
+  extends React.HtmlHTMLAttributes<HTMLUListElement> {
   children: React.ReactNode;
 }
 

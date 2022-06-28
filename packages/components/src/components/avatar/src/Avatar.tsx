@@ -36,7 +36,7 @@ const Avatar = React.forwardRef<HTMLDivElement, AvatarProps>(
           <AvatarContents name={name} src={src} />
         </StyledAvatar>
         {showName ? (
-          <Text css={{ marginLeft: "$20" }}>
+          <Box as="span" css={{ marginLeft: "$20" }}>
             <Text
               display="block"
               fontSize="fontSize10"
@@ -55,7 +55,7 @@ const Avatar = React.forwardRef<HTMLDivElement, AvatarProps>(
                 {title}
               </Text>
             ) : null}
-          </Text>
+          </Box>
         ) : null}
       </Box>
     );

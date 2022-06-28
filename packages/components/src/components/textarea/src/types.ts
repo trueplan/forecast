@@ -1,5 +1,5 @@
 export interface TextAreaProps
-  extends Omit<React.TextareaHTMLAttributes<HTMLTextAreaElement>, "css"> {
+  extends React.TextareaHTMLAttributes<HTMLTextAreaElement> {
   disabled?: boolean;
   hasError?: boolean;
   height?: never;

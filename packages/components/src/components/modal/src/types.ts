@@ -1,7 +1,7 @@
-import type * as DialogPrimitive from "@radix-ui/react-dialog";
+import type DialogPrimitive from "@radix-ui/react-dialog";
 import type { HeadingProps } from "../../heading";
 
-export interface ModalProps extends Omit<DialogPrimitive.DialogProps, "css"> {
+export interface ModalProps extends DialogPrimitive.DialogProps {
   children: React.ReactNode;
   defaultOpen?: boolean;
   open?: boolean;
@@ -9,8 +9,7 @@ export interface ModalProps extends Omit<DialogPrimitive.DialogProps, "css"> {
   id?: string;
 }
 
-export interface ModalContentProps
-  extends Omit<DialogPrimitive.DialogContentProps, "css"> {
+export interface ModalContentProps extends DialogPrimitive.DialogContentProps {
   "aria-describedby": string;
   children: React.ReactNode;
   size?: "default" | "medium" | "wide";
@@ -18,30 +17,28 @@ export interface ModalContentProps
 }
 
 export interface ModalHeaderActionsProps
-  extends Omit<React.HTMLAttributes<HTMLDivElement>, "css"> {
+  extends React.HTMLAttributes<HTMLDivElement> {
   children?: React.ReactNode;
   customCloseButton?: boolean;
 }
 
 export interface ModalHeaderProps
-  extends Omit<React.HTMLAttributes<HTMLHeadElement>, "css"> {
+  extends React.HTMLAttributes<HTMLHeadElement> {
   children: React.ReactNode;
 }
 
 export interface ModalHeadingProps
-  extends Omit<HeadingProps, "marginBottom" | "size" | "css"> {
+  extends Omit<HeadingProps, "marginBottom" | "size"> {
   children: React.ReactNode;
   subTitle?: string;
 }
 
-export interface ModalBodyProps
-  extends Omit<DialogPrimitive.DialogDescriptionProps, "css"> {
+export interface ModalBodyProps extends DialogPrimitive.DialogDescriptionProps {
   children: React.ReactNode;
   padding?: "space0" | "space35";
 }
 
-export interface ModalFooterProps
-  extends Omit<React.HTMLAttributes<HTMLDivElement>, "css"> {
+export interface ModalFooterProps extends React.HTMLAttributes<HTMLDivElement> {
   children: React.ReactNode;
   helpText?: string;
 }

@@ -1,5 +1,5 @@
 export interface RadioProps
-  extends Omit<React.ButtonHTMLAttributes<HTMLButtonElement>, "css"> {
+  extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   children: React.ReactNode;
   disabled?: boolean;
   id: string;
@@ -7,8 +7,7 @@ export interface RadioProps
   value: string;
 }
 
-export interface RadioGroupProps
-  extends Omit<React.HTMLAttributes<HTMLDivElement>, "css"> {
+export interface RadioGroupProps extends React.HTMLAttributes<HTMLDivElement> {
   children: React.ReactNode;
   defaultValue?: string;
   dir?: "ltr" | "rtl";
