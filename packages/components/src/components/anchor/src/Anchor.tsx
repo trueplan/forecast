@@ -5,11 +5,7 @@ import { StyledAnchor } from "./styles";
 import type { AnchorProps } from "./types";
 
 /**
- * An Anchor is text that navigates the user from one webpage to another. You can use this component using the following import:
- *
- * ```
- * import {Anchor} from "@trueplan/forecast-components"
- * ```
+ * An Anchor is text that navigates the user from one webpage to another.
  */
 const Anchor = React.forwardRef<HTMLAnchorElement, AnchorProps>(
   ({ children, isExternal, noUnderline, size, ...props }, ref) => (

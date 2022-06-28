@@ -1,7 +1,6 @@
 import * as React from "react";
 import {
   Title,
-  Subtitle,
   Description,
   Primary,
   ArgsTable,
@@ -23,14 +22,15 @@ export const decorators = [
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
   controls: { expanded: true },
+  viewMode: "docs",
+  previewTabs: { "storybook/docs/panel": { index: -1 } },
   docs: {
     page: () => (
       <>
         <Title />
         <Description />
-        <Primary />
+        <Stories includePrimary />
         <ArgsTable />
-        <Stories />
       </>
     ),
     source: {
