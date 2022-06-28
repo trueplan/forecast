@@ -28,6 +28,7 @@ const printIcon = (variant: AlertVariants): React.ReactElement | undefined => {
   }
 };
 
+/** An Alert is a banner that notifies users to high-priority or time-sensitive information. */
 const Alert = React.forwardRef<HTMLDivElement, AlertProps>(
   ({ children, title, onDismiss, variant = "warning", ...props }, ref) => (
     <StyledAlert role="alert" ref={ref} variant={variant} {...props}>
