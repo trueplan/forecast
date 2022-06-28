@@ -13,7 +13,7 @@ export interface ModalContentProps
   extends Omit<DialogPrimitive.DialogContentProps, "css"> {
   "aria-describedby": string;
   children: React.ReactNode;
-  size?: "default" | "wide";
+  size?: "default" | "medium" | "wide";
   onOpenAutoFocus?: (event: Event) => void;
 }
 

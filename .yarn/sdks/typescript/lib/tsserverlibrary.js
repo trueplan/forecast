@@ -18,6 +18,7 @@ const moduleWrapper = (tsserver) => {
   const pnpApi = require(`pnpapi`);
 
   const isVirtual = (str) => str.match(/\/(\$\$virtual|__virtual__)\//);
+  const isPortal = (str) => str.startsWith("portal:/");
   const normalize = (str) => str.replace(/\\/g, `/`).replace(/^\/?/, `/`);
 
   const dependencyTreeRoots = new Set(
@@ -52,7 +53,8 @@ const moduleWrapper = (tsserver) => {
         const locator = pnpApi.findPackageLocator(resolved);
         if (
           locator &&
-          dependencyTreeRoots.has(`${locator.name}@${locator.reference}`)
+          (dependencyTreeRoots.has(`${locator.name}@${locator.reference}`) ||
+            isPortal(locator.reference))
         ) {
           str = resolved;
         }
@@ -69,13 +71,33 @@ const moduleWrapper = (tsserver) => {
           //
           // Ref: https://github.com/microsoft/vscode/issues/105014#issuecomment-686760910
           //
-          // Update Oct 8 2021: VSCode changed their format in 1.61.
+          // 2021-10-08: VSCode changed the format in 1.61.
           // Before | ^zip:/c:/foo/bar.zip/package.json
+          // After  | ^/zip//c:/foo/bar.zip/package.json
+          //
+          // 2022-04-06: VSCode changed the format in 1.66.
+          // Before | ^/zip//c:/foo/bar.zip/package.json
+          // After  | ^/zip/c:/foo/bar.zip/package.json
+          //
+          // 2022-05-06: VSCode changed the format in 1.68
+          // Before | ^/zip/c:/foo/bar.zip/package.json
           // After  | ^/zip//c:/foo/bar.zip/package.json
           //
           case `vscode <1.61`:
             {
               str = `^zip:${str}`;
+            }
+            break;
+
+          case `vscode <1.66`:
+            {
+              str = `^/zip/${str}`;
+            }
+            break;
+
+          case `vscode <1.68`:
+            {
+              str = `^/zip${str}`;
             }
             break;
 
@@ -101,7 +123,7 @@ const moduleWrapper = (tsserver) => {
           case `neovim`:
             {
               str = normalize(resolved).replace(/\.zip\//, `.zip::`);
-              str = `zipfile:${str}`;
+              str = `zipfile://${str}`;
             }
             break;
 
@@ -120,7 +142,6 @@ const moduleWrapper = (tsserver) => {
   function fromEditorPath(str) {
     switch (hostInfo) {
       case `coc-nvim`:
-      case `neovim`:
         {
           str = str.replace(/\.zip::/, `.zip/`);
           // The path for coc-nvim is in format of /<pwd>/zipfile:/<pwd>/.yarn/...
@@ -132,12 +153,21 @@ const moduleWrapper = (tsserver) => {
         }
         break;
 
+      case `neovim`:
+        {
+          str = str.replace(/\.zip::/, `.zip/`);
+          // The path for neovim is in format of zipfile:///<pwd>/.yarn/...
+          return str.replace(/^zipfile:\/\//, ``);
+        }
+        break;
+
       case `vscode`:
       default:
         {
-          return process.platform === `win32`
-            ? str.replace(/^\^?(zip:|\/zip)\/+/, ``)
-            : str.replace(/^\^?(zip:|\/zip)\/+/, `/`);
+          return str.replace(
+            /^\^?(zip:|\/zip(\/ts-nul-authority)?)\/+/,
+            process.platform === `win32` ? `` : `/`
+          );
         }
         break;
     }
@@ -168,8 +198,9 @@ const moduleWrapper = (tsserver) => {
   let hostInfo = `unknown`;
 
   Object.assign(Session.prototype, {
-    onMessage(/** @type {string} */ message) {
-      const parsedMessage = JSON.parse(message);
+    onMessage(/** @type {string | object} */ message) {
+      const isStringMessage = typeof message === "string";
+      const parsedMessage = isStringMessage ? JSON.parse(message) : message;
 
       if (
         parsedMessage != null &&
@@ -178,20 +209,38 @@ const moduleWrapper = (tsserver) => {
         typeof parsedMessage.arguments.hostInfo === `string`
       ) {
         hostInfo = parsedMessage.arguments.hostInfo;
-        if (
-          hostInfo === `vscode` &&
-          process.env.VSCODE_IPC_HOOK &&
-          process.env.VSCODE_IPC_HOOK.match(/Code\/1\.([1-5][0-9]|60)\./)
-        ) {
-          hostInfo += ` <1.61`;
+        if (hostInfo === `vscode` && process.env.VSCODE_IPC_HOOK) {
+          const [, major, minor] = (
+            process.env.VSCODE_IPC_HOOK.match(
+              // The RegExp from https://semver.org/ but without the caret at the start
+              /(0|[1-9]\d*)\.(0|[1-9]\d*)\.(0|[1-9]\d*)(?:-((?:0|[1-9]\d*|\d*[a-zA-Z-][0-9a-zA-Z-]*)(?:\.(?:0|[1-9]\d*|\d*[a-zA-Z-][0-9a-zA-Z-]*))*))?(?:\+([0-9a-zA-Z-]+(?:\.[0-9a-zA-Z-]+)*))?$/
+            ) ?? []
+          ).map(Number);
+
+          if (major === 1) {
+            if (minor < 61) {
+              hostInfo += ` <1.61`;
+            } else if (minor < 66) {
+              hostInfo += ` <1.66`;
+            } else if (minor < 68) {
+              hostInfo += ` <1.68`;
+            }
+          }
         }
       }
 
+      const processedMessageJSON = JSON.stringify(
+        parsedMessage,
+        (key, value) => {
+          return typeof value === "string" ? fromEditorPath(value) : value;
+        }
+      );
+
       return originalOnMessage.call(
         this,
-        JSON.stringify(parsedMessage, (key, value) => {
-          return typeof value === `string` ? fromEditorPath(value) : value;
-        })
+        isStringMessage
+          ? processedMessageJSON
+          : JSON.parse(processedMessageJSON)
       );
     },
 

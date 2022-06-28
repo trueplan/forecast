@@ -44,6 +44,9 @@ export const StyledModalContent = styled(DialogPrimitive.Content, {
       default: {
         maxWidth: "26.5rem",
       },
+      medium: {
+        maxWidth: "56.25rem",
+      },
       wide: {
         maxWidth: "73.125rem",
       },

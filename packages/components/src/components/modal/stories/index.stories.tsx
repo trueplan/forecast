@@ -67,6 +67,52 @@ Default.parameters = {
   chromatic: { pauseAnimationAtEnd: true },
 };
 
+export const Medium = (): React.ReactNode => {
+  const descriptionId = useUID();
+  return (
+    <Box css={{ height: "1000px", width: "1350px" }}>
+      <Modal defaultOpen>
+        <ModalTrigger asChild>
+          <Button variant="primary">Open Modal</Button>
+        </ModalTrigger>
+        <ModalContent aria-describedby={descriptionId} size="medium">
+          <ModalHeader>
+            <ModalHeading subTitle="This is the subtitle">
+              This is the Title
+            </ModalHeading>
+            <ModalHeaderActions />
+          </ModalHeader>
+          <ModalBody>
+            <Heading as="h3" size="heading30">
+              Modal Body Heading
+            </Heading>
+            <Paragraph id={descriptionId}>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Vestibulum dignissim sit amet quam nec vehicula. Nullam lectus
+              leo, mattis ut erat quis, fringilla consectetur magna. Praesent
+              nisi massa, faucibus et aliquet quis, porttitor ultricies augue.
+              Nulla in tincidunt libero. Donec pellentesque fermentum sagittis.
+              Suspendisse eu mauris quis diam faucibus hendrerit eget et lectus.
+              Nunc quis ipsum id neque ultricies lacinia.
+            </Paragraph>
+          </ModalBody>
+          <ModalFooter helpText="This is the help text.">
+            <ModalTrigger asChild>
+              <Button variant="primary" size="small">
+                Click
+              </Button>
+            </ModalTrigger>
+          </ModalFooter>
+        </ModalContent>
+      </Modal>
+    </Box>
+  );
+};
+
+Default.parameters = {
+  chromatic: { pauseAnimationAtEnd: true },
+};
+
 export const Wide = (): React.ReactNode => {
   const descriptionId = useUID();
   return (
