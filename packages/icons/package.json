@@ -1,6 +1,6 @@
 {
   "name": "@trueplan/forecast-icons",
-  "version": "4.0.3",
+  "version": "5.0.0",
   "description": "Forecast Design System Icons",
   "author": "TruePlan Inc.",
   "license": "UNLICENSED",
@@ -33,7 +33,7 @@
     "lodash.startcase": "4.4.0"
   },
   "peerDependencies": {
-    "@trueplan/forecast-components": "^4.0.0",
+    "@trueplan/forecast-components": "^5.0.0",
     "@trueplan/forecast-theme": "^3.0.0",
     "react": "17.x",
     "react-dom": "17.x",
@@ -43,8 +43,8 @@
     "@svgr/babel-plugin-add-jsx-attribute": "6.0.0",
     "@svgr/babel-plugin-remove-jsx-attribute": "6.0.0",
     "@svgr/plugin-svgo": "6.2.0",
-    "@trueplan/forecast-components": "4.7.6",
-    "@trueplan/forecast-theme": "3.2.1",
+    "@trueplan/forecast-components": "5.0.0",
+    "@trueplan/forecast-theme": "3.2.2",
     "@twilio-labs/svg-to-react": "2.1.1",
     "@types/node": "18.0.0",
     "@types/react": "18.0.14",

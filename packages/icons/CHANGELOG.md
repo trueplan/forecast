@@ -1,5 +1,16 @@
 # @trueplan/forecast-icons
 
+## 5.0.0
+
+### Patch Changes
+
+- [#136](https://github.com/trueplan/forecast/pull/136) [`2afa8db`](https://github.com/trueplan/forecast/commit/2afa8dbbbce1503c6bda6fcdb7edd6a72aefed3a) Thanks [@richbachman](https://github.com/richbachman)! - Fixing the package versions.
+
+* [#133](https://github.com/trueplan/forecast/pull/133) [`6b0ced4`](https://github.com/trueplan/forecast/commit/6b0ced43109b5de0aa887f54e1f4fe6492958ae5) Thanks [@jayarnielsen](https://github.com/jayarnielsen)! - updated dependencies
+
+* Updated dependencies [[`ef8a957`](https://github.com/trueplan/forecast/commit/ef8a95793a4f71f5168fe36a3c2f61679850a143), [`2afa8db`](https://github.com/trueplan/forecast/commit/2afa8dbbbce1503c6bda6fcdb7edd6a72aefed3a), [`1a708e9`](https://github.com/trueplan/forecast/commit/1a708e92552c3c49a5bac052c3a291e49a8178ad), [`6b0ced4`](https://github.com/trueplan/forecast/commit/6b0ced43109b5de0aa887f54e1f4fe6492958ae5)]:
+  - @trueplan/forecast-components@5.0.0
+
 ## 4.0.3
 
 ### Patch Changes
