@@ -1,4 +1,5 @@
 import * as React from "react";
+import type { ComponentStory, ComponentMeta } from "@storybook/react";
 import { CloseIcon, PencilIcon } from "@trueplan/forecast-icons";
 import { Box } from "../../../primitives/box";
 import { Button } from "../src";
@@ -7,9 +8,9 @@ import { Button } from "../src";
 export default {
   title: "Components/Button",
   component: Button,
-};
+} as ComponentMeta<typeof Button>;
 
-export const Default: React.FC = () => (
+export const Default: ComponentStory<typeof Button> = () => (
   <>
     <Box
       css={{
@@ -218,7 +219,7 @@ export const Default: React.FC = () => (
   </>
 );
 
-export const FullWidth: React.FC = () => (
+export const FullWidth: ComponentStory<typeof Button> = () => (
   <>
     <Box
       css={{
@@ -380,7 +381,7 @@ export const FullWidth: React.FC = () => (
   </>
 );
 
-export const Icons: React.FC = () => (
+export const Icons: ComponentStory<typeof Button> = () => (
   <>
     <Box
       css={{
@@ -522,7 +523,7 @@ export const Icons: React.FC = () => (
   </>
 );
 
-export const IconOnly: React.FC = () => (
+export const IconOnly: ComponentStory<typeof Button> = () => (
   <>
     <Box
       css={{
@@ -590,7 +591,7 @@ export const IconOnly: React.FC = () => (
   </>
 );
 
-export const AsAnchor: React.FC = () => (
+export const AsAnchor: ComponentStory<typeof Button> = () => (
   <>
     <Box
       css={{

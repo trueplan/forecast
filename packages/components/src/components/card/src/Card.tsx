@@ -2,6 +2,7 @@ import * as React from "react";
 import { StyledCard } from "./styles";
 import type { CardProps } from "./types";
 
+/** A Card is a styled container that groups related content and actions. */
 const Card = React.forwardRef<HTMLDivElement, CardProps>(
   (
     {

@@ -1,6 +1,5 @@
 import * as React from "react";
-import type { Story } from "@storybook/react";
-import type { BadgeProps } from "../src";
+import type { ComponentStory, ComponentMeta } from "@storybook/react";
 import { Badge } from "../src";
 
 // eslint-disable-next-line import/no-default-export
@@ -8,9 +7,9 @@ export default {
   title: "Components/Badge",
   component: Badge,
   args: {},
-};
+} as ComponentMeta<typeof Badge>;
 
-const Template: Story<BadgeProps> = (props) => (
+const Template: ComponentStory<typeof Badge> = (props) => (
   <div style={{ display: "flex", gap: "10px" }}>
     <Badge color="lilac" {...props}>
       0

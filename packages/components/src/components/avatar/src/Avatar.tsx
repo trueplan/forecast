@@ -20,6 +20,7 @@ const AvatarContents: React.FC<AvatarContentProps> = ({ name, src }) => {
   );
 };
 
+/** The Avatar is a pictorial representation of a user or object. It can display the initials of that entity, or an image. */
 const Avatar = React.forwardRef<HTMLDivElement, AvatarProps>(
   (
     { color = "lilac", name, showName, size = "medium", title, src, ...props },
