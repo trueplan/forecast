@@ -1,5 +1,11 @@
 # @trueplan/forecast-theme
 
+## 3.2.2
+
+### Patch Changes
+
+- [#133](https://github.com/trueplan/forecast/pull/133) [`6b0ced4`](https://github.com/trueplan/forecast/commit/6b0ced43109b5de0aa887f54e1f4fe6492958ae5) Thanks [@jayarnielsen](https://github.com/jayarnielsen)! - updated dependencies
+
 ## 3.2.1
 
 ### Patch Changes

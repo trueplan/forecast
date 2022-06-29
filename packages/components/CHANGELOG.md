@@ -1,5 +1,25 @@
 # @trueplan/forecast-components
 
+## 5.0.0
+
+### Major Changes
+
+- [#132](https://github.com/trueplan/forecast/pull/132) [`1a708e9`](https://github.com/trueplan/forecast/commit/1a708e92552c3c49a5bac052c3a291e49a8178ad) Thanks [@richbachman](https://github.com/richbachman)! - [components]: The `css` prop has been removed from all components, except for Box. It was an error allowing it on other components as those styles should have already been set. If you need to escape the system and adjust a components style, there are two available methods:
+
+  - `style` prop as provided by React
+  - `styled` function provided from Stitches
+
+### Patch Changes
+
+- [#135](https://github.com/trueplan/forecast/pull/135) [`ef8a957`](https://github.com/trueplan/forecast/commit/ef8a95793a4f71f5168fe36a3c2f61679850a143) Thanks [@richbachman](https://github.com/richbachman)! - [Alert]: added storybook doc page.
+
+* [#136](https://github.com/trueplan/forecast/pull/136) [`2afa8db`](https://github.com/trueplan/forecast/commit/2afa8dbbbce1503c6bda6fcdb7edd6a72aefed3a) Thanks [@richbachman](https://github.com/richbachman)! - Fixing the package versions.
+
+- [#133](https://github.com/trueplan/forecast/pull/133) [`6b0ced4`](https://github.com/trueplan/forecast/commit/6b0ced43109b5de0aa887f54e1f4fe6492958ae5) Thanks [@jayarnielsen](https://github.com/jayarnielsen)! - updated dependencies
+
+- Updated dependencies [[`2afa8db`](https://github.com/trueplan/forecast/commit/2afa8dbbbce1503c6bda6fcdb7edd6a72aefed3a), [`6b0ced4`](https://github.com/trueplan/forecast/commit/6b0ced43109b5de0aa887f54e1f4fe6492958ae5)]:
+  - @trueplan/forecast-icons@5.0.0
+
 ## 4.7.6
 
 ### Patch Changes
