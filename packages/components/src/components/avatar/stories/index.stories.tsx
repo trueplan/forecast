@@ -1,4 +1,5 @@
 import * as React from "react";
+import type { ComponentStory, ComponentMeta } from "@storybook/react";
 import type { AvatarColors } from "../src";
 import { Avatar } from "../src";
 import { Box } from "../../../primitives/box";
@@ -11,9 +12,9 @@ export default {
   component: Avatar,
   // Sets the diffThreshold for all stories
   chromatic: { diffThreshold: 0.3 },
-};
+} as ComponentMeta<typeof Avatar>;
 
-export const Initials = (): React.ReactNode => {
+export const Initials: ComponentStory<typeof Avatar> = () => {
   return (
     <>
       <Box css={{ marginBottom: "10px" }}>
@@ -68,8 +69,14 @@ export const Initials = (): React.ReactNode => {
     </>
   );
 };
+Initials.parameters = {
+  docs: {
+    storyDescription:
+      "Use the initials Avatar when you only have a name to represent the entity.",
+  },
+};
 
-export const Image = (): React.ReactNode => {
+export const Image: ComponentStory<typeof Avatar> = () => {
   return (
     <>
       <Box css={{ marginBottom: "10px" }}>
@@ -184,12 +191,15 @@ export const Image = (): React.ReactNode => {
     </>
   );
 };
-
-Image.story = {
-  parameters: { chromatic: { delay: 3000 } },
+Image.parameters = {
+  chromatic: { delay: 3000 },
+  docs: {
+    storyDescription:
+      "Use the image Avatar version when you have an image to represent the entity. Make sure include the `name` prop as well.",
+  },
 };
 
-export const WithName = (): React.ReactNode => {
+export const WithName: ComponentStory<typeof Avatar> = () => {
   return (
     <Stack direction="vertical" spacing="$40">
       <Avatar
@@ -213,8 +223,16 @@ export const WithName = (): React.ReactNode => {
     </Stack>
   );
 };
+WithName.parameters = {
+  docs: {
+    storyDescription:
+      "The name and title of the entity can be shown to the right of the Avatar with the `showName` and `title` props.",
+  },
+};
 
-export const WithNameAndRandomBackgroundColor = (): React.ReactNode => {
+export const WithNameAndRandomBackgroundColor: ComponentStory<
+  typeof Avatar
+> = () => {
   return (
     <Stack direction="vertical" spacing="$40">
       <Avatar

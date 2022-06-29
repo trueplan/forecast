@@ -4,6 +4,7 @@ import { Spinner } from "../../spinner";
 import { StyledButton, StyledButtonContents } from "./styles";
 import type { ButtonProps } from "./types";
 
+/** A Button is a clickable element which communicates that users can trigger an action. */
 const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
   (
     {

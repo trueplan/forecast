@@ -19,12 +19,20 @@ export type ButtonVariants =
 
 export interface ButtonProps
   extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+  /** Sets the render element of the component. Prefer 'a' or 'button'.*/
   as?: ButtonAsOptions;
+  /** Expands the button to fill the full width of its parent element. */
   fullWidth?: boolean;
+  /** If used as an 'a', the href is url that the link point to. */
   href?: string;
+  /** Sets the button to be disabled. */
   isDisabled?: boolean;
+  /** Sets the button state to loading. */
   loading?: boolean;
+  /** Sets the size of the button. */
   size?: ButtonSizes;
+  /** Used with React Router or NextJS to set the route the anchor links to. */
   to?: string;
+  /** Sets the variant of the button. */
   variant: ButtonVariants;
 }

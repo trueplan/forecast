@@ -1,4 +1,5 @@
 import * as React from "react";
+import type { ComponentStory, ComponentMeta } from "@storybook/react";
 import { Box } from "../../../primitives/box";
 import { Card, CardHeader, CardFooter } from "../src";
 
@@ -6,33 +7,35 @@ import { Card, CardHeader, CardFooter } from "../src";
 export default {
   title: "Components/Card",
   component: Card,
-};
+} as ComponentMeta<typeof Card>;
 
-export const Default: React.FC = () => <Card>This is the content.</Card>;
+export const Default: ComponentStory<typeof Card> = () => (
+  <Card>This is the content.</Card>
+);
 
-export const Padding: React.FC = () => (
+export const Padding: ComponentStory<typeof Card> = () => (
   <Card padding="space60">This is the content.</Card>
 );
 
-export const TopPadding: React.FC = () => (
+export const TopPadding: ComponentStory<typeof Card> = () => (
   <Card paddingTop="space60">This is the content.</Card>
 );
 
-export const RightPadding: React.FC = () => (
+export const RightPadding: ComponentStory<typeof Card> = () => (
   <Card paddingRight="space60">
     <Box css={{ textAlign: "right" }}>This is the content.</Box>
   </Card>
 );
 
-export const BottomPadding: React.FC = () => (
+export const BottomPadding: ComponentStory<typeof Card> = () => (
   <Card paddingBottom="space60">This is the content.</Card>
 );
 
-export const LeftPadding: React.FC = () => (
+export const LeftPadding: ComponentStory<typeof Card> = () => (
   <Card paddingLeft="space60">This is the content.</Card>
 );
 
-export const Header: React.FC = () => (
+export const Header: ComponentStory<typeof Card> = () => (
   <Card>
     <CardHeader>Card header content.</CardHeader>
     <Card borderless padding="space40">
@@ -41,7 +44,7 @@ export const Header: React.FC = () => (
   </Card>
 );
 
-export const Footer: React.FC = () => (
+export const Footer: ComponentStory<typeof Card> = () => (
   <Card>
     <Card borderless padding="space40">
       This is the content.
@@ -50,7 +53,7 @@ export const Footer: React.FC = () => (
   </Card>
 );
 
-export const HeaderAndFooter: React.FC = () => (
+export const HeaderAndFooter: ComponentStory<typeof Card> = () => (
   <Card>
     <CardHeader>Card header content.</CardHeader>
     <Card borderless padding="space40">
