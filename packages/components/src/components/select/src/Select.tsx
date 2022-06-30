@@ -47,13 +47,19 @@ const SelectIconWrapper: React.FC = () => (
 
 export interface SelectProps
   extends React.SelectHTMLAttributes<HTMLSelectElement> {
+  /** The options or option group for the select. */
   children: React.ReactNode;
+  /** Sets the state of the select to disabled, so a user is not able to interact with it. */
   disabled?: boolean;
+  /** Sets the state of the select to an error state. */
   hasError?: boolean;
+  /** The `id` of the select. */
   id?: string;
+  /** The `name` of the select. */
   name?: string;
 }
 
+/** A Select is an unstyled dropdown form element that allows users to select a value from a list. */
 const Select = React.forwardRef<HTMLSelectElement, SelectProps>(
   ({ children, disabled, hasError, id, name, required, ...props }, ref) => {
     return (
