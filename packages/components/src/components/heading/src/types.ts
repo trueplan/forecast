@@ -8,7 +8,10 @@ export type HeadingSizes =
   | "heading60";
 type ParagraphMarginBottom = "space0" | "space40";
 export interface HeadingProps extends React.HTMLAttributes<HTMLHeadingElement> {
+  /** Sets the HTML element on render. */
   as?: HeadingLevels;
+  /** Changes the bottom margin of the heading.  */
   marginBottom?: ParagraphMarginBottom;
+  /** Changes the size of the heading. */
   size?: HeadingSizes;
 }

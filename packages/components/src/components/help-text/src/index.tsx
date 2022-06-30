@@ -19,10 +19,13 @@ const StyledHelpText = styled("span", {
 });
 
 export interface HelpTextProps extends React.HTMLAttributes<HTMLSpanElement> {
+  /** The text to be displayed. */
   children: React.ReactNode;
+  /** Changes the help text to its error state. The color changes to the theme red color. */
   hasError?: boolean;
 }
 
+/** Help Text is paired with a form element to give users information to prevent or correct formatting errors. */
 const HelpText = React.forwardRef<HTMLSpanElement, HelpTextProps>(
   ({ children, hasError, ...props }, ref) => (
     <StyledHelpText hasError={hasError} ref={ref} {...props}>

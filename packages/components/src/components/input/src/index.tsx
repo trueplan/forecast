@@ -3,6 +3,7 @@ import { InputBox } from "../../input-box";
 import { StyledInput } from "./styles";
 import type { InputProps, InputTypeProps } from "./types";
 
+/** An Input is a form element that lets users enter one of various types of text on a single line. */
 const Input = React.forwardRef<HTMLInputElement, InputProps>(
   (
     {
