@@ -35,11 +35,15 @@ const printToastIcon = (
 
 export interface ToastProps
   extends React.ComponentProps<typeof ToastPrimitive.Root> {
+  /** The accessible alt text used if an action is used in the toast. */
   actionAltText?: string;
+  /** The text content of the toast. */
   content?: string;
+  /** The type and style of toast. */
   variant?: ToastVariants;
 }
 
+/** A succinct message that is displayed temporarily. */
 const Toast = React.forwardRef<HTMLLIElement, ToastProps>(
   (
     {
