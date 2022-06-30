@@ -2,6 +2,7 @@ import React from "react";
 import { StyledParagraph } from "./styles";
 import type { ParagraphProps } from "./types";
 
+/** A Paragraph is a block of text. */
 const Paragraph = React.forwardRef<HTMLParagraphElement, ParagraphProps>(
   (
     { size = "medium", color = "default", marginBottom, children, ...rest },
