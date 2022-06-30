@@ -4,9 +4,11 @@ import { Box } from "../../../primitives/box";
 
 export interface PaginationListProps
   extends React.HtmlHTMLAttributes<HTMLUListElement> {
+  /** The pagination list contents. Must be valid HTML. */
   children: React.ReactNode;
 }
 
+/** The pagination list is the container for all pagination buttons. */
 const PaginationList = React.forwardRef<HTMLUListElement, PaginationListProps>(
   ({ children, ...props }, ref) => {
     const [childrenCount, validChildren] = React.useMemo(() => {
