@@ -24,6 +24,7 @@ const priorityIcon = (
   }
 };
 
+/** The priority component is used to specify importance of an object. */
 const Priority = React.forwardRef<HTMLSpanElement, PriorityProps>(
   ({ children, variant, ...props }, ref) => {
     return (
