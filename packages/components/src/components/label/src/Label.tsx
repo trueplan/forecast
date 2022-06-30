@@ -2,6 +2,7 @@ import React from "react";
 import { StyledLabel, StyledDot } from "./styles";
 import type { LabelProps } from "./types";
 
+/** A Label is text that provides a visible and accessible name to a form element. */
 const Label = React.forwardRef<HTMLLabelElement, LabelProps>(
   (
     {
