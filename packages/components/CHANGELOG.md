@@ -1,5 +1,32 @@
 # @trueplan/forecast-components
 
+## 5.0.1
+
+### Patch Changes
+
+- [#140](https://github.com/trueplan/forecast/pull/140) [`991c6ff`](https://github.com/trueplan/forecast/commit/991c6ff187c310b6ccfadce2d1552ab3e1862eb9) Thanks [@richbachman](https://github.com/richbachman)! - [Checkbox]: added storybook doc page comments.
+  [Heading]: added storybook doc page comments.
+  [HelpText]: added storybook doc page comments.
+  [Input]: added storybook doc page comments.
+  [InputBox]: added storybook doc page comments.
+  [Label]: added storybook doc page comments.
+  [Pagination]: added storybook doc page comments.
+  [Paragraph]: added storybook doc page comments.
+  [Pill]: added storybook doc page comments.
+  [Popover]: added storybook doc page comments.
+  [Priority]: added storybook doc page comments.
+  [Progress]: added storybook doc page comments.
+  [RadioGroup]: added storybook doc page comments.
+  [Select]: added storybook doc page comments.
+  [Spinner]: added storybook doc page comments.
+  [Textarea]: added storybook doc page comments.
+  [Toast]: added storybook doc page comments.
+
+* [#138](https://github.com/trueplan/forecast/pull/138) [`3ece536`](https://github.com/trueplan/forecast/commit/3ece536a7b51d9ca71d63ba6934ea0aace2230f8) Thanks [@richbachman](https://github.com/richbachman)! - [Avatar]: added storybook doc page comments.
+  [Badge]: added storybook doc page comments.
+  [Button]: added storybook doc page comments.
+  [Card]: added storybook doc page comments.
+
 ## 5.0.0
 
 ### Major Changes
