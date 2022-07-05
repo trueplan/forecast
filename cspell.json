@@ -28,7 +28,8 @@
     "describedby",
     "ariakit",
     "unmerge",
-    "Unmerge"
+    "Unmerge",
+    "unstyled"
   ],
   "ignoreWords": [
     "btlr",

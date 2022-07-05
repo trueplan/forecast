@@ -88,4 +88,6 @@ export const PopoverContent: React.FC<PopoverContentProps> = ({
 );
 
 export const PopoverTrigger = PopoverPrimitive.Trigger;
+
+/** A Popover is a page overlay triggered by a click that displays additional interactive content. */
 export const Popover = PopoverPrimitive.Root;

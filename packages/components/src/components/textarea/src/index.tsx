@@ -3,6 +3,7 @@ import { InputBox } from "../../input-box";
 import { StyledTextArea } from "./styles";
 import type { TextAreaProps } from "./types";
 
+/** A Textarea is a form element that allows users to enter text on multiple lines. */
 const TextArea = React.forwardRef<HTMLTextAreaElement, TextAreaProps>(
   (
     {

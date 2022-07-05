@@ -5,6 +5,7 @@ import { Label } from "../../label";
 import { StyledCheckbox, StyledCheckboxIndicator } from "./styles";
 import type { CheckboxProps } from "./types";
 
+/** A control that allows the user to toggle between checked and not checked. */
 const Checkbox = React.forwardRef<HTMLButtonElement, CheckboxProps>(
   (
     {

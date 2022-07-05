@@ -4,9 +4,13 @@ import { Box } from "../../../primitives/box";
 
 export interface PaginationButtonProps
   extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+  /** The button contents. Must be valid HTML. */
   children: React.ReactNode;
+  /** Specifies whether the button includes and icon or not. */
   hasIcon?: boolean;
+  /** Applies different styles to the button when the current section or page is selected. */
   isCurrent?: boolean;
+  /** The accessible label for the button. */
   label: string;
 }
 
@@ -87,6 +91,7 @@ export const StyledPaginationButton = styled("button", {
   },
 });
 
+/** The pagination button element, which lets users navigation between sections or pages. */
 const PaginationButton = React.forwardRef<
   HTMLButtonElement,
   PaginationButtonProps

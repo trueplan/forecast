@@ -2,6 +2,7 @@ import * as React from "react";
 import { StyledInputBox } from "./styles";
 import type { InputBoxProps } from "./types";
 
+/** Input box is the visual outer container used for text based form elements. */
 const InputBox = React.forwardRef<HTMLDivElement, InputBoxProps>(
   (
     {

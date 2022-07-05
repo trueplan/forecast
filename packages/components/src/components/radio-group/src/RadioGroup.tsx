@@ -3,6 +3,7 @@ import { Stack } from "../../../layout/stack";
 import { StyledRadioGroup } from "./styles";
 import type { RadioGroupProps } from "./types";
 
+/** A set of checkable buttons—known as radio buttons—where no more than one of the buttons can be checked at a time. */
 const RadioGroup = React.forwardRef<HTMLDivElement, RadioGroupProps>(
   (
     {
