@@ -6529,7 +6529,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@trueplan/forecast-components@5.0.1, @trueplan/forecast-components@workspace:packages/components":
+"@trueplan/forecast-components@5.0.2, @trueplan/forecast-components@workspace:packages/components":
   version: 0.0.0-use.local
   resolution: "@trueplan/forecast-components@workspace:packages/components"
   dependencies:
@@ -6584,7 +6584,7 @@ __metadata:
     "@svgr/babel-plugin-add-jsx-attribute": 6.0.0
     "@svgr/babel-plugin-remove-jsx-attribute": 6.0.0
     "@svgr/plugin-svgo": 6.2.0
-    "@trueplan/forecast-components": 5.0.1
+    "@trueplan/forecast-components": 5.0.2
     "@trueplan/forecast-theme": 3.2.2
     "@twilio-labs/svg-to-react": 2.1.1
     "@types/node": 18.0.0
