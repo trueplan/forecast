@@ -1,5 +1,11 @@
 # @trueplan/forecast-components
 
+## 5.0.2
+
+### Patch Changes
+
+- [#141](https://github.com/trueplan/forecast/pull/141) [`82eb8aa`](https://github.com/trueplan/forecast/commit/82eb8aa639d7f3c3da7dfaaf9818527a4e8d52b9) Thanks [@bumbeishvili](https://github.com/bumbeishvili)! - [Drawer]: add `modal` prop to drawer types.
+
 ## 5.0.1
 
 ### Patch Changes
