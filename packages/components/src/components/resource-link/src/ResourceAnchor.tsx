@@ -10,10 +10,10 @@ const StyledAnchor = styled(Anchor, {
   width: "100%",
   height: "100%",
   "&:hover": {
-    border: "none",
+    borderBottomWidth: "0",
   },
   "&:focus": {
-    border: "none",
+    borderBottomWidth: "0",
   },
   "&:after": {
     content: "",

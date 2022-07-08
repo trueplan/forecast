@@ -1,9 +1,10 @@
 import * as React from "react";
 import { Text } from "../../../primitives/text";
+import { Truncate } from "../../truncate";
 
 export interface ResourceLinkTitleProps
   extends Omit<React.HTMLAttributes<HTMLSpanElement>, "color"> {
-  children: React.ReactNode;
+  children: string;
 }
 
 const ResourceLinkTitle = React.forwardRef<
@@ -16,16 +17,12 @@ const ResourceLinkTitle = React.forwardRef<
       fontSize="fontSize10"
       fontWeight="semiBold"
       lineHeight="lineHeight5"
-      style={{
-        overflow: "hidden",
-        display: "-webkit-box",
-        WebkitBoxOrient: "vertical",
-        WebkitLineClamp: 2,
-      }}
       {...props}
       ref={ref}
     >
-      {children}
+      <Truncate title={children} lines={2}>
+        {children}
+      </Truncate>
     </Text>
   );
 });
