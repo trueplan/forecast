@@ -1,5 +1,12 @@
 # @trueplan/forecast-components
 
+## 5.0.3
+
+### Patch Changes
+
+- [#144](https://github.com/trueplan/forecast/pull/144) [`7d64954`](https://github.com/trueplan/forecast/commit/7d64954d50c1f1c7f194617cde9216b7c5543dc1) Thanks [@richbachman](https://github.com/richbachman)! - - [Truncate]: Add multiline truncation capability.
+  - [ResourceLink]: Use Truncate for ResourceLinkTitle.
+
 ## 5.0.2
 
 ### Patch Changes
