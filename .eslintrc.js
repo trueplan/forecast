@@ -121,7 +121,7 @@ module.exports = {
     },
     {
       files: ["*.{js,cjs}"],
-      parser: "babel-eslint",
+      parser: "@babel/eslint-parser",
       rules: {
         "unicorn/prefer-module": "off",
       },
