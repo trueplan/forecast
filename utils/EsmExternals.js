@@ -28,9 +28,9 @@ const NAMESPACE = NAME;
 // this is a modified version of https://github.com/remorses/esbuild-plugins/tree/master/esm-externals
 // this plugin worked, but was a little over the top in that it tried to convert existing import
 // statements too, not just require calls. That would lead to correct import statements like
-// import JSON from '@twilio-paste/package/jsonfile.json'
+// import JSON from '@trueplan/forecast-components/package/jsonfile.json'
 // to be converted incorrectly to
-// import * as JSON from '@twilio-paste/package/jsonfile.json'
+// import * as JSON from '@trueplan/forecast-components/package/jsonfile.json'
 // which would then blow up webpack 5. By targeting only require statements, we solve this
 // eslint-disable-next-line @typescript-eslint/explicit-function-return-type
 function EsmExternalsPlugin({ externals }) {
