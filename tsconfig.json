@@ -27,7 +27,7 @@
     "resolveJsonModule": true,
     "esModuleInterop": true
   },
-  "include": ["./packages/**/*"],
+  "include": ["./packages/**/*", "./website/**/*"],
   "exclude": [
     "node_modules",
     "public",
