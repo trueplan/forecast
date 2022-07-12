@@ -23,7 +23,7 @@
     "build": "yarn clean && yarn compile",
     "clean": "rm -rf ./dist",
     "compile": "NODE_ENV=production node build.js && tsc",
-    "type-check": "tsc --noEmit --composite false",
+    "type-check": "tsc --composite false",
     "tsc": "tsc"
   },
   "dependencies": {

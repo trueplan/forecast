@@ -72,7 +72,8 @@ async function build(packageJson) {
       format: "cjs",
       outfile: outFileCJS,
     })
-    .catch(() => {
+    .catch((error) => {
+      console.log("cjs", error);
       // eslint-disable-next-line unicorn/no-process-exit
       return process.exit(1);
     });
@@ -88,7 +89,8 @@ async function build(packageJson) {
       // Needed to fix a bug with replacing require with import statements https://github.com/evanw/esbuild/issues/566
       plugins: [EsmExternalsPlugin({ externals: external })],
     })
-    .catch(() => {
+    .catch((error) => {
+      console.log("esm", error);
       // eslint-disable-next-line unicorn/no-process-exit
       return process.exit(1);
     });
@@ -100,7 +102,8 @@ async function build(packageJson) {
       format: "cjs",
       outfile: outFileCJS.replace(".js", ".debug.js"),
     })
-    .catch(() => {
+    .catch((error) => {
+      console.log("debug cjs", error);
       // eslint-disable-next-line unicorn/no-process-exit
       return process.exit(1);
     });
@@ -113,7 +116,8 @@ async function build(packageJson) {
       // Needed to fix a bug with replacing require with import statements https://github.com/evanw/esbuild/issues/566
       plugins: [EsmExternalsPlugin({ externals: external })],
     })
-    .catch(() => {
+    .catch((error) => {
+      console.log("debug esm", error);
       // eslint-disable-next-line unicorn/no-process-exit
       return process.exit(1);
     });
