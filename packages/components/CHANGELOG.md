@@ -1,5 +1,13 @@
 # @trueplan/forecast-components
 
+## 5.0.4
+
+### Patch Changes
+
+- [#146](https://github.com/trueplan/forecast/pull/146) [`e1c9693`](https://github.com/trueplan/forecast/commit/e1c96932a932eae116c03b5516f61bfcd2a961cb) Thanks [@richbachman](https://github.com/richbachman)! - [components]: Changed the build tools from rollup to esbuild.
+  [icons]: Changed the build tools from rollup to esbuild.
+  [theme]: Changed the build tools from rollup to esbuild.
+
 ## 5.0.3
 
 ### Patch Changes
