@@ -29,7 +29,8 @@
     "ariakit",
     "unmerge",
     "Unmerge",
-    "unstyled"
+    "unstyled",
+    "esbuild"
   ],
   "ignoreWords": [
     "btlr",

@@ -1,9 +1,9 @@
 {
-  "extends": "tsconfig-forecast",
+  "extends": "../../tsconfig.json",
   "compilerOptions": {
     "outDir": "./dist",
     "rootDir": "./"
   },
-  "include": ["./src/**/*"],
+  "include": ["./index.ts", "./src/**/*"],
   "exclude": ["./tools/**/*"]
 }
